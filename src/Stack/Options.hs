@@ -1,4 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE PartialTypeSignatures #-}
 
 module Stack.Options
     (Command(..)
@@ -674,3 +675,6 @@ pvpBoundsOption =
         case parsePvpBounds $ T.pack s of
             Left e -> readerError e
             Right v -> return v
+
+configOptions :: Parser _
+configOptions = undefined
