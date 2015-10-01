@@ -37,6 +37,7 @@ library
                      Options.Applicative.Args
                      Stack.BuildPlan
                      Stack.Config
+                     Stack.ConfigCmd
                      Stack.Constants
                      Stack.Docker
                      Stack.Docker.GlobalDB

@@ -9,6 +9,7 @@
 {-# LANGUAGE TypeFamilies #-}
 {-# LANGUAGE RecordWildCards #-}
 {-# LANGUAGE ScopedTypeVariables #-}
+{-# LANGUAGE FlexibleContexts #-}
 
 -- | The Config type.
 
@@ -29,6 +30,7 @@ import           Data.Aeson.Extended
 import           Data.Attoparsec.Args
 import           Data.Binary (Binary)
 import           Data.ByteString (ByteString)
+import qualified Data.ByteString.Builder as B
 import qualified Data.ByteString.Char8 as S8
 import           Data.Either (partitionEithers)
 import           Data.List (stripPrefix)
@@ -61,6 +63,9 @@ import           Stack.Types.PackageIdentifier
 import           Stack.Types.PackageName
 import           Stack.Types.Version
 import           System.Process.Read (EnvOverride)
+import qualified Data.Yaml as Yaml
+import qualified Data.HashMap.Strict             as HM
+import qualified Data.Foldable                   as F
 
 -- | The top-level Stackage configuration.
 data Config =
@@ -1176,3 +1181,49 @@ instance ToJSON PvpBounds where
   toJSON = toJSON . pvpBoundsText
 instance FromJSON PvpBounds where
   parseJSON = withText "PvpBounds" (either fail return . parsePvpBounds)
+
+-- | Render a stack.yaml file with comments, see:
+-- https://github.com/commercialhaskell/stack/issues/226
+renderStackYaml :: Project -> B.Builder
+renderStackYaml p =
+    case Yaml.toJSON p of
+        Yaml.Object o -> renderObject o
+        _ -> assert False $ B.byteString $ Yaml.encode p
+  where
+    renderObject o =
+        B.byteString "# For more information, see: https://github.com/commercialhaskell/stack/blob/release/doc/yaml_configuration.md\n\n" <>
+        F.foldMap (goComment o) comments <>
+        goOthers (o `HM.difference` HM.fromList comments) <>
+        B.byteString
+            "# Control whether we use the GHC we find on the path\n\
+            \# system-ghc: true\n\n\
+            \# Require a specific version of stack, using version ranges\n\
+            \# require-stack-version: -any # Default\n\
+            \# require-stack-version: >= 0.1.4.0\n\n\
+            \# Override the architecture used by stack, especially useful on Windows\n\
+            \# arch: i386\n\
+            \# arch: x86_64\n\n\
+            \# Extra directories used by stack for building\n\
+            \# extra-include-dirs: [/path/to/dir]\n\
+            \# extra-lib-dirs: [/path/to/dir]\n"
+
+    comments =
+        [ ("resolver", "Specifies the GHC version and set of packages available (e.g., lts-3.5, nightly-2015-09-21, ghc-7.10.2)")
+        , ("packages", "Local packages, usually specified by relative directory name")
+        , ("extra-deps", "Packages to be pulled from upstream that are not in the resolver (e.g., acme-missiles-0.3)")
+        , ("flags", "Override default flag values for local packages and extra-deps")
+        ]
+
+    goComment o (name, comment) =
+        case HM.lookup name o of
+            Nothing -> assert False mempty
+            Just v ->
+                B.byteString "# " <>
+                B.byteString comment <>
+                B.byteString "\n" <>
+                B.byteString (Yaml.encode $ Yaml.object [(name, v)]) <>
+                B.byteString "\n"
+
+    goOthers o
+        | HM.null o = mempty
+        | otherwise = assert False $ B.byteString $ Yaml.encode o
