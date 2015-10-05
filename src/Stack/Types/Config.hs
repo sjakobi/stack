@@ -38,6 +38,8 @@ import           Data.Hashable (Hashable)
 import           Data.Map (Map)
 import qualified Data.Map as Map
 
+import qualified Data.Foldable                   as F
+import qualified Data.HashMap.Strict             as HM
 import qualified Data.Map.Strict as M
 import           Data.Maybe
 import           Data.Monoid
@@ -48,6 +50,7 @@ import qualified Data.Text as T
 import           Data.Text.Encoding (encodeUtf8, decodeUtf8)
 import           Data.Typeable
 import           Data.Yaml (ParseException)
+import qualified Data.Yaml as Yaml
 import           Distribution.System (Platform)
 import qualified Distribution.Text
 import           Distribution.Version (anyVersion)
@@ -63,9 +66,6 @@ import           Stack.Types.PackageIdentifier
 import           Stack.Types.PackageName
 import           Stack.Types.Version
 import           System.Process.Read (EnvOverride)
-import qualified Data.Yaml as Yaml
-import qualified Data.HashMap.Strict             as HM
-import qualified Data.Foldable                   as F
 
 -- | The top-level Stackage configuration.
 data Config =
