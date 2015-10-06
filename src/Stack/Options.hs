@@ -24,9 +24,9 @@ import Data.Text.Read (decimal)
 import Options.Applicative.Args
 import Options.Applicative.Builder.Extra
 import Options.Applicative.Simple
-import Options.Applicative.Types (readerAsk)
+import Options.Applicative.Types (readerAsk, fromM)
 import Stack.Config (packagesParser)
-import qualified Stack.ConfigCmd as ConfigCmd
+import Stack.ConfigCmd
 import Stack.Docker
 import qualified Stack.Docker as Docker
 import Stack.Dot
@@ -577,7 +577,8 @@ logLevelOptsParser =
 -- | Parser for the resolver
 abstractResolverOptsParser :: Parser AbstractResolver
 abstractResolverOptsParser =
-    option readAbstractResolver
+    option
+        readAbstractResolver
         (long "resolver" <>
          metavar "RESOLVER" <>
          help "Override resolver in project file")
@@ -586,66 +587,85 @@ readAbstractResolver :: ReadM AbstractResolver
 readAbstractResolver = do
     s <- readerAsk
     case s of
-        "global" -> return ARGlobal
-        "nightly" -> return ARLatestNightly
-        "lts" -> return ARLatestLTS
-        'l':'t':'s':'-':x | Right (x', "") <- decimal $ T.pack x ->
-            return $ ARLatestLTSMajor x'
+        "global" ->
+            return ARGlobal
+        "nightly" ->
+            return ARLatestNightly
+        "lts" ->
+            return ARLatestLTS
+        'l':'t':'s':'-':x
+          | Right (x',"") <- decimal $ T.pack x ->
+              return $
+              ARLatestLTSMajor x'
         _ ->
             case parseResolverText $ T.pack s of
-                Left e -> readerError $ show e
-                Right x -> return $ ARResolver x
+                Left e ->
+                    readerError $ show e
+                Right x ->
+                    return $
+                    ARResolver x
 
 -- | GHC variant parser
 ghcVariantParser :: Parser GHCVariant
 ghcVariantParser =
     option
         readGHCVariant
-        (long "ghc-variant" <> metavar "VARIANT" <>
+        (long "ghc-variant" <>
+         metavar "VARIANT" <>
          help
              "Specialized GHC variant, e.g. integersimple (implies --no-system-ghc)")
   where
     readGHCVariant = do
         s <- readerAsk
         case parseGHCVariant s of
-            Left e -> readerError (show e)
-            Right v -> return v
+            Left e ->
+                readerError
+                    (show e)
+            Right v ->
+                return v
 
 -- | Parser for @solverCmd@
 solverOptsParser :: Parser Bool
-solverOptsParser = boolFlags False
-    "modify-stack-yaml"
-    "Automatically modify stack.yaml with the solver's recommendations"
-    idm
+solverOptsParser =
+    boolFlags
+        False
+        "modify-stack-yaml"
+        "Automatically modify stack.yaml with the solver's recommendations"
+        idm
 
 -- | Parser for test arguments.
 testOptsParser :: Parser TestOpts
-testOptsParser = TestOpts
-       <$> boolFlags True
-                     "rerun-tests"
-                     "running already successful tests"
-                     idm
-       <*> fmap (fromMaybe [])
-                (optional (argsOption(long "test-arguments" <>
-                                      metavar "TEST_ARGS" <>
-                                      help "Arguments passed in to the test suite program")))
-      <*> flag False
-               True
-               (long "coverage" <>
-               help "Generate a code coverage report")
-      <*> flag False
-               True
-               (long "no-run-tests" <>
-                help "Disable running of tests. (Tests will still be built.)")
+testOptsParser =
+    TestOpts <$>
+    boolFlags True "rerun-tests" "running already successful tests" idm <*>
+    fmap
+        (fromMaybe [])
+        (optional
+             (argsOption
+                  (long "test-arguments" <>
+                   metavar "TEST_ARGS" <>
+                   help "Arguments passed in to the test suite program"))) <*>
+    flag
+        False
+        True
+        (long "coverage" <>
+         help "Generate a code coverage report") <*>
+    flag
+        False
+        True
+        (long "no-run-tests" <>
+         help "Disable running of tests. (Tests will still be built.)")
 
 -- | Parser for @stack new@.
-newOptsParser :: Parser (NewOpts,InitOpts)
-newOptsParser = (,) <$> newOpts <*> initOptsParser
+newOptsParser :: Parser (NewOpts, InitOpts)
+newOptsParser =
+    (,) <$> newOpts <*> initOptsParser
   where
     newOpts =
         NewOpts <$>
         packageNameArgument
-            (metavar "PACKAGE_NAME" <> help "A valid package name.") <*>
+            (metavar "PACKAGE_NAME" <>
+             help "A valid package name.") <*>
         templateNameArgument
             (metavar "TEMPLATE_NAME" <>
              help "Name of a template, for example: foo or foo.hsfiles" <>
@@ -654,28 +674,50 @@ newOptsParser = (,) <$> newOpts <*> initOptsParser
             M.fromList
             (many
                  (templateParamArgument
-                      (short 'p' <> long "param" <> metavar "KEY:VALUE" <>
-                       help
-                           "Parameter for the template in the format key:value"))) <*
-        abortOption ShowHelpText (long "help" <> help "Show help text.")
+                      (short 'p' <>
+                       long "param" <>
+                       metavar "KEY:VALUE" <>
+                       help "Parameter for the template in the format key:value"))) <*
+        abortOption
+            ShowHelpText
+            (long "help" <>
+             help "Show help text.")
 
 pvpBoundsOption :: Parser PvpBounds
 pvpBoundsOption =
     option
         readPvpBounds
-        (long "pvp-bounds" <> metavar "PVP-BOUNDS" <>
+        (long "pvp-bounds" <>
+         metavar "PVP-BOUNDS" <>
          help
              "How PVP version bounds should be added to .cabal file: none, lower, upper, both")
   where
     readPvpBounds = do
         s <- readerAsk
         case parsePvpBounds $ T.pack s of
-            Left e -> readerError e
-            Right v -> return v
+            Left e ->
+                readerError e
+            Right v ->
+                return v
 
-configCmdSetParser :: Parser ConfigCmd.ConfigCmdSetOpts
-configCmdSetParser =
-    (ConfigCmd.ConfigCmdSetOpts <$>
-    (argument readAbstractResolver
-        (metavar "RESOLVER" <>
-        help ("Set this to global-stack yaml"))))
+configCmdSetParser :: Parser ConfigCmdSetOpts
+configCmdSetParser = fromM $ do
+    return $ ConfigCmdSetOpts undefined undefined
+    -- ConfigCmdSetOpts <$>
+    -- (parseField <$>
+    --  strArgument
+    --         (long "field" <>
+    --          metavar "FIELD" <>
+    --          help "Set global-stack yaml field")) <*>
+    -- (argument
+    --        readAbstractResolver
+    --        (long "resolver" <>
+    --         metavar "RESOLVER" <>
+    --         help "Set this to global-stack yaml"))
+  where
+    parseField s =
+        case s of
+            "resolver" ->
+                ConfigCmdSetResolver
+            _ ->
+                ConfigCmdSetConfigMonoid
