@@ -24,7 +24,7 @@ import Data.Text.Read (decimal)
 import Options.Applicative.Args
 import Options.Applicative.Builder.Extra
 import Options.Applicative.Simple
-import Options.Applicative.Types (readerAsk, fromM)
+import Options.Applicative.Types (readerAsk, fromM, oneM)
 import Stack.Config (packagesParser)
 import Stack.ConfigCmd
 import Stack.Docker
@@ -700,9 +700,14 @@ pvpBoundsOption =
             Right v ->
                 return v
 
-configCmdSetParser :: Parser ConfigCmdSetOpts
-configCmdSetParser = fromM $ do
-    return $ ConfigCmdSetOpts undefined undefined
+configCmdSetParser :: Parser ConfigCmdSet
+configCmdSetParser =
+    fromM $
+    do fieldSel <- oneM $ strArgument idm
+       -- let parsed = "resolver"
+       oneM $ parseFieldToVal fieldSel
+
+  where
     -- ConfigCmdSetOpts <$>
     -- (parseField <$>
     --  strArgument
@@ -714,10 +719,18 @@ configCmdSetParser = fromM $ do
     --        (long "resolver" <>
     --         metavar "RESOLVER" <>
     --         help "Set this to global-stack yaml"))
-  where
-    parseField s =
+    parseFieldToVal :: String -> Parser ConfigCmdSet
+    parseFieldToVal s =
         case s of
             "resolver" ->
-                ConfigCmdSetResolver
-            _ ->
-                ConfigCmdSetConfigMonoid
+                ConfigCmdSetResolver <$>
+                argument
+                    readAbstractResolver
+                    (metavar "RESOLVER" <>
+                     help "Override resolver in project file")
+            _
+             ->
+                ConfigCmdSetConfigMonoid . T.pack <$>
+                strArgument
+                    (metavar "FIELD" <>
+                     help "Change the field in config monoid")
