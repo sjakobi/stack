@@ -714,16 +714,24 @@ pvpBoundsOption =
                 return v
 
 configCmdGetParser :: Parser ConfigCmdGet
-configCmdGetParser = undefined
+configCmdGetParser =
+    ConfigCmdGetConfigMonoid <$>
+    textArgument
+        (metavar "FIELD" <>
+         help "field e.g. \"resolver\"")
 
 configCmdSetParser :: Parser ConfigCmdSet
 configCmdSetParser =
     fromM $
-    do fieldSel <- oneM $ strArgument (help "set resolver or config option")
-       oneM $ parseFieldToVal fieldSel
+    do field <-
+           oneM $
+           strArgument
+               (metavar "FIELD" <>
+                help "set resolver or config option")
+       oneM $ fieldToValParser field
   where
-    parseFieldToVal :: String -> Parser ConfigCmdSet
-    parseFieldToVal s =
+    fieldToValParser :: String -> Parser ConfigCmdSet
+    fieldToValParser s =
         case s of
             "resolver" ->
                 ConfigCmdSetResolver <$>
@@ -733,7 +741,7 @@ configCmdSetParser =
                      help "Override resolver in project file")
             f ->
                 ConfigCmdSetConfigMonoid
-                (T.pack f) <$>
+                    (T.pack f) <$>
                 (T.pack <$>
                  strArgument
                      (metavar "VALUE" <>
