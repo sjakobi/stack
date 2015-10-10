@@ -867,38 +867,46 @@ execCmd ExecOpts {..} go@GlobalOpts{..} = do
 -- | Run GHCi in the context of a project.
 ghciCmd :: GhciOpts -> GlobalOpts -> IO ()
 ghciCmd ghciOpts go@GlobalOpts{..} =
-  withBuildConfigAndLock go $ \lk -> do
-    let packageTargets = concatMap words (ghciAdditionalPackages ghciOpts)
-    unless (null packageTargets) $ globalFixCodePage go $
-       Stack.Build.build (const $ return ()) lk defaultBuildOpts
-           { boptsTargets = map T.pack packageTargets
-           }
-    munlockFile lk -- Don't hold the lock while in the GHCI.
-    ghci ghciOpts
+    withBuildConfigAndLock go $
+    \lk ->
+         do let packageTargets =
+                    concatMap words (ghciAdditionalPackages ghciOpts)
+            unless (null packageTargets) $
+                globalFixCodePage go $
+                Stack.Build.build
+                    (const $
+                     return ())
+                    lk
+                    defaultBuildOpts
+                    { boptsTargets = map T.pack packageTargets
+                    }
+            munlockFile lk -- Don't hold the lock while in the GHCI.
+            ghci ghciOpts
 
 -- | Run ide-backend in the context of a project.
 ideCmd :: ([Text], [String]) -> GlobalOpts -> IO ()
 ideCmd (targets,args) go@GlobalOpts{..} =
     withBuildConfig go $ -- No locking needed.
-      ide targets args
+    ide targets args
 
 -- | List packages in the project.
 packagesCmd :: () -> GlobalOpts -> IO ()
 packagesCmd () go@GlobalOpts{..} =
     withBuildConfig go $
-      do econfig <- asks getEnvConfig
-         locals <-
-             forM (M.toList (envConfigPackages econfig)) $
-             \(dir,_) ->
-                  do cabalfp <- getCabalFileName dir
-                     parsePackageNameFromFilePath cabalfp
-         forM_ locals (liftIO . putStrLn . packageNameString)
+    do econfig <- asks getEnvConfig
+       locals <-
+           forM (M.toList (envConfigPackages econfig)) $
+           \(dir,_) ->
+                do cabalfp <- getCabalFileName dir
+                   parsePackageNameFromFilePath cabalfp
+       forM_ locals (liftIO . putStrLn . packageNameString)
 
 -- | List load targets for a package target.
 targetsCmd :: Text -> GlobalOpts -> IO ()
 targetsCmd target go@GlobalOpts{..} =
     withBuildConfig go $
-    do (_realTargets,_,pkgs) <- ghciSetup Nothing [target]
+    do (_realTargets,_,pkgs) <-
+           ghciSetup Nothing [target]
        pwd <- getWorkingDir
        targets <-
            fmap
@@ -911,42 +919,67 @@ dockerPullCmd :: () -> GlobalOpts -> IO ()
 dockerPullCmd _ go@GlobalOpts{..} = do
     (manager,lc) <- liftIO $ loadConfigWithOpts go
     -- TODO: can we eliminate this lock if it doesn't touch ~/.stack/?
-    withUserFileLock (configStackRoot $ lcConfig lc) $ \_ ->
-     runStackTGlobal manager (lcConfig lc) go $
-       Docker.preventInContainer Docker.pull
+    withUserFileLock
+        (configStackRoot $ lcConfig lc) $
+        \_ ->
+             runStackTGlobal
+                 manager
+                 (lcConfig lc)
+                 go $
+             Docker.preventInContainer Docker.pull
 
 -- | Reset the Docker sandbox.
 dockerResetCmd :: Bool -> GlobalOpts -> IO ()
 dockerResetCmd keepHome go@GlobalOpts{..} = do
-    (manager,lc) <- liftIO (loadConfigWithOpts go)
+    (manager,lc) <-
+        liftIO (loadConfigWithOpts go)
     -- TODO: can we eliminate this lock if it doesn't touch ~/.stack/?
-    withUserFileLock (configStackRoot $ lcConfig lc) $ \_ ->
-     runStackLoggingTGlobal manager go $
-        Docker.preventInContainer $ Docker.reset (lcProjectRoot lc) keepHome
+    withUserFileLock
+        (configStackRoot $ lcConfig lc) $
+        \_ ->
+             runStackLoggingTGlobal manager go $
+             Docker.preventInContainer $
+             Docker.reset
+                 (lcProjectRoot lc)
+                 keepHome
 
 -- | Cleanup Docker images and containers.
 dockerCleanupCmd :: Docker.CleanupOpts -> GlobalOpts -> IO ()
 dockerCleanupCmd cleanupOpts go@GlobalOpts{..} = do
     (manager,lc) <- liftIO $ loadConfigWithOpts go
     -- TODO: can we eliminate this lock if it doesn't touch ~/.stack/?
-    withUserFileLock (configStackRoot $ lcConfig lc) $ \_ ->
-     runStackTGlobal manager (lcConfig lc) go $
-        Docker.preventInContainer $
-            Docker.cleanup cleanupOpts
+    withUserFileLock
+        (configStackRoot $ lcConfig lc) $
+        \_ ->
+             runStackTGlobal
+                 manager
+                 (lcConfig lc)
+                 go $
+             Docker.preventInContainer $ Docker.cleanup cleanupOpts
 
 cfgGetCmd :: ConfigCmd.ConfigCmdGet -> GlobalOpts -> IO ()
-cfgGetCmd co go@GlobalOpts{..} = undefined
+cfgGetCmd co go@GlobalOpts{..} =
+    (manager,lc) <- liftIO $ loadConfigWithOpts go
+    withBuildConfigAndLock
+        go
+        (\_ -> do env <- ask
+                 let cfg = envConfig env
+                     bc = envConfigBuildConfig cfg
+                 runReaderT
+                     (cfgCmdGet co)
+                     env)
 
 cfgSetCmd :: ConfigCmd.ConfigCmdSet -> GlobalOpts -> IO ()
 cfgSetCmd co go@GlobalOpts{..} = do
-    withConfigAndLock go $
-        do pwd <- getWorkingDir
-           config <- asks getConfig
-           miniConfig <- loadMiniConfig config
-           runReaderT
-               (cfgSetField
-                    ("resolver", "nightly") pwd co)
-               miniConfig
+    (manager,lc) <- liftIO $ loadConfigWithOpts go
+    withBuildConfigAndLock
+        go
+        (\_ -> do env <- ask
+                 let cfg = envConfig env
+                     bc = envConfigBuildConfig cfg
+                 runReaderT
+                     (cfgCmdSet co)
+                     env)
 
 cfgAddCmd :: ConfigCmd.ConfigCmdAdd -> GlobalOpts -> IO ()
 cfgAddCmd co go@GlobalOpts{..} = undefined
