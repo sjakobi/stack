@@ -195,7 +195,7 @@ findTransitiveGhcPkgDepends
     -> m (Set PackageIdentifier)
 findTransitiveGhcPkgDepends menv wc pkgDbs pkgId0 = do
     deps <- go (packageIdentifierString pkgId0) Set.empty
-    Set.mapMaybeM (getPackageIdentifier menv wc pkgDbs) deps
+    Set.mapM parsePackageIdentifierFromGhcPkgId deps
   where
     go pkgId res = do
         deps <- findGhcPkgDepends menv wc pkgDbs pkgId
@@ -208,22 +208,6 @@ findTransitiveGhcPkgDepends menv wc pkgDbs pkgId0 = do
                 let res' = Set.insert dep res
                 res'' <- go (ghcPkgIdString dep) res'
                 loop deps res''
-
--- | Get the PackageIdentifier for a ghc-pkg id.
-getPackageIdentifier :: (MonadIO m, MonadLogger m, MonadBaseControl IO m, MonadCatch m, MonadThrow m)
-                     => EnvOverride
-                     -> WhichCompiler
-                     -> [Path Abs Dir] -- ^ package databases
-                     -> GhcPkgId
-                     -> m (Maybe PackageIdentifier)
-getPackageIdentifier menv wc pkgDbs ghcPkgId = do
-    let s = ghcPkgIdString ghcPkgId
-    mname <- findGhcPkgField menv wc pkgDbs s "name"
-    mversion <- findGhcPkgField menv wc pkgDbs s "version"
-    pure $ do
-        name <- mname >>= parsePackageName . T.encodeUtf8
-        version <- mversion >>= parseVersion . T.encodeUtf8
-        Just $ PackageIdentifier name version
 
 -- | Get the dependencies of the package.
 findGhcPkgDepends :: (MonadIO m, MonadLogger m, MonadBaseControl IO m, MonadCatch m, MonadThrow m)
