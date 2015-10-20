@@ -25,7 +25,6 @@ module Stack.GhcPkg
   ,mkGhcPackagePath)
   where
 
-import           Control.Applicative
 import           Control.Monad
 import           Control.Monad.Catch
 import           Control.Monad.IO.Class
@@ -165,24 +164,19 @@ findGhcPkgHaddockHtml :: (MonadIO m, MonadLogger m, MonadBaseControl IO m, Monad
                       => EnvOverride
                       -> WhichCompiler
                       -> [Path Abs Dir] -- ^ package databases
-                      -> String -- ^ PackageIdentifier or GhcPkgId
-                      -> m (Maybe (PackageIdentifier, Path Abs Dir))
-findGhcPkgHaddockHtml menv wc pkgDbs ghcPkgId = do
-    mpath <- findGhcPkgField menv wc pkgDbs ghcPkgId "haddock-html"
-    mid <- findGhcPkgField menv wc pkgDbs ghcPkgId "id"
-    mversion <- findGhcPkgField menv wc pkgDbs ghcPkgId "version"
-    let mpkgId = PackageIdentifier
-            <$> (mid >>= parsePackageName . T.encodeUtf8)
-            <*> (mversion >>= parseVersion . T.encodeUtf8)
-    case (,) <$> mpath <*> mpkgId of
-        Just (path0, pkgId) -> do
+                      -> PackageIdentifier
+                      -> m (Maybe (Path Abs Dir))
+findGhcPkgHaddockHtml menv wc pkgDbs pkgId = do
+    mpath <- findGhcPkgField menv wc pkgDbs (packageIdentifierString pkgId) "ghcPkgId haddock-html"
+    case mpath of
+        Just path0 -> do
             let path = T.unpack path0
             exists <- liftIO $ doesDirectoryExist path
             path' <- if exists
                 then liftIO $ canonicalizePath path
                 else return path
 
-            return $ fmap (pkgId,) (parseAbsDir path')
+            return (parseAbsDir path')
         _ -> return Nothing
 
 -- | Finds dependencies of package, and all their dependencies, etc.
