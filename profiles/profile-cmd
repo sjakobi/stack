@@ -1,0 +1,3 @@
+stack install --ignore-subdirs --enable-executable-profiling --enable-library-profiling --ghc-options="-rtsopts -fprof-auto"
+
+# stack xxx blabla +RTS -p
