@@ -192,7 +192,7 @@ findTransitiveGhcPkgDepends menv wc pkgDbs pkgId0 = do
     Set.mapM parsePackageIdentifierFromGhcPkgId deps
   where
     go pkgId res = do
-        deps <- findGhcPkgDepends menv wc pkgDbs pkgId
+        deps <- findGhcPkgDepends' menv wc pkgDbs pkgId
         loop deps res
     loop [] res = return res
     loop (dep:deps) res = do
@@ -208,9 +208,19 @@ findGhcPkgDepends :: (MonadIO m, MonadLogger m, MonadBaseControl IO m, MonadCatc
                   => EnvOverride
                   -> WhichCompiler
                   -> [Path Abs Dir] -- ^ package databases
+                  -> PackageIdentifier
+                  -> m [GhcPkgId]
+findGhcPkgDepends menv wc pkgDbs pkgId =
+    findGhcPkgDepends' menv wc pkgDbs (packageIdentifierString pkgId)
+
+-- | Get the dependencies of the package.
+findGhcPkgDepends' :: (MonadIO m, MonadLogger m, MonadBaseControl IO m, MonadCatch m, MonadThrow m)
+                  => EnvOverride
+                  -> WhichCompiler
+                  -> [Path Abs Dir] -- ^ package databases
                   -> String -- ^ package identifier or GhcPkgId
                   -> m [GhcPkgId]
-findGhcPkgDepends menv wc pkgDbs pkgId = do
+findGhcPkgDepends' menv wc pkgDbs pkgId = do
     mdeps <- findGhcPkgField menv wc pkgDbs pkgId "depends"
     case mdeps of
         Just !deps -> return (mapMaybe (parseGhcPkgId . T.encodeUtf8) (T.words deps))

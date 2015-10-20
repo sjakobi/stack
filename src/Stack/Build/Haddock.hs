@@ -71,7 +71,7 @@ copyDepHaddocks envOverride wc bco pkgDbs pkgId extraDestDirs = do
     case mpkgHtmlDir of
         Nothing -> return ()
         Just pkgHtmlDir -> do
-            depGhcIds <- findGhcPkgDepends envOverride wc pkgDbs $ packageIdentifierString pkgId
+            depGhcIds <- findGhcPkgDepends envOverride wc pkgDbs pkgId
             forM_ depGhcIds $ copyDepWhenNeeded pkgHtmlDir
   where
     copyDepWhenNeeded pkgHtmlDir depGhcId = do
