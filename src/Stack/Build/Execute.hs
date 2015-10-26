@@ -339,6 +339,7 @@ executePlan :: M env m
             -> Plan
             -> m ()
 executePlan menv bopts baseConfigOpts locals globalPackages snapshotPackages localPackages sourceMap installedMap plan = do
+    $logDebug "executePlan: start"
     withExecuteEnv menv bopts baseConfigOpts locals globalPackages snapshotPackages localPackages sourceMap (executePlan' installedMap plan)
 
     unless (Map.null $ planInstallExes plan) $ do
@@ -413,6 +414,7 @@ executePlan menv bopts baseConfigOpts locals globalPackages snapshotPackages loc
     forM_ (boptsExec bopts) $ \(cmd, args) -> do
         $logProcessRun cmd args
         callProcess Nothing menv' cmd args
+    $logDebug "executePlan: done"
 
 -- | Windows can't write over the current executable. Instead, we rename the
 -- current executable to something else and then do the copy.

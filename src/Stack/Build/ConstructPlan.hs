@@ -16,7 +16,7 @@ import           Control.Exception.Lifted
 import           Control.Monad
 import           Control.Monad.Catch (MonadCatch)
 import           Control.Monad.IO.Class
-import           Control.Monad.Logger (MonadLogger, logWarn)
+import           Control.Monad.Logger
 import           Control.Monad.RWS.Strict
 import           Control.Monad.Trans.Resource
 import qualified Data.ByteString.Char8 as S8
@@ -133,6 +133,7 @@ constructPlan :: forall env m.
               -> InstalledMap
               -> m Plan
 constructPlan mbp0 baseConfigOpts0 locals extraToBuild0 localDumpPkgs loadPackage0 sourceMap installedMap = do
+    $logDebug "constructPlan: start"
     let locallyRegistered = Map.fromList $ map (dpGhcPkgId &&& dpPackageIdent) localDumpPkgs
     menv <- getMinimalEnvOverride
     caches <- getPackageCaches menv

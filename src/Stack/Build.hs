@@ -76,6 +76,7 @@ build :: M env m
       -> BuildOpts
       -> m ()
 build setLocalFiles mbuildLk bopts = fixCodePage' $ do
+    $logDebug "build: start"
     menv <- getMinimalEnvOverride
 
     (_, mbp, locals, extraToBuild, sourceMap) <- loadSourceMap NeedTargets bopts
@@ -120,6 +121,7 @@ build setLocalFiles mbuildLk bopts = fixCodePage' $ do
                          sourceMap
                          installedMap
                          plan
+    $logDebug "build: done"
   where
     profiling = boptsLibProfile bopts || boptsExeProfile bopts
 
@@ -161,6 +163,7 @@ withLoadPackage :: ( MonadIO m
                 -> ((PackageName -> Version -> Map FlagName Bool -> IO Package) -> m a)
                 -> m a
 withLoadPackage menv inner = do
+    $logDebug "withLoadPackage: start"
     econfig <- asks getEnvConfig
     withCabalLoader menv $ \cabalLoader ->
         inner $ \name version flags -> do

@@ -62,6 +62,7 @@ getInstalled :: (M env m, PackageInstallInfo pii)
                   , [DumpPackage () ()] -- locally installed
                   )
 getInstalled menv opts sourceMap = do
+    $logDebug "getInstalled: start"
     snapDBPath <- packageDatabaseDeps
     localDBPath <- packageDatabaseLocal
     extraDBPaths <- packageDatabaseExtra
@@ -132,6 +133,7 @@ loadDatabase :: (M env m, PackageInstallInfo pii)
              -> [LoadHelper] -- ^ from parent databases
              -> m ([LoadHelper], [DumpPackage () ()])
 loadDatabase menv opts mcache sourceMap mdb lhs0 = do
+    $logDebug "loadDatabase: start"
     wc <- getWhichCompiler
     (lhs1', dps) <- ghcPkgDump menv wc (fmap snd (maybeToList mdb))
                 $ conduitDumpPackage =$ sink
@@ -143,6 +145,7 @@ loadDatabase menv opts mcache sourceMap mdb lhs0 = do
             lhDeps
             const
             (lhs0 ++ lhs1)
+    $logDebug "loadDatabase: done"
     return (map (\lh -> lh { lhDeps = [] }) $ Map.elems lhs, dps)
   where
     conduitProfilingCache =
