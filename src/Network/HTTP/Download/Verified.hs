@@ -6,6 +6,9 @@
 {-# LANGUAGE RankNTypes            #-}
 {-# LANGUAGE GADTs                 #-}
 {-# LANGUAGE StandaloneDeriving    #-}
+
+-- | Verified downloads.
+
 module Network.HTTP.Download.Verified
   ( verifiedDownload
   , DownloadRequest(..)
@@ -68,6 +71,7 @@ data HashCheck = forall a. (Show a, HashAlgorithm a) => HashCheck
   }
 deriving instance Show HashCheck
 
+-- | A message digest (hash) in hex format.
 data CheckHexDigest
   = CheckHexDigestString String
   | CheckHexDigestByteString ByteString
@@ -138,7 +142,7 @@ displayCheckHexDigest (CheckHexDigestHeader h) =
 -- | Make sure that the hash digest for a finite stream of bytes
 -- is as expected.
 --
--- Throws WrongDigest (VerifiedDownloadException)
+-- Throws 'WrongDigest' ('VerifiedDownloadException')
 sinkCheckHash :: MonadThrow m
     => Request
     -> HashCheck
@@ -169,17 +173,18 @@ assertLengthSink req expectedStreamLength = ZipSink $ do
   when (actualStreamLength /= expectedStreamLength) $
     throwM $ WrongStreamLength req expectedStreamLength actualStreamLength
 
--- | A more explicitly type-guided sinkHash.
+-- | A more explicitly type-guided 'sinkHash'.
 sinkHashUsing :: (Monad m, HashAlgorithm a) => a -> Consumer ByteString m (Digest a)
 sinkHashUsing _ = sinkHash
 
--- | Turns a list of hash checks into a ZipSink that checks all of them.
+-- | Turns a list of hash checks into a 'ZipSink' that checks all of them.
 hashChecksToZipSink :: MonadThrow m => Request -> [HashCheck] -> ZipSink ByteString m ()
 hashChecksToZipSink req = traverse_ (ZipSink . sinkCheckHash req)
 
--- | Copied and extended version of Network.HTTP.Download.download.
+-- | Copied and extended version of 'Network.HTTP.Download.download'.
 --
 -- Has the following additional features:
+--
 -- * Verifies that response content-length header (if present)
 --     matches expected length
 -- * Limits the download to (close to) the expected # of bytes
@@ -187,9 +192,11 @@ hashChecksToZipSink req = traverse_ (ZipSink . sinkCheckHash req)
 -- * Verifies md5 if response includes content-md5 header
 -- * Verifies the expected hashes
 --
--- Throws VerifiedDownloadException.
--- Throws IOExceptions related to file system operations.
--- Throws HttpException.
+-- Throws:
+--
+-- * 'VerifiedDownloadException'
+-- * 'IOExceptions' related to file system operations
+-- * 'HttpException'
 verifiedDownload :: (MonadReader env m, HasHttpManager env, MonadIO m)
          => DownloadRequest
          -> Path Abs File -- ^ destination
