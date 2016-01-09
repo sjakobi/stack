@@ -304,6 +304,7 @@ configFromConfigMonoid configStackRoot configUserConfigPath mresolver mproject c
          configApplyGhcOptions = fromMaybe AGOLocals configMonoidApplyGhcOptions
          configAllowNewer = fromMaybe False configMonoidAllowNewer
          configDefaultTemplate = configMonoidDefaultTemplate
+         configAllowDifferentUser = fromMaybe False configMonoidAllowDifferentUser
 
      return Config {..}
 
@@ -398,7 +399,7 @@ loadConfig configArgs mstackYaml mresolver = do
             Just (_, _, projectConfig) -> configArgs : projectConfig : extraConfigs
     unless (fromCabalVersion Meta.version `withinRange` configRequireStackVersion config)
         (throwM (BadStackVersionException (configRequireStackVersion config)))
-    unless userIsOwner $
+    unless (userIsOwner || configAllowDifferentUser config) $
         throwM (UserDoesn'tOwnStackRoot stackRoot)
     return LoadConfig
         { lcConfig          = config
