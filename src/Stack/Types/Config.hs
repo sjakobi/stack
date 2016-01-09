@@ -1092,7 +1092,7 @@ data ConfigException
   | NoSuchDirectory FilePath
   | ParseGHCVariantException String
   | BadStackRootEnvVar FilePath
-  | UserDoesn'tOwnStackRootParentDirectory FilePath FilePath -- ^ $STACK_ROOT, parent dir
+  | Won'tCreateDirectoryWhenUserDoesn'tOwnParentDirectory FilePath FilePath -- ^ $STACK_ROOT, parent dir
   | UserDoesn'tOwnStackRoot (Path Abs Dir)
   deriving Typeable
 instance Show ConfigException where
@@ -1171,7 +1171,7 @@ instance Show ConfigException where
         , envStackRoot
         , "'"
         ]
-    show (UserDoesn'tOwnStackRootParentDirectory envStackRoot parentDir) = concat
+    show (Won'tCreateDirectoryWhenUserDoesn'tOwnParentDirectory envStackRoot parentDir) = concat
         [ "Preventing creation of $"
         , stackRootEnvVar
         , " '"

@@ -634,7 +634,7 @@ determineStackRootAndOwnership = liftIO $ do
             return (fileOwner fileStatus)
         user <- getEffectiveUserID
         when (not stackRootExists && user /= owner) $
-            throwIO (UserDoesn'tOwnStackRootParentDirectory stackRoot existingStackRootOrParentDir)
+            throwIO (Won'tCreateDirectoryWhenUserDoesn'tOwnParentDirectory stackRoot existingStackRootOrParentDir)
         return (owner == user)
 #else
     let userOwnsStackRootOrParentDir = True
