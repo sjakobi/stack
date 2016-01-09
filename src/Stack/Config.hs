@@ -1,3 +1,4 @@
+{-# LANGUAGE CPP #-}
 {-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
 {-# LANGUAGE TemplateHaskell #-}
@@ -36,11 +37,14 @@ import qualified Codec.Archive.Tar as Tar
 import qualified Codec.Compression.GZip as GZip
 import           Control.Applicative
 import           Control.Arrow ((***))
-import           Control.Exception (assert)
+import           Control.Exception
 import           Control.Monad
 import           Control.Monad.Catch (MonadThrow, MonadCatch, catchAll, throwM)
 import           Control.Monad.IO.Class
 import           Control.Monad.Logger hiding (Loc)
+#ifndef WINDOWS
+import           Control.Monad.Loops (firstM)
+#endif
 import           Control.Monad.Reader (MonadReader, ask, asks, runReaderT)
 import           Control.Monad.Trans.Control (MonadBaseControl)
 import qualified Crypto.Hash.SHA256 as SHA256
@@ -49,6 +53,9 @@ import qualified Data.ByteString as S
 import qualified Data.ByteString.Base16 as B16
 import qualified Data.ByteString.Lazy as L
 import qualified Data.IntMap as IntMap
+#ifndef WINDOWS
+import           Data.List.Extra (nubOrd)
+#endif
 import qualified Data.Map as Map
 import           Data.Maybe
 import           Data.Monoid
@@ -77,8 +84,18 @@ import           Stack.PackageIndex
 import           Stack.Types
 import           Stack.Types.Internal
 import           System.Directory (getAppUserDataDirectory, createDirectoryIfMissing, canonicalizePath)
+#ifndef WINDOWS
+import           System.Directory (doesDirectoryExist)
+#endif
 import           System.Environment
+#ifndef WINDOWS
+import           System.FilePath (takeDirectory)
+#endif
 import           System.IO
+#ifndef WINDOWS
+import           System.Posix.Files (fileOwner, getFileStatus)
+import           System.Posix.User (getEffectiveUserID)
+#endif
 import           System.Process.Read
 
 -- | If deprecated path exists, use it and print a warning.
@@ -364,7 +381,7 @@ loadConfig :: (MonadLogger m,MonadIO m,MonadCatch m,MonadThrow m,MonadBaseContro
            -- ^ Override resolver
            -> m (LoadConfig m)
 loadConfig configArgs mstackYaml mresolver = do
-    stackRoot <- determineStackRoot
+    (stackRoot, userIsOwner) <- determineStackRootAndOwnership
     userConfigPath <- getDefaultUserConfigPath stackRoot
     extraConfigs0 <- getExtraConfigs userConfigPath >>= mapM loadYaml
     let extraConfigs =
@@ -381,6 +398,8 @@ loadConfig configArgs mstackYaml mresolver = do
             Just (_, _, projectConfig) -> configArgs : projectConfig : extraConfigs
     unless (fromCabalVersion Meta.version `withinRange` configRequireStackVersion config)
         (throwM (BadStackVersionException (configRequireStackVersion config)))
+    unless userIsOwner $
+        throwM (UserDoesn'tOwnStackRoot stackRoot)
     return LoadConfig
         { lcConfig          = config
         , lcLoadBuildConfig = loadBuildConfig mproject config mresolver
@@ -590,19 +609,40 @@ resolvePackageLocation menv projRoot (PLRemote url remotePackageType) = do
 
         _ -> return dir
 
--- | Get the stack root, e.g. ~/.stack
-determineStackRoot :: (MonadIO m, MonadThrow m) => m (Path Abs Dir)
-determineStackRoot = do
-    env <- liftIO getEnvironment
-    case lookup stackRootEnvVar env of
-        Nothing -> do
-            x <- liftIO $ getAppUserDataDirectory stackProgName
-            parseAbsDir x
-        Just x -> do
-            y <- liftIO $ do
-                createDirectoryIfMissing True x
-                canonicalizePath x
-            parseAbsDir y
+-- | Get the stack root, e.g. ~/.stack, and determine whether the user owns it.
+--
+-- On Windows, the second value is always 'True'.
+determineStackRootAndOwnership :: (MonadIO m, MonadThrow m) => m (Path Abs Dir, Bool)
+determineStackRootAndOwnership = liftIO $ do
+    stackRoot <- do
+        mstackRoot <- lookupEnv stackRootEnvVar
+        case mstackRoot of
+            Nothing -> getAppUserDataDirectory stackProgName
+            Just x -> return x
+    stackRootExists <- doesDirectoryExist stackRoot
+#ifndef WINDOWS
+    userOwnsStackRootOrParentDir <- do
+        existingStackRootOrParentDir <- do
+            let stackRootAndParentDirs = nubOrd (take 100 (iterate takeDirectory stackRoot))
+            mdir <- firstM doesDirectoryExist stackRootAndParentDirs
+            case mdir of
+                Just dir -> return dir
+                Nothing -> throwIO (BadStackRootEnvVar stackRoot)
+        owner <- do
+            fileStatus <- getFileStatus existingStackRootOrParentDir
+            return (fileOwner fileStatus)
+        user <- getEffectiveUserID
+        when (not stackRootExists && user /= owner) $
+            throwIO (UserDoesn'tOwnStackRootParentDirectory stackRoot existingStackRootOrParentDir)
+        return (owner == user)
+#else
+    let userOwnsStackRootOrParentDir = True
+#endif
+    unless stackRootExists $
+        createDirectoryIfMissing True stackRoot
+    stackRoot' <- canonicalizePath stackRoot
+    stackRoot'' <- parseAbsDir stackRoot'
+    return (stackRoot'', userOwnsStackRootOrParentDir)
 
 -- | Determine the extra config file locations which exist.
 --

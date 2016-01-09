@@ -1079,6 +1079,9 @@ data ConfigException
   | ResolverPartial Resolver Text
   | NoSuchDirectory FilePath
   | ParseGHCVariantException String
+  | BadStackRootEnvVar FilePath
+  | UserDoesn'tOwnStackRootParentDirectory FilePath FilePath -- ^ $STACK_ROOT, parent dir
+  | UserDoesn'tOwnStackRoot (Path Abs Dir)
   deriving Typeable
 instance Show ConfigException where
     show (ParseConfigFileException configFile exception) = concat
@@ -1149,7 +1152,33 @@ instance Show ConfigException where
         [ "Invalid ghc-variant value: "
         , v
         ]
+    show (BadStackRootEnvVar envStackRoot) = concat
+        [ "Invalid $"
+        , stackRootEnvVar
+        , ": '"
+        , envStackRoot
+        , "'"
+        ]
+    show (UserDoesn'tOwnStackRootParentDirectory envStackRoot parentDir) = concat
+        [ "Preventing creation of $"
+        , stackRootEnvVar
+        , " '"
+        , envStackRoot
+        , "'. Parent directory '"
+        , parentDir
+        , "' is owned by someone else."
+        ]
+    show (UserDoesn'tOwnStackRoot stackRoot) = concat
+        [ "You are not the owner of '"
+        , toFilePath stackRoot
+        , "'. Aborting to protect file permissions."
+        ]
 instance Exception ConfigException
+
+-- TODO: stackRootEnvVar is defined in Stack.Constants but
+-- can't currently be imported due to a dependency cycle.
+stackRootEnvVar :: String
+stackRootEnvVar = "STACK_ROOT"
 
 -- | Helper function to ask the environment and apply getConfig
 askConfig :: (MonadReader env m, HasConfig env) => m Config
