@@ -8,67 +8,73 @@ module Stack.Clean
     ) where
 
 import           Control.Exception (Exception)
-import           Control.Monad (when)
 import           Control.Monad.Catch (MonadCatch, throwM)
 import           Control.Monad.IO.Class (MonadIO)
 import           Control.Monad.Logger (MonadLogger)
-import           Control.Monad.Reader (MonadReader, asks)
+import           Control.Monad.Reader (MonadReader)
 import           Data.Foldable (forM_)
 import           Data.List ((\\),intercalate)
 import qualified Data.Map.Strict as Map
 import           Data.Maybe (mapMaybe)
 import           Data.Typeable (Typeable)
-import           Path.IO (ignoringAbsence, removeDirRecur)
+import           Path (Path,Rel,Dir,(</>))
+import           Path.IO (ignoringAbsence,removeDirRecur)
 import           Stack.Build.Source (getLocalPackageViews)
 import           Stack.Build.Target (LocalPackageView(..))
-import           Stack.Constants (distDirFromDir, workDirFromDir)
-import           Stack.Types (HasEnvConfig,PackageName, bcWorkDir, getBuildConfig)
+import           Stack.Constants (distRelativeDir)
+import           Stack.Types (HasBuildConfig,HasEnvConfig,PackageName
+                             ,configProjectWorkDir,getWorkDir)
 
--- | Reset the build, i.e. remove the @dist@ directory
--- (for example @.stack-work\/dist\/x84_64-linux\/Cabal-1.22.4.0@)
--- for all targets.
+-- | Clean a project according to the given 'CleanOpts'.
 --
 -- Throws 'StackCleanException'.
 clean
-    :: (MonadCatch m, MonadIO m, MonadReader env m, HasEnvConfig env, MonadLogger m)
+    :: (MonadCatch m,MonadIO m,MonadReader env m,HasEnvConfig env,MonadLogger m)
     => CleanOpts
     -> m ()
-clean (CleanTargets targets) =
-    cleanup targets False
-clean (CleanFull _ ) =
-    cleanup [] True
+clean (CleanTargets targets) = do
+    distDir <- distRelativeDir
+    cleanProjectPackages distDir targets
+clean CleanFull = do
+    workDir <- getWorkDir
+    cleanProjectPackages workDir []
+    deleteProjectWorkDir
 
-cleanup
-    :: (MonadCatch m, MonadIO m, MonadReader env m, HasEnvConfig env, MonadLogger m)
-    => [PackageName] -> Bool
-    -> m()
-cleanup targets doFullClean = do
+cleanProjectPackages
+    :: (MonadCatch m,MonadIO m,MonadReader env m,HasEnvConfig env,MonadLogger m)
+    => Path Rel Dir -- ^ Directory to delete
+    -> [PackageName] -- ^ Packages to clean. Cleans all project packages if empty.
+    -> m ()
+cleanProjectPackages deleteDir targets = do
     locals <- getLocalPackageViews
-    case targets \\ Map.keys locals of
+    let nonLocalTargets = targets \\ Map.keys locals
+    case nonLocalTargets of
         [] -> do
-            let lpvs =
+            let targets' =
                     if null targets
-                        then Map.elems locals -- default to cleaning all local packages
+                        then Map.elems locals
                         else mapMaybe (`Map.lookup` locals) targets
-            forM_ lpvs $ \(LocalPackageView{lpvRoot = pkgDir},_) -> do
-                let delDir =
-                          if doFullClean
-                              then workDirFromDir pkgDir
-                              else distDirFromDir pkgDir
-                ignoringAbsence . removeDirRecur =<< delDir
-            when doFullClean $ do
-                bconfig <- asks getBuildConfig
-                bcwd <- bcWorkDir bconfig
-                ignoringAbsence (removeDirRecur bcwd)
+                pkgDirs = map (lpvRoot . fst) targets'
+            forM_ pkgDirs $ \dir -> do
+                (ignoringAbsence . removeDirRecur) (dir </> deleteDir)
         pkgs -> throwM (NonLocalPackages pkgs)
 
+deleteProjectWorkDir
+    :: (MonadCatch m,MonadIO m,MonadReader env m,HasBuildConfig env)
+    => m ()
+deleteProjectWorkDir = do
+    workDir <- configProjectWorkDir
+    ignoringAbsence (removeDirRecur workDir)
+
 -- | Options for cleaning a project.
-data CleanOpts = CleanTargets
-    { cleanOptsTargets :: [PackageName]
-    -- ^ Names of the packages to clean.
+data CleanOpts
+    = CleanTargets [PackageName]
+    -- ^ Remove the @dist@ directories of the listed packages.
     -- If the list is empty, every local package should be cleaned.
-    }
-    | CleanFull { cleanOptsFull :: Bool }
+    | CleanFull
+    -- ^ Remove the entire work directories of all project packages
+    -- as well as the main project work directory.
+    deriving (Show)
 
 -- | Exceptions during cleanup.
 newtype StackCleanException
