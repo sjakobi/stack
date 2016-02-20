@@ -46,7 +46,6 @@ import           Data.List hiding (any)
 import           Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
 import           Data.Maybe
-import           Data.Maybe.Extra (forMaybeM)
 import           Data.Monoid ((<>))
 import           Data.Set (Set)
 import qualified Data.Set as Set
@@ -57,6 +56,7 @@ import qualified Data.Text as T
 import           Data.Text.Encoding (decodeUtf8)
 import           Data.Time.Clock (getCurrentTime)
 import           Data.Traversable (forM)
+import           Data.Witherable (wither)
 import qualified Distribution.PackageDescription as C
 import           Distribution.System            (OS (Windows),
                                                  Platform (Platform))
@@ -361,7 +361,7 @@ executePlan menv bopts baseConfigOpts locals globalPackages snapshotPackages loc
 
         currExe <- liftIO getExecutablePath -- needed for windows, see below
 
-        installed <- forMaybeM (Map.toList $ planInstallExes plan) $ \(name, loc) -> do
+        installed <- (flip wither) (Map.toList $ planInstallExes plan) $ \(name, loc) -> do
             let bindir =
                     case loc of
                         Snap -> snapBin

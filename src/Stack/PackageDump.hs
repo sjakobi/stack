@@ -43,11 +43,11 @@ import           Data.IORef
 import           Data.Map (Map)
 import qualified Data.Map as Map
 import           Data.Maybe (catMaybes, listToMaybe)
-import           Data.Maybe.Extra (mapMaybeM)
 import qualified Data.Set as Set
 import qualified Data.Text as T
 import           Data.Text (Text)
 import           Data.Typeable (Typeable)
+import           Data.Witherable (wither)
 import           GHC.Generics (Generic)
 import           Path
 import           Path.IO (ensureDir)
@@ -333,7 +333,7 @@ conduitDumpPackage = (=$= CL.catMaybes) $ eachSection $ do
                 libraries = parseM "hs-libraries"
                 exposedModules = parseM "exposed-modules"
                 exposed = parseM "exposed"
-            depends <- mapMaybeM parseDepend $ concatMap T.words $ parseM "depends"
+            depends <- wither parseDepend $ concatMap T.words $ parseM "depends"
 
             let parseQuoted key =
                     case mapM (P.parseOnly (argsParser NoEscaping)) val of

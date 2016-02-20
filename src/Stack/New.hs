@@ -33,7 +33,6 @@ import           Data.List
 import           Data.Map.Strict (Map)
 import qualified Data.Map.Strict as M
 import           Data.Maybe (fromMaybe)
-import           Data.Maybe.Extra (mapMaybeM)
 import           Data.Monoid
 import           Data.Set (Set)
 import qualified Data.Set as S
@@ -45,6 +44,7 @@ import qualified Data.Text.Lazy as LT
 import           Data.Time.Calendar
 import           Data.Time.Clock
 import           Data.Typeable
+import           Data.Witherable (wither)
 import           Network.HTTP.Client.Conduit hiding (path)
 import           Network.HTTP.Download
 import           Network.HTTP.Types.Status
@@ -298,7 +298,7 @@ getTemplates = do
 parseTemplateSet :: Value -> Parser (Set TemplateName)
 parseTemplateSet a = do
     xs <- parseJSON a
-    fmap S.fromList (mapMaybeM parseTemplate xs)
+    fmap S.fromList (wither parseTemplate xs)
   where
     parseTemplate v = do
         o <- parseJSON v

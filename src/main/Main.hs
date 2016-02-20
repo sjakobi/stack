@@ -26,7 +26,6 @@ import           Data.List
 import qualified Data.Map as Map
 import qualified Data.Map.Strict as M
 import           Data.Maybe
-import           Data.Maybe.Extra (mapMaybeA)
 import           Data.Monoid
 import qualified Data.Set as Set
 import           Data.Text (Text)
@@ -35,6 +34,7 @@ import qualified Data.Text.IO as T
 import           Data.Traversable
 import           Data.Typeable (Typeable)
 import           Data.Version (showVersion)
+import           Data.Witherable (wither)
 #ifdef USE_GIT_INFO
 import           Development.GitRev (gitCommitCount, gitHash)
 #endif
@@ -249,7 +249,7 @@ commandLineHandler progName isInterpreter = complicatedOptions
         addCommand' "path"
                     "Print out handy path information"
                     pathCmd
-                    (mapMaybeA
+                    (wither
                         (\(desc,name,_) ->
                              flag Nothing
                                   (Just name)

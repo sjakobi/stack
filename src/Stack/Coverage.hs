@@ -29,7 +29,6 @@ import           Data.Function
 import           Data.List
 import qualified Data.Map.Strict as Map
 import           Data.Maybe
-import           Data.Maybe.Extra (mapMaybeM)
 import           Data.Monoid ((<>))
 import           Data.Text (Text)
 import qualified Data.Text as T
@@ -37,6 +36,7 @@ import qualified Data.Text.Encoding as T
 import qualified Data.Text.IO as T
 import qualified Data.Text.Lazy as LT
 import           Data.Traversable (forM)
+import           Data.Witherable (wither)
 import           Network.HTTP.Download (HasHttpManager)
 import           Path
 import           Path.Extra (toFilePathNoTrailingSep)
@@ -282,7 +282,7 @@ generateHpcUnifiedReport = do
 generateUnionReport :: (MonadIO m,MonadReader env m,HasConfig env,MonadLogger m,MonadBaseControl IO m,MonadCatch m,HasEnvConfig env)
                     => Text -> Path Abs Dir -> [Path Abs File] -> m ()
 generateUnionReport report reportDir tixFiles = do
-    (errs, tix) <- fmap (unionTixes . map removeExeModules) (mapMaybeM readTixOrLog tixFiles)
+    (errs, tix) <- fmap (unionTixes . map removeExeModules) (wither readTixOrLog tixFiles)
     $logDebug $ "Using the following tix files: " <> T.pack (show tixFiles)
     unless (null errs) $ $logWarn $ T.concat $
         "The following modules are left out of the " : report : " due to version mismatches: " :
