@@ -58,7 +58,6 @@ library
                      Data.Attoparsec.Interpreter
                      Data.Binary.VersionTagged
                      Data.IORef.RunOnce
-                     Data.Set.Monad
                      Distribution.Version.Extra
                      Network.HTTP.Download 
                      Network.HTTP.Download.Verified
