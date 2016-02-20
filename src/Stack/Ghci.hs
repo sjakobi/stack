@@ -32,12 +32,12 @@ import           Data.List.Extra (nubOrd)
 import           Data.Map.Strict (Map)
 import qualified Data.Map.Strict as M
 import           Data.Maybe
-import           Data.Maybe.Extra (forMaybeM)
 import           Data.Set (Set)
 import qualified Data.Set as S
 import           Data.Text (Text)
 import qualified Data.Text as T
 import           Data.Typeable (Typeable)
+import           Data.Witherable (wither)
 import           Distribution.ModuleName (ModuleName)
 import           Distribution.Text (display)
 import           Network.HTTP.Client.Conduit
@@ -297,7 +297,7 @@ ghciSetup GhciOpts{..} = do
             }
         sourceMap
     directlyWanted <-
-        forMaybeM (M.toList (envConfigPackages econfig)) $
+        (flip wither) (M.toList (envConfigPackages econfig)) $
         \(dir,validWanted) ->
              do cabalfp <- findOrGenerateCabalFile dir
                 name <- parsePackageNameFromFilePath cabalfp

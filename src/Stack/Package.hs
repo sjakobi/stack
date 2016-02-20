@@ -55,7 +55,6 @@ import           Data.List.Extra (nubOrd)
 import           Data.Map.Strict (Map)
 import qualified Data.Map.Strict as M
 import           Data.Maybe
-import           Data.Maybe.Extra
 import           Data.Monoid
 import           Data.Set (Set)
 import qualified Data.Set as S
@@ -64,6 +63,7 @@ import qualified Data.Text as T
 import           Data.Text.Encoding (decodeUtf8, decodeUtf8With)
 import           Data.Text.Encoding.Error (lenientDecode)
 import           Data.Version (showVersion)
+import           Data.Witherable (wither)
 import           Distribution.Compiler
 import           Distribution.ModuleName (ModuleName)
 import qualified Distribution.ModuleName as Cabal
@@ -605,7 +605,7 @@ benchmarkFiles
     :: (MonadLogger m, MonadIO m, MonadCatch m, MonadReader (Path Abs File, Path Abs Dir) m)
     => Benchmark -> m (Set ModuleName, Set DotCabalPath, [PackageWarning])
 benchmarkFiles bench = do
-    dirs <- mapMaybeM resolveDirOrWarn (hsSourceDirs build)
+    dirs <- wither resolveDirOrWarn (hsSourceDirs build)
     dir <- asks (parent . fst)
     (modules,files,warnings) <-
         resolveFilesAndDeps
@@ -629,7 +629,7 @@ testFiles
     => TestSuite
     -> m (Set ModuleName, Set DotCabalPath, [PackageWarning])
 testFiles test = do
-    dirs <- mapMaybeM resolveDirOrWarn (hsSourceDirs build)
+    dirs <- wither resolveDirOrWarn (hsSourceDirs build)
     dir <- asks (parent . fst)
     (modules,files,warnings) <-
         resolveFilesAndDeps
@@ -654,7 +654,7 @@ executableFiles
     => Executable
     -> m (Set ModuleName, Set DotCabalPath, [PackageWarning])
 executableFiles exe = do
-    dirs <- mapMaybeM resolveDirOrWarn (hsSourceDirs build)
+    dirs <- wither resolveDirOrWarn (hsSourceDirs build)
     dir <- asks (parent . fst)
     (modules,files,warnings) <-
         resolveFilesAndDeps
@@ -673,7 +673,7 @@ libraryFiles
     :: (MonadLogger m, MonadIO m, MonadCatch m, MonadReader (Path Abs File, Path Abs Dir) m)
     => Library -> m (Set ModuleName, Set DotCabalPath, [PackageWarning])
 libraryFiles lib = do
-    dirs <- mapMaybeM resolveDirOrWarn (hsSourceDirs build)
+    dirs <- wither resolveDirOrWarn (hsSourceDirs build)
     dir <- asks (parent . fst)
     (modules,files,warnings) <-
         resolveFilesAndDeps
@@ -695,10 +695,10 @@ buildOtherSources :: (MonadLogger m,MonadIO m,MonadCatch m,MonadReader (Path Abs
 buildOtherSources build =
     do csources <- liftM
                        (S.map DotCabalCFilePath . S.fromList)
-                       (mapMaybeM resolveFileOrWarn (cSources build))
+                       (wither resolveFileOrWarn (cSources build))
        jsources <- liftM
                        (S.map DotCabalFilePath . S.fromList)
-                       (mapMaybeM resolveFileOrWarn (targetJsSources build))
+                       (wither resolveFileOrWarn (targetJsSources build))
        return (csources <> jsources)
 
 -- | Get the target's JS sources.
@@ -948,7 +948,7 @@ resolveFiles
     -> [Text] -- ^ Extentions.
     -> m [DotCabalPath]
 resolveFiles dirs names exts =
-    forMaybeM names (findCandidate dirs exts)
+    wither (findCandidate dirs exts) names
 
 -- | Find a candidate for the given module-or-filename from the list
 -- of directories and given extensions.

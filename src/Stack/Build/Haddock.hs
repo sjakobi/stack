@@ -29,12 +29,12 @@ import           Data.List.Extra                (nubOrd)
 import           Data.Map.Strict                (Map)
 import qualified Data.Map.Strict                as Map
 import           Data.Maybe
-import           Data.Maybe.Extra               (mapMaybeM)
 import           Data.Set                       (Set)
 import qualified Data.Set                       as Set
 import           Data.Text                      (Text)
 import qualified Data.Text                      as T
 import           Data.Time                      (UTCTime)
+import           Data.Witherable                (wither)
 import           Path
 import           Path.Extra
 import           Path.IO
@@ -161,7 +161,7 @@ generateHaddockIndex
     -> m ()
 generateHaddockIndex descr envOverride wc dumpPackages docRelFP destDir = do
     ensureDir destDir
-    interfaceOpts <- (liftIO . fmap nubOrd . mapMaybeM toInterfaceOpt) dumpPackages
+    interfaceOpts <- (liftIO . fmap nubOrd . wither toInterfaceOpt) dumpPackages
     unless (null interfaceOpts) $ do
         let destIndexFile = haddockIndexFile destDir
         eindexModTime <- liftIO (tryGetModificationTime destIndexFile)
