@@ -66,11 +66,9 @@ haskellPreprocessorExts :: [Text]
 haskellPreprocessorExts = ["gc", "chs", "hsc", "x", "y", "ly", "cpphs"]
 
 -- | Output .o/.hi directory.
-objectInterfaceDir :: (MonadReader env m, HasConfig env)
-  => BuildConfig -> m (Path Abs Dir)
-objectInterfaceDir bconfig = do
-  bcwd <- bcWorkDir bconfig
-  return (bcwd </> $(mkRelDir "odir/"))
+objectInterfaceDir :: HasBuildConfig env => env -> Path Abs Dir
+objectInterfaceDir env =
+  projectWorkDir env </> $(mkRelDir "odir/")
 
 -- | The filename used for dirtiness check of source files.
 buildCacheFile :: (MonadThrow m, MonadReader env m, HasPlatform env,HasEnvConfig env)
@@ -190,19 +188,19 @@ rawGithubUrl org repo branch file = T.concat
 projectDockerSandboxDir :: (MonadReader env m, HasConfig env)
   => Path Abs Dir      -- ^ Project root
   -> m (Path Abs Dir)  -- ^ Docker sandbox
-projectDockerSandboxDir projectRoot = do
+projectDockerSandboxDir projectRoot' = do
   workDir <- getWorkDir
-  return $ projectRoot </> workDir </> $(mkRelDir "docker/")
+  return $ projectRoot' </> workDir </> $(mkRelDir "docker/")
 
 -- | Image staging dir from project root.
 imageStagingDir :: (MonadReader env m, HasConfig env, MonadThrow m)
   => Path Abs Dir      -- ^ Project root
   -> Int               -- ^ Index of image
   -> m (Path Abs Dir)  -- ^ Docker sandbox
-imageStagingDir projectRoot imageIdx = do
+imageStagingDir projectRoot' imageIdx = do
   workDir <- getWorkDir
   idxRelDir <- parseRelDir (show imageIdx)
-  return $ projectRoot </> workDir </> $(mkRelDir "image") </> idxRelDir
+  return $ projectRoot' </> workDir </> $(mkRelDir "image") </> idxRelDir
 
 -- | Name of the 'stack' program, uppercased
 stackProgNameUpper :: String

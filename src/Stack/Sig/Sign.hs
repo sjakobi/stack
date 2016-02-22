@@ -46,9 +46,9 @@ sign
     :: (MonadCatch m, MonadBaseControl IO m, MonadIO m, MonadMask m, MonadLogger m, MonadThrow m, MonadReader env m, HasConfig env)
     => Maybe (Path Abs Dir) -> String -> Path Abs File -> m ()
 sign Nothing _ _ = throwM SigNoProjectRootException
-sign (Just projectRoot) url filePath = do
+sign (Just projectRoot') url filePath = do
     withStackWorkTempDir
-        projectRoot
+        projectRoot'
         (\tempDir ->
               do bytes <-
                      liftIO
@@ -88,13 +88,13 @@ signTarBytes
     :: (MonadCatch m, MonadBaseControl IO m, MonadIO m, MonadMask m, MonadLogger m, MonadThrow m, MonadReader env m, HasConfig env)
     => Maybe (Path Abs Dir) -> String -> Path Rel File -> L.ByteString -> m ()
 signTarBytes Nothing _ _ _ = throwM SigNoProjectRootException
-signTarBytes (Just projectRoot) url tarPath bs =
+signTarBytes (Just projectRoot') url tarPath bs =
     withStackWorkTempDir
-        projectRoot
+        projectRoot'
         (\tempDir ->
               do let tempTarBall = tempDir </> tarPath
                  liftIO (L.writeFile (toFilePath tempTarBall) bs)
-                 sign (Just projectRoot) url tempTarBall)
+                 sign (Just projectRoot') url tempTarBall)
 
 -- | Sign a haskell package given the url to the signature service, a
 -- @PackageIdentifier@ and a file path to the package on disk.
@@ -127,11 +127,11 @@ signPackage url pkg filePath = do
 withStackWorkTempDir
     :: (MonadCatch m, MonadIO m, MonadMask m, MonadLogger m, MonadReader env m, HasConfig env)
     => Path Abs Dir -> (Path Abs Dir -> m ()) -> m ()
-withStackWorkTempDir projectRoot f = do
+withStackWorkTempDir projectRoot' f = do
     uuid <- liftIO nextRandom
     uuidPath <- parseRelDir (toString uuid)
     workDir <- getWorkDir
-    let tempDir = projectRoot </> workDir </> $(mkRelDir "tmp") </> uuidPath
+    let tempDir = projectRoot' </> workDir </> $(mkRelDir "tmp") </> uuidPath
     bracket
         (ensureDir tempDir)
         (const (removeDirRecur tempDir))

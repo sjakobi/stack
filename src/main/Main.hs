@@ -594,7 +594,7 @@ paths =
       , T.pack . toFilePathNoTrailingSep . configStackRoot . bcConfig . piBuildConfig )
     , ( "Project root (derived from stack.yaml file)"
       , "project-root"
-      , T.pack . toFilePathNoTrailingSep . bcRoot . piBuildConfig )
+      , T.pack . toFilePathNoTrailingSep . projectRoot . piBuildConfig )
     , ( "Configuration location (where the stack.yaml file is)"
       , "config-location"
       , T.pack . toFilePath . bcStackYaml . piBuildConfig )

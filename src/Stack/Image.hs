@@ -91,7 +91,7 @@ syncAddContentToDir opts dir = do
                  let destFullPath = dir </> dropRoot destPath
                  ensureDir destFullPath
                  copyDirRecur
-                     (bcRoot bconfig </> sourcePath)
+                     (projectRoot bconfig </> sourcePath)
                      destFullPath)
 
 -- | Derive an image name from the project directory.

@@ -102,8 +102,8 @@ reexecWithOptionalContainer
     -> Maybe (m ())
     -> Maybe (m ())
     -> m ()
-reexecWithOptionalContainer mprojectRoot =
-    execWithOptionalContainer mprojectRoot getCmdArgs
+reexecWithOptionalContainer mprojectRoot' =
+    execWithOptionalContainer mprojectRoot' getCmdArgs
   where
     getCmdArgs docker envOverride imageInfo isRemoteDocker = do
         config <- asks getConfig
@@ -284,7 +284,7 @@ runContainerAndExit getCmdArgs
                   Just ii2 -> return ii2
                   Nothing -> throwM (InspectFailedException image)
          | otherwise -> throwM (NotPulledException image)
-     sandboxDir <- projectDockerSandboxDir projectRoot
+     sandboxDir <- projectDockerSandboxDir projectRoot'
      let ImageConfig {..} = iiConfig
          imageEnvVars = map (break (== '=')) icEnv
          platformVariant = BS.unpack $ Hash.digestToHexByteString $ hashRepoName image
@@ -307,7 +307,7 @@ runContainerAndExit getCmdArgs
      (cmnd,args,envVars,extraMount) <- getCmdArgs docker envOverride imageInfo isRemoteDocker
      pwd <- getCurrentDir
      liftIO
-       (do updateDockerImageLastUsed config iiId (toFilePath projectRoot)
+       (do updateDockerImageLastUsed config iiId (toFilePath projectRoot')
            mapM_ (ensureDir) [sandboxHomeDir, stackRoot])
      containerID <- (trim . decodeUtf8) <$> readDockerProcess
        envOverride
@@ -321,7 +321,7 @@ runContainerAndExit getCmdArgs
           ,"-e","PATH=" ++ T.unpack newPathEnv
           ,"-e","PWD=" ++ toFilePathNoTrailingSep pwd
           ,"-v",toFilePathNoTrailingSep stackRoot ++ ":" ++ toFilePathNoTrailingSep stackRoot
-          ,"-v",toFilePathNoTrailingSep projectRoot ++ ":" ++ toFilePathNoTrailingSep projectRoot
+          ,"-v",toFilePathNoTrailingSep projectRoot' ++ ":" ++ toFilePathNoTrailingSep projectRoot'
           ,"-v",toFilePathNoTrailingSep sandboxHomeDir ++ ":" ++ toFilePathNoTrailingSep sandboxHomeDir
           ,"-w",toFilePathNoTrailingSep pwd]
          ,case muserEnv of
@@ -401,7 +401,7 @@ runContainerAndExit getCmdArgs
         Just ('=':val) -> Just val
         _ -> Nothing
     mountArg (Mount host container) = ["-v",host ++ ":" ++ container]
-    projectRoot = fromMaybeProjectRoot mprojectRoot
+    projectRoot' = fromMaybeProjectRoot mprojectRoot
     sshRelDir = $(mkRelDir ".ssh/")
 
 -- | Clean-up old docker images and containers.
@@ -718,12 +718,12 @@ checkDockerVersion envOverride docker =
 reset :: (MonadIO m, MonadReader env m, HasConfig env)
   => Maybe (Path Abs Dir) -> Bool -> m ()
 reset maybeProjectRoot keepHome = do
-  dockerSandboxDir <- projectDockerSandboxDir projectRoot
+  dockerSandboxDir <- projectDockerSandboxDir projectRoot'
   liftIO (removeDirectoryContents
             dockerSandboxDir
             [homeDirName | keepHome]
             [])
-  where projectRoot = fromMaybeProjectRoot maybeProjectRoot
+  where projectRoot' = fromMaybeProjectRoot maybeProjectRoot
 
 -- | The Docker container "entrypoint": special actions performed when first entering
 -- a container, such as switching the UID/GID to the "outside-Docker" user's.

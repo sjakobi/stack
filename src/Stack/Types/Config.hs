@@ -29,8 +29,8 @@ module Stack.Types.Config
   ,getMinimalEnvOverride
   -- ** BuildConfig & HasBuildConfig
   ,BuildConfig(..)
-  ,bcRoot
-  ,bcWorkDir
+  ,projectRoot
+  ,projectWorkDir
   ,HasBuildConfig(..)
   -- ** GHCVariant & HasGHCVariant
   ,GHCVariant(..)
@@ -468,7 +468,7 @@ data BuildConfig = BuildConfig
       -- ^ Location of the stack.yaml file.
       --
       -- Note: if the STACK_YAML environment variable is used, this may be
-      -- different from bcRoot </> "stack.yaml"
+      -- different from projectRoot </> "stack.yaml"
     , bcFlags      :: !(Map PackageName (Map FlagName Bool))
       -- ^ Per-package flag overrides
     , bcImplicitGlobal :: !Bool
@@ -481,14 +481,12 @@ data BuildConfig = BuildConfig
     }
 
 -- | Directory containing the project's stack.yaml file
-bcRoot :: BuildConfig -> Path Abs Dir
-bcRoot = parent . bcStackYaml
+projectRoot :: (HasBuildConfig env) => env -> Path Abs Dir
+projectRoot = parent . bcStackYaml . getBuildConfig
 
--- | @"'bcRoot'/.stack-work"@
-bcWorkDir :: (MonadReader env m, HasConfig env) => BuildConfig -> m (Path Abs Dir)
-bcWorkDir bconfig = do
-  workDir <- getWorkDir
-  return (bcRoot bconfig </> workDir)
+-- | @'projectRoot'/.stack-work@
+projectWorkDir :: (HasBuildConfig env) => env -> Path Abs Dir
+projectWorkDir env = projectRoot env </> workDir env
 
 -- | Configuration after the environment has been setup.
 data EnvConfig = EnvConfig
@@ -1239,15 +1237,19 @@ configPackageTarball iname ident = do
     return (root </> $(mkRelDir "packages") </> name </> ver </> base)
 
 -- | @".stack-work"@
+workDir :: (HasConfig env) => env -> Path Rel Dir
+workDir = configWorkDir . getConfig
+
+-- | @".stack-work"@
 getWorkDir :: (MonadReader env m, HasConfig env) => m (Path Rel Dir)
-getWorkDir = configWorkDir `liftM` asks getConfig
+getWorkDir = asks workDir
 
 -- | Per-project work dir
 configProjectWorkDir :: (HasBuildConfig env, MonadReader env m) => m (Path Abs Dir)
 configProjectWorkDir = do
     bc      <- asks getBuildConfig
-    workDir <- getWorkDir
-    return (bcRoot bc </> workDir)
+    workDir' <- getWorkDir
+    return (projectRoot bc </> workDir')
 
 -- | File containing the installed cache, see "Stack.PackageDump"
 configInstalledCache :: (HasBuildConfig env, MonadReader env m) => m (Path Abs File)

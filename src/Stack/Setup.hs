@@ -220,7 +220,7 @@ setupEnv mResolveMissingGHC = do
     compilerVer <- getCompilerVersion menv wc
     cabalVer <- getCabalPkgVer menv wc
     packages <- mapM
-        (resolvePackageEntry menv (bcRoot bconfig))
+        (resolvePackageEntry menv (projectRoot bconfig))
         (bcPackageEntries bconfig)
     let envConfig0 = EnvConfig
             { envConfigBuildConfig = bconfig

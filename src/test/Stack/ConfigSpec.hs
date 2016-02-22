@@ -82,7 +82,7 @@ spec = beforeAll setup $ afterAll teardown $ do
       LoadConfig{..} <- loadConfig' manager
       bc@BuildConfig{..} <- loadBuildConfigRest manager
                             (lcLoadBuildConfig Nothing)
-      bcRoot bc `shouldBe` parentDir
+      projectRoot bc `shouldBe` parentDir
 
     it "respects the STACK_YAML env variable" $ \T{..} -> inTempDir $ do
       withSystemTempDir "config-is-here" $ \dir -> do

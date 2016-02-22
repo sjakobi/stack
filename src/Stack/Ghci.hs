@@ -135,7 +135,7 @@ ghci opts@GhciOpts{..} = do
             ("The following GHC options are incompatible with GHCi and have not been passed to it: " <>
              T.unwords (map T.pack (nubOrd omittedOpts)))
     allModules <- checkForDuplicateModules ghciNoLoadModules pkgs
-    oiDir <- objectInterfaceDir bconfig
+    let oiDir = objectInterfaceDir bconfig
     (modulesToLoad, thingsToLoad) <- if ghciNoLoadModules then return ([], []) else do
         mainFile <- figureOutMainFile bopts mainIsTargets targets pkgs
         let thingsToLoad = maybe [] (return . toFilePath) mainFile <> allModules

@@ -22,7 +22,7 @@ import           Path.IO (ignoringAbsence, removeDirRecur)
 import           Stack.Build.Source (getLocalPackageViews)
 import           Stack.Build.Target (LocalPackageView(..))
 import           Stack.Constants (distDirFromDir, workDirFromDir)
-import           Stack.Types (HasEnvConfig,PackageName, bcWorkDir, getBuildConfig)
+import           Stack.Types (HasEnvConfig,PackageName, projectWorkDir, getBuildConfig)
 
 -- | Reset the build, i.e. remove the @dist@ directory
 -- (for example @.stack-work\/dist\/x84_64-linux\/Cabal-1.22.4.0@)
@@ -58,8 +58,7 @@ cleanup targets doFullClean = do
                 ignoringAbsence . removeDirRecur =<< delDir
             when doFullClean $ do
                 bconfig <- asks getBuildConfig
-                bcwd <- bcWorkDir bconfig
-                ignoringAbsence (removeDirRecur bcwd)
+                (ignoringAbsence . removeDirRecur) (projectWorkDir bconfig)
         pkgs -> throwM (NonLocalPackages pkgs)
 
 -- | Options for cleaning a project.
