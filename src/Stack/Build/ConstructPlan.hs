@@ -16,7 +16,7 @@ import           Control.Exception.Lifted
 import           Control.Monad
 import           Control.Monad.Catch (MonadCatch)
 import           Control.Monad.IO.Class
-import           Control.Monad.Logger (MonadLogger, logWarn)
+import           Control.Monad.Logger (MonadLogger, logInfo, logWarn)
 import           Control.Monad.RWS.Strict
 import           Control.Monad.Trans.Resource
 import           Data.Either
@@ -119,18 +119,74 @@ instance HasBuildConfig Ctx where
 instance HasEnvConfig Ctx where
     getEnvConfig = ctxEnvConfig
 
-constructPlan :: forall env m.
-                 (MonadCatch m, MonadReader env m, HasEnvConfig env, MonadIO m, MonadLogger m, MonadBaseControl IO m, HasHttpManager env)
-              => MiniBuildPlan
-              -> BaseConfigOpts
-              -> [LocalPackage]
-              -> Set PackageName -- ^ additional packages that must be built
-              -> [DumpPackage () ()] -- ^ locally registered
-              -> (PackageName -> Version -> Map FlagName Bool -> IO Package) -- ^ load upstream package
-              -> SourceMap
-              -> InstalledMap
-              -> m Plan
+{-
+https://github.com/commercialhaskell/stack/issues/595
+
+Idee: wenn `not (null extraToBuild0)`, dann erzeuge aus dem Plan einen neuen MiniBuildPlan
+und lass constructPlan nochmal laufen.
+-}
+
+enhanceMiniBuildPlan
+    :: MiniBuildPlan
+    -> Plan
+    -> MiniBuildPlan
+enhanceMiniBuildPlan mbp plan =
+    mbp { mbpPackages = Map.map toMpi (planTasks plan) }
+  where
+    toMpi :: Task -> MiniPackageInfo
+    toMpi task = MiniPackageInfo
+        { mpiVersion = packageIdentifierVersion (taskProvides task)
+        , mpiFlags = packageFlags pkg
+        , mpiPackageDeps = Map.keysSet (packageDeps pkg)
+        , mpiToolDeps = Set.fromList (map depAsText (packageTools pkg))
+        , mpiExes = Set.map ExeName (packageExes pkg)
+        , mpiHasLibrary = packageHasLibrary pkg
+        }
+      where
+        pkg =
+            case taskType task of
+                TTLocal localPkg -> lpPackage localPkg
+                TTUpstream p _ -> p
+        depAsText (Dependency pn _vr) = packageNameText (fromCabalPackageName pn)
+
+constructPlan
+    :: forall env m.
+       (MonadCatch m, MonadReader env m, HasEnvConfig env, MonadIO m, MonadLogger m, MonadBaseControl IO m, HasHttpManager env)
+    => MiniBuildPlan
+    -> BaseConfigOpts
+    -> [LocalPackage]
+    -> Set PackageName -- ^ additional packages that must be built
+    -> [DumpPackage () ()] -- ^ locally registered
+    -> (PackageName -> Version -> Map FlagName Bool -> IO Package) -- ^ load upstream package
+    -> SourceMap
+    -> InstalledMap
+    -> m Plan
 constructPlan mbp0 baseConfigOpts0 locals extraToBuild0 localDumpPkgs loadPackage0 sourceMap installedMap = do
+    plan <- constructPlan' mbp0 baseConfigOpts0 locals extraToBuild0 localDumpPkgs loadPackage0 sourceMap installedMap
+    if hasExtraDeps plan
+        then constructPlan' (enhanceMiniBuildPlan mbp0 plan) baseConfigOpts0 locals extraToBuild0 localDumpPkgs loadPackage0 sourceMap installedMap
+        else return plan
+  where
+    hasExtraDeps plan = any isExtraDep (Map.map taskType (planTasks plan))
+    isExtraDep (TTUpstream _ Local) = True
+    isExtraDep _ = False
+
+constructPlan'
+    :: forall env m.
+       (MonadCatch m, MonadReader env m, HasEnvConfig env, MonadIO m, MonadLogger m, MonadBaseControl IO m, HasHttpManager env)
+    => MiniBuildPlan
+    -> BaseConfigOpts
+    -> [LocalPackage]
+    -> Set PackageName -- ^ additional packages that must be built
+    -> [DumpPackage () ()] -- ^ locally registered
+    -> (PackageName -> Version -> Map FlagName Bool -> IO Package) -- ^ load upstream package
+    -> SourceMap
+    -> InstalledMap
+    -> m Plan
+constructPlan' mbp0 baseConfigOpts0 locals extraToBuild0 localDumpPkgs loadPackage0 sourceMap installedMap = do
+    $logInfo $ "\nmbp0: " <> (T.pack $ show mbp0)
+    $logInfo $ "\nextraToBuild0: " <> (T.pack $ show extraToBuild0)
+    $logInfo $ "\nlocals: " <> (T.pack $ show locals)
     let locallyRegistered = Map.fromList $ map (dpGhcPkgId &&& dpPackageIdent) localDumpPkgs
     caches <- getPackageCaches
     let versions =
@@ -161,15 +217,17 @@ constructPlan mbp0 baseConfigOpts0 locals extraToBuild0 localDumpPkgs loadPackag
                         BSAll -> id
                         BSOnlySnapshot -> stripLocals
                         BSOnlyDependencies -> stripNonDeps deps
-            return $ takeSubset Plan
-                { planTasks = tasks
-                , planFinals = M.fromList finals
-                , planUnregisterLocal = mkUnregisterLocal tasks dirtyReason locallyRegistered sourceMap
-                , planInstallExes =
-                    if boptsInstallExes $ bcoBuildOpts baseConfigOpts0
-                        then installExes
-                        else Map.empty
-                }
+                plan = takeSubset Plan
+                    { planTasks = tasks
+                    , planFinals = M.fromList finals
+                    , planUnregisterLocal = mkUnregisterLocal tasks dirtyReason locallyRegistered sourceMap
+                    , planInstallExes =
+                        if boptsInstallExes $ bcoBuildOpts baseConfigOpts0
+                            then installExes
+                            else Map.empty
+                    }
+            $logInfo $ "\nplan: " <> (T.pack $ show plan)
+            return plan
         else throwM $ ConstructPlanExceptions errs (bcStackYaml $ getBuildConfig econfig)
   where
     ctx econfig versions = Ctx
