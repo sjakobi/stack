@@ -1,0 +1,236 @@
+Configuring random-1.1...
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency time ==1.5.0.1: using time-1.5.0.1
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/random-1.1-9Kgekc9yEaLHLNUuw6paWL
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/share/x86_64-linux-ghc-7.10.3/random-1.1
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/random-1.1
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building random-1.1...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library random-1.1...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key rando_9Kgekc9yEaLHLNUuw6paWL -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b -XHaskell98 -XCPP System.Random -O2 -ddump-hi -ddump-to-file
+[1 of 1] Compiling System.Random    ( System/Random.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Random.o )
+
+System/Random.hs:43:1: Warning: Tab character
+
+System/Random.hs:45:1: Warning: Tab character
+
+System/Random.hs:47:1: Warning: Tab character
+
+System/Random.hs:53:1: Warning: Tab character
+
+System/Random.hs:55:1: Warning: Tab character
+
+System/Random.hs:56:1: Warning: Tab character
+
+System/Random.hs:57:1: Warning: Tab character
+
+System/Random.hs:59:1: Warning: Tab character
+
+System/Random.hs:61:1: Warning: Tab character
+
+System/Random.hs:63:1: Warning: Tab character
+
+System/Random.hs:64:1: Warning: Tab character
+
+System/Random.hs:65:1: Warning: Tab character
+
+System/Random.hs:66:1: Warning: Tab character
+
+System/Random.hs:68:1: Warning: Tab character
+
+System/Random.hs:69:1: Warning: Tab character
+
+System/Random.hs:70:1: Warning: Tab character
+
+System/Random.hs:71:1: Warning: Tab character
+
+System/Random.hs:73:1: Warning: Tab character
+
+System/Random.hs:74:1: Warning: Tab character
+
+System/Random.hs:76:1: Warning: Tab character
+
+System/Random.hs:90:22: Warning: Tab character
+
+System/Random.hs:91:17: Warning: Tab character
+
+System/Random.hs:94:17: Warning: Tab character
+
+System/Random.hs:102:15: Warning: Tab character
+
+System/Random.hs:240:1: Warning: Tab character
+
+System/Random.hs:241:1: Warning: Tab character
+
+System/Random.hs:249:1: Warning: Tab character
+
+System/Random.hs:269:1: Warning: Tab character
+
+System/Random.hs:270:1: Warning: Tab character
+
+System/Random.hs:271:1: Warning: Tab character
+
+System/Random.hs:272:1: Warning: Tab character
+
+System/Random.hs:273:1: Warning: Tab character
+
+System/Random.hs:326:11: Warning: Tab character
+
+System/Random.hs:343:11: Warning: Tab character
+
+System/Random.hs:384:11: Warning: Tab character
+
+System/Random.hs:395:1: Warning: Tab character
+
+System/Random.hs:396:1: Warning: Tab character
+
+System/Random.hs:396:20: Warning: Tab character
+
+System/Random.hs:397:1: Warning: Tab character
+
+System/Random.hs:397:20: Warning: Tab character
+
+System/Random.hs:399:11: Warning: Tab character
+
+System/Random.hs:406:1: Warning: Tab character
+
+System/Random.hs:415:1: Warning: Tab character
+
+System/Random.hs:428:1: Warning: Tab character
+
+System/Random.hs:429:1: Warning: Tab character
+
+System/Random.hs:430:1: Warning: Tab character
+
+System/Random.hs:440:3: Warning: Tab character
+
+System/Random.hs:502:1: Warning: Tab character
+
+System/Random.hs:503:1: Warning: Tab character
+
+System/Random.hs:504:1: Warning: Tab character
+
+System/Random.hs:506:1: Warning: Tab character
+
+System/Random.hs:507:1: Warning: Tab character
+
+System/Random.hs:508:1: Warning: Tab character
+
+System/Random.hs:519:1: Warning: Tab character
+
+System/Random.hs:519:14: Warning: Tab character
+
+System/Random.hs:520:1: Warning: Tab character
+
+System/Random.hs:522:1: Warning: Tab character
+
+System/Random.hs:523:1: Warning: Tab character
+
+System/Random.hs:524:1: Warning: Tab character
+
+System/Random.hs:526:1: Warning: Tab character
+
+System/Random.hs:527:1: Warning: Tab character
+
+System/Random.hs:528:1: Warning: Tab character
+Linking...
+[(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b",PackageIdentifier {pkgName =
+PackageName {unPackageName = "time"}, pkgVersion = Version {versionBranch =
+[1,5,0,1], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-19059/libHSrandom-1.1-9Kgekc9yEaLHLNUuw6paWL.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Random.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-19059/libHSrandom-1.1-9Kgekc9yEaLHLNUuw6paWL.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-19059/libHSrandom-1.1-9Kgekc9yEaLHLNUuw6paWL.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/time_FTheb6LSxyX1UABIbBXRfn -this-package-key rando_9Kgekc9yEaLHLNUuw6paWL -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Random.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSrandom-1.1-9Kgekc9yEaLHLNUuw6paWL-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering random-1.1...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/random does
+exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/random-1.1
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/random-1.1/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/random-1.1-9Kgekc9yEaLHLNUuw6paWL
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/random-1.1-9Kgekc9yEaLHLNUuw6paWL/System
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/random-1.1-9Kgekc9yEaLHLNUuw6paWL
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/random-1.1-9Kgekc9yEaLHLNUuw6paWL/System
+Installing .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Random.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/random-1.1-9Kgekc9yEaLHLNUuw6paWL/System/Random.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/random-1.1-9Kgekc9yEaLHLNUuw6paWL/System
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Random.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/random-1.1-9Kgekc9yEaLHLNUuw6paWL/System/Random.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/random-1.1-9Kgekc9yEaLHLNUuw6paWL
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSrandom-1.1-9Kgekc9yEaLHLNUuw6paWL.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/random-1.1-9Kgekc9yEaLHLNUuw6paWL/libHSrandom-1.1-9Kgekc9yEaLHLNUuw6paWL.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/random-1.1-9Kgekc9yEaLHLNUuw6paWL
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSrandom-1.1-9Kgekc9yEaLHLNUuw6paWL-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSrandom-1.1-9Kgekc9yEaLHLNUuw6paWL-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/random-1.1-9Kgekc9yEaLHLNUuw6paWL/libHSrandom-1.1-9Kgekc9yEaLHLNUuw6paWL-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key rando_9Kgekc9yEaLHLNUuw6paWL -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b -XHaskell98 -XCPP System.Random -O2
+Registering random-1.1...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb'

@@ -1,0 +1,411 @@
+Configuring memory-0.11...
+Flags chosen: support_deepseq=True, support_bytestring=True
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency deepseq ==1.4.1.1: using deepseq-1.4.1.1
+Dependency ghc-prim ==0.4.0.0: using ghc-prim-0.4.0.0
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/share/x86_64-linux-ghc-7.10.3/memory-0.11
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/memory-0.11
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building memory-0.11...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library memory-0.11...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/MemMap
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/MemMap
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs '--cc=/usr/bin/gcc' '--ld=/usr/bin/gcc' '--cflag=-D__GLASGOW_HASKELL__=710' '--cflag=-Dlinux_BUILD_OS=1' '--cflag=-Dx86_64_BUILD_ARCH=1' '--cflag=-Dlinux_HOST_OS=1' '--cflag=-Dx86_64_HOST_ARCH=1' '--cflag=-DARCH_IS_LITTLE_ENDIAN' '--cflag=-DWITH_BYTESTRING_SUPPORT' '--cflag=-DWITH_DEEPSEQ_SUPPORT' '--cflag=-I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen' '--cflag=-include' '--cflag=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h' '--cflag=-I/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6/include' '--cflag=-I/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM/include' '--cflag=-I/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS/include' '--cflag=-I/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/include' '--lflag=-L/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6' '--lflag=-Wl,-R,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6' '--lflag=-L/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59' '--lflag=-Wl,-R,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59' '--lflag=-L/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA' '--lflag=-Wl,-R,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA' '--lflag=-L/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM' '--lflag=-Wl,-R,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM' '--lflag=-L/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS' '--lflag=-Wl,-R,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS' '--lflag=-lgmp' '--lflag=-L/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3' '--lflag=-Wl,-R,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3' '--lflag=-L/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts' '--lflag=-Wl,-R,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts' '--lflag=-lm' '--lflag=-lrt' '--lflag=-ldl' -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/MemMap/Posix.hs Data/Memory/MemMap/Posix.hsc
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-DARCH_IS_LITTLE_ENDIAN -optP-DWITH_BYTESTRING_SUPPORT -optP-DWITH_DEEPSEQ_SUPPORT -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key memor_0EiEBIg44i8KGjAeoKnPDs -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -XHaskell2010 Data.ByteArray Data.ByteArray.Encoding Data.ByteArray.Mapping Data.ByteArray.Pack Data.ByteArray.Parse Data.ByteArray.Hash Data.Memory.Endian Data.Memory.PtrMethods Data.Memory.ExtendedWords Data.Memory.Encoding.Base16 Data.Memory.Encoding.Base32 Data.Memory.Encoding.Base64 Data.Memory.Internal.Compat Data.Memory.Internal.CompatPrim Data.Memory.Internal.CompatPrim64 Data.Memory.Internal.DeepSeq Data.Memory.Internal.Imports Data.Memory.Internal.Scrubber Data.Memory.Hash.SipHash Data.Memory.Hash.FNV Data.ByteArray.Pack.Internal Data.ByteArray.Types Data.ByteArray.Bytes Data.ByteArray.ScrubbedBytes Data.ByteArray.Methods Data.ByteArray.MemView Data.ByteArray.View Data.Memory.MemMap.Posix -Wall -fwarn-tabs -ddump-hi -ddump-to-file
+[ 1 of 28] Compiling Data.Memory.MemMap.Posix ( .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/MemMap/Posix.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/MemMap/Posix.o )
+[ 2 of 28] Compiling Data.Memory.Internal.DeepSeq ( Data/Memory/Internal/DeepSeq.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/DeepSeq.o )
+[ 3 of 28] Compiling Data.Memory.Internal.CompatPrim64 ( Data/Memory/Internal/CompatPrim64.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/CompatPrim64.o )
+[ 4 of 28] Compiling Data.Memory.Internal.CompatPrim ( Data/Memory/Internal/CompatPrim.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/CompatPrim.o )
+[ 5 of 28] Compiling Data.Memory.Internal.Scrubber ( Data/Memory/Internal/Scrubber.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/Scrubber.o )
+[ 6 of 28] Compiling Data.Memory.ExtendedWords ( Data/Memory/ExtendedWords.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/ExtendedWords.o )
+[ 7 of 28] Compiling Data.Memory.Internal.Imports ( Data/Memory/Internal/Imports.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/Imports.o )
+[ 8 of 28] Compiling Data.Memory.PtrMethods ( Data/Memory/PtrMethods.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/PtrMethods.o )
+[ 9 of 28] Compiling Data.Memory.Internal.Compat ( Data/Memory/Internal/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/Compat.o )
+[10 of 28] Compiling Data.Memory.Encoding.Base16 ( Data/Memory/Encoding/Base16.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Encoding/Base16.o )
+[11 of 28] Compiling Data.Memory.Encoding.Base32 ( Data/Memory/Encoding/Base32.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Encoding/Base32.o )
+[12 of 28] Compiling Data.Memory.Encoding.Base64 ( Data/Memory/Encoding/Base64.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Encoding/Base64.o )
+[13 of 28] Compiling Data.Memory.Endian ( Data/Memory/Endian.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Endian.o )
+[14 of 28] Compiling Data.Memory.Hash.SipHash ( Data/Memory/Hash/SipHash.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Hash/SipHash.o )
+[15 of 28] Compiling Data.Memory.Hash.FNV ( Data/Memory/Hash/FNV.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Hash/FNV.o )
+[16 of 28] Compiling Data.ByteArray.Types ( Data/ByteArray/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Types.o )
+
+Data/ByteArray/Types.hs:15:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[17 of 28] Compiling Data.ByteArray.Bytes ( Data/ByteArray/Bytes.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Bytes.o )
+
+Data/ByteArray/Bytes.hs:20:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[18 of 28] Compiling Data.ByteArray.ScrubbedBytes ( Data/ByteArray/ScrubbedBytes.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/ScrubbedBytes.o )
+
+Data/ByteArray/ScrubbedBytes.hs:19:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[19 of 28] Compiling Data.ByteArray.MemView ( Data/ByteArray/MemView.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/MemView.o )
+[20 of 28] Compiling Data.ByteArray.Pack.Internal ( Data/ByteArray/Pack/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Pack/Internal.o )
+
+Data/ByteArray/Pack/Internal.hs:20:1: Warning:
+    The import of ‘Data.Memory.Internal.Imports’ is redundant
+      except perhaps to import instances from ‘Data.Memory.Internal.Imports’
+    To import instances alone, use: import Data.Memory.Internal.Imports()
+[21 of 28] Compiling Data.ByteArray.Methods ( Data/ByteArray/Methods.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Methods.o )
+[22 of 28] Compiling Data.ByteArray.View ( Data/ByteArray/View.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/View.o )
+[23 of 28] Compiling Data.ByteArray.Encoding ( Data/ByteArray/Encoding.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Encoding.o )
+[24 of 28] Compiling Data.ByteArray.Mapping ( Data/ByteArray/Mapping.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Mapping.o )
+[25 of 28] Compiling Data.ByteArray.Parse ( Data/ByteArray/Parse.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Parse.o )
+[26 of 28] Compiling Data.ByteArray.Hash ( Data/ByteArray/Hash.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Hash.o )
+[27 of 28] Compiling Data.ByteArray   ( Data/ByteArray.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray.o )
+[28 of 28] Compiling Data.ByteArray.Pack ( Data/ByteArray/Pack.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Pack.o )
+Linking...
+[(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437",PackageIdentifier
+{pkgName = PackageName {unPackageName = "bytestring"}, pkgVersion = Version
+{versionBranch = [0,10,6,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311",PackageIdentifier {pkgName
+= PackageName {unPackageName = "deepseq"}, pkgVersion = Version {versionBranch
+= [1,4,1,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e",PackageIdentifier {pkgName
+= PackageName {unPackageName = "ghc-prim"}, pkgVersion = Version
+{versionBranch = [0,4,0,0], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-15754/libHSmemory-0.11-0EiEBIg44i8KGjAeoKnPDs.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Encoding.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Mapping.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Pack.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Parse.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Hash.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Endian.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/PtrMethods.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/ExtendedWords.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Encoding/Base16.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Encoding/Base32.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Encoding/Base64.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/CompatPrim.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/CompatPrim64.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/DeepSeq.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/Imports.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/Scrubber.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Hash/SipHash.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Hash/FNV.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Pack/Internal.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Types.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Bytes.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/ScrubbedBytes.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Methods.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/MemView.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/View.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/MemMap/Posix.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-15754/libHSmemory-0.11-0EiEBIg44i8KGjAeoKnPDs.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-15754/libHSmemory-0.11-0EiEBIg44i8KGjAeoKnPDs.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -this-package-key memor_0EiEBIg44i8KGjAeoKnPDs -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Encoding.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Mapping.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Pack.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Parse.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Hash.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Endian.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/PtrMethods.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/ExtendedWords.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Encoding/Base16.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Encoding/Base32.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Encoding/Base64.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/CompatPrim.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/CompatPrim64.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/DeepSeq.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/Imports.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/Scrubber.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Hash/SipHash.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Hash/FNV.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Pack/Internal.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Types.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Bytes.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/ScrubbedBytes.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Methods.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/MemView.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/View.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/MemMap/Posix.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSmemory-0.11-0EiEBIg44i8KGjAeoKnPDs-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering memory-0.11...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/memory does
+exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/memory-0.11
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/memory-0.11/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Encoding
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Internal
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Hash
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Pack
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/MemMap
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Encoding.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Encoding.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Mapping.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Mapping.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Pack.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Pack.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Parse.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Parse.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Hash.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Hash.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Endian.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Endian.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/PtrMethods.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/PtrMethods.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/ExtendedWords.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/ExtendedWords.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Encoding/Base16.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Encoding/Base16.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Encoding/Base32.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Encoding/Base32.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Encoding/Base64.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Encoding/Base64.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/Compat.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Internal/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/CompatPrim.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Internal/CompatPrim.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/CompatPrim64.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Internal/CompatPrim64.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/DeepSeq.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Internal/DeepSeq.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/Imports.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Internal/Imports.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/Scrubber.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Internal/Scrubber.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Hash/SipHash.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Hash/SipHash.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Hash/FNV.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Hash/FNV.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Pack/Internal.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Pack/Internal.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Types.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Types.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Bytes.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Bytes.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/ScrubbedBytes.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/ScrubbedBytes.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Methods.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Methods.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/MemView.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/MemView.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/View.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/View.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/MemMap/Posix.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/MemMap/Posix.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Encoding
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Internal
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Hash
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Pack
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/MemMap
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Encoding.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Encoding.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Mapping.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Mapping.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Pack.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Pack.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Parse.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Parse.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Hash.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Hash.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Endian.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Endian.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/PtrMethods.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/PtrMethods.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/ExtendedWords.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/ExtendedWords.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Encoding/Base16.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Encoding/Base16.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Encoding/Base32.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Encoding/Base32.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Encoding/Base64.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Encoding/Base64.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Internal/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/CompatPrim.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Internal/CompatPrim.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/CompatPrim64.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Internal/CompatPrim64.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/DeepSeq.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Internal/DeepSeq.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/Imports.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Internal/Imports.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Internal/Scrubber.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Internal/Scrubber.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Hash/SipHash.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Hash/SipHash.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/Hash/FNV.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/Hash/FNV.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Pack/Internal.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Pack/Internal.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Types.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Types.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Bytes.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Bytes.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/ScrubbedBytes.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/ScrubbedBytes.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/Methods.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/Methods.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/MemView.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/MemView.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteArray/View.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/ByteArray/View.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Memory/MemMap/Posix.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/Data/Memory/MemMap/Posix.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSmemory-0.11-0EiEBIg44i8KGjAeoKnPDs.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/libHSmemory-0.11-0EiEBIg44i8KGjAeoKnPDs.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSmemory-0.11-0EiEBIg44i8KGjAeoKnPDs-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSmemory-0.11-0EiEBIg44i8KGjAeoKnPDs-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs/libHSmemory-0.11-0EiEBIg44i8KGjAeoKnPDs-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-DARCH_IS_LITTLE_ENDIAN -optP-DWITH_BYTESTRING_SUPPORT -optP-DWITH_DEEPSEQ_SUPPORT -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key memor_0EiEBIg44i8KGjAeoKnPDs -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -XHaskell2010 Data.ByteArray Data.ByteArray.Encoding Data.ByteArray.Mapping Data.ByteArray.Pack Data.ByteArray.Parse Data.ByteArray.Hash Data.Memory.Endian Data.Memory.PtrMethods Data.Memory.ExtendedWords Data.Memory.Encoding.Base16 Data.Memory.Encoding.Base32 Data.Memory.Encoding.Base64 -Wall -fwarn-tabs
+Registering memory-0.11...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb'

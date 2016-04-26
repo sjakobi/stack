@@ -1,0 +1,243 @@
+Configuring Glob-0.7.5...
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency containers ==0.5.6.2: using containers-0.5.6.2
+Dependency directory ==1.2.2.0: using directory-1.2.2.0
+Dependency dlist ==0.7.1.2: using dlist-0.7.1.2
+Dependency filepath ==1.4.0.0: using filepath-1.4.0.0
+Dependency transformers ==0.4.2.0: using transformers-0.4.2.0
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/share/x86_64-linux-ghc-7.10.3/Glob-0.7.5
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/Glob-0.7.5
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building Glob-0.7.5...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library Glob-0.7.5...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key Glob_J8eYhnaKSeW8dehUANn0F1 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id dlist-0.7.1.2-ff29ea897ce0546ab24638745f33b7b9 -package-id filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -XHaskell98 System.FilePath.Glob System.FilePath.Glob.Primitive System.FilePath.Glob.Base System.FilePath.Glob.Directory System.FilePath.Glob.Match System.FilePath.Glob.Simplify System.FilePath.Glob.Utils -ddump-hi -ddump-to-file
+[1 of 7] Compiling System.FilePath.Glob.Utils ( System/FilePath/Glob/Utils.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Utils.o )
+[2 of 7] Compiling System.FilePath.Glob.Base ( System/FilePath/Glob/Base.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Base.o )
+
+System/FilePath/Glob/Base.hs:24:1: Warning:
+    Module ‘Control.Monad.Trans.Error’ is deprecated:
+      Use Control.Monad.Trans.Except instead
+
+System/FilePath/Glob/Base.hs:437:11: Warning:
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+System/FilePath/Glob/Base.hs:439:27: Warning:
+    In the use of ‘runErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+System/FilePath/Glob/Base.hs:443:20: Warning:
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+System/FilePath/Glob/Base.hs:448:15: Warning:
+    In the use of ‘throwError’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+System/FilePath/Glob/Base.hs:450:22: Warning:
+    In the use of ‘throwError’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+System/FilePath/Glob/Base.hs:452:30: Warning:
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+System/FilePath/Glob/Base.hs:460:27: Warning:
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+System/FilePath/Glob/Base.hs:466:27: Warning:
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+System/FilePath/Glob/Base.hs:486:15: Warning:
+    In the use of ‘throwError’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+[3 of 7] Compiling System.FilePath.Glob.Match ( System/FilePath/Glob/Match.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Match.o )
+[4 of 7] Compiling System.FilePath.Glob.Directory ( System/FilePath/Glob/Directory.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Directory.o )
+[5 of 7] Compiling System.FilePath.Glob.Simplify ( System/FilePath/Glob/Simplify.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Simplify.o )
+[6 of 7] Compiling System.FilePath.Glob.Primitive ( System/FilePath/Glob/Primitive.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Primitive.o )
+[7 of 7] Compiling System.FilePath.Glob ( System/FilePath/Glob.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob.o )
+Linking...
+[(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592",PackageIdentifier
+{pkgName = PackageName {unPackageName = "containers"}, pkgVersion = Version
+{versionBranch = [0,5,6,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732",PackageIdentifier
+{pkgName = PackageName {unPackageName = "directory"}, pkgVersion = Version
+{versionBranch = [1,2,2,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"dlist-0.7.1.2-ff29ea897ce0546ab24638745f33b7b9",PackageIdentifier {pkgName =
+PackageName {unPackageName = "dlist"}, pkgVersion = Version {versionBranch =
+[0,7,1,2], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e",PackageIdentifier {pkgName
+= PackageName {unPackageName = "filepath"}, pkgVersion = Version
+{versionBranch = [1,4,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers"}, pkgVersion = Version
+{versionBranch = [0,4,2,0], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-14282/libHSGlob-0.7.5-J8eYhnaKSeW8dehUANn0F1.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Primitive.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Base.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Directory.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Match.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Simplify.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Utils.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-14282/libHSGlob-0.7.5-J8eYhnaKSeW8dehUANn0F1.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-14282/libHSGlob-0.7.5-J8eYhnaKSeW8dehUANn0F1.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/conta_2C3ZI8RgPO2LBMidXKTvIU -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/direc_0hFG6ZxK1nk4zsyOqbNHfm -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/dlist-0.7.1.2-AO7XAasbAeyL0XLKeq1Aui -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/filep_Ey7a1in9roBAE8bUFJ5R9m -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/time_FTheb6LSxyX1UABIbBXRfn -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/trans_GZTjP9K5WFq01xC9BAGQpF -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/unix_KZL8h98IqDM57kQSPo1mKx -this-package-key Glob_J8eYhnaKSeW8dehUANn0F1 -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id dlist-0.7.1.2-ff29ea897ce0546ab24638745f33b7b9 -package-id filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Primitive.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Base.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Directory.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Match.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Simplify.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Utils.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSGlob-0.7.5-J8eYhnaKSeW8dehUANn0F1-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering Glob-0.7.5...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/Glob does
+exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/Glob-0.7.5
+Installing LICENSE.txt to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/Glob-0.7.5/LICENSE.txt
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath/Glob
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath/Glob.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Primitive.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath/Glob/Primitive.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Base.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath/Glob/Base.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Directory.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath/Glob/Directory.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Match.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath/Glob/Match.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Simplify.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath/Glob/Simplify.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Utils.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath/Glob/Utils.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath/Glob
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath/Glob.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Primitive.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath/Glob/Primitive.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Base.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath/Glob/Base.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Directory.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath/Glob/Directory.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Match.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath/Glob/Match.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Simplify.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath/Glob/Simplify.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/FilePath/Glob/Utils.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/System/FilePath/Glob/Utils.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSGlob-0.7.5-J8eYhnaKSeW8dehUANn0F1.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/libHSGlob-0.7.5-J8eYhnaKSeW8dehUANn0F1.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSGlob-0.7.5-J8eYhnaKSeW8dehUANn0F1-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSGlob-0.7.5-J8eYhnaKSeW8dehUANn0F1-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/Glob-0.7.5-J8eYhnaKSeW8dehUANn0F1/libHSGlob-0.7.5-J8eYhnaKSeW8dehUANn0F1-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key Glob_J8eYhnaKSeW8dehUANn0F1 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id dlist-0.7.1.2-ff29ea897ce0546ab24638745f33b7b9 -package-id filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -XHaskell98 System.FilePath.Glob System.FilePath.Glob.Primitive
+Registering Glob-0.7.5...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb'

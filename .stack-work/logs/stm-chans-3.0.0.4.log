@@ -1,0 +1,160 @@
+[1 of 1] Compiling Main             ( /tmp/stack16292/stm-chans-3.0.0.4/Setup.hs, /tmp/stack16292/stm-chans-3.0.0.4/.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/setup/Main.o )
+Linking /tmp/stack16292/stm-chans-3.0.0.4/.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/setup/setup ...
+Configuring stm-chans-3.0.0.4...
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency stm ==2.4.4.1: using stm-2.4.4.1
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/share/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/stm-chans-3.0.0.4
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building stm-chans-3.0.0.4...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library stm-chans-3.0.0.4...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -isrc -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key stmch_4ac5OLG4E0w1rpuIDCribD -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id stm-2.4.4.1-7050c728ed5b2315e2c6b56d8bf9837f -XHaskell98 Control.Concurrent.STM.TBChan Control.Concurrent.STM.TBMChan Control.Concurrent.STM.TMChan Control.Concurrent.STM.TBMQueue Control.Concurrent.STM.TMQueue -ddump-hi -ddump-to-file
+[1 of 5] Compiling Control.Concurrent.STM.TMQueue ( src/Control/Concurrent/STM/TMQueue.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TMQueue.o )
+[2 of 5] Compiling Control.Concurrent.STM.TBMQueue ( src/Control/Concurrent/STM/TBMQueue.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TBMQueue.o )
+[3 of 5] Compiling Control.Concurrent.STM.TMChan ( src/Control/Concurrent/STM/TMChan.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TMChan.o )
+[4 of 5] Compiling Control.Concurrent.STM.TBMChan ( src/Control/Concurrent/STM/TBMChan.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TBMChan.o )
+[5 of 5] Compiling Control.Concurrent.STM.TBChan ( src/Control/Concurrent/STM/TBChan.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TBChan.o )
+Linking...
+[(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"stm-2.4.4.1-7050c728ed5b2315e2c6b56d8bf9837f",PackageIdentifier {pkgName =
+PackageName {unPackageName = "stm"}, pkgVersion = Version {versionBranch =
+[2,4,4,1], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-19923/libHSstm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TBChan.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TBMChan.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TMChan.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TBMQueue.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TMQueue.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-19923/libHSstm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-19923/libHSstm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-2.4.4.1-EyxFXFfnfY05IrjGaqCxeD -this-package-key stmch_4ac5OLG4E0w1rpuIDCribD -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id stm-2.4.4.1-7050c728ed5b2315e2c6b56d8bf9837f .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TBChan.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TBMChan.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TMChan.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TBMQueue.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TMQueue.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSstm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering stm-chans-3.0.0.4...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/stm-chans does
+exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/stm-chans-3.0.0.4
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/stm-chans-3.0.0.4/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/Control/Concurrent/STM
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/Control/Concurrent
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/Control
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/Control
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/Control/Concurrent
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/Control/Concurrent/STM
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TBChan.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/Control/Concurrent/STM/TBChan.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TBMChan.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/Control/Concurrent/STM/TBMChan.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TMChan.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/Control/Concurrent/STM/TMChan.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TBMQueue.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/Control/Concurrent/STM/TBMQueue.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TMQueue.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/Control/Concurrent/STM/TMQueue.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/Control/Concurrent/STM
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TBChan.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/Control/Concurrent/STM/TBChan.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TBMChan.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/Control/Concurrent/STM/TBMChan.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TMChan.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/Control/Concurrent/STM/TMChan.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TBMQueue.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/Control/Concurrent/STM/TBMQueue.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/STM/TMQueue.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/Control/Concurrent/STM/TMQueue.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSstm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/libHSstm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSstm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSstm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD/libHSstm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -isrc -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key stmch_4ac5OLG4E0w1rpuIDCribD -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id stm-2.4.4.1-7050c728ed5b2315e2c6b56d8bf9837f -XHaskell98 Control.Concurrent.STM.TBChan Control.Concurrent.STM.TBMChan Control.Concurrent.STM.TMChan Control.Concurrent.STM.TBMQueue Control.Concurrent.STM.TMQueue
+Registering stm-chans-3.0.0.4...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb'

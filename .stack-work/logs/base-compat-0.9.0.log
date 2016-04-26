@@ -1,0 +1,589 @@
+Configuring base-compat-0.9.0...
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency unix ==2.7.1.0: using unix-2.7.1.0
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/share/x86_64-linux-ghc-7.10.3/base-compat-0.9.0
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/base-compat-0.9.0
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building base-compat-0.9.0...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library base-compat-0.9.0...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -isrc -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key basec_3G7TOYmSpaF0smBtbGU3h4 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 -XHaskell98 Control.Concurrent.Compat Control.Concurrent.MVar.Compat Control.Monad.Compat Control.Monad.ST.Lazy.Unsafe.Compat Control.Monad.ST.Unsafe.Compat Data.Bits.Compat Data.Bool.Compat Data.Complex.Compat Data.Either.Compat Data.Foldable.Compat Data.Function.Compat Data.Functor.Compat Data.Functor.Const.Compat Data.IORef.Compat Data.List.Compat Data.Monoid.Compat Data.Ratio.Compat Data.STRef.Compat Data.String.Compat Data.Version.Compat Data.Word.Compat Debug.Trace.Compat Foreign.Compat Foreign.ForeignPtr.Safe.Compat Foreign.ForeignPtr.Unsafe.Compat Foreign.Marshal.Alloc.Compat Foreign.Marshal.Array.Compat Foreign.Marshal.Compat Foreign.Marshal.Safe.Compat Foreign.Marshal.Unsafe.Compat Foreign.Marshal.Utils.Compat Numeric.Compat Prelude.Compat System.Environment.Compat System.Exit.Compat System.IO.Unsafe.Compat Text.Read.Compat -Wall -fno-warn-duplicate-exports -ddump-hi -ddump-to-file
+[ 1 of 37] Compiling Text.Read.Compat ( src/Text/Read/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Read/Compat.o )
+[ 2 of 37] Compiling System.IO.Unsafe.Compat ( src/System/IO/Unsafe/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/IO/Unsafe/Compat.o )
+[ 3 of 37] Compiling System.Exit.Compat ( src/System/Exit/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Exit/Compat.o )
+[ 4 of 37] Compiling System.Environment.Compat ( src/System/Environment/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Environment/Compat.o )
+[ 5 of 37] Compiling Numeric.Compat   ( src/Numeric/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Numeric/Compat.o )
+[ 6 of 37] Compiling Foreign.Marshal.Unsafe.Compat ( src/Foreign/Marshal/Unsafe/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Unsafe/Compat.o )
+[ 7 of 37] Compiling Foreign.Marshal.Safe.Compat ( src/Foreign/Marshal/Safe/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Safe/Compat.o )
+[ 8 of 37] Compiling Foreign.Marshal.Utils.Compat ( src/Foreign/Marshal/Utils/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Utils/Compat.o )
+[ 9 of 37] Compiling Foreign.Marshal.Array.Compat ( src/Foreign/Marshal/Array/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Array/Compat.o )
+[10 of 37] Compiling Foreign.Marshal.Alloc.Compat ( src/Foreign/Marshal/Alloc/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Alloc/Compat.o )
+[11 of 37] Compiling Foreign.ForeignPtr.Unsafe.Compat ( src/Foreign/ForeignPtr/Unsafe/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/ForeignPtr/Unsafe/Compat.o )
+[12 of 37] Compiling Foreign.ForeignPtr.Safe.Compat ( src/Foreign/ForeignPtr/Safe/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/ForeignPtr/Safe/Compat.o )
+[13 of 37] Compiling Foreign.Marshal.Compat ( src/Foreign/Marshal/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Compat.o )
+[14 of 37] Compiling Foreign.Compat   ( src/Foreign/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Compat.o )
+[15 of 37] Compiling Data.Word.Compat ( src/Data/Word/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Word/Compat.o )
+[16 of 37] Compiling Data.Version.Compat ( src/Data/Version/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Version/Compat.o )
+[17 of 37] Compiling Data.String.Compat ( src/Data/String/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/String/Compat.o )
+[18 of 37] Compiling Data.STRef.Compat ( src/Data/STRef/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/STRef/Compat.o )
+[19 of 37] Compiling Data.Ratio.Compat ( src/Data/Ratio/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Ratio/Compat.o )
+[20 of 37] Compiling Data.Monoid.Compat ( src/Data/Monoid/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Monoid/Compat.o )
+[21 of 37] Compiling Data.List.Compat ( src/Data/List/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/List/Compat.o )
+[22 of 37] Compiling Data.IORef.Compat ( src/Data/IORef/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/IORef/Compat.o )
+[23 of 37] Compiling Data.Functor.Const.Compat ( src/Data/Functor/Const/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Functor/Const/Compat.o )
+[24 of 37] Compiling Data.Functor.Compat ( src/Data/Functor/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Functor/Compat.o )
+[25 of 37] Compiling Data.Function.Compat ( src/Data/Function/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Function/Compat.o )
+[26 of 37] Compiling Data.Either.Compat ( src/Data/Either/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Either/Compat.o )
+[27 of 37] Compiling Data.Complex.Compat ( src/Data/Complex/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Complex/Compat.o )
+[28 of 37] Compiling Data.Bool.Compat ( src/Data/Bool/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Bool/Compat.o )
+[29 of 37] Compiling Data.Bits.Compat ( src/Data/Bits/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Bits/Compat.o )
+[30 of 37] Compiling Control.Monad.ST.Unsafe.Compat ( src/Control/Monad/ST/Unsafe/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/ST/Unsafe/Compat.o )
+[31 of 37] Compiling Control.Monad.ST.Lazy.Unsafe.Compat ( src/Control/Monad/ST/Lazy/Unsafe/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/ST/Lazy/Unsafe/Compat.o )
+[32 of 37] Compiling Data.Foldable.Compat ( src/Data/Foldable/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Foldable/Compat.o )
+[33 of 37] Compiling Prelude.Compat   ( src/Prelude/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Prelude/Compat.o )
+[34 of 37] Compiling Debug.Trace.Compat ( src/Debug/Trace/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Debug/Trace/Compat.o )
+[35 of 37] Compiling Control.Monad.Compat ( src/Control/Monad/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Compat.o )
+[36 of 37] Compiling Control.Concurrent.MVar.Compat ( src/Control/Concurrent/MVar/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/MVar/Compat.o )
+[37 of 37] Compiling Control.Concurrent.Compat ( src/Control/Concurrent/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/Compat.o )
+Linking...
+[(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"unix-2.7.1.0-343d4f566f30113da92e819f4a148640",PackageIdentifier {pkgName =
+PackageName {unPackageName = "unix"}, pkgVersion = Version {versionBranch =
+[2,7,1,0], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-13670/libHSbase-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/MVar/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/ST/Lazy/Unsafe/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/ST/Unsafe/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Bits/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Bool/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Complex/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Either/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Foldable/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Function/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Functor/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Functor/Const/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/IORef/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/List/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Monoid/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Ratio/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/STRef/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/String/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Version/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Word/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Debug/Trace/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/ForeignPtr/Safe/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/ForeignPtr/Unsafe/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Alloc/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Array/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Safe/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Unsafe/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Utils/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Numeric/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Prelude/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Environment/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Exit/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/IO/Unsafe/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Read/Compat.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-13670/libHSbase-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-13670/libHSbase-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/time_FTheb6LSxyX1UABIbBXRfn -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/unix_KZL8h98IqDM57kQSPo1mKx -this-package-key basec_3G7TOYmSpaF0smBtbGU3h4 -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/MVar/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/ST/Lazy/Unsafe/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/ST/Unsafe/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Bits/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Bool/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Complex/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Either/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Foldable/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Function/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Functor/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Functor/Const/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/IORef/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/List/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Monoid/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Ratio/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/STRef/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/String/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Version/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Word/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Debug/Trace/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/ForeignPtr/Safe/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/ForeignPtr/Unsafe/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Alloc/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Array/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Safe/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Unsafe/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Utils/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Numeric/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Prelude/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Environment/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Exit/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/IO/Unsafe/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Read/Compat.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSbase-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering base-compat-0.9.0...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/base-compat
+does exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/base-compat-0.9.0
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/base-compat-0.9.0/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Concurrent
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Concurrent
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Concurrent/MVar
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Monad
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Monad/ST/Lazy/Unsafe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Monad/ST/Lazy
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Monad/ST
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Monad/ST/Lazy
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Monad/ST/Lazy/Unsafe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Monad/ST/Unsafe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Bits
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Bits
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Bool
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Complex
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Either
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Foldable
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Function
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Functor
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Functor/Const
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/IORef
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/List
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Monoid
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Ratio
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/STRef
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/String
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Version
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Word
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Debug/Trace
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Debug
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Debug/Trace
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/ForeignPtr/Safe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/ForeignPtr
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/ForeignPtr/Safe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/ForeignPtr/Unsafe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Alloc
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Alloc
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Array
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Safe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Unsafe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Utils
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Numeric
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Prelude
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/System/Environment
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/System
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/System/Environment
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/System/Exit
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/System/IO/Unsafe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/System/IO
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/System/IO/Unsafe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Text/Read
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Text
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Text/Read
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/Compat.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Concurrent/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/MVar/Compat.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Concurrent/MVar/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Monad/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/ST/Lazy/Unsafe/Compat.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Monad/ST/Lazy/Unsafe/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/ST/Unsafe/Compat.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Monad/ST/Unsafe/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Bits/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Bits/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Bool/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Bool/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Complex/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Complex/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Either/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Either/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Foldable/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Foldable/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Function/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Function/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Functor/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Functor/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Functor/Const/Compat.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Functor/Const/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/IORef/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/IORef/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/List/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/List/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Monoid/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Monoid/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Ratio/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Ratio/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/STRef/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/STRef/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/String/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/String/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Version/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Version/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Word/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Word/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Debug/Trace/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Debug/Trace/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/ForeignPtr/Safe/Compat.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/ForeignPtr/Safe/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/ForeignPtr/Unsafe/Compat.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/ForeignPtr/Unsafe/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Alloc/Compat.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Alloc/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Array/Compat.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Array/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Compat.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Safe/Compat.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Safe/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Unsafe/Compat.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Unsafe/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Utils/Compat.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Utils/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Numeric/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Numeric/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Prelude/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Prelude/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Environment/Compat.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/System/Environment/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Exit/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/System/Exit/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/IO/Unsafe/Compat.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/System/IO/Unsafe/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Read/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Text/Read/Compat.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Concurrent
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Concurrent/MVar
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Monad
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Monad/ST/Lazy/Unsafe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Monad/ST/Unsafe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Bits
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Bool
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Complex
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Either
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Foldable
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Function
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Functor
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Functor/Const
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/IORef
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/List
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Monoid
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Ratio
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/STRef
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/String
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Version
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Word
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Debug/Trace
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/ForeignPtr/Safe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/ForeignPtr/Unsafe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Alloc
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Array
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Safe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Unsafe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Utils
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Numeric
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Prelude
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/System/Environment
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/System/Exit
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/System/IO/Unsafe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Text/Read
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Concurrent/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Concurrent/MVar/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Concurrent/MVar/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Monad/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/ST/Lazy/Unsafe/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Monad/ST/Lazy/Unsafe/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/ST/Unsafe/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Control/Monad/ST/Unsafe/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Bits/Compat.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Bits/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Bool/Compat.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Bool/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Complex/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Complex/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Either/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Either/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Foldable/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Foldable/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Function/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Function/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Functor/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Functor/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Functor/Const/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Functor/Const/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/IORef/Compat.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/IORef/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/List/Compat.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/List/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Monoid/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Monoid/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Ratio/Compat.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Ratio/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/STRef/Compat.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/STRef/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/String/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/String/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Version/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Version/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Word/Compat.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Data/Word/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Debug/Trace/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Debug/Trace/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Compat.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/ForeignPtr/Safe/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/ForeignPtr/Safe/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/ForeignPtr/Unsafe/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/ForeignPtr/Unsafe/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Alloc/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Alloc/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Array/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Array/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Safe/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Safe/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Unsafe/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Unsafe/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Foreign/Marshal/Utils/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Foreign/Marshal/Utils/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Numeric/Compat.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Numeric/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Prelude/Compat.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Prelude/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Environment/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/System/Environment/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Exit/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/System/Exit/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/IO/Unsafe/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/System/IO/Unsafe/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Read/Compat.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/Text/Read/Compat.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSbase-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/libHSbase-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSbase-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSbase-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4/libHSbase-compat-0.9.0-3G7TOYmSpaF0smBtbGU3h4-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -isrc -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key basec_3G7TOYmSpaF0smBtbGU3h4 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 -XHaskell98 Control.Concurrent.Compat Control.Concurrent.MVar.Compat Control.Monad.Compat Control.Monad.ST.Lazy.Unsafe.Compat Control.Monad.ST.Unsafe.Compat Data.Bits.Compat Data.Bool.Compat Data.Complex.Compat Data.Either.Compat Data.Foldable.Compat Data.Function.Compat Data.Functor.Compat Data.Functor.Const.Compat Data.IORef.Compat Data.List.Compat Data.Monoid.Compat Data.Ratio.Compat Data.STRef.Compat Data.String.Compat Data.Version.Compat Data.Word.Compat Debug.Trace.Compat Foreign.Compat Foreign.ForeignPtr.Safe.Compat Foreign.ForeignPtr.Unsafe.Compat Foreign.Marshal.Alloc.Compat Foreign.Marshal.Array.Compat Foreign.Marshal.Compat Foreign.Marshal.Safe.Compat Foreign.Marshal.Unsafe.Compat Foreign.Marshal.Utils.Compat Numeric.Compat Prelude.Compat System.Environment.Compat System.Exit.Compat System.IO.Unsafe.Compat Text.Read.Compat -Wall -fno-warn-duplicate-exports
+Registering base-compat-0.9.0...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb'

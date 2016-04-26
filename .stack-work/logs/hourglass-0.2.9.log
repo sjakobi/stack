@@ -1,0 +1,249 @@
+Configuring hourglass-0.2.9...
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency deepseq ==1.4.1.1: using deepseq-1.4.1.1
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/share/x86_64-linux-ghc-7.10.3/hourglass-0.2.9
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/hourglass-0.2.9
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building hourglass-0.2.9...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library hourglass-0.2.9...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key hourg_8MOIDfr6DODKJWnjukfaUl -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -XHaskell2010 Data.Hourglass Data.Hourglass.Types Data.Hourglass.Epoch Data.Hourglass.Compat System.Hourglass Data.Hourglass.Time Data.Hourglass.Format Data.Hourglass.Diff Data.Hourglass.Local Data.Hourglass.Calendar Data.Hourglass.Zone Data.Hourglass.Internal Data.Hourglass.Utils Data.Hourglass.Internal.Unix -Wall -fwarn-tabs -ddump-hi -ddump-to-file
+[ 1 of 14] Compiling Data.Hourglass.Utils ( Data/Hourglass/Utils.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Utils.o )
+[ 2 of 14] Compiling Data.Hourglass.Zone ( Data/Hourglass/Zone.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Zone.o )
+[ 3 of 14] Compiling Data.Hourglass.Types ( Data/Hourglass/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Types.o )
+[ 4 of 14] Compiling Data.Hourglass.Internal.Unix ( Data/Hourglass/Internal/Unix.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Internal/Unix.o )
+
+Data/Hourglass/Internal/Unix.hs:24:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[ 5 of 14] Compiling Data.Hourglass.Internal ( Data/Hourglass/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Internal.o )
+[ 6 of 14] Compiling Data.Hourglass.Calendar ( Data/Hourglass/Calendar.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Calendar.o )
+[ 7 of 14] Compiling Data.Hourglass.Diff ( Data/Hourglass/Diff.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Diff.o )
+
+Data/Hourglass/Diff.hs:22:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[ 8 of 14] Compiling Data.Hourglass.Time ( Data/Hourglass/Time.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Time.o )
+[ 9 of 14] Compiling Data.Hourglass.Local ( Data/Hourglass/Local.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Local.o )
+[10 of 14] Compiling Data.Hourglass.Format ( Data/Hourglass/Format.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Format.o )
+[11 of 14] Compiling Data.Hourglass.Epoch ( Data/Hourglass/Epoch.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Epoch.o )
+[12 of 14] Compiling System.Hourglass ( System/Hourglass.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Hourglass.o )
+
+System/Hourglass.hs:23:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[13 of 14] Compiling Data.Hourglass   ( Data/Hourglass.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass.o )
+[14 of 14] Compiling Data.Hourglass.Compat ( Data/Hourglass/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Compat.o )
+Building C Sources...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -c -fPIC -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optc-O2 -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 cbits/unix.c -ddump-hi -ddump-to-file
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -c -dynamic -fPIC -osuf dyn_o -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optc-O2 -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 cbits/unix.c -ddump-hi -ddump-to-file
+Linking...
+[(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311",PackageIdentifier {pkgName
+= PackageName {unPackageName = "deepseq"}, pkgVersion = Version {versionBranch
+= [1,4,1,1], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-15237/libHShourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Types.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Epoch.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Hourglass.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Time.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Format.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Diff.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Local.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Calendar.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Zone.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Internal.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Utils.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Internal/Unix.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/cbits/unix.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-15237/libHShourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-15237/libHShourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -this-package-key hourg_8MOIDfr6DODKJWnjukfaUl -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Types.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Epoch.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Hourglass.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Time.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Format.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Diff.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Local.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Calendar.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Zone.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Internal.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Utils.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Internal/Unix.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/cbits/unix.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHShourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering hourglass-0.2.9...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/hourglass does
+exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/hourglass-0.2.9
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/hourglass-0.2.9/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/System
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Internal
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Types.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Types.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Epoch.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Epoch.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Hourglass.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/System/Hourglass.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Time.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Time.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Format.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Format.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Diff.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Diff.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Local.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Local.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Calendar.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Calendar.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Zone.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Zone.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Internal.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Internal.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Utils.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Utils.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Internal/Unix.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Internal/Unix.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/System
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Internal
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Types.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Types.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Epoch.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Epoch.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Hourglass.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/System/Hourglass.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Time.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Time.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Format.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Format.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Diff.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Diff.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Local.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Local.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Calendar.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Calendar.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Zone.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Zone.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Internal.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Internal.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Utils.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Utils.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Hourglass/Internal/Unix.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/Data/Hourglass/Internal/Unix.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHShourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/libHShourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHShourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHShourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl/libHShourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key hourg_8MOIDfr6DODKJWnjukfaUl -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -XHaskell2010 Data.Hourglass Data.Hourglass.Types Data.Hourglass.Epoch Data.Hourglass.Compat System.Hourglass -Wall -fwarn-tabs
+Registering hourglass-0.2.9...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb'

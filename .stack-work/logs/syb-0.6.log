@@ -1,0 +1,240 @@
+Configuring syb-0.6...
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/share/x86_64-linux-ghc-7.10.3/syb-0.6
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/syb-0.6
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building syb-0.6...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library syb-0.6...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -isrc -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key syb_4kccWaTe3QZLxAMQYKgEyE -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -XHaskell98 Data.Generics Data.Generics.Basics Data.Generics.Instances Data.Generics.Aliases Data.Generics.Schemes Data.Generics.Text Data.Generics.Twins Data.Generics.Builders Generics.SYB Generics.SYB.Basics Generics.SYB.Instances Generics.SYB.Aliases Generics.SYB.Schemes Generics.SYB.Text Generics.SYB.Twins Generics.SYB.Builders -Wall -ddump-hi -ddump-to-file
+[ 1 of 16] Compiling Data.Generics.Basics ( src/Data/Generics/Basics.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Basics.o )
+[ 2 of 16] Compiling Generics.SYB.Basics ( src/Generics/SYB/Basics.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Basics.o )
+[ 3 of 16] Compiling Data.Generics.Instances ( src/Data/Generics/Instances.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Instances.o )
+[ 4 of 16] Compiling Generics.SYB.Instances ( src/Generics/SYB/Instances.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Instances.o )
+[ 5 of 16] Compiling Data.Generics.Aliases ( src/Data/Generics/Aliases.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Aliases.o )
+[ 6 of 16] Compiling Data.Generics.Schemes ( src/Data/Generics/Schemes.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Schemes.o )
+[ 7 of 16] Compiling Generics.SYB.Schemes ( src/Generics/SYB/Schemes.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Schemes.o )
+[ 8 of 16] Compiling Data.Generics.Text ( src/Data/Generics/Text.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Text.o )
+[ 9 of 16] Compiling Generics.SYB.Text ( src/Generics/SYB/Text.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Text.o )
+[10 of 16] Compiling Data.Generics.Twins ( src/Data/Generics/Twins.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Twins.o )
+[11 of 16] Compiling Generics.SYB.Twins ( src/Generics/SYB/Twins.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Twins.o )
+[12 of 16] Compiling Data.Generics.Builders ( src/Data/Generics/Builders.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Builders.o )
+[13 of 16] Compiling Generics.SYB.Builders ( src/Generics/SYB/Builders.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Builders.o )
+[14 of 16] Compiling Generics.SYB.Aliases ( src/Generics/SYB/Aliases.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Aliases.o )
+[15 of 16] Compiling Data.Generics    ( src/Data/Generics.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics.o )
+[16 of 16] Compiling Generics.SYB     ( src/Generics/SYB.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB.o )
+Linking...
+[(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-20049/libHSsyb-0.6-4kccWaTe3QZLxAMQYKgEyE.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Basics.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Instances.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Aliases.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Schemes.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Text.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Twins.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Builders.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Basics.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Instances.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Aliases.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Schemes.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Text.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Twins.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Builders.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-20049/libHSsyb-0.6-4kccWaTe3QZLxAMQYKgEyE.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-20049/libHSsyb-0.6-4kccWaTe3QZLxAMQYKgEyE.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -this-package-key syb_4kccWaTe3QZLxAMQYKgEyE -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Basics.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Instances.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Aliases.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Schemes.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Text.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Twins.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Builders.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Basics.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Instances.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Aliases.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Schemes.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Text.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Twins.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Builders.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSsyb-0.6-4kccWaTe3QZLxAMQYKgEyE-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering syb-0.6...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/syb does
+exist: False
+creating /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/syb-0.6
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/syb-0.6/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data/Generics
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics/SYB
+Installing .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data/Generics.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Basics.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data/Generics/Basics.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Instances.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data/Generics/Instances.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Aliases.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data/Generics/Aliases.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Schemes.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data/Generics/Schemes.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Text.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data/Generics/Text.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Twins.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data/Generics/Twins.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Builders.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data/Generics/Builders.hi
+Installing .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics/SYB.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Basics.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics/SYB/Basics.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Instances.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics/SYB/Instances.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Aliases.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics/SYB/Aliases.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Schemes.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics/SYB/Schemes.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Text.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics/SYB/Text.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Twins.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics/SYB/Twins.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Builders.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics/SYB/Builders.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data/Generics
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics/SYB
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data/Generics.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Basics.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data/Generics/Basics.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Instances.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data/Generics/Instances.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Aliases.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data/Generics/Aliases.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Schemes.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data/Generics/Schemes.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Text.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data/Generics/Text.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Twins.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data/Generics/Twins.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Generics/Builders.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Data/Generics/Builders.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics/SYB.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Basics.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics/SYB/Basics.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Instances.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics/SYB/Instances.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Aliases.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics/SYB/Aliases.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Schemes.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics/SYB/Schemes.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Text.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics/SYB/Text.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Twins.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics/SYB/Twins.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SYB/Builders.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/Generics/SYB/Builders.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSsyb-0.6-4kccWaTe3QZLxAMQYKgEyE.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/libHSsyb-0.6-4kccWaTe3QZLxAMQYKgEyE.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSsyb-0.6-4kccWaTe3QZLxAMQYKgEyE-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSsyb-0.6-4kccWaTe3QZLxAMQYKgEyE-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE/libHSsyb-0.6-4kccWaTe3QZLxAMQYKgEyE-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -isrc -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key syb_4kccWaTe3QZLxAMQYKgEyE -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -XHaskell98 Data.Generics Data.Generics.Basics Data.Generics.Instances Data.Generics.Aliases Data.Generics.Schemes Data.Generics.Text Data.Generics.Twins Data.Generics.Builders Generics.SYB Generics.SYB.Basics Generics.SYB.Instances Generics.SYB.Aliases Generics.SYB.Schemes Generics.SYB.Text Generics.SYB.Twins Generics.SYB.Builders -Wall
+Registering syb-0.6...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb'

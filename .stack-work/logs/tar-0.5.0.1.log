@@ -1,0 +1,243 @@
+Configuring tar-0.5.0.1...
+Flags chosen: old-bytestring=False, old-time=False
+Dependency array ==0.5.1.0: using array-0.5.1.0
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency containers ==0.5.6.2: using containers-0.5.6.2
+Dependency deepseq ==1.4.1.1: using deepseq-1.4.1.1
+Dependency directory ==1.2.2.0: using directory-1.2.2.0
+Dependency filepath ==1.4.0.0: using filepath-1.4.0.0
+Dependency time ==1.5.0.1: using time-1.5.0.1
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/share/x86_64-linux-ghc-7.10.3/tar-0.5.0.1
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/tar-0.5.0.1
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building tar-0.5.0.1...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library tar-0.5.0.1...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key tar_KzbcHMWdeyG0iD4huFJJiM -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id array-0.5.1.0-960bf9ae8875cc30355e086f8853a049 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e -package-id time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b -XHaskell98 Codec.Archive.Tar Codec.Archive.Tar.Entry Codec.Archive.Tar.Check Codec.Archive.Tar.Index Codec.Archive.Tar.Types Codec.Archive.Tar.Read Codec.Archive.Tar.Write Codec.Archive.Tar.Pack Codec.Archive.Tar.Unpack Codec.Archive.Tar.Index.StringTable Codec.Archive.Tar.Index.IntTrie -Wall -fno-warn-unused-imports -ddump-hi -ddump-to-file
+[ 1 of 11] Compiling Codec.Archive.Tar.Index.IntTrie ( Codec/Archive/Tar/Index/IntTrie.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Index/IntTrie.o )
+[ 2 of 11] Compiling Codec.Archive.Tar.Index.StringTable ( Codec/Archive/Tar/Index/StringTable.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Index/StringTable.o )
+[ 3 of 11] Compiling Codec.Archive.Tar.Types ( Codec/Archive/Tar/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Types.o )
+[ 4 of 11] Compiling Codec.Archive.Tar.Read ( Codec/Archive/Tar/Read.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Read.o )
+[ 5 of 11] Compiling Codec.Archive.Tar.Write ( Codec/Archive/Tar/Write.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Write.o )
+[ 6 of 11] Compiling Codec.Archive.Tar.Pack ( Codec/Archive/Tar/Pack.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Pack.o )
+[ 7 of 11] Compiling Codec.Archive.Tar.Index ( Codec/Archive/Tar/Index.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Index.o )
+[ 8 of 11] Compiling Codec.Archive.Tar.Check ( Codec/Archive/Tar/Check.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Check.o )
+[ 9 of 11] Compiling Codec.Archive.Tar.Unpack ( Codec/Archive/Tar/Unpack.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Unpack.o )
+[10 of 11] Compiling Codec.Archive.Tar.Entry ( Codec/Archive/Tar/Entry.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Entry.o )
+[11 of 11] Compiling Codec.Archive.Tar ( Codec/Archive/Tar.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar.o )
+Linking...
+[(InstalledPackageId
+"array-0.5.1.0-960bf9ae8875cc30355e086f8853a049",PackageIdentifier {pkgName =
+PackageName {unPackageName = "array"}, pkgVersion = Version {versionBranch =
+[0,5,1,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437",PackageIdentifier
+{pkgName = PackageName {unPackageName = "bytestring"}, pkgVersion = Version
+{versionBranch = [0,10,6,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592",PackageIdentifier
+{pkgName = PackageName {unPackageName = "containers"}, pkgVersion = Version
+{versionBranch = [0,5,6,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311",PackageIdentifier {pkgName
+= PackageName {unPackageName = "deepseq"}, pkgVersion = Version {versionBranch
+= [1,4,1,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732",PackageIdentifier
+{pkgName = PackageName {unPackageName = "directory"}, pkgVersion = Version
+{versionBranch = [1,2,2,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e",PackageIdentifier {pkgName
+= PackageName {unPackageName = "filepath"}, pkgVersion = Version
+{versionBranch = [1,4,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b",PackageIdentifier {pkgName =
+PackageName {unPackageName = "time"}, pkgVersion = Version {versionBranch =
+[1,5,0,1], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-20288/libHStar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Entry.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Check.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Index.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Types.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Read.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Write.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Pack.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Unpack.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Index/StringTable.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Index/IntTrie.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-20288/libHStar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-20288/libHStar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/conta_2C3ZI8RgPO2LBMidXKTvIU -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/direc_0hFG6ZxK1nk4zsyOqbNHfm -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/filep_Ey7a1in9roBAE8bUFJ5R9m -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/time_FTheb6LSxyX1UABIbBXRfn -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/unix_KZL8h98IqDM57kQSPo1mKx -this-package-key tar_KzbcHMWdeyG0iD4huFJJiM -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id array-0.5.1.0-960bf9ae8875cc30355e086f8853a049 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e -package-id time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Entry.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Check.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Index.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Types.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Read.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Write.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Pack.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Unpack.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Index/StringTable.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Index/IntTrie.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHStar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering tar-0.5.0.1...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/tar does
+exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/tar-0.5.0.1
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/tar-0.5.0.1/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Index
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Entry.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Entry.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Check.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Check.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Index.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Index.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Types.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Types.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Read.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Read.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Write.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Write.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Pack.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Pack.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Unpack.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Unpack.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Index/StringTable.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Index/StringTable.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Index/IntTrie.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Index/IntTrie.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Index
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Entry.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Entry.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Check.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Check.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Index.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Index.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Types.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Types.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Read.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Read.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Write.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Write.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Pack.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Pack.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Unpack.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Unpack.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Index/StringTable.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Index/StringTable.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Codec/Archive/Tar/Index/IntTrie.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/Codec/Archive/Tar/Index/IntTrie.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHStar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/libHStar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHStar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHStar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM/libHStar-0.5.0.1-KzbcHMWdeyG0iD4huFJJiM-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key tar_KzbcHMWdeyG0iD4huFJJiM -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-id array-0.5.1.0-960bf9ae8875cc30355e086f8853a049 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e -package-id time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b -XHaskell98 Codec.Archive.Tar Codec.Archive.Tar.Entry Codec.Archive.Tar.Check Codec.Archive.Tar.Index -Wall -fno-warn-unused-imports
+Registering tar-0.5.0.1...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb'

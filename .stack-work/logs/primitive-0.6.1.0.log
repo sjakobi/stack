@@ -1,0 +1,237 @@
+Configuring primitive-0.6.1.0...
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency ghc-prim ==0.4.0.0: using ghc-prim-0.4.0.0
+Dependency transformers ==0.4.2.0: using transformers-0.4.2.0
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/share/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/primitive-0.6.1.0
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building primitive-0.6.1.0...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library primitive-0.6.1.0...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Icbits -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key primi_EphY2c7CCxSCBKjAN0YTR3 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -XHaskell2010 Control.Monad.Primitive Data.Primitive Data.Primitive.MachDeps Data.Primitive.Types Data.Primitive.Array Data.Primitive.ByteArray Data.Primitive.Addr Data.Primitive.MutVar Data.Primitive.Internal.Compat Data.Primitive.Internal.Operations -O2 -Wall -ddump-hi -ddump-to-file
+[ 1 of 10] Compiling Data.Primitive.Internal.Compat ( Data/Primitive/Internal/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Internal/Compat.o )
+[ 2 of 10] Compiling Data.Primitive.MachDeps ( Data/Primitive/MachDeps.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/MachDeps.o )
+[ 3 of 10] Compiling Data.Primitive.Internal.Operations ( Data/Primitive/Internal/Operations.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Internal/Operations.o )
+[ 4 of 10] Compiling Control.Monad.Primitive ( Control/Monad/Primitive.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Primitive.o )
+
+Control/Monad/Primitive.hs:41:1: Warning:
+    Module ‘Control.Monad.Trans.Error’ is deprecated:
+      Use Control.Monad.Trans.Except instead
+
+Control/Monad/Primitive.hs:100:11: Warning:
+    In the use of type constructor or class ‘Error’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+Control/Monad/Primitive.hs:100:47: Warning:
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+Control/Monad/Primitive.hs:101:19: Warning:
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+[ 5 of 10] Compiling Data.Primitive.Types ( Data/Primitive/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Types.o )
+[ 6 of 10] Compiling Data.Primitive.Array ( Data/Primitive/Array.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Array.o )
+[ 7 of 10] Compiling Data.Primitive.ByteArray ( Data/Primitive/ByteArray.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/ByteArray.o )
+[ 8 of 10] Compiling Data.Primitive.Addr ( Data/Primitive/Addr.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Addr.o )
+[ 9 of 10] Compiling Data.Primitive   ( Data/Primitive.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive.o )
+[10 of 10] Compiling Data.Primitive.MutVar ( Data/Primitive/MutVar.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/MutVar.o )
+Building C Sources...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -c -fPIC -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Icbits -optc-O2 -optc-O3 -optc-fomit-frame-pointer -optc-Wall -optc-ftree-vectorize -optc-msse2 -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 cbits/primitive-memops.c -ddump-hi -ddump-to-file
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -c -dynamic -fPIC -osuf dyn_o -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Icbits -optc-O2 -optc-O3 -optc-fomit-frame-pointer -optc-Wall -optc-ftree-vectorize -optc-msse2 -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 cbits/primitive-memops.c -ddump-hi -ddump-to-file
+Linking...
+[(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e",PackageIdentifier {pkgName
+= PackageName {unPackageName = "ghc-prim"}, pkgVersion = Version
+{versionBranch = [0,4,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers"}, pkgVersion = Version
+{versionBranch = [0,4,2,0], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-18911/libHSprimitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Primitive.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/MachDeps.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Types.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Array.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/ByteArray.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Addr.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/MutVar.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Internal/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Internal/Operations.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/cbits/primitive-memops.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-18911/libHSprimitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-18911/libHSprimitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/trans_GZTjP9K5WFq01xC9BAGQpF -this-package-key primi_EphY2c7CCxSCBKjAN0YTR3 -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Primitive.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/MachDeps.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Types.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Array.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/ByteArray.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Addr.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/MutVar.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Internal/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Internal/Operations.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/cbits/primitive-memops.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSprimitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering primitive-0.6.1.0...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/primitive does
+exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/primitive-0.6.1.0
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/primitive-0.6.1.0/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/include
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/include
+Installing cbits/primitive-memops.h to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/include/primitive-memops.h
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Control/Monad
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Control
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Control/Monad
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive/Internal
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Primitive.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Control/Monad/Primitive.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/MachDeps.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive/MachDeps.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Types.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive/Types.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Array.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive/Array.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/ByteArray.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive/ByteArray.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Addr.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive/Addr.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/MutVar.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive/MutVar.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Internal/Compat.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive/Internal/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Internal/Operations.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive/Internal/Operations.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Control/Monad
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive/Internal
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Primitive.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Control/Monad/Primitive.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/MachDeps.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive/MachDeps.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Types.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive/Types.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Array.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive/Array.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/ByteArray.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive/ByteArray.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Addr.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive/Addr.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/MutVar.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive/MutVar.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Internal/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive/Internal/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Primitive/Internal/Operations.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/Data/Primitive/Internal/Operations.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSprimitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/libHSprimitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSprimitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSprimitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3/libHSprimitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Icbits -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key primi_EphY2c7CCxSCBKjAN0YTR3 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -XHaskell2010 Control.Monad.Primitive Data.Primitive Data.Primitive.MachDeps Data.Primitive.Types Data.Primitive.Array Data.Primitive.ByteArray Data.Primitive.Addr Data.Primitive.MutVar -O2 -Wall
+Registering primitive-0.6.1.0...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb'

@@ -1,0 +1,232 @@
+Configuring asn1-encoding-0.9.3...
+Dependency asn1-types ==0.3.2: using asn1-types-0.3.2
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency hourglass ==0.2.9: using hourglass-0.2.9
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/share/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/asn1-encoding-0.9.3
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building asn1-encoding-0.9.3...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library asn1-encoding-0.9.3...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key asn1e_GyaJpTCz0m93p9MwtJXM8v -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id asn1-types-0.3.2-ab6494a680acdbe021c9ab3e58094a93 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id hourglass-0.2.9-2cc4a0c4f77a865a45f6870e2ade79c0 -XHaskell2010 Data.ASN1.Error Data.ASN1.BinaryEncoding Data.ASN1.BinaryEncoding.Raw Data.ASN1.Encoding Data.ASN1.Stream Data.ASN1.Object Data.ASN1.Prim Data.ASN1.BinaryEncoding.Parse Data.ASN1.BinaryEncoding.Writer Data.ASN1.Internal Data.ASN1.Serialize Data.ASN1.Get -Wall -fwarn-tabs -ddump-hi -ddump-to-file
+[ 1 of 12] Compiling Data.ASN1.Get    ( Data/ASN1/Get.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Get.o )
+
+Data/ASN1/Get.hs:30:1: Warning:
+    The import of ‘Applicative’
+    from module ‘Control.Applicative’ is redundant
+[ 2 of 12] Compiling Data.ASN1.Internal ( Data/ASN1/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Internal.o )
+[ 3 of 12] Compiling Data.ASN1.Serialize ( Data/ASN1/Serialize.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Serialize.o )
+
+Data/ASN1/Serialize.hs:17:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[ 4 of 12] Compiling Data.ASN1.Object ( Data/ASN1/Object.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Object.o )
+[ 5 of 12] Compiling Data.ASN1.BinaryEncoding.Writer ( Data/ASN1/BinaryEncoding/Writer.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding/Writer.o )
+[ 6 of 12] Compiling Data.ASN1.Stream ( Data/ASN1/Stream.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Stream.o )
+[ 7 of 12] Compiling Data.ASN1.Error  ( Data/ASN1/Error.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Error.o )
+[ 8 of 12] Compiling Data.ASN1.Encoding ( Data/ASN1/Encoding.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Encoding.o )
+[ 9 of 12] Compiling Data.ASN1.BinaryEncoding.Parse ( Data/ASN1/BinaryEncoding/Parse.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding/Parse.o )
+[10 of 12] Compiling Data.ASN1.BinaryEncoding.Raw ( Data/ASN1/BinaryEncoding/Raw.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding/Raw.o )
+[11 of 12] Compiling Data.ASN1.Prim   ( Data/ASN1/Prim.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Prim.o )
+
+Data/ASN1/Prim.hs:59:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[12 of 12] Compiling Data.ASN1.BinaryEncoding ( Data/ASN1/BinaryEncoding.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding.o )
+Linking...
+[(InstalledPackageId
+"asn1-types-0.3.2-ab6494a680acdbe021c9ab3e58094a93",PackageIdentifier {pkgName
+= PackageName {unPackageName = "asn1-types"}, pkgVersion = Version
+{versionBranch = [0,3,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437",PackageIdentifier
+{pkgName = PackageName {unPackageName = "bytestring"}, pkgVersion = Version
+{versionBranch = [0,10,6,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"hourglass-0.2.9-2cc4a0c4f77a865a45f6870e2ade79c0",PackageIdentifier {pkgName
+= PackageName {unPackageName = "hourglass"}, pkgVersion = Version
+{versionBranch = [0,2,9], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-16087/libHSasn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Error.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding/Raw.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Encoding.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Stream.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Object.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Prim.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding/Parse.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding/Writer.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Internal.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Serialize.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Get.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-16087/libHSasn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-16087/libHSasn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-types-0.3.2-6uyF88PICD359B0mWeP6nA -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/hourglass-0.2.9-8MOIDfr6DODKJWnjukfaUl -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.11-0EiEBIg44i8KGjAeoKnPDs -this-package-key asn1e_GyaJpTCz0m93p9MwtJXM8v -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id asn1-types-0.3.2-ab6494a680acdbe021c9ab3e58094a93 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id hourglass-0.2.9-2cc4a0c4f77a865a45f6870e2ade79c0 .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Error.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding/Raw.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Encoding.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Stream.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Object.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Prim.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding/Parse.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding/Writer.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Internal.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Serialize.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Get.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSasn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering asn1-encoding-0.9.3...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/asn1-encoding
+does exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/asn1-encoding-0.9.3
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/doc/asn1-encoding-0.9.3/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/BinaryEncoding
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Error.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/Error.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/BinaryEncoding.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding/Raw.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/BinaryEncoding/Raw.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Encoding.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/Encoding.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Stream.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/Stream.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Object.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/Object.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Prim.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/Prim.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding/Parse.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/BinaryEncoding/Parse.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding/Writer.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/BinaryEncoding/Writer.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Internal.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/Internal.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Serialize.hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/Serialize.hi
+Installing .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Get.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/Get.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/BinaryEncoding
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Error.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/Error.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/BinaryEncoding.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding/Raw.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/BinaryEncoding/Raw.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Encoding.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/Encoding.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Stream.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/Stream.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Object.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/Object.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Prim.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/Prim.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding/Parse.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/BinaryEncoding/Parse.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/BinaryEncoding/Writer.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/BinaryEncoding/Writer.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Internal.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/Internal.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Serialize.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/Serialize.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ASN1/Get.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/Data/ASN1/Get.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSasn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/libHSasn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSasn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSasn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/asn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v/libHSasn1-encoding-0.9.3-GyaJpTCz0m93p9MwtJXM8v-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key asn1e_GyaJpTCz0m93p9MwtJXM8v -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb -package-id asn1-types-0.3.2-ab6494a680acdbe021c9ab3e58094a93 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id hourglass-0.2.9-2cc4a0c4f77a865a45f6870e2ade79c0 -XHaskell2010 Data.ASN1.Error Data.ASN1.BinaryEncoding Data.ASN1.BinaryEncoding.Raw Data.ASN1.Encoding Data.ASN1.Stream Data.ASN1.Object -Wall -fwarn-tabs
+Registering asn1-encoding-0.9.3...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/pkgdb'
