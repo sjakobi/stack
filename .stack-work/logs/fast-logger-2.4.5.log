@@ -1,0 +1,227 @@
+Configuring fast-logger-2.4.5...
+Dependency array ==0.5.1.0: using array-0.5.1.0
+Dependency auto-update ==0.1.3.1: using auto-update-0.1.3.1
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency bytestring-builder ==0.10.6.0.0: using
+bytestring-builder-0.10.6.0.0
+Dependency directory ==1.2.2.0: using directory-1.2.2.0
+Dependency easy-file ==0.2.1: using easy-file-0.2.1
+Dependency filepath ==1.4.0.0: using filepath-1.4.0.0
+Dependency text ==1.2.2.1: using text-1.2.2.1
+Dependency unix ==2.7.1.0: using unix-2.7.1.0
+Dependency unix-time ==0.3.6: using unix-time-0.3.6
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/share/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/fast-logger-2.4.5
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building fast-logger-2.4.5...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library fast-logger-2.4.5...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key fastl_7EbVwtKgfIp7Dz8DZ2fSbo -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id array-0.5.1.0-960bf9ae8875cc30355e086f8853a049 -package-id auto-update-0.1.3.1-f757a1609412c29a6ca6bf4af1f49bcf -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id bytestring-builder-0.10.6.0.0-8aa4073730c676dbe210ea8bffd8d092 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id easy-file-0.2.1-9b22ae8f4cbee2da82c99a0d82e5050c -package-id filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 -package-id unix-time-0.3.6-1b8cff38eee813d880d6d83550c4f5b0 -XHaskell98 System.Log.FastLogger System.Log.FastLogger.File System.Log.FastLogger.Date System.Log.FastLogger.IO System.Log.FastLogger.FileIO System.Log.FastLogger.IORef System.Log.FastLogger.LogStr System.Log.FastLogger.Logger -Wall -ddump-hi -ddump-to-file
+[1 of 8] Compiling System.Log.FastLogger.LogStr ( System/Log/FastLogger/LogStr.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/LogStr.o )
+[2 of 8] Compiling System.Log.FastLogger.IORef ( System/Log/FastLogger/IORef.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/IORef.o )
+[3 of 8] Compiling System.Log.FastLogger.FileIO ( System/Log/FastLogger/FileIO.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/FileIO.o )
+[4 of 8] Compiling System.Log.FastLogger.IO ( System/Log/FastLogger/IO.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/IO.o )
+[5 of 8] Compiling System.Log.FastLogger.Logger ( System/Log/FastLogger/Logger.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/Logger.o )
+[6 of 8] Compiling System.Log.FastLogger.File ( System/Log/FastLogger/File.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/File.o )
+[7 of 8] Compiling System.Log.FastLogger.Date ( System/Log/FastLogger/Date.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/Date.o )
+[8 of 8] Compiling System.Log.FastLogger ( System/Log/FastLogger.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger.o )
+Linking...
+[(InstalledPackageId
+"array-0.5.1.0-960bf9ae8875cc30355e086f8853a049",PackageIdentifier {pkgName =
+PackageName {unPackageName = "array"}, pkgVersion = Version {versionBranch =
+[0,5,1,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"auto-update-0.1.3.1-f757a1609412c29a6ca6bf4af1f49bcf",PackageIdentifier
+{pkgName = PackageName {unPackageName = "auto-update"}, pkgVersion = Version
+{versionBranch = [0,1,3,1], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437",PackageIdentifier
+{pkgName = PackageName {unPackageName = "bytestring"}, pkgVersion = Version
+{versionBranch = [0,10,6,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"bytestring-builder-0.10.6.0.0-8aa4073730c676dbe210ea8bffd8d092",PackageIdentifier
+{pkgName = PackageName {unPackageName = "bytestring-builder"}, pkgVersion =
+Version {versionBranch = [0,10,6,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732",PackageIdentifier
+{pkgName = PackageName {unPackageName = "directory"}, pkgVersion = Version
+{versionBranch = [1,2,2,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"easy-file-0.2.1-9b22ae8f4cbee2da82c99a0d82e5050c",PackageIdentifier {pkgName
+= PackageName {unPackageName = "easy-file"}, pkgVersion = Version
+{versionBranch = [0,2,1], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e",PackageIdentifier {pkgName
+= PackageName {unPackageName = "filepath"}, pkgVersion = Version
+{versionBranch = [1,4,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c",PackageIdentifier {pkgName =
+PackageName {unPackageName = "text"}, pkgVersion = Version {versionBranch =
+[1,2,2,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"unix-2.7.1.0-343d4f566f30113da92e819f4a148640",PackageIdentifier {pkgName =
+PackageName {unPackageName = "unix"}, pkgVersion = Version {versionBranch =
+[2,7,1,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"unix-time-0.3.6-1b8cff38eee813d880d6d83550c4f5b0",PackageIdentifier {pkgName
+= PackageName {unPackageName = "unix-time"}, pkgVersion = Version
+{versionBranch = [0,3,6], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-29731/libHSfast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/File.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/Date.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/IO.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/FileIO.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/IORef.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/LogStr.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/Logger.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-29731/libHSfast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-29731/libHSfast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/auto-update-0.1.3.1-JxODiy791X7A5hkNmGN2Ed -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/binar_3uXFWMoAGBg0xKP9MHKRwi -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/conta_2C3ZI8RgPO2LBMidXKTvIU -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/direc_0hFG6ZxK1nk4zsyOqbNHfm -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/filep_Ey7a1in9roBAE8bUFJ5R9m -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/old-locale-1.0.0.7-7h2Gx6mVPJ5Gheca8j9Mpe -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/old-time-1.1.0.3-JVjJvknZJ0JKghfag2Jw2L -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/text-1.2.2.1-HmqVQnZSpjaC156ABqPhne -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/time_FTheb6LSxyX1UABIbBXRfn -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/unix_KZL8h98IqDM57kQSPo1mKx -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/unix-time-0.3.6-4DXmhADld9WFju1Q636Hdx -this-package-key fastl_7EbVwtKgfIp7Dz8DZ2fSbo -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id array-0.5.1.0-960bf9ae8875cc30355e086f8853a049 -package-id auto-update-0.1.3.1-f757a1609412c29a6ca6bf4af1f49bcf -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id bytestring-builder-0.10.6.0.0-8aa4073730c676dbe210ea8bffd8d092 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id easy-file-0.2.1-9b22ae8f4cbee2da82c99a0d82e5050c -package-id filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 -package-id unix-time-0.3.6-1b8cff38eee813d880d6d83550c4f5b0 .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/File.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/Date.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/IO.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/FileIO.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/IORef.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/LogStr.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/Logger.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSfast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering fast-logger-2.4.5...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/fast-logger
+does exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/fast-logger-2.4.5
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/fast-logger-2.4.5/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log/FastLogger
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log/FastLogger.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/File.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log/FastLogger/File.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/Date.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log/FastLogger/Date.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/IO.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log/FastLogger/IO.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/FileIO.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log/FastLogger/FileIO.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/IORef.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log/FastLogger/IORef.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/LogStr.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log/FastLogger/LogStr.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/Logger.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log/FastLogger/Logger.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log/FastLogger
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log/FastLogger.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/File.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log/FastLogger/File.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/Date.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log/FastLogger/Date.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/IO.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log/FastLogger/IO.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/FileIO.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log/FastLogger/FileIO.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/IORef.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log/FastLogger/IORef.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/LogStr.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log/FastLogger/LogStr.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/Log/FastLogger/Logger.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/System/Log/FastLogger/Logger.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSfast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/libHSfast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSfast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSfast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo/libHSfast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key fastl_7EbVwtKgfIp7Dz8DZ2fSbo -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-id array-0.5.1.0-960bf9ae8875cc30355e086f8853a049 -package-id auto-update-0.1.3.1-f757a1609412c29a6ca6bf4af1f49bcf -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id bytestring-builder-0.10.6.0.0-8aa4073730c676dbe210ea8bffd8d092 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id easy-file-0.2.1-9b22ae8f4cbee2da82c99a0d82e5050c -package-id filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 -package-id unix-time-0.3.6-1b8cff38eee813d880d6d83550c4f5b0 -XHaskell98 System.Log.FastLogger System.Log.FastLogger.File System.Log.FastLogger.Date -Wall
+Registering fast-logger-2.4.5...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb'

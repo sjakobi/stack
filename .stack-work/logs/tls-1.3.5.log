@@ -1,0 +1,560 @@
+Configuring tls-1.3.5...
+Flags chosen: hans=False, network=True, compat=True
+Dependency asn1-encoding ==0.9.0: using asn1-encoding-0.9.0
+Dependency asn1-types ==0.3.2: using asn1-types-0.3.2
+Dependency async ==2.0.2: using async-2.0.2
+Dependency base ==4.7.0.2: using base-4.7.0.2
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency cereal ==0.4.1.1: using cereal-0.4.1.1
+Dependency cryptonite ==0.15: using cryptonite-0.15
+Dependency data-default-class ==0.0.1: using data-default-class-0.0.1
+Dependency memory ==0.12: using memory-0.12
+Dependency mtl ==2.1.3.1: using mtl-2.1.3.1
+Dependency network ==2.6.2.1: using network-2.6.2.1
+Dependency transformers ==0.3.0.0: using transformers-0.3.0.0
+Dependency x509 ==1.6.3: using x509-1.6.3
+Dependency x509-store ==1.6.1: using x509-store-1.6.1
+Dependency x509-validation ==1.6.3: using x509-validation-1.6.3
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+Using Cabal-1.18.1.5 compiled by ghc-7.8
+Using compiler: ghc-7.8.4
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/bin
+Libraries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5
+Private binaries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/libexec
+Data files installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/share/x86_64-linux-ghc-7.8.4/tls-1.3.5
+Documentation installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/tls-1.3.5
+Configuration files installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+No ffihugs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.8.4 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc
+Using ghc-pkg version 7.8.4 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg
+No greencard found
+Using haddock version 2.14.3 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/haddock
+No happy found
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No hugs found
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+No nhc98 found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using ranlib found on system at: /usr/bin/ranlib
+Using strip found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen
+Building tls-1.3.5...
+Preprocessing library tls-1.3.5...
+Building library...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -optP-DINCLUDE_NETWORK -optP-DSSLV2_COMPATIBLE -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -package-name tls-1.3.5 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id asn1-encoding-0.9.0-35f3e08c8328902ba4a876aad90837e6 -package-id asn1-types-0.3.2-7c1f4c3504f2ea6040f9635e1a8f15b3 -package-id async-2.0.2-8eeaa974e7375a529dd6320cf5f8ab24 -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id cereal-0.4.1.1-3ed1bc5ae73f54e79bf22337a4e79cce -package-id cryptonite-0.15-080b52b5f9a0b8e3ff28b38a707484eb -package-id data-default-class-0.0.1-c90f2361289c9de494da7845c67d72e1 -package-id memory-0.12-f29f92e7f8019e481cc51e83b228b662 -package-id mtl-2.1.3.1-96f1a7910a7553352339ed05fb61c269 -package-id network-2.6.2.1-2337f5b1121f4f052346bcfdc38ad4fc -package-id transformers-0.3.0.0-6458c21515cab7c1cf21e53141557a1c -package-id x509-1.6.3-0ab77559411d7e088733be2cad0f3db1 -package-id x509-store-1.6.1-20ecf56b4728513dc283a9670d4978d9 -package-id x509-validation-1.6.3-36bd0e57bbc85f6ea1a72facaec19041 -XHaskell98 Network.TLS Network.TLS.Cipher Network.TLS.Compression Network.TLS.Internal Network.TLS.Extra Network.TLS.Extra.Cipher Network.TLS.Cap Network.TLS.Struct Network.TLS.Core Network.TLS.Context Network.TLS.Context.Internal Network.TLS.Credentials Network.TLS.Backend Network.TLS.Crypto Network.TLS.Crypto.DH Network.TLS.Crypto.ECDH Network.TLS.ErrT Network.TLS.Extension Network.TLS.Extension.EC Network.TLS.Handshake Network.TLS.Handshake.Common Network.TLS.Handshake.Certificate Network.TLS.Handshake.Key Network.TLS.Handshake.Client Network.TLS.Handshake.Server Network.TLS.Handshake.Process Network.TLS.Handshake.Signature Network.TLS.Handshake.State Network.TLS.Hooks Network.TLS.IO Network.TLS.MAC Network.TLS.Measurement Network.TLS.Packet Network.TLS.Parameters Network.TLS.Record Network.TLS.Record.Types Network.TLS.Record.Engage Network.TLS.Record.Disengage Network.TLS.Record.State Network.TLS.RNG Network.TLS.State Network.TLS.Session Network.TLS.Sending Network.TLS.Receiving Network.TLS.Util Network.TLS.Util.ASN1 Network.TLS.Util.Serialization Network.TLS.Types Network.TLS.Wire Network.TLS.X509 -Wall -fwarn-tabs -ddump-hi -ddump-to-file
+[ 1 of 50] Compiling Network.TLS.Util.ASN1 ( Network/TLS/Util/ASN1.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Util/ASN1.o )
+[ 2 of 50] Compiling Network.TLS.ErrT ( Network/TLS/ErrT.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/ErrT.o )
+[ 3 of 50] Compiling Network.TLS.Extension.EC ( Network/TLS/Extension/EC.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extension/EC.o )
+[ 4 of 50] Compiling Network.TLS.RNG  ( Network/TLS/RNG.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/RNG.o )
+[ 5 of 50] Compiling Network.TLS.Util.Serialization ( Network/TLS/Util/Serialization.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Util/Serialization.o )
+[ 6 of 50] Compiling Network.TLS.Crypto.ECDH ( Network/TLS/Crypto/ECDH.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Crypto/ECDH.o )
+[ 7 of 50] Compiling Network.TLS.Crypto.DH ( Network/TLS/Crypto/DH.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Crypto/DH.o )
+[ 8 of 50] Compiling Network.TLS.Types ( Network/TLS/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Types.o )
+[ 9 of 50] Compiling Network.TLS.X509 ( Network/TLS/X509.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/X509.o )
+[10 of 50] Compiling Network.TLS.Session ( Network/TLS/Session.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Session.o )
+[11 of 50] Compiling Network.TLS.Measurement ( Network/TLS/Measurement.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Measurement.o )
+[12 of 50] Compiling Network.TLS.Crypto ( Network/TLS/Crypto.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Crypto.o )
+[13 of 50] Compiling Network.TLS.MAC  ( Network/TLS/MAC.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/MAC.o )
+[14 of 50] Compiling Network.TLS.Struct ( Network/TLS/Struct.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Struct.o )
+[15 of 50] Compiling Network.TLS.Hooks ( Network/TLS/Hooks.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Hooks.o )
+[16 of 50] Compiling Network.TLS.Credentials ( Network/TLS/Credentials.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Credentials.o )
+[17 of 50] Compiling Network.TLS.Wire ( Network/TLS/Wire.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Wire.o )
+[18 of 50] Compiling Network.TLS.Cap  ( Network/TLS/Cap.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Cap.o )
+[19 of 50] Compiling Network.TLS.Util ( Network/TLS/Util.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Util.o )
+[20 of 50] Compiling Network.TLS.Backend ( Network/TLS/Backend.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Backend.o )
+[21 of 50] Compiling Network.TLS.Cipher ( Network/TLS/Cipher.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Cipher.o )
+[22 of 50] Compiling Network.TLS.Packet ( Network/TLS/Packet.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Packet.o )
+[23 of 50] Compiling Network.TLS.Extension ( Network/TLS/Extension.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extension.o )
+[24 of 50] Compiling Network.TLS.State ( Network/TLS/State.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/State.o )
+[25 of 50] Compiling Network.TLS.Compression ( Network/TLS/Compression.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Compression.o )
+[26 of 50] Compiling Network.TLS.Parameters ( Network/TLS/Parameters.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Parameters.o )
+[27 of 50] Compiling Network.TLS.Record.State ( Network/TLS/Record/State.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/State.o )
+[28 of 50] Compiling Network.TLS.Record.Types ( Network/TLS/Record/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/Types.o )
+[29 of 50] Compiling Network.TLS.Handshake.State ( Network/TLS/Handshake/State.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/State.o )
+[30 of 50] Compiling Network.TLS.Context.Internal ( Network/TLS/Context/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Context/Internal.o )
+[31 of 50] Compiling Network.TLS.Handshake.Certificate ( Network/TLS/Handshake/Certificate.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Certificate.o )
+[32 of 50] Compiling Network.TLS.Handshake.Key ( Network/TLS/Handshake/Key.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Key.o )
+[33 of 50] Compiling Network.TLS.Handshake.Process ( Network/TLS/Handshake/Process.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Process.o )
+[34 of 50] Compiling Network.TLS.Handshake.Signature ( Network/TLS/Handshake/Signature.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Signature.o )
+
+Network/TLS/Handshake/Signature.hs:85:14: Warning:
+    This binding for ‘hash’ shadows the existing binding
+      imported from ‘Network.TLS.Crypto’ at Network/TLS/Handshake/Signature.hs:19:1-25
+      (and originally defined at Network/TLS/Crypto.hs:108:1-4)
+
+Network/TLS/Handshake/Signature.hs:98:14: Warning:
+    This binding for ‘hash’ shadows the existing binding
+      imported from ‘Network.TLS.Crypto’ at Network/TLS/Handshake/Signature.hs:19:1-25
+      (and originally defined at Network/TLS/Crypto.hs:108:1-4)
+[35 of 50] Compiling Network.TLS.Record.Engage ( Network/TLS/Record/Engage.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/Engage.o )
+[36 of 50] Compiling Network.TLS.Record.Disengage ( Network/TLS/Record/Disengage.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/Disengage.o )
+[37 of 50] Compiling Network.TLS.Record ( Network/TLS/Record.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record.o )
+[38 of 50] Compiling Network.TLS.Receiving ( Network/TLS/Receiving.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Receiving.o )
+[39 of 50] Compiling Network.TLS.Sending ( Network/TLS/Sending.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Sending.o )
+[40 of 50] Compiling Network.TLS.IO   ( Network/TLS/IO.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/IO.o )
+[41 of 50] Compiling Network.TLS.Handshake.Common ( Network/TLS/Handshake/Common.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Common.o )
+[42 of 50] Compiling Network.TLS.Handshake.Client ( Network/TLS/Handshake/Client.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Client.o )
+[43 of 50] Compiling Network.TLS.Handshake.Server ( Network/TLS/Handshake/Server.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Server.o )
+[44 of 50] Compiling Network.TLS.Handshake ( Network/TLS/Handshake.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake.o )
+[45 of 50] Compiling Network.TLS.Context ( Network/TLS/Context.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Context.o )
+[46 of 50] Compiling Network.TLS.Core ( Network/TLS/Core.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Core.o )
+[47 of 50] Compiling Network.TLS.Internal ( Network/TLS/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Internal.o )
+[48 of 50] Compiling Network.TLS      ( Network/TLS.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS.o )
+[49 of 50] Compiling Network.TLS.Extra.Cipher ( Network/TLS/Extra/Cipher.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extra/Cipher.o )
+[50 of 50] Compiling Network.TLS.Extra ( Network/TLS/Extra.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extra.o )
+Linking...
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHStls-1.3.5.a .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Cipher.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Compression.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Internal.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extra.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extra/Cipher.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Cap.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Struct.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Core.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Context.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Context/Internal.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Credentials.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Backend.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Crypto.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Crypto/DH.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Crypto/ECDH.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/ErrT.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extension.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extension/EC.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Common.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Certificate.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Key.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Client.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Server.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Process.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Signature.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/State.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Hooks.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/IO.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/MAC.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Measurement.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Packet.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Parameters.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/Types.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/Engage.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/Disengage.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/State.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/RNG.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/State.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Session.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Sending.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Receiving.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Util.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Util/ASN1.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Util/Serialization.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Types.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Wire.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/X509.o
+/usr/bin/ar: creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHStls-1.3.5.a
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc -shared -dynamic -package-name tls-1.3.5 -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id asn1-encoding-0.9.0-35f3e08c8328902ba4a876aad90837e6 -package-id asn1-types-0.3.2-7c1f4c3504f2ea6040f9635e1a8f15b3 -package-id async-2.0.2-8eeaa974e7375a529dd6320cf5f8ab24 -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id cereal-0.4.1.1-3ed1bc5ae73f54e79bf22337a4e79cce -package-id cryptonite-0.15-080b52b5f9a0b8e3ff28b38a707484eb -package-id data-default-class-0.0.1-c90f2361289c9de494da7845c67d72e1 -package-id memory-0.12-f29f92e7f8019e481cc51e83b228b662 -package-id mtl-2.1.3.1-96f1a7910a7553352339ed05fb61c269 -package-id network-2.6.2.1-2337f5b1121f4f052346bcfdc38ad4fc -package-id transformers-0.3.0.0-6458c21515cab7c1cf21e53141557a1c -package-id x509-1.6.3-0ab77559411d7e088733be2cad0f3db1 -package-id x509-store-1.6.1-20ecf56b4728513dc283a9670d4978d9 -package-id x509-validation-1.6.3-36bd0e57bbc85f6ea1a72facaec19041 .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Cipher.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Compression.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Internal.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extra.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extra/Cipher.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Cap.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Struct.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Core.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Context.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Context/Internal.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Credentials.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Backend.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Crypto.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Crypto/DH.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Crypto/ECDH.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/ErrT.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extension.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extension/EC.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Common.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Certificate.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Key.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Client.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Server.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Process.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Signature.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/State.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Hooks.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/IO.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/MAC.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Measurement.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Packet.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Parameters.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/Types.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/Engage.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/Disengage.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/State.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/RNG.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/State.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Session.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Sending.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Receiving.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Util.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Util/ASN1.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Util/Serialization.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Types.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Wire.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/X509.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHStls-1.3.5-ghc7.8.4.so -ddump-hi -ddump-to-file
+In-place registering tls-1.3.5...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/doc/html/tls does
+exist: False
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/tls-1.3.5
+Installing LICENSE to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/tls-1.3.5/LICENSE
+Installing library in
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Extra
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Context
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Crypto
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Extension
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Record
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Util
+Installing .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Cipher.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Cipher.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Compression.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Compression.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Internal.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Internal.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extra.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Extra.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extra/Cipher.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Extra/Cipher.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Cap.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Cap.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Struct.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Struct.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Core.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Core.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Context.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Context.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Context/Internal.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Context/Internal.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Credentials.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Credentials.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Backend.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Backend.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Crypto.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Crypto.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Crypto/DH.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Crypto/DH.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Crypto/ECDH.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Crypto/ECDH.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/ErrT.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/ErrT.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extension.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Extension.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extension/EC.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Extension/EC.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Common.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake/Common.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Certificate.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake/Certificate.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Key.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake/Key.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Client.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake/Client.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Server.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake/Server.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Process.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake/Process.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Signature.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake/Signature.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/State.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake/State.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Hooks.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Hooks.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/IO.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/IO.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/MAC.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/MAC.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Measurement.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Measurement.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Packet.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Packet.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Parameters.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Parameters.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Record.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/Types.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Record/Types.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/Engage.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Record/Engage.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/Disengage.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Record/Disengage.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/State.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Record/State.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/RNG.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/RNG.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/State.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/State.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Session.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Session.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Sending.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Sending.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Receiving.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Receiving.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Util.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Util.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Util/ASN1.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Util/ASN1.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Util/Serialization.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Util/Serialization.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Types.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Types.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Wire.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Wire.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/X509.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/X509.hi
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Extra
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Context
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Crypto
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Extension
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Record
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Util
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Cipher.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Cipher.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Compression.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Compression.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Internal.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Internal.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extra.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Extra.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extra/Cipher.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Extra/Cipher.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Cap.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Cap.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Struct.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Struct.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Core.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Core.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Context.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Context.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Context/Internal.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Context/Internal.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Credentials.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Credentials.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Backend.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Backend.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Crypto.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Crypto.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Crypto/DH.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Crypto/DH.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Crypto/ECDH.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Crypto/ECDH.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/ErrT.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/ErrT.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extension.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Extension.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Extension/EC.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Extension/EC.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Common.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake/Common.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Certificate.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake/Certificate.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Key.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake/Key.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Client.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake/Client.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Server.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake/Server.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Process.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake/Process.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/Signature.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake/Signature.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Handshake/State.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Handshake/State.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Hooks.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Hooks.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/IO.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/IO.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/MAC.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/MAC.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Measurement.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Measurement.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Packet.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Packet.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Parameters.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Parameters.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Record.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/Types.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Record/Types.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/Engage.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Record/Engage.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/Disengage.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Record/Disengage.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Record/State.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Record/State.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/RNG.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/RNG.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/State.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/State.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Session.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Session.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Sending.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Sending.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Receiving.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Receiving.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Util.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Util.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Util/ASN1.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Util/ASN1.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Util/Serialization.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Util/Serialization.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Types.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Types.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/Wire.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/Wire.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/TLS/X509.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/Network/TLS/X509.dyn_hi
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5
+Installing .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHStls-1.3.5.a
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/libHStls-1.3.5.a
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHStls-1.3.5-ghc7.8.4.so
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/tls-1.3.5/libHStls-1.3.5-ghc7.8.4.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -optP-DINCLUDE_NETWORK -optP-DSSLV2_COMPATIBLE -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -package-name tls-1.3.5 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-id asn1-encoding-0.9.0-35f3e08c8328902ba4a876aad90837e6 -package-id asn1-types-0.3.2-7c1f4c3504f2ea6040f9635e1a8f15b3 -package-id async-2.0.2-8eeaa974e7375a529dd6320cf5f8ab24 -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id cereal-0.4.1.1-3ed1bc5ae73f54e79bf22337a4e79cce -package-id cryptonite-0.15-080b52b5f9a0b8e3ff28b38a707484eb -package-id data-default-class-0.0.1-c90f2361289c9de494da7845c67d72e1 -package-id memory-0.12-f29f92e7f8019e481cc51e83b228b662 -package-id mtl-2.1.3.1-96f1a7910a7553352339ed05fb61c269 -package-id network-2.6.2.1-2337f5b1121f4f052346bcfdc38ad4fc -package-id transformers-0.3.0.0-6458c21515cab7c1cf21e53141557a1c -package-id x509-1.6.3-0ab77559411d7e088733be2cad0f3db1 -package-id x509-store-1.6.1-20ecf56b4728513dc283a9670d4978d9 -package-id x509-validation-1.6.3-36bd0e57bbc85f6ea1a72facaec19041 -XHaskell98 Network.TLS Network.TLS.Cipher Network.TLS.Compression Network.TLS.Internal Network.TLS.Extra Network.TLS.Extra.Cipher -Wall -fwarn-tabs
+Registering tls-1.3.5...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb'

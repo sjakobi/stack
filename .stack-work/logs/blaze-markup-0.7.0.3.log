@@ -1,0 +1,201 @@
+Configuring blaze-markup-0.7.0.3...
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency blaze-builder ==0.4.0.2: using blaze-builder-0.4.0.2
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency text ==1.2.2.1: using text-1.2.2.1
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/share/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/blaze-markup-0.7.0.3
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building blaze-markup-0.7.0.3...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library blaze-markup-0.7.0.3...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -isrc -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key blaze_JGtgJgx8yqB3DdKuU3sbgD -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id blaze-builder-0.4.0.2-e19cc2f50668f3d4da5e982c4d0bcfe9 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -XHaskell98 Text.Blaze Text.Blaze.Internal Text.Blaze.Renderer.Pretty Text.Blaze.Renderer.String Text.Blaze.Renderer.Text Text.Blaze.Renderer.Utf8 -Wall -ddump-hi -ddump-to-file
+[1 of 6] Compiling Text.Blaze.Internal ( src/Text/Blaze/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Internal.o )
+
+src/Text/Blaze/Internal.hs:74:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+src/Text/Blaze/Internal.hs:75:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[2 of 6] Compiling Text.Blaze.Renderer.String ( src/Text/Blaze/Renderer/String.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/String.o )
+[3 of 6] Compiling Text.Blaze.Renderer.Pretty ( src/Text/Blaze/Renderer/Pretty.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/Pretty.o )
+[4 of 6] Compiling Text.Blaze.Renderer.Text ( src/Text/Blaze/Renderer/Text.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/Text.o )
+
+src/Text/Blaze/Renderer/Text.hs:15:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[5 of 6] Compiling Text.Blaze.Renderer.Utf8 ( src/Text/Blaze/Renderer/Utf8.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/Utf8.o )
+
+src/Text/Blaze/Renderer/Utf8.hs:11:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[6 of 6] Compiling Text.Blaze       ( src/Text/Blaze.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze.o )
+
+src/Text/Blaze.hs:91:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+
+src/Text/Blaze.hs:92:1: Warning:
+    The import of ‘Word’ from module ‘Data.Word’ is redundant
+Linking...
+[(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"blaze-builder-0.4.0.2-e19cc2f50668f3d4da5e982c4d0bcfe9",PackageIdentifier
+{pkgName = PackageName {unPackageName = "blaze-builder"}, pkgVersion = Version
+{versionBranch = [0,4,0,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437",PackageIdentifier
+{pkgName = PackageName {unPackageName = "bytestring"}, pkgVersion = Version
+{versionBranch = [0,10,6,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c",PackageIdentifier {pkgName =
+PackageName {unPackageName = "text"}, pkgVersion = Version {versionBranch =
+[1,2,2,1], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-25745/libHSblaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Internal.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/Pretty.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/String.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/Text.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/Utf8.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-25745/libHSblaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-25745/libHSblaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/binar_3uXFWMoAGBg0xKP9MHKRwi -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/conta_2C3ZI8RgPO2LBMidXKTvIU -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/text-1.2.2.1-HmqVQnZSpjaC156ABqPhne -this-package-key blaze_JGtgJgx8yqB3DdKuU3sbgD -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id blaze-builder-0.4.0.2-e19cc2f50668f3d4da5e982c4d0bcfe9 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Internal.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/Pretty.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/String.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/Text.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/Utf8.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSblaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering blaze-markup-0.7.0.3...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/blaze-markup
+does exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/blaze-markup-0.7.0.3
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/blaze-markup-0.7.0.3/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text/Blaze
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text/Blaze/Renderer
+Installing .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text/Blaze.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Internal.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text/Blaze/Internal.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/Pretty.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text/Blaze/Renderer/Pretty.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/String.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text/Blaze/Renderer/String.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/Text.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text/Blaze/Renderer/Text.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/Utf8.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text/Blaze/Renderer/Utf8.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text/Blaze
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text/Blaze/Renderer
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text/Blaze.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Internal.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text/Blaze/Internal.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/Pretty.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text/Blaze/Renderer/Pretty.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/String.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text/Blaze/Renderer/String.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/Text.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text/Blaze/Renderer/Text.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Text/Blaze/Renderer/Utf8.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/Text/Blaze/Renderer/Utf8.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSblaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/libHSblaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSblaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSblaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD/libHSblaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -isrc -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key blaze_JGtgJgx8yqB3DdKuU3sbgD -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id blaze-builder-0.4.0.2-e19cc2f50668f3d4da5e982c4d0bcfe9 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -XHaskell98 Text.Blaze Text.Blaze.Internal Text.Blaze.Renderer.Pretty Text.Blaze.Renderer.String Text.Blaze.Renderer.Text Text.Blaze.Renderer.Utf8 -Wall
+Registering blaze-markup-0.7.0.3...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb'

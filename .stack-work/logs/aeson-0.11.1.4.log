@@ -1,0 +1,339 @@
+Configuring aeson-0.11.1.4...
+Flags chosen: old-locale=False, developer=False
+Dependency attoparsec ==0.13.0.2: using attoparsec-0.13.0.2
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency containers ==0.5.6.2: using containers-0.5.6.2
+Dependency deepseq ==1.4.1.1: using deepseq-1.4.1.1
+Dependency dlist ==0.7.1.2: using dlist-0.7.1.2
+Dependency fail ==4.9.0.0: using fail-4.9.0.0
+Dependency ghc-prim ==0.4.0.0: using ghc-prim-0.4.0.0
+Dependency hashable ==1.2.4.0: using hashable-1.2.4.0
+Dependency mtl ==2.2.1: using mtl-2.2.1
+Dependency scientific ==0.3.4.6: using scientific-0.3.4.6
+Dependency semigroups ==0.18.1: using semigroups-0.18.1
+Dependency syb ==0.6: using syb-0.6
+Dependency tagged ==0.8.3: using tagged-0.8.3
+Dependency template-haskell ==2.10.0.0: using template-haskell-2.10.0.0
+Dependency text ==1.2.2.1: using text-1.2.2.1
+Dependency time ==1.5.0.1: using time-1.5.0.1
+Dependency transformers ==0.4.2.0: using transformers-0.4.2.0
+Dependency unordered-containers ==0.2.7.0: using unordered-containers-0.2.7.0
+Dependency vector ==0.11.0.0: using vector-0.11.0.0
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/share/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/aeson-0.11.1.4
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building aeson-0.11.1.4...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library aeson-0.11.1.4...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Iinclude -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key aeson_7Kpihi3FCLhDsk0ZPNknzA -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id attoparsec-0.13.0.2-87ea637177cb911dc7b0c7a0dc7f6c7b -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id dlist-0.7.1.2-ff29ea897ce0546ab24638745f33b7b9 -package-id fail-4.9.0.0-dd8812a5b6b0a0ce790ee5a93be03a9d -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id hashable-1.2.4.0-2f6e980fdeff3f16111d43036e99487a -package-id mtl-2.2.1-3af90341e75ee52dfc4e3143b4e5d219 -package-id scientific-0.3.4.6-02cfa837bc89b2d53be4760679816289 -package-id semigroups-0.18.1-0b973864a94a83937669009b4e06c027 -package-id syb-0.6-d154b8ffa473f7cfcfc32ca4d99f62f7 -package-id tagged-0.8.3-21c7d9e94c80e78986722ec9a3df67cf -package-id template-haskell-2.10.0.0-3c4cb52230f347282af9b2817f013181 -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id unordered-containers-0.2.7.0-fd1fc5881b5267f169202fbad1787983 -package-id vector-0.11.0.0-299aefb173ce5a731565d31f609a0cfd -XHaskell2010 Data.Aeson Data.Aeson.Encode Data.Aeson.Internal Data.Aeson.Internal.Time Data.Aeson.Parser Data.Aeson.Types Data.Aeson.TH Data.Aeson.Encode.Builder Data.Aeson.Encode.Functions Data.Aeson.Functions Data.Aeson.Parser.Internal Data.Aeson.Parser.Time Data.Aeson.Types.Class Data.Aeson.Types.Generic Data.Aeson.Types.Instances Data.Aeson.Types.Internal -O2 -Wall -ddump-hi -ddump-to-file
+[ 1 of 16] Compiling Data.Aeson.Functions ( Data/Aeson/Functions.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Functions.o )
+[ 2 of 16] Compiling Data.Aeson.Internal.Time ( Data/Aeson/Internal/Time.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Internal/Time.o )
+[ 3 of 16] Compiling Data.Aeson.Types.Internal ( Data/Aeson/Types/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Internal.o )
+[ 4 of 16] Compiling Data.Aeson.Encode.Builder ( Data/Aeson/Encode/Builder.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Encode/Builder.o )
+[ 5 of 16] Compiling Data.Aeson.Types.Class ( Data/Aeson/Types/Class.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Class.o )
+[ 6 of 16] Compiling Data.Aeson.Encode.Functions ( Data/Aeson/Encode/Functions.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Encode/Functions.o )
+[ 7 of 16] Compiling Data.Aeson.Parser.Time ( Data/Aeson/Parser/Time.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Parser/Time.o )
+[ 8 of 16] Compiling Data.Aeson.Types.Instances ( Data/Aeson/Types/Instances.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Instances.o )
+[ 9 of 16] Compiling Data.Aeson.Internal ( Data/Aeson/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Internal.o )
+[10 of 16] Compiling Data.Aeson.Types.Generic ( Data/Aeson/Types/Generic.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Generic.o )
+[11 of 16] Compiling Data.Aeson.Types ( Data/Aeson/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types.o )
+[12 of 16] Compiling Data.Aeson.Parser.Internal ( Data/Aeson/Parser/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Parser/Internal.o )
+[13 of 16] Compiling Data.Aeson.Parser ( Data/Aeson/Parser.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Parser.o )
+[14 of 16] Compiling Data.Aeson.Encode ( Data/Aeson/Encode.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Encode.o )
+[15 of 16] Compiling Data.Aeson       ( Data/Aeson.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson.o )
+[16 of 16] Compiling Data.Aeson.TH    ( Data/Aeson/TH.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/TH.o )
+Linking...
+[(InstalledPackageId
+"attoparsec-0.13.0.2-87ea637177cb911dc7b0c7a0dc7f6c7b",PackageIdentifier
+{pkgName = PackageName {unPackageName = "attoparsec"}, pkgVersion = Version
+{versionBranch = [0,13,0,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437",PackageIdentifier
+{pkgName = PackageName {unPackageName = "bytestring"}, pkgVersion = Version
+{versionBranch = [0,10,6,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592",PackageIdentifier
+{pkgName = PackageName {unPackageName = "containers"}, pkgVersion = Version
+{versionBranch = [0,5,6,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311",PackageIdentifier {pkgName
+= PackageName {unPackageName = "deepseq"}, pkgVersion = Version {versionBranch
+= [1,4,1,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"dlist-0.7.1.2-ff29ea897ce0546ab24638745f33b7b9",PackageIdentifier {pkgName =
+PackageName {unPackageName = "dlist"}, pkgVersion = Version {versionBranch =
+[0,7,1,2], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"fail-4.9.0.0-dd8812a5b6b0a0ce790ee5a93be03a9d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "fail"}, pkgVersion = Version {versionBranch =
+[4,9,0,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e",PackageIdentifier {pkgName
+= PackageName {unPackageName = "ghc-prim"}, pkgVersion = Version
+{versionBranch = [0,4,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"hashable-1.2.4.0-2f6e980fdeff3f16111d43036e99487a",PackageIdentifier {pkgName
+= PackageName {unPackageName = "hashable"}, pkgVersion = Version
+{versionBranch = [1,2,4,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"mtl-2.2.1-3af90341e75ee52dfc4e3143b4e5d219",PackageIdentifier {pkgName =
+PackageName {unPackageName = "mtl"}, pkgVersion = Version {versionBranch =
+[2,2,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"scientific-0.3.4.6-02cfa837bc89b2d53be4760679816289",PackageIdentifier
+{pkgName = PackageName {unPackageName = "scientific"}, pkgVersion = Version
+{versionBranch = [0,3,4,6], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"semigroups-0.18.1-0b973864a94a83937669009b4e06c027",PackageIdentifier
+{pkgName = PackageName {unPackageName = "semigroups"}, pkgVersion = Version
+{versionBranch = [0,18,1], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"syb-0.6-d154b8ffa473f7cfcfc32ca4d99f62f7",PackageIdentifier {pkgName =
+PackageName {unPackageName = "syb"}, pkgVersion = Version {versionBranch =
+[0,6], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"tagged-0.8.3-21c7d9e94c80e78986722ec9a3df67cf",PackageIdentifier {pkgName =
+PackageName {unPackageName = "tagged"}, pkgVersion = Version {versionBranch =
+[0,8,3], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"template-haskell-2.10.0.0-3c4cb52230f347282af9b2817f013181",PackageIdentifier
+{pkgName = PackageName {unPackageName = "template-haskell"}, pkgVersion =
+Version {versionBranch = [2,10,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c",PackageIdentifier {pkgName =
+PackageName {unPackageName = "text"}, pkgVersion = Version {versionBranch =
+[1,2,2,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b",PackageIdentifier {pkgName =
+PackageName {unPackageName = "time"}, pkgVersion = Version {versionBranch =
+[1,5,0,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers"}, pkgVersion = Version
+{versionBranch = [0,4,2,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"unordered-containers-0.2.7.0-fd1fc5881b5267f169202fbad1787983",PackageIdentifier
+{pkgName = PackageName {unPackageName = "unordered-containers"}, pkgVersion =
+Version {versionBranch = [0,2,7,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"vector-0.11.0.0-299aefb173ce5a731565d31f609a0cfd",PackageIdentifier {pkgName
+= PackageName {unPackageName = "vector"}, pkgVersion = Version {versionBranch
+= [0,11,0,0], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-1282/libHSaeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Encode.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Internal.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Internal/Time.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Parser.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/TH.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Encode/Builder.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Encode/Functions.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Functions.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Parser/Internal.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Parser/Time.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Class.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Generic.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Instances.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Internal.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-1282/libHSaeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-1282/libHSaeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/attoparsec-0.13.0.2-41FU8li3hiTHrQHazQNzh3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/binar_3uXFWMoAGBg0xKP9MHKRwi -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/conta_2C3ZI8RgPO2LBMidXKTvIU -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/dlist-0.7.1.2-AO7XAasbAeyL0XLKeq1Aui -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fail-4.9.0.0-2xB1AvdW34sDm9N3JOe33G -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/hashable-1.2.4.0-EalUWgp8NarBYWPbvYAD8I -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/mtl-2.2.1-Aue4leSeVkpKLsfHIV51E8 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/prett_JItwetRppk1H5Uq3xbjDGC -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/semigroups-0.18.1-IBlkGPjZsYWGswV1yLDA9m -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tagged-0.8.3-5cptKNCoGdxJM6eqqNERxD -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/templ_GJPvtLC64aA4c1Jl10o2qt -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/text-1.2.2.1-HmqVQnZSpjaC156ABqPhne -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/time_FTheb6LSxyX1UABIbBXRfn -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/trans_GZTjP9K5WFq01xC9BAGQpF -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/unordered-containers-0.2.7.0-2BLx4faR35mFWLJj5xiBgm -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/vector-0.11.0.0-LmZ3LQW4ivu8MsQuVgukln -this-package-key aeson_7Kpihi3FCLhDsk0ZPNknzA -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id attoparsec-0.13.0.2-87ea637177cb911dc7b0c7a0dc7f6c7b -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id dlist-0.7.1.2-ff29ea897ce0546ab24638745f33b7b9 -package-id fail-4.9.0.0-dd8812a5b6b0a0ce790ee5a93be03a9d -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id hashable-1.2.4.0-2f6e980fdeff3f16111d43036e99487a -package-id mtl-2.2.1-3af90341e75ee52dfc4e3143b4e5d219 -package-id scientific-0.3.4.6-02cfa837bc89b2d53be4760679816289 -package-id semigroups-0.18.1-0b973864a94a83937669009b4e06c027 -package-id syb-0.6-d154b8ffa473f7cfcfc32ca4d99f62f7 -package-id tagged-0.8.3-21c7d9e94c80e78986722ec9a3df67cf -package-id template-haskell-2.10.0.0-3c4cb52230f347282af9b2817f013181 -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id unordered-containers-0.2.7.0-fd1fc5881b5267f169202fbad1787983 -package-id vector-0.11.0.0-299aefb173ce5a731565d31f609a0cfd .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Encode.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Internal.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Internal/Time.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Parser.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/TH.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Encode/Builder.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Encode/Functions.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Functions.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Parser/Internal.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Parser/Time.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Class.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Generic.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Instances.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Internal.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSaeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering aeson-0.11.1.4...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/aeson does
+exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/aeson-0.11.1.4
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/aeson-0.11.1.4/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Internal
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Encode
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Parser
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Types
+Installing .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Encode.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Encode.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Internal.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Internal.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Internal/Time.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Internal/Time.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Parser.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Parser.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Types.hi
+Installing .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/TH.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/TH.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Encode/Builder.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Encode/Builder.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Encode/Functions.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Encode/Functions.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Functions.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Functions.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Parser/Internal.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Parser/Internal.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Parser/Time.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Parser/Time.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Class.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Types/Class.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Generic.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Types/Generic.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Instances.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Types/Instances.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Internal.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Types/Internal.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Internal
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Encode
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Parser
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Types
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Encode.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Encode.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Internal.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Internal.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Internal/Time.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Internal/Time.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Parser.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Parser.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Types.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/TH.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/TH.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Encode/Builder.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Encode/Builder.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Encode/Functions.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Encode/Functions.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Functions.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Functions.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Parser/Internal.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Parser/Internal.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Parser/Time.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Parser/Time.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Class.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Types/Class.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Generic.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Types/Generic.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Instances.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Types/Instances.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Aeson/Types/Internal.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/Data/Aeson/Types/Internal.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSaeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/libHSaeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSaeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSaeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA/libHSaeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Iinclude -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key aeson_7Kpihi3FCLhDsk0ZPNknzA -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-id attoparsec-0.13.0.2-87ea637177cb911dc7b0c7a0dc7f6c7b -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id dlist-0.7.1.2-ff29ea897ce0546ab24638745f33b7b9 -package-id fail-4.9.0.0-dd8812a5b6b0a0ce790ee5a93be03a9d -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id hashable-1.2.4.0-2f6e980fdeff3f16111d43036e99487a -package-id mtl-2.2.1-3af90341e75ee52dfc4e3143b4e5d219 -package-id scientific-0.3.4.6-02cfa837bc89b2d53be4760679816289 -package-id semigroups-0.18.1-0b973864a94a83937669009b4e06c027 -package-id syb-0.6-d154b8ffa473f7cfcfc32ca4d99f62f7 -package-id tagged-0.8.3-21c7d9e94c80e78986722ec9a3df67cf -package-id template-haskell-2.10.0.0-3c4cb52230f347282af9b2817f013181 -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id unordered-containers-0.2.7.0-fd1fc5881b5267f169202fbad1787983 -package-id vector-0.11.0.0-299aefb173ce5a731565d31f609a0cfd -XHaskell2010 Data.Aeson Data.Aeson.Encode Data.Aeson.Internal Data.Aeson.Internal.Time Data.Aeson.Parser Data.Aeson.Types Data.Aeson.TH -O2 -Wall
+Registering aeson-0.11.1.4...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb'

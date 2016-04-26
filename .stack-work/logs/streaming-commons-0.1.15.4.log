@@ -1,0 +1,365 @@
+Configuring streaming-commons-0.1.15.4...
+Flags chosen: use-bytestring-builder=False
+Dependency array ==0.5.1.0: using array-0.5.1.0
+Dependency async ==2.1.0: using async-2.1.0
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency blaze-builder ==0.4.0.2: using blaze-builder-0.4.0.2
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency directory ==1.2.2.0: using directory-1.2.2.0
+Dependency network ==2.6.2.1: using network-2.6.2.1
+Dependency process ==1.2.3.0: using process-1.2.3.0
+Dependency random ==1.1: using random-1.1
+Dependency stm ==2.4.4.1: using stm-2.4.4.1
+Dependency text ==1.2.2.1: using text-1.2.2.1
+Dependency transformers ==0.4.2.0: using transformers-0.4.2.0
+Dependency unix ==2.7.1.0: using unix-2.7.1.0
+Dependency zlib ==0.6.1.1: using zlib-0.6.1.1
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/share/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/streaming-commons-0.1.15.4
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building streaming-commons-0.1.15.4...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library streaming-commons-0.1.15.4...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Iinclude -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key strea_FDgjqa6CVPZ2zy4YbsUfKW -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id array-0.5.1.0-960bf9ae8875cc30355e086f8853a049 -package-id async-2.1.0-033e4fae4da028fc2d6502bd36e5e5a1 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id blaze-builder-0.4.0.2-e19cc2f50668f3d4da5e982c4d0bcfe9 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id network-2.6.2.1-b9017957b1e5d0d1d9d4782a2ba4fcb5 -package-id process-1.2.3.0-78f206acb2330ea8066c6c19c87356f0 -package-id random-1.1-7d035f9e510822cd64834106e4acc4b7 -package-id stm-2.4.4.1-7050c728ed5b2315e2c6b56d8bf9837f -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 -package-id zlib-0.6.1.1-d37b5c840601f4d3ae0bae63cca64227 -XHaskell98 Data.Streaming.Blaze Data.Streaming.ByteString.Builder Data.Streaming.ByteString.Builder.Buffer Data.Streaming.ByteString.Builder.Class Data.Streaming.FileRead Data.Streaming.Filesystem Data.Streaming.Network Data.Streaming.Network.Internal Data.Streaming.Process Data.Streaming.Process.Internal Data.Streaming.Text Data.Streaming.Zlib Data.Streaming.Zlib.Lowlevel Data.Text.Internal.Unsafe.Char Data.Text.Internal.Unsafe.Shift Data.Text.Internal.Encoding.Utf8 Data.Text.Internal.Encoding.Utf16 Data.Text.Internal.Encoding.Utf32 -ddump-hi -ddump-to-file
+[ 1 of 18] Compiling Data.Streaming.Zlib.Lowlevel ( Data/Streaming/Zlib/Lowlevel.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Zlib/Lowlevel.o )
+[ 2 of 18] Compiling Data.Streaming.Zlib ( Data/Streaming/Zlib.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Zlib.o )
+[ 3 of 18] Compiling Data.Text.Internal.Unsafe.Shift ( Data/Text/Internal/Unsafe/Shift.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Unsafe/Shift.o )
+[ 4 of 18] Compiling Data.Text.Internal.Unsafe.Char ( Data/Text/Internal/Unsafe/Char.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Unsafe/Char.o )
+[ 5 of 18] Compiling Data.Text.Internal.Encoding.Utf8 ( Data/Text/Internal/Encoding/Utf8.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Encoding/Utf8.o )
+[ 6 of 18] Compiling Data.Text.Internal.Encoding.Utf32 ( Data/Text/Internal/Encoding/Utf32.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Encoding/Utf32.o )
+[ 7 of 18] Compiling Data.Text.Internal.Encoding.Utf16 ( Data/Text/Internal/Encoding/Utf16.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Encoding/Utf16.o )
+[ 8 of 18] Compiling Data.Streaming.Text ( Data/Streaming/Text.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Text.o )
+[ 9 of 18] Compiling Data.Streaming.Process.Internal ( Data/Streaming/Process/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Process/Internal.o )
+[10 of 18] Compiling Data.Streaming.Process ( Data/Streaming/Process.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Process.o )
+[11 of 18] Compiling Data.Streaming.Network.Internal ( Data/Streaming/Network/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Network/Internal.o )
+[12 of 18] Compiling Data.Streaming.Network ( Data/Streaming/Network.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Network.o )
+[13 of 18] Compiling Data.Streaming.Filesystem ( Data/Streaming/Filesystem.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Filesystem.o )
+[14 of 18] Compiling Data.Streaming.FileRead ( Data/Streaming/FileRead.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/FileRead.o )
+[15 of 18] Compiling Data.Streaming.ByteString.Builder.Buffer ( Data/Streaming/ByteString/Builder/Buffer.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/ByteString/Builder/Buffer.o )
+[16 of 18] Compiling Data.Streaming.ByteString.Builder ( Data/Streaming/ByteString/Builder.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/ByteString/Builder.o )
+[17 of 18] Compiling Data.Streaming.ByteString.Builder.Class ( Data/Streaming/ByteString/Builder/Class.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/ByteString/Builder/Class.o )
+[18 of 18] Compiling Data.Streaming.Blaze ( Data/Streaming/Blaze.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Blaze.o )
+Building C Sources...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -c -fPIC -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Iinclude -optc-O2 -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id array-0.5.1.0-960bf9ae8875cc30355e086f8853a049 -package-id async-2.1.0-033e4fae4da028fc2d6502bd36e5e5a1 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id blaze-builder-0.4.0.2-e19cc2f50668f3d4da5e982c4d0bcfe9 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id network-2.6.2.1-b9017957b1e5d0d1d9d4782a2ba4fcb5 -package-id process-1.2.3.0-78f206acb2330ea8066c6c19c87356f0 -package-id random-1.1-7d035f9e510822cd64834106e4acc4b7 -package-id stm-2.4.4.1-7050c728ed5b2315e2c6b56d8bf9837f -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 -package-id zlib-0.6.1.1-d37b5c840601f4d3ae0bae63cca64227 cbits/zlib-helper.c -ddump-hi -ddump-to-file
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -c -dynamic -fPIC -osuf dyn_o -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Iinclude -optc-O2 -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id array-0.5.1.0-960bf9ae8875cc30355e086f8853a049 -package-id async-2.1.0-033e4fae4da028fc2d6502bd36e5e5a1 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id blaze-builder-0.4.0.2-e19cc2f50668f3d4da5e982c4d0bcfe9 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id network-2.6.2.1-b9017957b1e5d0d1d9d4782a2ba4fcb5 -package-id process-1.2.3.0-78f206acb2330ea8066c6c19c87356f0 -package-id random-1.1-7d035f9e510822cd64834106e4acc4b7 -package-id stm-2.4.4.1-7050c728ed5b2315e2c6b56d8bf9837f -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 -package-id zlib-0.6.1.1-d37b5c840601f4d3ae0bae63cca64227 cbits/zlib-helper.c -ddump-hi -ddump-to-file
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -c -fPIC -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Iinclude -optc-O2 -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id array-0.5.1.0-960bf9ae8875cc30355e086f8853a049 -package-id async-2.1.0-033e4fae4da028fc2d6502bd36e5e5a1 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id blaze-builder-0.4.0.2-e19cc2f50668f3d4da5e982c4d0bcfe9 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id network-2.6.2.1-b9017957b1e5d0d1d9d4782a2ba4fcb5 -package-id process-1.2.3.0-78f206acb2330ea8066c6c19c87356f0 -package-id random-1.1-7d035f9e510822cd64834106e4acc4b7 -package-id stm-2.4.4.1-7050c728ed5b2315e2c6b56d8bf9837f -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 -package-id zlib-0.6.1.1-d37b5c840601f4d3ae0bae63cca64227 cbits/text-helper.c -ddump-hi -ddump-to-file
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -c -dynamic -fPIC -osuf dyn_o -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Iinclude -optc-O2 -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id array-0.5.1.0-960bf9ae8875cc30355e086f8853a049 -package-id async-2.1.0-033e4fae4da028fc2d6502bd36e5e5a1 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id blaze-builder-0.4.0.2-e19cc2f50668f3d4da5e982c4d0bcfe9 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id network-2.6.2.1-b9017957b1e5d0d1d9d4782a2ba4fcb5 -package-id process-1.2.3.0-78f206acb2330ea8066c6c19c87356f0 -package-id random-1.1-7d035f9e510822cd64834106e4acc4b7 -package-id stm-2.4.4.1-7050c728ed5b2315e2c6b56d8bf9837f -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 -package-id zlib-0.6.1.1-d37b5c840601f4d3ae0bae63cca64227 cbits/text-helper.c -ddump-hi -ddump-to-file
+Linking...
+[(InstalledPackageId
+"array-0.5.1.0-960bf9ae8875cc30355e086f8853a049",PackageIdentifier {pkgName =
+PackageName {unPackageName = "array"}, pkgVersion = Version {versionBranch =
+[0,5,1,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"async-2.1.0-033e4fae4da028fc2d6502bd36e5e5a1",PackageIdentifier {pkgName =
+PackageName {unPackageName = "async"}, pkgVersion = Version {versionBranch =
+[2,1,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"blaze-builder-0.4.0.2-e19cc2f50668f3d4da5e982c4d0bcfe9",PackageIdentifier
+{pkgName = PackageName {unPackageName = "blaze-builder"}, pkgVersion = Version
+{versionBranch = [0,4,0,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437",PackageIdentifier
+{pkgName = PackageName {unPackageName = "bytestring"}, pkgVersion = Version
+{versionBranch = [0,10,6,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732",PackageIdentifier
+{pkgName = PackageName {unPackageName = "directory"}, pkgVersion = Version
+{versionBranch = [1,2,2,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"network-2.6.2.1-b9017957b1e5d0d1d9d4782a2ba4fcb5",PackageIdentifier {pkgName
+= PackageName {unPackageName = "network"}, pkgVersion = Version {versionBranch
+= [2,6,2,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"process-1.2.3.0-78f206acb2330ea8066c6c19c87356f0",PackageIdentifier {pkgName
+= PackageName {unPackageName = "process"}, pkgVersion = Version {versionBranch
+= [1,2,3,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"random-1.1-7d035f9e510822cd64834106e4acc4b7",PackageIdentifier {pkgName =
+PackageName {unPackageName = "random"}, pkgVersion = Version {versionBranch =
+[1,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"stm-2.4.4.1-7050c728ed5b2315e2c6b56d8bf9837f",PackageIdentifier {pkgName =
+PackageName {unPackageName = "stm"}, pkgVersion = Version {versionBranch =
+[2,4,4,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c",PackageIdentifier {pkgName =
+PackageName {unPackageName = "text"}, pkgVersion = Version {versionBranch =
+[1,2,2,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers"}, pkgVersion = Version
+{versionBranch = [0,4,2,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"unix-2.7.1.0-343d4f566f30113da92e819f4a148640",PackageIdentifier {pkgName =
+PackageName {unPackageName = "unix"}, pkgVersion = Version {versionBranch =
+[2,7,1,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"zlib-0.6.1.1-d37b5c840601f4d3ae0bae63cca64227",PackageIdentifier {pkgName =
+PackageName {unPackageName = "zlib"}, pkgVersion = Version {versionBranch =
+[0,6,1,1], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-464/libHSstreaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Blaze.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/ByteString/Builder.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/ByteString/Builder/Buffer.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/ByteString/Builder/Class.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/FileRead.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Filesystem.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Network.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Network/Internal.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Process.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Process/Internal.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Text.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Zlib.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Zlib/Lowlevel.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Unsafe/Char.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Unsafe/Shift.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Encoding/Utf8.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Encoding/Utf16.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Encoding/Utf32.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/cbits/zlib-helper.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/cbits/text-helper.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-464/libHSstreaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-464/libHSstreaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/async-2.1.0-KuqnF1GrhHK5nNp6Zzm3jy -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/binar_3uXFWMoAGBg0xKP9MHKRwi -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/conta_2C3ZI8RgPO2LBMidXKTvIU -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/direc_0hFG6ZxK1nk4zsyOqbNHfm -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/filep_Ey7a1in9roBAE8bUFJ5R9m -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/network-2.6.2.1-A6pE0dLgMEk2GtUa1JtTJQ -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/proce_52AgREEfSrnJLlkGV9YZZJ -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/random-1.1-9Kgekc9yEaLHLNUuw6paWL -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-2.4.4.1-EyxFXFfnfY05IrjGaqCxeD -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/text-1.2.2.1-HmqVQnZSpjaC156ABqPhne -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/time_FTheb6LSxyX1UABIbBXRfn -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/trans_GZTjP9K5WFq01xC9BAGQpF -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/unix_KZL8h98IqDM57kQSPo1mKx -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/zlib-0.6.1.1-7LjT7TSHX8U3VTy3t378Vu -this-package-key strea_FDgjqa6CVPZ2zy4YbsUfKW -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id array-0.5.1.0-960bf9ae8875cc30355e086f8853a049 -package-id async-2.1.0-033e4fae4da028fc2d6502bd36e5e5a1 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id blaze-builder-0.4.0.2-e19cc2f50668f3d4da5e982c4d0bcfe9 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id network-2.6.2.1-b9017957b1e5d0d1d9d4782a2ba4fcb5 -package-id process-1.2.3.0-78f206acb2330ea8066c6c19c87356f0 -package-id random-1.1-7d035f9e510822cd64834106e4acc4b7 -package-id stm-2.4.4.1-7050c728ed5b2315e2c6b56d8bf9837f -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 -package-id zlib-0.6.1.1-d37b5c840601f4d3ae0bae63cca64227 .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Blaze.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/ByteString/Builder.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/ByteString/Builder/Buffer.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/ByteString/Builder/Class.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/FileRead.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Filesystem.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Network.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Network/Internal.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Process.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Process/Internal.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Text.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Zlib.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Zlib/Lowlevel.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Unsafe/Char.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Unsafe/Shift.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Encoding/Utf8.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Encoding/Utf16.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Encoding/Utf32.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/cbits/zlib-helper.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/cbits/text-helper.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSstreaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering streaming-commons-0.1.15.4...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/streaming-commons does
+exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/streaming-commons-0.1.15.4
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/streaming-commons-0.1.15.4/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/ByteString
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/ByteString/Builder
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Network
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Process
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Zlib
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Text/Internal/Unsafe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Text/Internal
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Text
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Text/Internal
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Text/Internal/Unsafe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Text/Internal/Encoding
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Blaze.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Blaze.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/ByteString/Builder.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/ByteString/Builder.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/ByteString/Builder/Buffer.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/ByteString/Builder/Buffer.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/ByteString/Builder/Class.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/ByteString/Builder/Class.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/FileRead.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/FileRead.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Filesystem.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Filesystem.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Network.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Network.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Network/Internal.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Network/Internal.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Process.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Process.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Process/Internal.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Process/Internal.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Text.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Text.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Zlib.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Zlib.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Zlib/Lowlevel.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Zlib/Lowlevel.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Unsafe/Char.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Text/Internal/Unsafe/Char.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Unsafe/Shift.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Text/Internal/Unsafe/Shift.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Encoding/Utf8.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Text/Internal/Encoding/Utf8.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Encoding/Utf16.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Text/Internal/Encoding/Utf16.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Encoding/Utf32.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Text/Internal/Encoding/Utf32.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/ByteString
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/ByteString/Builder
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Network
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Process
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Zlib
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Text/Internal/Unsafe
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Text/Internal/Encoding
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Blaze.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Blaze.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/ByteString/Builder.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/ByteString/Builder.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/ByteString/Builder/Buffer.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/ByteString/Builder/Buffer.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/ByteString/Builder/Class.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/ByteString/Builder/Class.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/FileRead.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/FileRead.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Filesystem.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Filesystem.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Network.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Network.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Network/Internal.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Network/Internal.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Process.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Process.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Process/Internal.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Process/Internal.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Text.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Text.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Zlib.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Zlib.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Streaming/Zlib/Lowlevel.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Streaming/Zlib/Lowlevel.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Unsafe/Char.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Text/Internal/Unsafe/Char.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Unsafe/Shift.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Text/Internal/Unsafe/Shift.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Encoding/Utf8.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Text/Internal/Encoding/Utf8.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Encoding/Utf16.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Text/Internal/Encoding/Utf16.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Internal/Encoding/Utf32.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/Data/Text/Internal/Encoding/Utf32.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSstreaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/libHSstreaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSstreaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSstreaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW/libHSstreaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Iinclude -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key strea_FDgjqa6CVPZ2zy4YbsUfKW -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-id array-0.5.1.0-960bf9ae8875cc30355e086f8853a049 -package-id async-2.1.0-033e4fae4da028fc2d6502bd36e5e5a1 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id blaze-builder-0.4.0.2-e19cc2f50668f3d4da5e982c4d0bcfe9 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id network-2.6.2.1-b9017957b1e5d0d1d9d4782a2ba4fcb5 -package-id process-1.2.3.0-78f206acb2330ea8066c6c19c87356f0 -package-id random-1.1-7d035f9e510822cd64834106e4acc4b7 -package-id stm-2.4.4.1-7050c728ed5b2315e2c6b56d8bf9837f -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 -package-id zlib-0.6.1.1-d37b5c840601f4d3ae0bae63cca64227 -XHaskell98 Data.Streaming.Blaze Data.Streaming.ByteString.Builder Data.Streaming.ByteString.Builder.Buffer Data.Streaming.ByteString.Builder.Class Data.Streaming.FileRead Data.Streaming.Filesystem Data.Streaming.Network Data.Streaming.Network.Internal Data.Streaming.Process Data.Streaming.Process.Internal Data.Streaming.Text Data.Streaming.Zlib Data.Streaming.Zlib.Lowlevel
+Registering streaming-commons-0.1.15.4...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb'

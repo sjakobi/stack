@@ -1,0 +1,247 @@
+Configuring scientific-0.3.4.6...
+Flags chosen: integer-simple=False, bytestring-builder=True
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency binary ==0.7.5.0: using binary-0.7.5.0
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency containers ==0.5.6.2: using containers-0.5.6.2
+Dependency deepseq ==1.4.1.1: using deepseq-1.4.1.1
+Dependency ghc-prim ==0.4.0.0: using ghc-prim-0.4.0.0
+Dependency hashable ==1.2.4.0: using hashable-1.2.4.0
+Dependency integer-gmp ==1.0.0.0: using integer-gmp-1.0.0.0
+Dependency text ==1.2.2.1: using text-1.2.2.1
+Dependency vector ==0.11.0.0: using vector-0.11.0.0
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/share/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/scientific-0.3.4.6
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building scientific-0.3.4.6...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library scientific-0.3.4.6...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -isrc -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key scien_5s26qRhE5w04kI4pP1Rtwm -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id binary-0.7.5.0-5784fd031a720c3b84e73006e444c7ca -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id hashable-1.2.4.0-2f6e980fdeff3f16111d43036e99487a -package-id integer-gmp-1.0.0.0-3c8c40657a9870f5c33be17496806d8d -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id vector-0.11.0.0-299aefb173ce5a731565d31f609a0cfd -XHaskell2010 Data.Scientific Data.Text.Lazy.Builder.Scientific Data.ByteString.Builder.Scientific Math.NumberTheory.Logarithms GHC.Integer.Logarithms.Compat GHC.Integer.Compat Utils -Wall -ddump-hi -ddump-to-file
+[1 of 7] Compiling GHC.Integer.Logarithms.Compat ( src/GHC/Integer/Logarithms/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/GHC/Integer/Logarithms/Compat.o )
+[2 of 7] Compiling Utils            ( src/Utils.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Utils.o )
+[3 of 7] Compiling GHC.Integer.Compat ( src/GHC/Integer/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/GHC/Integer/Compat.o )
+[4 of 7] Compiling Math.NumberTheory.Logarithms ( src/Math/NumberTheory/Logarithms.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Math/NumberTheory/Logarithms.o )
+[5 of 7] Compiling Data.Scientific  ( src/Data/Scientific.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Scientific.o )
+[6 of 7] Compiling Data.Text.Lazy.Builder.Scientific ( src/Data/Text/Lazy/Builder/Scientific.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Lazy/Builder/Scientific.o )
+[7 of 7] Compiling Data.ByteString.Builder.Scientific ( src/Data/ByteString/Builder/Scientific.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteString/Builder/Scientific.o )
+Linking...
+[(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"binary-0.7.5.0-5784fd031a720c3b84e73006e444c7ca",PackageIdentifier {pkgName =
+PackageName {unPackageName = "binary"}, pkgVersion = Version {versionBranch =
+[0,7,5,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437",PackageIdentifier
+{pkgName = PackageName {unPackageName = "bytestring"}, pkgVersion = Version
+{versionBranch = [0,10,6,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592",PackageIdentifier
+{pkgName = PackageName {unPackageName = "containers"}, pkgVersion = Version
+{versionBranch = [0,5,6,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311",PackageIdentifier {pkgName
+= PackageName {unPackageName = "deepseq"}, pkgVersion = Version {versionBranch
+= [1,4,1,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e",PackageIdentifier {pkgName
+= PackageName {unPackageName = "ghc-prim"}, pkgVersion = Version
+{versionBranch = [0,4,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"hashable-1.2.4.0-2f6e980fdeff3f16111d43036e99487a",PackageIdentifier {pkgName
+= PackageName {unPackageName = "hashable"}, pkgVersion = Version
+{versionBranch = [1,2,4,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"integer-gmp-1.0.0.0-3c8c40657a9870f5c33be17496806d8d",PackageIdentifier
+{pkgName = PackageName {unPackageName = "integer-gmp"}, pkgVersion = Version
+{versionBranch = [1,0,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c",PackageIdentifier {pkgName =
+PackageName {unPackageName = "text"}, pkgVersion = Version {versionBranch =
+[1,2,2,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"vector-0.11.0.0-299aefb173ce5a731565d31f609a0cfd",PackageIdentifier {pkgName
+= PackageName {unPackageName = "vector"}, pkgVersion = Version {versionBranch
+= [0,11,0,0], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-30228/libHSscientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Scientific.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Lazy/Builder/Scientific.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteString/Builder/Scientific.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Math/NumberTheory/Logarithms.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/GHC/Integer/Logarithms/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/GHC/Integer/Compat.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Utils.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-30228/libHSscientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-30228/libHSscientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/binar_3uXFWMoAGBg0xKP9MHKRwi -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/conta_2C3ZI8RgPO2LBMidXKTvIU -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/hashable-1.2.4.0-EalUWgp8NarBYWPbvYAD8I -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/text-1.2.2.1-HmqVQnZSpjaC156ABqPhne -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/trans_GZTjP9K5WFq01xC9BAGQpF -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/vector-0.11.0.0-LmZ3LQW4ivu8MsQuVgukln -this-package-key scien_5s26qRhE5w04kI4pP1Rtwm -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id binary-0.7.5.0-5784fd031a720c3b84e73006e444c7ca -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id hashable-1.2.4.0-2f6e980fdeff3f16111d43036e99487a -package-id integer-gmp-1.0.0.0-3c8c40657a9870f5c33be17496806d8d -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id vector-0.11.0.0-299aefb173ce5a731565d31f609a0cfd .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Scientific.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Lazy/Builder/Scientific.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteString/Builder/Scientific.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Math/NumberTheory/Logarithms.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/GHC/Integer/Logarithms/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/GHC/Integer/Compat.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Utils.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSscientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering scientific-0.3.4.6...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/scientific
+does exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/scientific-0.3.4.6
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/scientific-0.3.4.6/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data/Text/Lazy/Builder
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data/Text/Lazy
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data/Text
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data/Text/Lazy
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data/Text/Lazy/Builder
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data/ByteString/Builder
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data/ByteString
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data/ByteString/Builder
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Math/NumberTheory
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Math
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Math/NumberTheory
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/GHC/Integer/Logarithms
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/GHC/Integer
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/GHC
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/GHC/Integer
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/GHC/Integer/Logarithms
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/GHC/Integer
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Scientific.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data/Scientific.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Lazy/Builder/Scientific.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data/Text/Lazy/Builder/Scientific.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteString/Builder/Scientific.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data/ByteString/Builder/Scientific.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Math/NumberTheory/Logarithms.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Math/NumberTheory/Logarithms.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/GHC/Integer/Logarithms/Compat.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/GHC/Integer/Logarithms/Compat.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/GHC/Integer/Compat.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/GHC/Integer/Compat.hi
+Installing .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Utils.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Utils.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data/Text/Lazy/Builder
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data/ByteString/Builder
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Math/NumberTheory
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/GHC/Integer/Logarithms
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/GHC/Integer
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Scientific.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data/Scientific.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Text/Lazy/Builder/Scientific.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data/Text/Lazy/Builder/Scientific.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/ByteString/Builder/Scientific.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Data/ByteString/Builder/Scientific.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Math/NumberTheory/Logarithms.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Math/NumberTheory/Logarithms.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/GHC/Integer/Logarithms/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/GHC/Integer/Logarithms/Compat.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/GHC/Integer/Compat.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/GHC/Integer/Compat.dyn_hi
+Installing .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Utils.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/Utils.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSscientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/libHSscientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSscientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSscientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm/libHSscientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -isrc -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key scien_5s26qRhE5w04kI4pP1Rtwm -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id binary-0.7.5.0-5784fd031a720c3b84e73006e444c7ca -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id hashable-1.2.4.0-2f6e980fdeff3f16111d43036e99487a -package-id integer-gmp-1.0.0.0-3c8c40657a9870f5c33be17496806d8d -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id vector-0.11.0.0-299aefb173ce5a731565d31f609a0cfd -XHaskell2010 Data.Scientific Data.Text.Lazy.Builder.Scientific Data.ByteString.Builder.Scientific -Wall
+Registering scientific-0.3.4.6...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb'

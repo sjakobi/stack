@@ -1,0 +1,353 @@
+Configuring conduit-extra-1.1.9.1...
+Dependency attoparsec ==0.12.1.6: using attoparsec-0.12.1.6
+Dependency base ==4.7.0.2: using base-4.7.0.2
+Dependency blaze-builder ==0.4.0.1: using blaze-builder-0.4.0.1
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency conduit ==1.2.5: using conduit-1.2.5
+Dependency directory ==1.2.2.0: using directory-1.2.2.0
+Dependency filepath ==1.3.0.2: using filepath-1.3.0.2
+Dependency monad-control ==1.0.0.4: using monad-control-1.0.0.4
+Dependency network ==2.6.2.1: using network-2.6.2.1
+Dependency primitive ==0.6: using primitive-0.6
+Dependency process ==1.2.1.0: using process-1.2.1.0
+Dependency resourcet ==1.1.6: using resourcet-1.1.6
+Dependency stm ==2.4.4: using stm-2.4.4
+Dependency streaming-commons ==0.1.12.1: using streaming-commons-0.1.12.1
+Dependency text ==1.2.0.6: using text-1.2.0.6
+Dependency transformers ==0.3.0.0: using transformers-0.3.0.0
+Dependency transformers-base ==0.4.4: using transformers-base-0.4.4
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+Using Cabal-1.18.1.5 compiled by ghc-7.8
+Using compiler: ghc-7.8.4
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/bin
+Libraries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1
+Private binaries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/libexec
+Data files installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/share/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1
+Documentation installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/conduit-extra-1.1.9.1
+Configuration files installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+No ffihugs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.8.4 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc
+Using ghc-pkg version 7.8.4 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg
+No greencard found
+Using haddock version 2.14.3 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/haddock
+No happy found
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No hugs found
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+No nhc98 found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using ranlib found on system at: /usr/bin/ranlib
+Using strip found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen
+Building conduit-extra-1.1.9.1...
+Preprocessing library conduit-extra-1.1.9.1...
+Building library...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -package-name conduit-extra-1.1.9.1 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id attoparsec-0.12.1.6-d08edb08168a7eb1480504d031126c90 -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id blaze-builder-0.4.0.1-7e2801cb38c458a8ac0607b8484050de -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id conduit-1.2.5-1fd7b00b6c40cdfb800fa3750fd2b254 -package-id directory-1.2.2.0-c0b1502bda890c7f4845b27401b306c5 -package-id filepath-1.3.0.2-25a474a9272ae6260626ce0d70ad1cab -package-id monad-control-1.0.0.4-6c1f8e5fbca10f10e897dd10e058dbee -package-id network-2.6.2.1-2337f5b1121f4f052346bcfdc38ad4fc -package-id primitive-0.6-fe138e2cff0e79f8de9f483fe6ba4d79 -package-id process-1.2.1.0-6c70a9b5ad87dd9db7786aa0fb5d5175 -package-id resourcet-1.1.6-b1d32882318e6e38bb5f6787477ca797 -package-id stm-2.4.4-c36cb8072081a12d13d98a3b4449e55c -package-id streaming-commons-0.1.12.1-f80babd10f5f1ce6f481afbf31c7d5f6 -package-id text-1.2.0.6-70c8ca36fc88551c14d04680329a8148 -package-id transformers-0.3.0.0-6458c21515cab7c1cf21e53141557a1c -package-id transformers-base-0.4.4-df53c5608746be30e79e15ec5b62cb7c -XHaskell98 Data.Conduit.Attoparsec Data.Conduit.Binary Data.Conduit.Blaze Data.Conduit.ByteString.Builder Data.Conduit.Filesystem Data.Conduit.Lazy Data.Conduit.Network Data.Conduit.Network.UDP Data.Conduit.Process Data.Conduit.Text Data.Conduit.Zlib Data.Conduit.Network.Unix -Wall -ddump-hi -ddump-to-file
+[ 1 of 12] Compiling Data.Conduit.Zlib ( Data/Conduit/Zlib.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Zlib.o )
+[ 2 of 12] Compiling Data.Conduit.Text ( Data/Conduit/Text.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Text.o )
+
+Data/Conduit/Text.hs:41:1: Warning:
+    The qualified import of ‘Prelude’ is redundant
+      except perhaps to import instances from ‘Prelude’
+    To import instances alone, use: import Prelude()
+
+Data/Conduit/Text.hs:64:7: Warning:
+    Defined but not used: ‘codecName’
+
+Data/Conduit/Text.hs:153:21: Warning: Defined but not used: ‘name’
+[ 3 of 12] Compiling Data.Conduit.Network.UDP ( Data/Conduit/Network/UDP.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Network/UDP.o )
+
+Data/Conduit/Network/UDP.hs:16:1: Warning:
+    The import of ‘SockAddr, AddrInfo’
+    from module ‘Network.Socket’ is redundant
+
+Data/Conduit/Network/UDP.hs:17:1: Warning:
+    The qualified import of ‘Network.Socket’ is redundant
+      except perhaps to import instances from ‘Network.Socket’
+    To import instances alone, use: import Network.Socket()
+[ 4 of 12] Compiling Data.Conduit.Network ( Data/Conduit/Network.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Network.o )
+
+Data/Conduit/Network.hs:41:1: Warning:
+    Module ‘Prelude’ does not export ‘catch’
+
+Data/Conduit/Network.hs:43:1: Warning:
+    The qualified import of ‘Network.Socket’ is redundant
+      except perhaps to import instances from ‘Network.Socket’
+    To import instances alone, use: import Network.Socket()
+
+Data/Conduit/Network.hs:45:1: Warning:
+    The import of ‘recv’
+    from module ‘Network.Socket.ByteString’ is redundant
+
+Data/Conduit/Network.hs:49:1: Warning:
+    The qualified import of ‘Data.ByteString.Char8’ is redundant
+      except perhaps to import instances from ‘Data.ByteString.Char8’
+    To import instances alone, use: import Data.ByteString.Char8()
+
+Data/Conduit/Network.hs:51:1: Warning:
+    The import of ‘Control.Exception’ is redundant
+      except perhaps to import instances from ‘Control.Exception’
+    To import instances alone, use: import Control.Exception()
+
+Data/Conduit/Network.hs:84:1: Warning:
+    Top-level binding with no type signature:
+      serverSettings :: Int -> SN.HostPreference -> SN.ServerSettings
+
+Data/Conduit/Network.hs:85:1: Warning:
+    Top-level binding with no type signature:
+      clientSettings :: Int -> ByteString -> SN.ClientSettings
+[ 5 of 12] Compiling Data.Conduit.Network.Unix ( Data/Conduit/Network/Unix.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Network/Unix.o )
+
+Data/Conduit/Network/Unix.hs:29:1: Warning:
+    The import of ‘Data.Conduit’ is redundant
+      except perhaps to import instances from ‘Data.Conduit’
+    To import instances alone, use: import Data.Conduit()
+
+Data/Conduit/Network/Unix.hs:30:1: Warning:
+    The import of ‘Network.Socket’ is redundant
+      except perhaps to import instances from ‘Network.Socket’
+    To import instances alone, use: import Network.Socket()
+
+Data/Conduit/Network/Unix.hs:31:1: Warning:
+    The qualified import of ‘Network.Socket’ is redundant
+      except perhaps to import instances from ‘Network.Socket’
+    To import instances alone, use: import Network.Socket()
+
+Data/Conduit/Network/Unix.hs:34:1: Warning:
+    The import of ‘Control.Monad.IO.Class’ is redundant
+      except perhaps to import instances from ‘Control.Monad.IO.Class’
+    To import instances alone, use: import Control.Monad.IO.Class()
+
+Data/Conduit/Network/Unix.hs:35:1: Warning:
+    The import of ‘Control.Exception’ is redundant
+      except perhaps to import instances from ‘Control.Exception’
+    To import instances alone, use: import Control.Exception()
+
+Data/Conduit/Network/Unix.hs:37:1: Warning:
+    The import of ‘Control.Monad’ is redundant
+      except perhaps to import instances from ‘Control.Monad’
+    To import instances alone, use: import Control.Monad()
+
+Data/Conduit/Network/Unix.hs:38:1: Warning:
+    The import of ‘Control.Monad.Trans.Control’ is redundant
+      except perhaps to import instances from ‘Control.Monad.Trans.Control’
+    To import instances alone, use: import Control.Monad.Trans.Control()
+
+Data/Conduit/Network/Unix.hs:39:1: Warning:
+    The import of ‘Control.Concurrent’ is redundant
+      except perhaps to import instances from ‘Control.Concurrent’
+    To import instances alone, use: import Control.Concurrent()
+
+Data/Conduit/Network/Unix.hs:40:1: Warning:
+    The import of ‘System.Directory’ is redundant
+      except perhaps to import instances from ‘System.Directory’
+    To import instances alone, use: import System.Directory()
+
+Data/Conduit/Network/Unix.hs:41:1: Warning:
+    The import of ‘System.IO.Error’ is redundant
+      except perhaps to import instances from ‘System.IO.Error’
+    To import instances alone, use: import System.IO.Error()
+
+Data/Conduit/Network/Unix.hs:42:1: Warning:
+    The import of ‘Control.Monad.Trans.Resource’ is redundant
+      except perhaps to import instances from ‘Control.Monad.Trans.Resource’
+    To import instances alone, use: import Control.Monad.Trans.Resource()
+
+Data/Conduit/Network/Unix.hs:44:1: Warning:
+    Top-level binding with no type signature:
+      clientSettings :: FilePath -> SN.ClientSettingsUnix
+
+Data/Conduit/Network/Unix.hs:45:1: Warning:
+    Top-level binding with no type signature:
+      serverSettings :: FilePath -> SN.ServerSettingsUnix
+[ 6 of 12] Compiling Data.Conduit.Lazy ( Data/Conduit/Lazy.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Lazy.o )
+[ 7 of 12] Compiling Data.Conduit.Filesystem ( Data/Conduit/Filesystem.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Filesystem.o )
+[ 8 of 12] Compiling Data.Conduit.ByteString.Builder ( Data/Conduit/ByteString/Builder.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/ByteString/Builder.o )
+[ 9 of 12] Compiling Data.Conduit.Blaze ( Data/Conduit/Blaze.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Blaze.o )
+[10 of 12] Compiling Data.Conduit.Binary ( Data/Conduit/Binary.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Binary.o )
+
+Data/Conduit/Binary.hs:376:27: Warning:
+    In the use of ‘S.breakByte’ (imported from Data.ByteString):
+    Deprecated: "It is an internal function and should never have been exported. Use 'break (== x)' instead. (There are rewrite rules that handle this special case of 'break'.)"
+
+Data/Conduit/Binary.hs:425:28: Warning:
+    In the use of ‘inlinePerformIO’
+    (imported from Data.ByteString.Internal):
+    Deprecated: "If you think you know what you are doing, use 'unsafePerformIO'. If you are sure you know what you are doing, use 'unsafeDupablePerformIO'. If you enjoy sharing an address space with a malevolent agent of chaos, try 'accursedUnutterablePerformIO'."
+
+Data/Conduit/Binary.hs:427:20: Warning:
+    In the use of ‘inlinePerformIO’
+    (imported from Data.ByteString.Internal):
+    Deprecated: "If you think you know what you are doing, use 'unsafePerformIO'. If you are sure you know what you are doing, use 'unsafeDupablePerformIO'. If you enjoy sharing an address space with a malevolent agent of chaos, try 'accursedUnutterablePerformIO'."
+[11 of 12] Compiling Data.Conduit.Process ( Data/Conduit/Process.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Process.o )
+[12 of 12] Compiling Data.Conduit.Attoparsec ( Data/Conduit/Attoparsec.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Attoparsec.o )
+
+Data/Conduit/Attoparsec.hs:108:9: Warning:
+    In the use of ‘TI.textP’ (imported from Data.Text.Internal):
+    Deprecated: "Use text instead"
+Linking...
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSconduit-extra-1.1.9.1.a .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Attoparsec.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Binary.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Blaze.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/ByteString/Builder.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Filesystem.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Lazy.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Network.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Network/UDP.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Process.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Text.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Zlib.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Network/Unix.o
+/usr/bin/ar: creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSconduit-extra-1.1.9.1.a
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc -shared -dynamic -package-name conduit-extra-1.1.9.1 -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id attoparsec-0.12.1.6-d08edb08168a7eb1480504d031126c90 -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id blaze-builder-0.4.0.1-7e2801cb38c458a8ac0607b8484050de -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id conduit-1.2.5-1fd7b00b6c40cdfb800fa3750fd2b254 -package-id directory-1.2.2.0-c0b1502bda890c7f4845b27401b306c5 -package-id filepath-1.3.0.2-25a474a9272ae6260626ce0d70ad1cab -package-id monad-control-1.0.0.4-6c1f8e5fbca10f10e897dd10e058dbee -package-id network-2.6.2.1-2337f5b1121f4f052346bcfdc38ad4fc -package-id primitive-0.6-fe138e2cff0e79f8de9f483fe6ba4d79 -package-id process-1.2.1.0-6c70a9b5ad87dd9db7786aa0fb5d5175 -package-id resourcet-1.1.6-b1d32882318e6e38bb5f6787477ca797 -package-id stm-2.4.4-c36cb8072081a12d13d98a3b4449e55c -package-id streaming-commons-0.1.12.1-f80babd10f5f1ce6f481afbf31c7d5f6 -package-id text-1.2.0.6-70c8ca36fc88551c14d04680329a8148 -package-id transformers-0.3.0.0-6458c21515cab7c1cf21e53141557a1c -package-id transformers-base-0.4.4-df53c5608746be30e79e15ec5b62cb7c .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Attoparsec.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Binary.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Blaze.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/ByteString/Builder.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Filesystem.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Lazy.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Network.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Network/UDP.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Process.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Text.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Zlib.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Network/Unix.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSconduit-extra-1.1.9.1-ghc7.8.4.so -ddump-hi -ddump-to-file
+In-place registering conduit-extra-1.1.9.1...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/doc/html/conduit-extra
+does exist: False
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/conduit-extra-1.1.9.1
+Installing LICENSE to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/conduit-extra-1.1.9.1/LICENSE
+Installing library in
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/ByteString
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Network
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Attoparsec.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Attoparsec.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Binary.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Binary.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Blaze.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Blaze.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/ByteString/Builder.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/ByteString/Builder.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Filesystem.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Filesystem.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Lazy.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Lazy.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Network.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Network.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Network/UDP.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Network/UDP.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Process.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Process.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Text.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Text.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Zlib.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Zlib.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Network/Unix.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Network/Unix.hi
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/ByteString
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Network
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Attoparsec.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Attoparsec.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Binary.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Binary.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Blaze.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Blaze.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/ByteString/Builder.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/ByteString/Builder.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Filesystem.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Filesystem.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Lazy.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Lazy.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Network.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Network.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Network/UDP.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Network/UDP.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Process.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Process.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Text.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Text.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Zlib.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Zlib.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Conduit/Network/Unix.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/Data/Conduit/Network/Unix.dyn_hi
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSconduit-extra-1.1.9.1.a
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/libHSconduit-extra-1.1.9.1.a
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSconduit-extra-1.1.9.1-ghc7.8.4.so
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/conduit-extra-1.1.9.1/libHSconduit-extra-1.1.9.1-ghc7.8.4.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -package-name conduit-extra-1.1.9.1 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-id attoparsec-0.12.1.6-d08edb08168a7eb1480504d031126c90 -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id blaze-builder-0.4.0.1-7e2801cb38c458a8ac0607b8484050de -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id conduit-1.2.5-1fd7b00b6c40cdfb800fa3750fd2b254 -package-id directory-1.2.2.0-c0b1502bda890c7f4845b27401b306c5 -package-id filepath-1.3.0.2-25a474a9272ae6260626ce0d70ad1cab -package-id monad-control-1.0.0.4-6c1f8e5fbca10f10e897dd10e058dbee -package-id network-2.6.2.1-2337f5b1121f4f052346bcfdc38ad4fc -package-id primitive-0.6-fe138e2cff0e79f8de9f483fe6ba4d79 -package-id process-1.2.1.0-6c70a9b5ad87dd9db7786aa0fb5d5175 -package-id resourcet-1.1.6-b1d32882318e6e38bb5f6787477ca797 -package-id stm-2.4.4-c36cb8072081a12d13d98a3b4449e55c -package-id streaming-commons-0.1.12.1-f80babd10f5f1ce6f481afbf31c7d5f6 -package-id text-1.2.0.6-70c8ca36fc88551c14d04680329a8148 -package-id transformers-0.3.0.0-6458c21515cab7c1cf21e53141557a1c -package-id transformers-base-0.4.4-df53c5608746be30e79e15ec5b62cb7c -XHaskell98 Data.Conduit.Attoparsec Data.Conduit.Binary Data.Conduit.Blaze Data.Conduit.ByteString.Builder Data.Conduit.Filesystem Data.Conduit.Lazy Data.Conduit.Network Data.Conduit.Network.UDP Data.Conduit.Process Data.Conduit.Text Data.Conduit.Zlib Data.Conduit.Network.Unix -Wall
+Registering conduit-extra-1.1.9.1...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb'

@@ -1,0 +1,130 @@
+Configuring x509-system-1.6.3...
+Dependency base ==4.7.0.2: using base-4.7.0.2
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency containers ==0.5.6.3: using containers-0.5.6.3
+Dependency directory ==1.2.2.0: using directory-1.2.2.0
+Dependency filepath ==1.3.0.2: using filepath-1.3.0.2
+Dependency mtl ==2.1.3.1: using mtl-2.1.3.1
+Dependency pem ==0.2.2: using pem-0.2.2
+Dependency process ==1.2.1.0: using process-1.2.1.0
+Dependency x509 ==1.6.3: using x509-1.6.3
+Dependency x509-store ==1.6.1: using x509-store-1.6.1
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+Using Cabal-1.18.1.5 compiled by ghc-7.8
+Using compiler: ghc-7.8.4
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/bin
+Libraries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/x509-system-1.6.3
+Private binaries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/libexec
+Data files installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/share/x86_64-linux-ghc-7.8.4/x509-system-1.6.3
+Documentation installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/x509-system-1.6.3
+Configuration files installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+No ffihugs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.8.4 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc
+Using ghc-pkg version 7.8.4 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg
+No greencard found
+Using haddock version 2.14.3 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/haddock
+No happy found
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No hugs found
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+No nhc98 found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using ranlib found on system at: /usr/bin/ranlib
+Using strip found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen
+Building x509-system-1.6.3...
+Preprocessing library x509-system-1.6.3...
+Building library...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -package-name x509-system-1.6.3 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id containers-0.5.6.3-5c4ab37ffe45c92c77b7280093039034 -package-id directory-1.2.2.0-c0b1502bda890c7f4845b27401b306c5 -package-id filepath-1.3.0.2-25a474a9272ae6260626ce0d70ad1cab -package-id mtl-2.1.3.1-96f1a7910a7553352339ed05fb61c269 -package-id pem-0.2.2-0067f639f9a6ad975dfbc1241a157cae -package-id process-1.2.1.0-6c70a9b5ad87dd9db7786aa0fb5d5175 -package-id x509-1.6.3-0ab77559411d7e088733be2cad0f3db1 -package-id x509-store-1.6.1-20ecf56b4728513dc283a9670d4978d9 -XHaskell98 System.X509 System.X509.Unix System.X509.MacOS -Wall -ddump-hi -ddump-to-file
+[1 of 3] Compiling System.X509.MacOS ( System/X509/MacOS.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/System/X509/MacOS.o )
+[2 of 3] Compiling System.X509.Unix ( System/X509/Unix.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/System/X509/Unix.o )
+[3 of 3] Compiling System.X509      ( System/X509.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/System/X509.o )
+Linking...
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSx509-system-1.6.3.a .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/System/X509.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/System/X509/Unix.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/System/X509/MacOS.o
+/usr/bin/ar: creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSx509-system-1.6.3.a
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc -shared -dynamic -package-name x509-system-1.6.3 -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id containers-0.5.6.3-5c4ab37ffe45c92c77b7280093039034 -package-id directory-1.2.2.0-c0b1502bda890c7f4845b27401b306c5 -package-id filepath-1.3.0.2-25a474a9272ae6260626ce0d70ad1cab -package-id mtl-2.1.3.1-96f1a7910a7553352339ed05fb61c269 -package-id pem-0.2.2-0067f639f9a6ad975dfbc1241a157cae -package-id process-1.2.1.0-6c70a9b5ad87dd9db7786aa0fb5d5175 -package-id x509-1.6.3-0ab77559411d7e088733be2cad0f3db1 -package-id x509-store-1.6.1-20ecf56b4728513dc283a9670d4978d9 .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/System/X509.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/System/X509/Unix.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/System/X509/MacOS.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSx509-system-1.6.3-ghc7.8.4.so -ddump-hi -ddump-to-file
+In-place registering x509-system-1.6.3...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/doc/html/x509-system
+does exist: False
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/x509-system-1.6.3
+Installing LICENSE to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/x509-system-1.6.3/LICENSE
+Installing library in
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/x509-system-1.6.3
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/x509-system-1.6.3/System
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/x509-system-1.6.3
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/x509-system-1.6.3/System
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/x509-system-1.6.3/System/X509
+Installing .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/System/X509.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/x509-system-1.6.3/System/X509.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/System/X509/Unix.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/x509-system-1.6.3/System/X509/Unix.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/System/X509/MacOS.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/x509-system-1.6.3/System/X509/MacOS.hi
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/x509-system-1.6.3/System
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/x509-system-1.6.3/System/X509
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/System/X509.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/x509-system-1.6.3/System/X509.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/System/X509/Unix.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/x509-system-1.6.3/System/X509/Unix.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/System/X509/MacOS.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/x509-system-1.6.3/System/X509/MacOS.dyn_hi
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/x509-system-1.6.3
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSx509-system-1.6.3.a to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/x509-system-1.6.3/libHSx509-system-1.6.3.a
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/x509-system-1.6.3
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSx509-system-1.6.3-ghc7.8.4.so
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/x509-system-1.6.3/libHSx509-system-1.6.3-ghc7.8.4.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -package-name x509-system-1.6.3 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id containers-0.5.6.3-5c4ab37ffe45c92c77b7280093039034 -package-id directory-1.2.2.0-c0b1502bda890c7f4845b27401b306c5 -package-id filepath-1.3.0.2-25a474a9272ae6260626ce0d70ad1cab -package-id mtl-2.1.3.1-96f1a7910a7553352339ed05fb61c269 -package-id pem-0.2.2-0067f639f9a6ad975dfbc1241a157cae -package-id process-1.2.1.0-6c70a9b5ad87dd9db7786aa0fb5d5175 -package-id x509-1.6.3-0ab77559411d7e088733be2cad0f3db1 -package-id x509-store-1.6.1-20ecf56b4728513dc283a9670d4978d9 -XHaskell98 System.X509 System.X509.Unix System.X509.MacOS -Wall
+Registering x509-system-1.6.3...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb'

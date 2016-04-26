@@ -1,0 +1,158 @@
+Configuring zlib-0.5.4.2...
+Dependency base ==4.7.0.2: using base-4.7.0.2
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+Using Cabal-1.18.1.5 compiled by ghc-7.8
+Using compiler: ghc-7.8.4
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/bin
+Libraries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2
+Private binaries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/libexec
+Data files installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/share/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2
+Documentation installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/zlib-0.5.4.2
+Configuration files installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+No ffihugs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.8.4 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc
+Using ghc-pkg version 7.8.4 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg
+No greencard found
+Using haddock version 2.14.3 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/haddock
+No happy found
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No hugs found
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+No nhc98 found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using ranlib found on system at: /usr/bin/ranlib
+Using strip found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen
+Building zlib-0.5.4.2...
+Preprocessing library zlib-0.5.4.2...
+creating
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression
+creating
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hsc2hs --cc=/usr/bin/gcc --ld=/usr/bin/gcc --cflag=-D__GLASGOW_HASKELL__=708 --cflag=-Dlinux_BUILD_OS=1 --cflag=-Dx86_64_BUILD_ARCH=1 --cflag=-Dlinux_HOST_OS=1 --cflag=-Dx86_64_HOST_ARCH=1 --lflag=-lz --cflag=-I/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/bytestring-0.10.6.0/include --cflag=-I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen --cflag=-include --cflag=.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h --cflag=-I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen --cflag=-include --cflag=.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h --cflag=-I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen --cflag=-include --cflag=.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h --cflag=-I/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/lib/ghc-7.8.4/base-4.7.0.2/include --cflag=-I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen --cflag=-include --cflag=.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h --cflag=-I/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/lib/ghc-7.8.4/integer-gmp-0.5.1.0/include --cflag=-I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen --cflag=-include --cflag=.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h --cflag=-I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen --cflag=-include --cflag=.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h --cflag=-I/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/lib/ghc-7.8.4/include --cflag=-I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen --cflag=-include --cflag=.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h --lflag=-L/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/bytestring-0.10.6.0 --lflag=-Wl,-R,/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/bytestring-0.10.6.0 --lflag=-L/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/deepseq-1.4.1.2 --lflag=-Wl,-R,/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/deepseq-1.4.1.2 --lflag=-L/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/lib/ghc-7.8.4/array-0.5.0.0 --lflag=-Wl,-R,/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/lib/ghc-7.8.4/array-0.5.0.0 --lflag=-L/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/lib/ghc-7.8.4/base-4.7.0.2 --lflag=-Wl,-R,/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/lib/ghc-7.8.4/base-4.7.0.2 --lflag=-L/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/lib/ghc-7.8.4/integer-gmp-0.5.1.0 --lflag=-Wl,-R,/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/lib/ghc-7.8.4/integer-gmp-0.5.1.0 --lflag=-lgmp --lflag=-L/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/lib/ghc-7.8.4/ghc-prim-0.3.1.0 --lflag=-Wl,-R,/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/lib/ghc-7.8.4/ghc-prim-0.3.1.0 --lflag=-L/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/lib/ghc-7.8.4/rts-1.0 --lflag=-Wl,-R,/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/lib/ghc-7.8.4/rts-1.0 --lflag=-lm --lflag=-lrt --lflag=-ldl -o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib/Stream.hs Codec/Compression/Zlib/Stream.hsc
+Building library...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -package-name zlib-0.5.4.2 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -XHaskell98 -XCPP -XForeignFunctionInterface Codec.Compression.GZip Codec.Compression.Zlib Codec.Compression.Zlib.Raw Codec.Compression.Zlib.Internal Codec.Compression.Zlib.Stream -Wall -ddump-hi -ddump-to-file
+[1 of 5] Compiling Codec.Compression.Zlib.Stream ( .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib/Stream.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib/Stream.o )
+[2 of 5] Compiling Codec.Compression.Zlib.Internal ( Codec/Compression/Zlib/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib/Internal.o )
+[3 of 5] Compiling Codec.Compression.Zlib.Raw ( Codec/Compression/Zlib/Raw.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib/Raw.o )
+[4 of 5] Compiling Codec.Compression.Zlib ( Codec/Compression/Zlib.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib.o )
+[5 of 5] Compiling Codec.Compression.GZip ( Codec/Compression/GZip.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/GZip.o )
+Linking...
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSzlib-0.5.4.2.a .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/GZip.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib/Raw.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib/Internal.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib/Stream.o
+/usr/bin/ar: creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSzlib-0.5.4.2.a
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc -shared -dynamic -lz -package-name zlib-0.5.4.2 -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/GZip.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib/Raw.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib/Internal.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib/Stream.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSzlib-0.5.4.2-ghc7.8.4.so -ddump-hi -ddump-to-file
+In-place registering zlib-0.5.4.2...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/doc/html/zlib does
+exist: False
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/zlib-0.5.4.2
+Installing LICENSE to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/zlib-0.5.4.2/LICENSE
+Installing library in
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/Codec/Compression
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/Codec
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/Codec
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/Codec/Compression
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/Codec/Compression/Zlib
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/GZip.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/Codec/Compression/GZip.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/Codec/Compression/Zlib.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib/Raw.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/Codec/Compression/Zlib/Raw.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib/Internal.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/Codec/Compression/Zlib/Internal.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib/Stream.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/Codec/Compression/Zlib/Stream.hi
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/Codec/Compression
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/Codec/Compression/Zlib
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/GZip.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/Codec/Compression/GZip.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/Codec/Compression/Zlib.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib/Raw.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/Codec/Compression/Zlib/Raw.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib/Internal.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/Codec/Compression/Zlib/Internal.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Codec/Compression/Zlib/Stream.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/Codec/Compression/Zlib/Stream.dyn_hi
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSzlib-0.5.4.2.a to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/libHSzlib-0.5.4.2.a
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSzlib-0.5.4.2-ghc7.8.4.so
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/zlib-0.5.4.2/libHSzlib-0.5.4.2-ghc7.8.4.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -package-name zlib-0.5.4.2 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -XHaskell98 -XCPP -XForeignFunctionInterface Codec.Compression.GZip Codec.Compression.Zlib Codec.Compression.Zlib.Raw Codec.Compression.Zlib.Internal -Wall
+Registering zlib-0.5.4.2...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb'

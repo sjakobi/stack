@@ -1,0 +1,25 @@
+Configuring containers-0.5.6.3...
+Building containers-0.5.6.3...
+Preprocessing library containers-0.5.6.3...
+[ 1 of 18] Compiling Data.Sequence    ( Data/Sequence.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Sequence.o )
+[ 2 of 18] Compiling Data.Tree        ( Data/Tree.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Tree.o )
+[ 3 of 18] Compiling Data.Graph       ( Data/Graph.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Graph.o )
+[ 4 of 18] Compiling Data.Utils.StrictPair ( Data/Utils/StrictPair.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Utils/StrictPair.o )
+[ 5 of 18] Compiling Data.Utils.StrictFold ( Data/Utils/StrictFold.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Utils/StrictFold.o )
+[ 6 of 18] Compiling Data.Set.Base    ( Data/Set/Base.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Set/Base.o )
+[ 7 of 18] Compiling Data.Map.Base    ( Data/Map/Base.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Map/Base.o )
+[ 8 of 18] Compiling Data.Map.Lazy    ( Data/Map/Lazy.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Map/Lazy.o )
+[ 9 of 18] Compiling Data.Map.Strict  ( Data/Map/Strict.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Map/Strict.o )
+[10 of 18] Compiling Data.Map         ( Data/Map.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Map.o )
+[11 of 18] Compiling Data.Set         ( Data/Set.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Set.o )
+[12 of 18] Compiling Data.Utils.BitUtil ( Data/Utils/BitUtil.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Utils/BitUtil.o )
+[13 of 18] Compiling Data.IntSet.Base ( Data/IntSet/Base.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/IntSet/Base.o )
+[14 of 18] Compiling Data.IntSet      ( Data/IntSet.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/IntSet.o )
+[15 of 18] Compiling Data.IntMap.Base ( Data/IntMap/Base.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/IntMap/Base.o )
+[16 of 18] Compiling Data.IntMap.Strict ( Data/IntMap/Strict.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/IntMap/Strict.o )
+[17 of 18] Compiling Data.IntMap.Lazy ( Data/IntMap/Lazy.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/IntMap/Lazy.o )
+[18 of 18] Compiling Data.IntMap      ( Data/IntMap.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/IntMap.o )
+In-place registering containers-0.5.6.3...
+Installing library in
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/containers-0.5.6.3
+Registering containers-0.5.6.3...

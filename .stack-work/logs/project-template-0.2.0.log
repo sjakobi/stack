@@ -1,0 +1,117 @@
+Configuring project-template-0.2.0...
+Dependency base ==4.7.0.2: using base-4.7.0.2
+Dependency base64-bytestring ==1.0.0.1: using base64-bytestring-1.0.0.1
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency conduit ==1.2.5: using conduit-1.2.5
+Dependency conduit-extra ==1.1.9.1: using conduit-extra-1.1.9.1
+Dependency containers ==0.5.6.3: using containers-0.5.6.3
+Dependency directory ==1.2.2.0: using directory-1.2.2.0
+Dependency filepath ==1.3.0.2: using filepath-1.3.0.2
+Dependency mtl ==2.1.3.1: using mtl-2.1.3.1
+Dependency resourcet ==1.1.6: using resourcet-1.1.6
+Dependency text ==1.2.0.6: using text-1.2.0.6
+Dependency transformers ==0.3.0.0: using transformers-0.3.0.0
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+Using Cabal-1.18.1.5 compiled by ghc-7.8
+Using compiler: ghc-7.8.4
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/bin
+Libraries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/project-template-0.2.0
+Private binaries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/libexec
+Data files installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/share/x86_64-linux-ghc-7.8.4/project-template-0.2.0
+Documentation installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/project-template-0.2.0
+Configuration files installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+No ffihugs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.8.4 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc
+Using ghc-pkg version 7.8.4 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg
+No greencard found
+Using haddock version 2.14.3 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/haddock
+No happy found
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No hugs found
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+No nhc98 found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using ranlib found on system at: /usr/bin/ranlib
+Using strip found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen
+Building project-template-0.2.0...
+Preprocessing library project-template-0.2.0...
+Building library...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -package-name project-template-0.2.0 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id base64-bytestring-1.0.0.1-43dbab7ae80e327d31adce2f976967cd -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id conduit-1.2.5-1fd7b00b6c40cdfb800fa3750fd2b254 -package-id conduit-extra-1.1.9.1-bff56b4240fc6a051acbbe8de7e7cdc7 -package-id containers-0.5.6.3-5c4ab37ffe45c92c77b7280093039034 -package-id directory-1.2.2.0-c0b1502bda890c7f4845b27401b306c5 -package-id filepath-1.3.0.2-25a474a9272ae6260626ce0d70ad1cab -package-id mtl-2.1.3.1-96f1a7910a7553352339ed05fb61c269 -package-id resourcet-1.1.6-b1d32882318e6e38bb5f6787477ca797 -package-id text-1.2.0.6-70c8ca36fc88551c14d04680329a8148 -package-id transformers-0.3.0.0-6458c21515cab7c1cf21e53141557a1c -XHaskell98 Text.ProjectTemplate -Wall -ddump-hi -ddump-to-file
+[1 of 1] Compiling Text.ProjectTemplate ( Text/ProjectTemplate.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Text/ProjectTemplate.o )
+Linking...
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSproject-template-0.2.0.a .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Text/ProjectTemplate.o
+/usr/bin/ar: creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSproject-template-0.2.0.a
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc -shared -dynamic -package-name project-template-0.2.0 -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id base64-bytestring-1.0.0.1-43dbab7ae80e327d31adce2f976967cd -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id conduit-1.2.5-1fd7b00b6c40cdfb800fa3750fd2b254 -package-id conduit-extra-1.1.9.1-bff56b4240fc6a051acbbe8de7e7cdc7 -package-id containers-0.5.6.3-5c4ab37ffe45c92c77b7280093039034 -package-id directory-1.2.2.0-c0b1502bda890c7f4845b27401b306c5 -package-id filepath-1.3.0.2-25a474a9272ae6260626ce0d70ad1cab -package-id mtl-2.1.3.1-96f1a7910a7553352339ed05fb61c269 -package-id resourcet-1.1.6-b1d32882318e6e38bb5f6787477ca797 -package-id text-1.2.0.6-70c8ca36fc88551c14d04680329a8148 -package-id transformers-0.3.0.0-6458c21515cab7c1cf21e53141557a1c .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Text/ProjectTemplate.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSproject-template-0.2.0-ghc7.8.4.so -ddump-hi -ddump-to-file
+In-place registering project-template-0.2.0...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace'
+directory
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/doc/html/project-template does
+exist: False
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/project-template-0.2.0
+Installing LICENSE to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/project-template-0.2.0/LICENSE
+Installing library in
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/project-template-0.2.0
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/project-template-0.2.0/Text
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/project-template-0.2.0
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/project-template-0.2.0/Text
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Text/ProjectTemplate.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/project-template-0.2.0/Text/ProjectTemplate.hi
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/project-template-0.2.0/Text
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Text/ProjectTemplate.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/project-template-0.2.0/Text/ProjectTemplate.dyn_hi
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/project-template-0.2.0
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSproject-template-0.2.0.a
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/project-template-0.2.0/libHSproject-template-0.2.0.a
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/project-template-0.2.0
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHSproject-template-0.2.0-ghc7.8.4.so
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/project-template-0.2.0/libHSproject-template-0.2.0-ghc7.8.4.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -package-name project-template-0.2.0 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id base64-bytestring-1.0.0.1-43dbab7ae80e327d31adce2f976967cd -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id conduit-1.2.5-1fd7b00b6c40cdfb800fa3750fd2b254 -package-id conduit-extra-1.1.9.1-bff56b4240fc6a051acbbe8de7e7cdc7 -package-id containers-0.5.6.3-5c4ab37ffe45c92c77b7280093039034 -package-id directory-1.2.2.0-c0b1502bda890c7f4845b27401b306c5 -package-id filepath-1.3.0.2-25a474a9272ae6260626ce0d70ad1cab -package-id mtl-2.1.3.1-96f1a7910a7553352339ed05fb61c269 -package-id resourcet-1.1.6-b1d32882318e6e38bb5f6787477ca797 -package-id text-1.2.0.6-70c8ca36fc88551c14d04680329a8148 -package-id transformers-0.3.0.0-6458c21515cab7c1cf21e53141557a1c -XHaskell98 Text.ProjectTemplate -Wall
+Registering project-template-0.2.0...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb'

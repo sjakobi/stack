@@ -1,0 +1,568 @@
+Configuring persistent-2.2.4.1...
+Flags chosen: nooverlap=False
+Dependency aeson ==0.11.1.4: using aeson-0.11.1.4
+Dependency attoparsec ==0.13.0.2: using attoparsec-0.13.0.2
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency base64-bytestring ==1.0.0.1: using base64-bytestring-1.0.0.1
+Dependency blaze-html ==0.8.1.1: using blaze-html-0.8.1.1
+Dependency blaze-markup ==0.7.0.3: using blaze-markup-0.7.0.3
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency conduit ==1.2.6.4: using conduit-1.2.6.4
+Dependency containers ==0.5.6.2: using containers-0.5.6.2
+Dependency exceptions ==0.8.2.1: using exceptions-0.8.2.1
+Dependency fast-logger ==2.4.5: using fast-logger-2.4.5
+Dependency http-api-data ==0.2.2: using http-api-data-0.2.2
+Dependency lifted-base ==0.2.3.6: using lifted-base-0.2.3.6
+Dependency monad-control ==1.0.1.0: using monad-control-1.0.1.0
+Dependency monad-logger ==0.3.18: using monad-logger-0.3.18
+Dependency mtl ==2.2.1: using mtl-2.2.1
+Dependency old-locale ==1.0.0.7: using old-locale-1.0.0.7
+Dependency path-pieces ==0.2.1: using path-pieces-0.2.1
+Dependency resource-pool ==0.2.3.2: using resource-pool-0.2.3.2
+Dependency resourcet ==1.1.7.3: using resourcet-1.1.7.3
+Dependency scientific ==0.3.4.6: using scientific-0.3.4.6
+Dependency silently ==1.2.5: using silently-1.2.5
+Dependency tagged ==0.8.3: using tagged-0.8.3
+Dependency template-haskell ==2.10.0.0: using template-haskell-2.10.0.0
+Dependency text ==1.2.2.1: using text-1.2.2.1
+Dependency time ==1.5.0.1: using time-1.5.0.1
+Dependency transformers ==0.4.2.0: using transformers-0.4.2.0
+Dependency transformers-base ==0.4.4: using transformers-base-0.4.4
+Dependency unordered-containers ==0.2.7.0: using unordered-containers-0.2.7.0
+Dependency vector ==0.11.0.0: using vector-0.11.0.0
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/share/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/persistent-2.2.4.1
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building persistent-2.2.4.1...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library persistent-2.2.4.1...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key persi_8Kr58OCuKea9qljzW88CQi -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id aeson-0.11.1.4-8d9201707f844872c5a25436ad19054d -package-id attoparsec-0.13.0.2-87ea637177cb911dc7b0c7a0dc7f6c7b -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id base64-bytestring-1.0.0.1-4aa13e7ac7c5b00cc0cd642708d4e148 -package-id blaze-html-0.8.1.1-37c265b12cef657151747f8792ac0bc4 -package-id blaze-markup-0.7.0.3-91d644114ace79079d1d727cc4658026 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id conduit-1.2.6.4-0efdbdac15e9b1f788715543fb78d26f -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id exceptions-0.8.2.1-08ed62d2282590eb80eba3e5c42a5f4e -package-id fast-logger-2.4.5-6d62016c37d9716c62949546a3edab07 -package-id http-api-data-0.2.2-ae4ce8ae5c18b2b9a825860e8b5b0a29 -package-id lifted-base-0.2.3.6-95d2e87a74e11a9ed06423bbb63b94ca -package-id monad-control-1.0.1.0-84c4bc4b17198076c8ec507b90de89c9 -package-id monad-logger-0.3.18-ff8a37cf7be26b37f7a03894caccb401 -package-id mtl-2.2.1-3af90341e75ee52dfc4e3143b4e5d219 -package-id old-locale-1.0.0.7-0db938eb141b01f4936a21aef6b843bf -package-id path-pieces-0.2.1-4a94c2c5f218271ea8c9d04d2daef5c5 -package-id resource-pool-0.2.3.2-c81e154dbc2b3662c1e6fcf6e9cb61cd -package-id resourcet-1.1.7.3-a37298a932226b35141df25d5ba85b7c -package-id scientific-0.3.4.6-02cfa837bc89b2d53be4760679816289 -package-id silently-1.2.5-6428d724564bb12923a8af3367134785 -package-id tagged-0.8.3-21c7d9e94c80e78986722ec9a3df67cf -package-id template-haskell-2.10.0.0-3c4cb52230f347282af9b2817f013181 -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id transformers-base-0.4.4-19dc155e74aa624600f63b02f5f0b424 -package-id unordered-containers-0.2.7.0-fd1fc5881b5267f169202fbad1787983 -package-id vector-0.11.0.0-299aefb173ce5a731565d31f609a0cfd -XHaskell98 Database.Persist Database.Persist.Quasi Database.Persist.Types Database.Persist.Class Database.Persist.Sql Database.Persist.Sql.Util Database.Persist.Types.Base Database.Persist.Class.DeleteCascade Database.Persist.Class.PersistEntity Database.Persist.Class.PersistQuery Database.Persist.Class.PersistUnique Database.Persist.Class.PersistConfig Database.Persist.Class.PersistField Database.Persist.Class.PersistStore Database.Persist.Sql.Migration Database.Persist.Sql.Internal Database.Persist.Sql.Types Database.Persist.Sql.Raw Database.Persist.Sql.Run Database.Persist.Sql.Class Database.Persist.Sql.Orphan.PersistQuery Database.Persist.Sql.Orphan.PersistStore Database.Persist.Sql.Orphan.PersistUnique -Wall -ddump-hi -ddump-to-file
+
+Database/Persist/Class/PersistField.hs:7:14: Warning:
+    -XOverlappingInstances is deprecated: instead use per-instance pragmas OVERLAPPING/OVERLAPPABLE/OVERLAPS
+
+Database/Persist/Sql/Class.hs:9:14: Warning:
+    -XOverlappingInstances is deprecated: instead use per-instance pragmas OVERLAPPING/OVERLAPPABLE/OVERLAPS
+[ 1 of 23] Compiling Database.Persist.Class.PersistConfig ( Database/Persist/Class/PersistConfig.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistConfig.o )
+
+Database/Persist/Class/PersistConfig.hs:12:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[ 2 of 23] Compiling Database.Persist.Types.Base ( Database/Persist/Types/Base.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Types/Base.o )
+
+Database/Persist/Types/Base.hs:10:1: Warning:
+    Module ‘Control.Monad.Trans.Error’ is deprecated:
+      Use Control.Monad.Trans.Except instead
+
+Database/Persist/Types/Base.hs:19:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+Database/Persist/Types/Base.hs:22:1: Warning:
+    The qualified import of ‘Data.Text.Read’ is redundant
+      except perhaps to import instances from ‘Data.Text.Read’
+    To import instances alone, use: import Data.Text.Read()
+
+Database/Persist/Types/Base.hs:93:10: Warning:
+    No explicit implementation for
+      ‘fromPathPiece’ and ‘toPathPiece’
+    In the instance declaration for ‘PathPiece Checkmark’
+
+Database/Persist/Types/Base.hs:260:10: Warning:
+    In the use of type constructor or class ‘Error’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+Database/Persist/Types/Base.hs:260:10: Warning:
+    In the use of type constructor or class ‘Error’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+[ 3 of 23] Compiling Database.Persist.Class.PersistField ( Database/Persist/Class/PersistField.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistField.o )
+
+Database/Persist/Class/PersistField.hs:22:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+Database/Persist/Class/PersistField.hs:24:1: Warning:
+    The import of ‘Word’ from module ‘Data.Word’ is redundant
+
+Database/Persist/Class/PersistField.hs:252:26: Warning:
+    This binding for ‘x’ shadows the existing binding
+      bound at Database/Persist/Class/PersistField.hs:246:22
+
+Database/Persist/Class/PersistField.hs:254:21: Warning:
+    In the use of ‘parseTime’
+    (imported from Data.Time, but defined in time-1.5.0.1:Data.Time.Format.Parse):
+    Deprecated: "use "parseTimeM True" instead"
+[ 4 of 23] Compiling Database.Persist.Class.PersistEntity ( Database/Persist/Class/PersistEntity.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistEntity.o )
+
+Database/Persist/Class/PersistEntity.hs:37:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+Database/Persist/Class/PersistEntity.hs:38:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[ 5 of 23] Compiling Database.Persist.Types ( Database/Persist/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Types.o )
+[ 6 of 23] Compiling Database.Persist.Quasi ( Database/Persist/Quasi.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Quasi.o )
+
+Database/Persist/Quasi.hs:27:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[ 7 of 23] Compiling Database.Persist.Class.PersistStore ( Database/Persist/Class/PersistStore.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistStore.o )
+[ 8 of 23] Compiling Database.Persist.Class.PersistQuery ( Database/Persist/Class/PersistQuery.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistQuery.o )
+[ 9 of 23] Compiling Database.Persist.Class.DeleteCascade ( Database/Persist/Class/DeleteCascade.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/DeleteCascade.o )
+[10 of 23] Compiling Database.Persist.Class.PersistUnique ( Database/Persist/Class/PersistUnique.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistUnique.o )
+
+Database/Persist/Class/PersistUnique.hs:20:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[11 of 23] Compiling Database.Persist.Class ( Database/Persist/Class.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class.o )
+[12 of 23] Compiling Database.Persist.Sql.Types ( Database/Persist/Sql/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Types.o )
+[13 of 23] Compiling Database.Persist.Sql.Internal ( Database/Persist/Sql/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Internal.o )
+
+Database/Persist/Sql/Internal.hs:14:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[14 of 23] Compiling Database.Persist ( Database/Persist.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist.o )
+[15 of 23] Compiling Database.Persist.Sql.Class ( Database/Persist/Sql/Class.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Class.o )
+
+Database/Persist/Sql/Class.hs:16:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+Database/Persist/Sql/Class.hs:70:23: Warning:
+    Defined but not used: ‘ent’
+
+Database/Persist/Sql/Class.hs:224:11: Warning:
+    In the use of ‘bitSize’ (imported from Data.Bits):
+    Deprecated: "Use 'bitSizeMaybe' or 'finiteBitSize' instead"
+[16 of 23] Compiling Database.Persist.Sql.Raw ( Database/Persist/Sql/Raw.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Raw.o )
+[17 of 23] Compiling Database.Persist.Sql.Run ( Database/Persist/Sql/Run.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Run.o )
+[18 of 23] Compiling Database.Persist.Sql.Migration ( Database/Persist/Sql/Migration.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Migration.o )
+[19 of 23] Compiling Database.Persist.Sql.Util ( Database/Persist/Sql/Util.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Util.o )
+[20 of 23] Compiling Database.Persist.Sql.Orphan.PersistStore ( Database/Persist/Sql/Orphan/PersistStore.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Orphan/PersistStore.o )
+
+Database/Persist/Sql/Orphan/PersistStore.hs:28:1: Warning:
+    The import of ‘mappend’ from module ‘Data.Monoid’ is redundant
+[21 of 23] Compiling Database.Persist.Sql.Orphan.PersistQuery ( Database/Persist/Sql/Orphan/PersistQuery.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Orphan/PersistQuery.o )
+
+Database/Persist/Sql/Orphan/PersistQuery.hs:20:1: Warning:
+    The import of ‘Monoid’ from module ‘Data.Monoid’ is redundant
+[22 of 23] Compiling Database.Persist.Sql.Orphan.PersistUnique ( Database/Persist/Sql/Orphan/PersistUnique.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Orphan/PersistUnique.o )
+
+Database/Persist/Sql/Orphan/PersistUnique.hs:13:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[23 of 23] Compiling Database.Persist.Sql ( Database/Persist/Sql.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql.o )
+Linking...
+[(InstalledPackageId
+"aeson-0.11.1.4-8d9201707f844872c5a25436ad19054d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "aeson"}, pkgVersion = Version {versionBranch =
+[0,11,1,4], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"attoparsec-0.13.0.2-87ea637177cb911dc7b0c7a0dc7f6c7b",PackageIdentifier
+{pkgName = PackageName {unPackageName = "attoparsec"}, pkgVersion = Version
+{versionBranch = [0,13,0,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"base64-bytestring-1.0.0.1-4aa13e7ac7c5b00cc0cd642708d4e148",PackageIdentifier
+{pkgName = PackageName {unPackageName = "base64-bytestring"}, pkgVersion =
+Version {versionBranch = [1,0,0,1], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"blaze-html-0.8.1.1-37c265b12cef657151747f8792ac0bc4",PackageIdentifier
+{pkgName = PackageName {unPackageName = "blaze-html"}, pkgVersion = Version
+{versionBranch = [0,8,1,1], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"blaze-markup-0.7.0.3-91d644114ace79079d1d727cc4658026",PackageIdentifier
+{pkgName = PackageName {unPackageName = "blaze-markup"}, pkgVersion = Version
+{versionBranch = [0,7,0,3], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437",PackageIdentifier
+{pkgName = PackageName {unPackageName = "bytestring"}, pkgVersion = Version
+{versionBranch = [0,10,6,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"conduit-1.2.6.4-0efdbdac15e9b1f788715543fb78d26f",PackageIdentifier {pkgName
+= PackageName {unPackageName = "conduit"}, pkgVersion = Version {versionBranch
+= [1,2,6,4], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592",PackageIdentifier
+{pkgName = PackageName {unPackageName = "containers"}, pkgVersion = Version
+{versionBranch = [0,5,6,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"exceptions-0.8.2.1-08ed62d2282590eb80eba3e5c42a5f4e",PackageIdentifier
+{pkgName = PackageName {unPackageName = "exceptions"}, pkgVersion = Version
+{versionBranch = [0,8,2,1], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"fast-logger-2.4.5-6d62016c37d9716c62949546a3edab07",PackageIdentifier
+{pkgName = PackageName {unPackageName = "fast-logger"}, pkgVersion = Version
+{versionBranch = [2,4,5], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"http-api-data-0.2.2-ae4ce8ae5c18b2b9a825860e8b5b0a29",PackageIdentifier
+{pkgName = PackageName {unPackageName = "http-api-data"}, pkgVersion = Version
+{versionBranch = [0,2,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"lifted-base-0.2.3.6-95d2e87a74e11a9ed06423bbb63b94ca",PackageIdentifier
+{pkgName = PackageName {unPackageName = "lifted-base"}, pkgVersion = Version
+{versionBranch = [0,2,3,6], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"monad-control-1.0.1.0-84c4bc4b17198076c8ec507b90de89c9",PackageIdentifier
+{pkgName = PackageName {unPackageName = "monad-control"}, pkgVersion = Version
+{versionBranch = [1,0,1,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"monad-logger-0.3.18-ff8a37cf7be26b37f7a03894caccb401",PackageIdentifier
+{pkgName = PackageName {unPackageName = "monad-logger"}, pkgVersion = Version
+{versionBranch = [0,3,18], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"mtl-2.2.1-3af90341e75ee52dfc4e3143b4e5d219",PackageIdentifier {pkgName =
+PackageName {unPackageName = "mtl"}, pkgVersion = Version {versionBranch =
+[2,2,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"old-locale-1.0.0.7-0db938eb141b01f4936a21aef6b843bf",PackageIdentifier
+{pkgName = PackageName {unPackageName = "old-locale"}, pkgVersion = Version
+{versionBranch = [1,0,0,7], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"path-pieces-0.2.1-4a94c2c5f218271ea8c9d04d2daef5c5",PackageIdentifier
+{pkgName = PackageName {unPackageName = "path-pieces"}, pkgVersion = Version
+{versionBranch = [0,2,1], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"resource-pool-0.2.3.2-c81e154dbc2b3662c1e6fcf6e9cb61cd",PackageIdentifier
+{pkgName = PackageName {unPackageName = "resource-pool"}, pkgVersion = Version
+{versionBranch = [0,2,3,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"resourcet-1.1.7.3-a37298a932226b35141df25d5ba85b7c",PackageIdentifier
+{pkgName = PackageName {unPackageName = "resourcet"}, pkgVersion = Version
+{versionBranch = [1,1,7,3], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"scientific-0.3.4.6-02cfa837bc89b2d53be4760679816289",PackageIdentifier
+{pkgName = PackageName {unPackageName = "scientific"}, pkgVersion = Version
+{versionBranch = [0,3,4,6], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"silently-1.2.5-6428d724564bb12923a8af3367134785",PackageIdentifier {pkgName =
+PackageName {unPackageName = "silently"}, pkgVersion = Version {versionBranch
+= [1,2,5], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"tagged-0.8.3-21c7d9e94c80e78986722ec9a3df67cf",PackageIdentifier {pkgName =
+PackageName {unPackageName = "tagged"}, pkgVersion = Version {versionBranch =
+[0,8,3], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"template-haskell-2.10.0.0-3c4cb52230f347282af9b2817f013181",PackageIdentifier
+{pkgName = PackageName {unPackageName = "template-haskell"}, pkgVersion =
+Version {versionBranch = [2,10,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c",PackageIdentifier {pkgName =
+PackageName {unPackageName = "text"}, pkgVersion = Version {versionBranch =
+[1,2,2,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b",PackageIdentifier {pkgName =
+PackageName {unPackageName = "time"}, pkgVersion = Version {versionBranch =
+[1,5,0,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers"}, pkgVersion = Version
+{versionBranch = [0,4,2,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"transformers-base-0.4.4-19dc155e74aa624600f63b02f5f0b424",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers-base"}, pkgVersion =
+Version {versionBranch = [0,4,4], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"unordered-containers-0.2.7.0-fd1fc5881b5267f169202fbad1787983",PackageIdentifier
+{pkgName = PackageName {unPackageName = "unordered-containers"}, pkgVersion =
+Version {versionBranch = [0,2,7,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"vector-0.11.0.0-299aefb173ce5a731565d31f609a0cfd",PackageIdentifier {pkgName
+= PackageName {unPackageName = "vector"}, pkgVersion = Version {versionBranch
+= [0,11,0,0], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-1814/libHSpersistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Quasi.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Types.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Util.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Types/Base.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/DeleteCascade.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistEntity.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistQuery.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistUnique.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistConfig.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistField.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistStore.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Migration.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Internal.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Types.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Raw.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Run.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Class.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Orphan/PersistQuery.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Orphan/PersistStore.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Orphan/PersistUnique.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-1814/libHSpersistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-1814/libHSpersistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/async-2.1.0-KuqnF1GrhHK5nNp6Zzm3jy -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/attoparsec-0.13.0.2-41FU8li3hiTHrQHazQNzh3 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/auto-update-0.1.3.1-JxODiy791X7A5hkNmGN2Ed -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base64-bytestring-1.0.0.1-AkCk8zInckjJsyQ4AIFHPN -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/binar_3uXFWMoAGBg0xKP9MHKRwi -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-html-0.8.1.1-1fCoF4onMJE2jDLBViwynk -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/conduit-1.2.6.4-1EneW8yRsjj18l2EfcgLyu -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/conduit-extra-1.1.13.1-K5a53Tkcwf93kOHQXIVa9v -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/conta_2C3ZI8RgPO2LBMidXKTvIU -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/direc_0hFG6ZxK1nk4zsyOqbNHfm -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/dlist-0.7.1.2-AO7XAasbAeyL0XLKeq1Aui -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/exceptions-0.8.2.1-6lgwjdgwblY7rzh5s6SLd8 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fail-4.9.0.0-2xB1AvdW34sDm9N3JOe33G -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/filep_Ey7a1in9roBAE8bUFJ5R9m -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/hashable-1.2.4.0-EalUWgp8NarBYWPbvYAD8I -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/http-api-data-0.2.2-3kiLcpdXTUe4CYRpIoinpP -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/lifted-base-0.2.3.6-DoOvgrTvmEtENHs0ypaZTR -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/mmorph-1.0.6-42KUkOfzC6q3qCtAMiSHam -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/monad-control-1.0.1.0-7Tqv3C2ASZP4J7swGaIkqS -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/monad-logger-0.3.18-F14WoEERnInG1mlgWNKXjm -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/monad-loops-0.4.3-LQiHRUYhFhYBU7nOOWDOrb -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/mtl-2.2.1-Aue4leSeVkpKLsfHIV51E8 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/network-2.6.2.1-A6pE0dLgMEk2GtUa1JtTJQ -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/old-locale-1.0.0.7-7h2Gx6mVPJ5Gheca8j9Mpe -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/old-time-1.1.0.3-JVjJvknZJ0JKghfag2Jw2L -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/path-pieces-0.2.1-4qW9xznk5mC6aJZVVgmWEO -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/prett_JItwetRppk1H5Uq3xbjDGC -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/proce_52AgREEfSrnJLlkGV9YZZJ -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/random-1.1-9Kgekc9yEaLHLNUuw6paWL -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resource-pool-0.2.3.2-BPzNUl5kJsI1qo7V284Tgq -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/semigroups-0.18.1-IBlkGPjZsYWGswV1yLDA9m -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/silently-1.2.5-5nVdOe0bUXfLPEbxHJT4m4 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-2.4.4.1-EyxFXFfnfY05IrjGaqCxeD -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tagged-0.8.3-5cptKNCoGdxJM6eqqNERxD -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/templ_GJPvtLC64aA4c1Jl10o2qt -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/text-1.2.2.1-HmqVQnZSpjaC156ABqPhne -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/time_FTheb6LSxyX1UABIbBXRfn -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/time-locale-compat-0.1.1.1-Ciz7M1U3da73rRwCjRF3Np -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/trans_GZTjP9K5WFq01xC9BAGQpF -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/transformers-base-0.4.4-74WedXVmfaHHDJItmBRTVp -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/transformers-compat-0.4.0.4-HLoEtsQxMvo5lni62P8VpB -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/unix_KZL8h98IqDM57kQSPo1mKx -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/unix-time-0.3.6-4DXmhADld9WFju1Q636Hdx -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/unordered-containers-0.2.7.0-2BLx4faR35mFWLJj5xiBgm -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/vector-0.11.0.0-LmZ3LQW4ivu8MsQuVgukln -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/zlib-0.6.1.1-7LjT7TSHX8U3VTy3t378Vu -this-package-key persi_8Kr58OCuKea9qljzW88CQi -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id aeson-0.11.1.4-8d9201707f844872c5a25436ad19054d -package-id attoparsec-0.13.0.2-87ea637177cb911dc7b0c7a0dc7f6c7b -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id base64-bytestring-1.0.0.1-4aa13e7ac7c5b00cc0cd642708d4e148 -package-id blaze-html-0.8.1.1-37c265b12cef657151747f8792ac0bc4 -package-id blaze-markup-0.7.0.3-91d644114ace79079d1d727cc4658026 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id conduit-1.2.6.4-0efdbdac15e9b1f788715543fb78d26f -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id exceptions-0.8.2.1-08ed62d2282590eb80eba3e5c42a5f4e -package-id fast-logger-2.4.5-6d62016c37d9716c62949546a3edab07 -package-id http-api-data-0.2.2-ae4ce8ae5c18b2b9a825860e8b5b0a29 -package-id lifted-base-0.2.3.6-95d2e87a74e11a9ed06423bbb63b94ca -package-id monad-control-1.0.1.0-84c4bc4b17198076c8ec507b90de89c9 -package-id monad-logger-0.3.18-ff8a37cf7be26b37f7a03894caccb401 -package-id mtl-2.2.1-3af90341e75ee52dfc4e3143b4e5d219 -package-id old-locale-1.0.0.7-0db938eb141b01f4936a21aef6b843bf -package-id path-pieces-0.2.1-4a94c2c5f218271ea8c9d04d2daef5c5 -package-id resource-pool-0.2.3.2-c81e154dbc2b3662c1e6fcf6e9cb61cd -package-id resourcet-1.1.7.3-a37298a932226b35141df25d5ba85b7c -package-id scientific-0.3.4.6-02cfa837bc89b2d53be4760679816289 -package-id silently-1.2.5-6428d724564bb12923a8af3367134785 -package-id tagged-0.8.3-21c7d9e94c80e78986722ec9a3df67cf -package-id template-haskell-2.10.0.0-3c4cb52230f347282af9b2817f013181 -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id transformers-base-0.4.4-19dc155e74aa624600f63b02f5f0b424 -package-id unordered-containers-0.2.7.0-fd1fc5881b5267f169202fbad1787983 -package-id vector-0.11.0.0-299aefb173ce5a731565d31f609a0cfd .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Quasi.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Types.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Util.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Types/Base.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/DeleteCascade.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistEntity.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistQuery.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistUnique.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistConfig.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistField.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistStore.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Migration.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Internal.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Types.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Raw.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Run.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Class.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Orphan/PersistQuery.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Orphan/PersistStore.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Orphan/PersistUnique.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSpersistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering persistent-2.2.4.1...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/persistent
+does exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/persistent-2.2.4.1
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/persistent-2.2.4.1/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Types
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Class
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Orphan
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Quasi.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Quasi.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Types.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Types.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Class.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Util.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Util.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Types/Base.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Types/Base.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/DeleteCascade.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Class/DeleteCascade.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistEntity.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Class/PersistEntity.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistQuery.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Class/PersistQuery.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistUnique.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Class/PersistUnique.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistConfig.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Class/PersistConfig.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistField.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Class/PersistField.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistStore.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Class/PersistStore.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Migration.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Migration.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Internal.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Internal.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Types.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Types.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Raw.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Raw.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Run.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Run.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Class.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Class.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Orphan/PersistQuery.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Orphan/PersistQuery.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Orphan/PersistStore.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Orphan/PersistStore.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Orphan/PersistUnique.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Orphan/PersistUnique.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Types
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Class
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Orphan
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Quasi.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Quasi.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Types.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Types.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Class.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Util.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Util.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Types/Base.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Types/Base.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/DeleteCascade.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Class/DeleteCascade.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistEntity.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Class/PersistEntity.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistQuery.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Class/PersistQuery.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistUnique.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Class/PersistUnique.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistConfig.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Class/PersistConfig.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistField.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Class/PersistField.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Class/PersistStore.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Class/PersistStore.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Migration.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Migration.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Internal.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Internal.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Types.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Types.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Raw.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Raw.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Run.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Run.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Class.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Class.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Orphan/PersistQuery.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Orphan/PersistQuery.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Orphan/PersistStore.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Orphan/PersistStore.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/Sql/Orphan/PersistUnique.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/Database/Persist/Sql/Orphan/PersistUnique.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSpersistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/libHSpersistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSpersistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSpersistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi/libHSpersistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key persi_8Kr58OCuKea9qljzW88CQi -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-id aeson-0.11.1.4-8d9201707f844872c5a25436ad19054d -package-id attoparsec-0.13.0.2-87ea637177cb911dc7b0c7a0dc7f6c7b -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id base64-bytestring-1.0.0.1-4aa13e7ac7c5b00cc0cd642708d4e148 -package-id blaze-html-0.8.1.1-37c265b12cef657151747f8792ac0bc4 -package-id blaze-markup-0.7.0.3-91d644114ace79079d1d727cc4658026 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id conduit-1.2.6.4-0efdbdac15e9b1f788715543fb78d26f -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id exceptions-0.8.2.1-08ed62d2282590eb80eba3e5c42a5f4e -package-id fast-logger-2.4.5-6d62016c37d9716c62949546a3edab07 -package-id http-api-data-0.2.2-ae4ce8ae5c18b2b9a825860e8b5b0a29 -package-id lifted-base-0.2.3.6-95d2e87a74e11a9ed06423bbb63b94ca -package-id monad-control-1.0.1.0-84c4bc4b17198076c8ec507b90de89c9 -package-id monad-logger-0.3.18-ff8a37cf7be26b37f7a03894caccb401 -package-id mtl-2.2.1-3af90341e75ee52dfc4e3143b4e5d219 -package-id old-locale-1.0.0.7-0db938eb141b01f4936a21aef6b843bf -package-id path-pieces-0.2.1-4a94c2c5f218271ea8c9d04d2daef5c5 -package-id resource-pool-0.2.3.2-c81e154dbc2b3662c1e6fcf6e9cb61cd -package-id resourcet-1.1.7.3-a37298a932226b35141df25d5ba85b7c -package-id scientific-0.3.4.6-02cfa837bc89b2d53be4760679816289 -package-id silently-1.2.5-6428d724564bb12923a8af3367134785 -package-id tagged-0.8.3-21c7d9e94c80e78986722ec9a3df67cf -package-id template-haskell-2.10.0.0-3c4cb52230f347282af9b2817f013181 -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id transformers-base-0.4.4-19dc155e74aa624600f63b02f5f0b424 -package-id unordered-containers-0.2.7.0-fd1fc5881b5267f169202fbad1787983 -package-id vector-0.11.0.0-299aefb173ce5a731565d31f609a0cfd -XHaskell98 Database.Persist Database.Persist.Quasi Database.Persist.Types Database.Persist.Class Database.Persist.Sql Database.Persist.Sql.Util -Wall
+Registering persistent-2.2.4.1...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb'

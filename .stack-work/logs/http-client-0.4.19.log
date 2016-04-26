@@ -1,0 +1,311 @@
+Configuring http-client-0.4.19...
+Flags chosen: network-uri=True
+Dependency array ==0.5.0.0: using array-0.5.0.0
+Dependency base ==4.7.0.2: using base-4.7.0.2
+Dependency base64-bytestring ==1.0.0.1: using base64-bytestring-1.0.0.1
+Dependency blaze-builder ==0.4.0.1: using blaze-builder-0.4.0.1
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency case-insensitive ==1.2.0.4: using case-insensitive-1.2.0.4
+Dependency containers ==0.5.6.3: using containers-0.5.6.3
+Dependency cookie ==0.4.1.6: using cookie-0.4.1.6
+Dependency data-default-class ==0.0.1: using data-default-class-0.0.1
+Dependency deepseq ==1.4.1.2: using deepseq-1.4.1.2
+Dependency exceptions ==0.8.0.2: using exceptions-0.8.0.2
+Dependency filepath ==1.3.0.2: using filepath-1.3.0.2
+Dependency ghc-prim ==0.3.1.0: using ghc-prim-0.3.1.0
+Dependency http-types ==0.8.6: using http-types-0.8.6
+Dependency mime-types ==0.1.0.6: using mime-types-0.1.0.6
+Dependency network ==2.6.2.1: using network-2.6.2.1
+Dependency network-uri ==2.6.0.3: using network-uri-2.6.0.3
+Dependency random ==1.1: using random-1.1
+Dependency streaming-commons ==0.1.12.1: using streaming-commons-0.1.12.1
+Dependency text ==1.2.0.6: using text-1.2.0.6
+Dependency time ==1.5.0.1: using time-1.5.0.1
+Dependency transformers ==0.3.0.0: using transformers-0.3.0.0
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+Using Cabal-1.18.1.5 compiled by ghc-7.8
+Using compiler: ghc-7.8.4
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/bin
+Libraries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19
+Private binaries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/libexec
+Data files installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/share/x86_64-linux-ghc-7.8.4/http-client-0.4.19
+Documentation installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/http-client-0.4.19
+Configuration files installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+No ffihugs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.8.4 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc
+Using ghc-pkg version 7.8.4 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg
+No greencard found
+Using haddock version 2.14.3 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/haddock
+No happy found
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No hugs found
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+No nhc98 found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using ranlib found on system at: /usr/bin/ranlib
+Using strip found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen
+Building http-client-0.4.19...
+Preprocessing library http-client-0.4.19...
+Building library...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i. -ipublicsuffixlist -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -package-name http-client-0.4.19 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id array-0.5.0.0-470385a50d2b78598af85cfe9d988e1b -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id base64-bytestring-1.0.0.1-43dbab7ae80e327d31adce2f976967cd -package-id blaze-builder-0.4.0.1-7e2801cb38c458a8ac0607b8484050de -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id case-insensitive-1.2.0.4-9b69c75082621c9475937fd081bca731 -package-id containers-0.5.6.3-5c4ab37ffe45c92c77b7280093039034 -package-id cookie-0.4.1.6-8e30f0b773a5b755498bb13b0cc4efba -package-id data-default-class-0.0.1-c90f2361289c9de494da7845c67d72e1 -package-id deepseq-1.4.1.2-9c441ff2589d83e11855d1ecf085892c -package-id exceptions-0.8.0.2-e1fa5f37d8c411aae7571d672d32d85b -package-id filepath-1.3.0.2-25a474a9272ae6260626ce0d70ad1cab -package-id ghc-prim-0.3.1.0-a24f9c14c632d75b683d0f93283aea37 -package-id http-types-0.8.6-be977986a7fd762b63d358663c166380 -package-id mime-types-0.1.0.6-6073ee5355fb45e1f937805ac57b6a52 -package-id network-2.6.2.1-2337f5b1121f4f052346bcfdc38ad4fc -package-id network-uri-2.6.0.3-efb8f5e87d002f6817d42f287a6a4400 -package-id random-1.1-6aaa78ca56808f6264069b1c5dec4df5 -package-id streaming-commons-0.1.12.1-f80babd10f5f1ce6f481afbf31c7d5f6 -package-id text-1.2.0.6-70c8ca36fc88551c14d04680329a8148 -package-id time-1.5.0.1-92941a4fbe0dfe591e36ee9c5148b51e -package-id transformers-0.3.0.0-6458c21515cab7c1cf21e53141557a1c -XHaskell2010 Network.HTTP.Client Network.HTTP.Client.MultipartFormData Network.HTTP.Client.Internal Network.HTTP.Client.Body Network.HTTP.Client.Connection Network.HTTP.Client.Cookies Network.HTTP.Client.Core Network.HTTP.Client.Headers Network.HTTP.Client.Manager Network.HTTP.Client.Request Network.HTTP.Client.Response Network.HTTP.Client.Types Network.HTTP.Client.Util Network.PublicSuffixList.Lookup Network.PublicSuffixList.Types Network.PublicSuffixList.Serialize Network.PublicSuffixList.DataStructure -ddump-hi -ddump-to-file
+[ 1 of 17] Compiling Network.PublicSuffixList.Types ( publicsuffixlist/Network/PublicSuffixList/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/Types.o )
+[ 2 of 17] Compiling Network.PublicSuffixList.Serialize ( publicsuffixlist/Network/PublicSuffixList/Serialize.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/Serialize.o )
+
+publicsuffixlist/Network/PublicSuffixList/Serialize.hs:38:16: Warning:
+    In the use of ‘BS.breakByte’ (imported from Data.ByteString):
+    Deprecated: "It is an internal function and should never have been exported. Use 'break (== x)' instead. (There are rewrite rules that handle this special case of 'break'.)"
+[ 3 of 17] Compiling Network.PublicSuffixList.DataStructure ( publicsuffixlist/Network/PublicSuffixList/DataStructure.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/DataStructure.o )
+[ 4 of 17] Compiling Network.PublicSuffixList.Lookup ( publicsuffixlist/Network/PublicSuffixList/Lookup.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/Lookup.o )
+[ 5 of 17] Compiling Network.HTTP.Client.Util ( Network/HTTP/Client/Util.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Util.o )
+[ 6 of 17] Compiling Network.HTTP.Client.Types ( Network/HTTP/Client/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Types.o )
+[ 7 of 17] Compiling Network.HTTP.Client.Connection ( Network/HTTP/Client/Connection.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Connection.o )
+
+Network/HTTP/Client/Connection.hs:44:14: Warning:
+    In the use of ‘S.breakByte’ (imported from Data.ByteString):
+    Deprecated: "It is an internal function and should never have been exported. Use 'break (== x)' instead. (There are rewrite rules that handle this special case of 'break'.)"
+[ 8 of 17] Compiling Network.HTTP.Client.Headers ( Network/HTTP/Client/Headers.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Headers.o )
+
+Network/HTTP/Client/Headers.hs:64:26: Warning:
+    In the use of ‘S.breakByte’ (imported from Data.ByteString):
+    Deprecated: "It is an internal function and should never have been exported. Use 'break (== x)' instead. (There are rewrite rules that handle this special case of 'break'.)"
+
+Network/HTTP/Client/Headers.hs:65:27: Warning:
+    In the use of ‘S.breakByte’ (imported from Data.ByteString):
+    Deprecated: "It is an internal function and should never have been exported. Use 'break (== x)' instead. (There are rewrite rules that handle this special case of 'break'.)"
+
+Network/HTTP/Client/Headers.hs:76:40: Warning:
+    In the use of ‘S.breakByte’ (imported from Data.ByteString):
+    Deprecated: "It is an internal function and should never have been exported. Use 'break (== x)' instead. (There are rewrite rules that handle this special case of 'break'.)"
+
+Network/HTTP/Client/Headers.hs:95:26: Warning:
+    In the use of ‘S.breakByte’ (imported from Data.ByteString):
+    Deprecated: "It is an internal function and should never have been exported. Use 'break (== x)' instead. (There are rewrite rules that handle this special case of 'break'.)"
+[ 9 of 17] Compiling Network.HTTP.Client.Request ( Network/HTTP/Client/Request.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Request.o )
+[10 of 17] Compiling Network.HTTP.Client.Manager ( Network/HTTP/Client/Manager.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Manager.o )
+[11 of 17] Compiling Network.HTTP.Client.Body ( Network/HTTP/Client/Body.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Body.o )
+[12 of 17] Compiling Network.HTTP.Client.Response ( Network/HTTP/Client/Response.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Response.o )
+[13 of 17] Compiling Network.HTTP.Client.Cookies ( Network/HTTP/Client/Cookies.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Cookies.o )
+
+Network/HTTP/Client/Cookies.hs:50:19: Warning:
+    In the use of ‘BS.breakByte’ (imported from Data.ByteString):
+    Deprecated: "It is an internal function and should never have been exported. Use 'break (== x)' instead. (There are rewrite rules that handle this special case of 'break'.)"
+[14 of 17] Compiling Network.HTTP.Client.Core ( Network/HTTP/Client/Core.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Core.o )
+[15 of 17] Compiling Network.HTTP.Client.Internal ( Network/HTTP/Client/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Internal.o )
+[16 of 17] Compiling Network.HTTP.Client ( Network/HTTP/Client.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client.o )
+[17 of 17] Compiling Network.HTTP.Client.MultipartFormData ( Network/HTTP/Client/MultipartFormData.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/MultipartFormData.o )
+Linking...
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHShttp-client-0.4.19.a .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/MultipartFormData.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Internal.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Body.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Connection.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Cookies.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Core.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Headers.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Manager.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Request.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Response.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Types.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Util.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/Lookup.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/Types.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/Serialize.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/DataStructure.o
+/usr/bin/ar: creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHShttp-client-0.4.19.a
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc -shared -dynamic -package-name http-client-0.4.19 -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id array-0.5.0.0-470385a50d2b78598af85cfe9d988e1b -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id base64-bytestring-1.0.0.1-43dbab7ae80e327d31adce2f976967cd -package-id blaze-builder-0.4.0.1-7e2801cb38c458a8ac0607b8484050de -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id case-insensitive-1.2.0.4-9b69c75082621c9475937fd081bca731 -package-id containers-0.5.6.3-5c4ab37ffe45c92c77b7280093039034 -package-id cookie-0.4.1.6-8e30f0b773a5b755498bb13b0cc4efba -package-id data-default-class-0.0.1-c90f2361289c9de494da7845c67d72e1 -package-id deepseq-1.4.1.2-9c441ff2589d83e11855d1ecf085892c -package-id exceptions-0.8.0.2-e1fa5f37d8c411aae7571d672d32d85b -package-id filepath-1.3.0.2-25a474a9272ae6260626ce0d70ad1cab -package-id ghc-prim-0.3.1.0-a24f9c14c632d75b683d0f93283aea37 -package-id http-types-0.8.6-be977986a7fd762b63d358663c166380 -package-id mime-types-0.1.0.6-6073ee5355fb45e1f937805ac57b6a52 -package-id network-2.6.2.1-2337f5b1121f4f052346bcfdc38ad4fc -package-id network-uri-2.6.0.3-efb8f5e87d002f6817d42f287a6a4400 -package-id random-1.1-6aaa78ca56808f6264069b1c5dec4df5 -package-id streaming-commons-0.1.12.1-f80babd10f5f1ce6f481afbf31c7d5f6 -package-id text-1.2.0.6-70c8ca36fc88551c14d04680329a8148 -package-id time-1.5.0.1-92941a4fbe0dfe591e36ee9c5148b51e -package-id transformers-0.3.0.0-6458c21515cab7c1cf21e53141557a1c .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/MultipartFormData.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Internal.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Body.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Connection.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Cookies.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Core.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Headers.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Manager.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Request.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Response.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Types.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Util.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/Lookup.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/Types.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/Serialize.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/DataStructure.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHShttp-client-0.4.19-ghc7.8.4.so -ddump-hi -ddump-to-file
+In-place registering http-client-0.4.19...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/doc/html/http-client
+does exist: False
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/http-client-0.4.19
+Installing LICENSE to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/http-client-0.4.19/LICENSE
+Installing library in
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/PublicSuffixList
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/MultipartFormData.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/MultipartFormData.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Internal.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Internal.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Body.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Body.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Connection.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Connection.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Cookies.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Cookies.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Core.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Core.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Headers.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Headers.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Manager.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Manager.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Request.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Request.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Response.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Response.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Types.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Types.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Util.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Util.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/Lookup.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/PublicSuffixList/Lookup.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/Types.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/PublicSuffixList/Types.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/Serialize.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/PublicSuffixList/Serialize.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/DataStructure.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/PublicSuffixList/DataStructure.hi
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/PublicSuffixList
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/MultipartFormData.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/MultipartFormData.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Internal.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Internal.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Body.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Body.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Connection.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Connection.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Cookies.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Cookies.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Core.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Core.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Headers.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Headers.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Manager.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Manager.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Request.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Request.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Response.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Response.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Types.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Types.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Util.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/HTTP/Client/Util.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/Lookup.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/PublicSuffixList/Lookup.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/Types.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/PublicSuffixList/Types.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/Serialize.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/PublicSuffixList/Serialize.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/PublicSuffixList/DataStructure.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/Network/PublicSuffixList/DataStructure.dyn_hi
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHShttp-client-0.4.19.a
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/libHShttp-client-0.4.19.a
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHShttp-client-0.4.19-ghc7.8.4.so
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-client-0.4.19/libHShttp-client-0.4.19-ghc7.8.4.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i. -ipublicsuffixlist -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -package-name http-client-0.4.19 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-id array-0.5.0.0-470385a50d2b78598af85cfe9d988e1b -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id base64-bytestring-1.0.0.1-43dbab7ae80e327d31adce2f976967cd -package-id blaze-builder-0.4.0.1-7e2801cb38c458a8ac0607b8484050de -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id case-insensitive-1.2.0.4-9b69c75082621c9475937fd081bca731 -package-id containers-0.5.6.3-5c4ab37ffe45c92c77b7280093039034 -package-id cookie-0.4.1.6-8e30f0b773a5b755498bb13b0cc4efba -package-id data-default-class-0.0.1-c90f2361289c9de494da7845c67d72e1 -package-id deepseq-1.4.1.2-9c441ff2589d83e11855d1ecf085892c -package-id exceptions-0.8.0.2-e1fa5f37d8c411aae7571d672d32d85b -package-id filepath-1.3.0.2-25a474a9272ae6260626ce0d70ad1cab -package-id ghc-prim-0.3.1.0-a24f9c14c632d75b683d0f93283aea37 -package-id http-types-0.8.6-be977986a7fd762b63d358663c166380 -package-id mime-types-0.1.0.6-6073ee5355fb45e1f937805ac57b6a52 -package-id network-2.6.2.1-2337f5b1121f4f052346bcfdc38ad4fc -package-id network-uri-2.6.0.3-efb8f5e87d002f6817d42f287a6a4400 -package-id random-1.1-6aaa78ca56808f6264069b1c5dec4df5 -package-id streaming-commons-0.1.12.1-f80babd10f5f1ce6f481afbf31c7d5f6 -package-id text-1.2.0.6-70c8ca36fc88551c14d04680329a8148 -package-id time-1.5.0.1-92941a4fbe0dfe591e36ee9c5148b51e -package-id transformers-0.3.0.0-6458c21515cab7c1cf21e53141557a1c -XHaskell2010 Network.HTTP.Client Network.HTTP.Client.MultipartFormData Network.HTTP.Client.Internal
+Registering http-client-0.4.19...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb'

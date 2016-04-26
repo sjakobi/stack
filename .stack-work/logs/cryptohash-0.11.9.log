@@ -1,0 +1,312 @@
+Configuring cryptohash-0.11.9...
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency byteable ==0.1.1: using byteable-0.1.1
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency cryptonite ==0.15: using cryptonite-0.15
+Dependency ghc-prim ==0.4.0.0: using ghc-prim-0.4.0.0
+Dependency memory ==0.12: using memory-0.12
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/share/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/cryptohash-0.11.9
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building cryptohash-0.11.9...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library cryptohash-0.11.9...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Icbits -optP-DARCH_X86 -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key crypt_E50adij9XxwLSq9g8Uixjd -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id byteable-0.1.1-38069d1c3de6139ffc8d1d1e85b91030 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id cryptonite-0.15-1087fb2398b5862d8439615b1c821afa -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id memory-0.12-6bfffce6fa802a5cd1a427fae9928852 -XHaskell98 -XForeignFunctionInterface -XTrustworthy Crypto.Hash Crypto.Hash.Types Crypto.MAC Crypto.Hash.SHA1 Crypto.Hash.SHA224 Crypto.Hash.SHA256 Crypto.Hash.SHA384 Crypto.Hash.SHA512 Crypto.Hash.SHA512t Crypto.Hash.SHA3 Crypto.Hash.MD2 Crypto.Hash.MD4 Crypto.Hash.MD5 Crypto.Hash.RIPEMD160 Crypto.Hash.Skein256 Crypto.Hash.Skein512 Crypto.Hash.Tiger Crypto.Hash.Whirlpool Crypto.MAC.HMAC Crypto.MAC.SHA3 Crypto.Hash.Internal -Wall -optc-O3 -fno-cse -fwarn-tabs -ddump-hi -ddump-to-file
+[ 1 of 21] Compiling Crypto.MAC.HMAC  ( Crypto/MAC/HMAC.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/MAC/HMAC.o )
+
+on the commandline: Warning:
+    ‘Crypto.MAC.HMAC’ is marked as Trustworthy but has been inferred as safe!
+[ 2 of 21] Compiling Crypto.Hash.Internal ( Crypto/Hash/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Internal.o )
+[ 3 of 21] Compiling Crypto.Hash.SHA224 ( Crypto/Hash/SHA224.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA224.o )
+[ 4 of 21] Compiling Crypto.Hash.SHA256 ( Crypto/Hash/SHA256.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA256.o )
+[ 5 of 21] Compiling Crypto.Hash.SHA384 ( Crypto/Hash/SHA384.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA384.o )
+[ 6 of 21] Compiling Crypto.Hash.SHA512 ( Crypto/Hash/SHA512.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA512.o )
+
+Crypto/Hash/SHA512.hs:51:11: Warning:
+    Rule "digestSize" may never fire
+      because ‘B.length’ might inline first
+    Probable fix: add an INLINE[n] or NOINLINE[n] pragma on ‘B.length’
+[ 7 of 21] Compiling Crypto.Hash.SHA512t ( Crypto/Hash/SHA512t.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA512t.o )
+
+on the commandline: Warning:
+    ‘Crypto.Hash.SHA512t’ is marked as Trustworthy but has been inferred as safe!
+[ 8 of 21] Compiling Crypto.Hash.SHA3 ( Crypto/Hash/SHA3.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA3.o )
+[ 9 of 21] Compiling Crypto.Hash.MD2  ( Crypto/Hash/MD2.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/MD2.o )
+[10 of 21] Compiling Crypto.Hash.MD4  ( Crypto/Hash/MD4.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/MD4.o )
+[11 of 21] Compiling Crypto.Hash.MD5  ( Crypto/Hash/MD5.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/MD5.o )
+[12 of 21] Compiling Crypto.Hash.RIPEMD160 ( Crypto/Hash/RIPEMD160.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/RIPEMD160.o )
+[13 of 21] Compiling Crypto.Hash.Skein256 ( Crypto/Hash/Skein256.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Skein256.o )
+[14 of 21] Compiling Crypto.Hash.Skein512 ( Crypto/Hash/Skein512.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Skein512.o )
+[15 of 21] Compiling Crypto.Hash.Tiger ( Crypto/Hash/Tiger.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Tiger.o )
+[16 of 21] Compiling Crypto.Hash.Whirlpool ( Crypto/Hash/Whirlpool.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Whirlpool.o )
+[17 of 21] Compiling Crypto.Hash.SHA1 ( Crypto/Hash/SHA1.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA1.o )
+[18 of 21] Compiling Crypto.Hash.Types ( Crypto/Hash/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Types.o )
+[19 of 21] Compiling Crypto.Hash      ( Crypto/Hash.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash.o )
+[20 of 21] Compiling Crypto.MAC       ( Crypto/MAC.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/MAC.o )
+[21 of 21] Compiling Crypto.MAC.SHA3  ( Crypto/MAC/SHA3.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/MAC/SHA3.o )
+Building C Sources...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -c -fPIC -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Icbits -optc-O2 -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id byteable-0.1.1-38069d1c3de6139ffc8d1d1e85b91030 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id cryptonite-0.15-1087fb2398b5862d8439615b1c821afa -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id memory-0.12-6bfffce6fa802a5cd1a427fae9928852 cbits/sha512.c -ddump-hi -ddump-to-file
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -c -dynamic -fPIC -osuf dyn_o -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Icbits -optc-O2 -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id byteable-0.1.1-38069d1c3de6139ffc8d1d1e85b91030 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id cryptonite-0.15-1087fb2398b5862d8439615b1c821afa -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id memory-0.12-6bfffce6fa802a5cd1a427fae9928852 cbits/sha512.c -ddump-hi -ddump-to-file
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -c -fPIC -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Icbits -optc-O2 -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id byteable-0.1.1-38069d1c3de6139ffc8d1d1e85b91030 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id cryptonite-0.15-1087fb2398b5862d8439615b1c821afa -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id memory-0.12-6bfffce6fa802a5cd1a427fae9928852 cbits/sha3.c -ddump-hi -ddump-to-file
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -c -dynamic -fPIC -osuf dyn_o -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Icbits -optc-O2 -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id byteable-0.1.1-38069d1c3de6139ffc8d1d1e85b91030 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id cryptonite-0.15-1087fb2398b5862d8439615b1c821afa -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id memory-0.12-6bfffce6fa802a5cd1a427fae9928852 cbits/sha3.c -ddump-hi -ddump-to-file
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -c -fPIC -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Icbits -optc-O2 -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id byteable-0.1.1-38069d1c3de6139ffc8d1d1e85b91030 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id cryptonite-0.15-1087fb2398b5862d8439615b1c821afa -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id memory-0.12-6bfffce6fa802a5cd1a427fae9928852 cbits/skein256.c -ddump-hi -ddump-to-file
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -c -dynamic -fPIC -osuf dyn_o -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Icbits -optc-O2 -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id byteable-0.1.1-38069d1c3de6139ffc8d1d1e85b91030 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id cryptonite-0.15-1087fb2398b5862d8439615b1c821afa -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id memory-0.12-6bfffce6fa802a5cd1a427fae9928852 cbits/skein256.c -ddump-hi -ddump-to-file
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -c -fPIC -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Icbits -optc-O2 -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id byteable-0.1.1-38069d1c3de6139ffc8d1d1e85b91030 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id cryptonite-0.15-1087fb2398b5862d8439615b1c821afa -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id memory-0.12-6bfffce6fa802a5cd1a427fae9928852 cbits/skein512.c -ddump-hi -ddump-to-file
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -c -dynamic -fPIC -osuf dyn_o -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Icbits -optc-O2 -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id byteable-0.1.1-38069d1c3de6139ffc8d1d1e85b91030 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id cryptonite-0.15-1087fb2398b5862d8439615b1c821afa -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id memory-0.12-6bfffce6fa802a5cd1a427fae9928852 cbits/skein512.c -ddump-hi -ddump-to-file
+Linking...
+[(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"byteable-0.1.1-38069d1c3de6139ffc8d1d1e85b91030",PackageIdentifier {pkgName =
+PackageName {unPackageName = "byteable"}, pkgVersion = Version {versionBranch
+= [0,1,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437",PackageIdentifier
+{pkgName = PackageName {unPackageName = "bytestring"}, pkgVersion = Version
+{versionBranch = [0,10,6,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"cryptonite-0.15-1087fb2398b5862d8439615b1c821afa",PackageIdentifier {pkgName
+= PackageName {unPackageName = "cryptonite"}, pkgVersion = Version
+{versionBranch = [0,15], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e",PackageIdentifier {pkgName
+= PackageName {unPackageName = "ghc-prim"}, pkgVersion = Version
+{versionBranch = [0,4,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"memory-0.12-6bfffce6fa802a5cd1a427fae9928852",PackageIdentifier {pkgName =
+PackageName {unPackageName = "memory"}, pkgVersion = Version {versionBranch =
+[0,12], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-27023/libHScryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Types.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/MAC.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA1.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA224.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA256.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA384.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA512.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA512t.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA3.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/MD2.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/MD4.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/MD5.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/RIPEMD160.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Skein256.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Skein512.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Tiger.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Whirlpool.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/MAC/HMAC.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/MAC/SHA3.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Internal.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/cbits/sha512.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/cbits/sha3.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/cbits/skein256.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/cbits/skein512.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-27023/libHScryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-27023/libHScryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/byteable-0.1.1-38yjJsjDRm9KusCn8Yo4aB -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptonite-0.15-CcjcowokjyFJ3PzxfpgObb -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/memory-0.12-Ax7qupEQgxCDhyhN5xpnFa -this-package-key crypt_E50adij9XxwLSq9g8Uixjd -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id byteable-0.1.1-38069d1c3de6139ffc8d1d1e85b91030 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id cryptonite-0.15-1087fb2398b5862d8439615b1c821afa -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id memory-0.12-6bfffce6fa802a5cd1a427fae9928852 .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Types.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/MAC.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA1.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA224.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA256.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA384.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA512.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA512t.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA3.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/MD2.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/MD4.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/MD5.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/RIPEMD160.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Skein256.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Skein512.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Tiger.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Whirlpool.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/MAC/HMAC.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/MAC/SHA3.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Internal.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/cbits/sha512.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/cbits/sha3.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/cbits/skein256.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/cbits/skein512.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHScryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering cryptohash-0.11.9...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/cryptohash
+does exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/cryptohash-0.11.9
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/cryptohash-0.11.9/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/MAC
+Installing .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Types.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/Types.hi
+Installing .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/MAC.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/MAC.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA1.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/SHA1.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA224.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/SHA224.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA256.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/SHA256.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA384.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/SHA384.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA512.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/SHA512.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA512t.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/SHA512t.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA3.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/SHA3.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/MD2.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/MD2.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/MD4.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/MD4.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/MD5.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/MD5.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/RIPEMD160.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/RIPEMD160.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Skein256.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/Skein256.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Skein512.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/Skein512.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Tiger.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/Tiger.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Whirlpool.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/Whirlpool.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/MAC/HMAC.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/MAC/HMAC.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/MAC/SHA3.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/MAC/SHA3.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Internal.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/Internal.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/MAC
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Types.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/Types.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/MAC.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/MAC.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA1.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/SHA1.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA224.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/SHA224.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA256.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/SHA256.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA384.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/SHA384.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA512.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/SHA512.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA512t.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/SHA512t.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/SHA3.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/SHA3.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/MD2.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/MD2.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/MD4.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/MD4.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/MD5.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/MD5.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/RIPEMD160.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/RIPEMD160.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Skein256.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/Skein256.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Skein512.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/Skein512.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Tiger.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/Tiger.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Whirlpool.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/Whirlpool.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/MAC/HMAC.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/MAC/HMAC.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/MAC/SHA3.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/MAC/SHA3.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Crypto/Hash/Internal.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/Crypto/Hash/Internal.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHScryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/libHScryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHScryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHScryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/cryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd/libHScryptohash-0.11.9-E50adij9XxwLSq9g8Uixjd-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -Icbits -optP-DARCH_X86 -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key crypt_E50adij9XxwLSq9g8Uixjd -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id byteable-0.1.1-38069d1c3de6139ffc8d1d1e85b91030 -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id cryptonite-0.15-1087fb2398b5862d8439615b1c821afa -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id memory-0.12-6bfffce6fa802a5cd1a427fae9928852 -XHaskell98 -XForeignFunctionInterface -XTrustworthy Crypto.Hash Crypto.Hash.Types Crypto.MAC Crypto.Hash.SHA1 Crypto.Hash.SHA224 Crypto.Hash.SHA256 Crypto.Hash.SHA384 Crypto.Hash.SHA512 Crypto.Hash.SHA512t Crypto.Hash.SHA3 Crypto.Hash.MD2 Crypto.Hash.MD4 Crypto.Hash.MD5 Crypto.Hash.RIPEMD160 Crypto.Hash.Skein256 Crypto.Hash.Skein512 Crypto.Hash.Tiger Crypto.Hash.Whirlpool Crypto.MAC.HMAC Crypto.MAC.SHA3 -Wall -optc-O3 -fno-cse -fwarn-tabs
+Registering cryptohash-0.11.9...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb'

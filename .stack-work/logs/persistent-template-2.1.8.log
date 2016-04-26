@@ -1,0 +1,209 @@
+Configuring persistent-template-2.1.8...
+Dependency aeson ==0.11.1.4: using aeson-0.11.1.4
+Dependency aeson-compat ==0.3.2.0: using aeson-compat-0.3.2.0
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency containers ==0.5.6.2: using containers-0.5.6.2
+Dependency ghc-prim ==0.4.0.0: using ghc-prim-0.4.0.0
+Dependency http-api-data ==0.2.2: using http-api-data-0.2.2
+Dependency monad-control ==1.0.1.0: using monad-control-1.0.1.0
+Dependency monad-logger ==0.3.18: using monad-logger-0.3.18
+Dependency path-pieces ==0.2.1: using path-pieces-0.2.1
+Dependency persistent ==2.2.4.1: using persistent-2.2.4.1
+Dependency tagged ==0.8.3: using tagged-0.8.3
+Dependency template-haskell ==2.10.0.0: using template-haskell-2.10.0.0
+Dependency text ==1.2.2.1: using text-1.2.2.1
+Dependency transformers ==0.4.2.0: using transformers-0.4.2.0
+Dependency unordered-containers ==0.2.7.0: using unordered-containers-0.2.7.0
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/share/x86_64-linux-ghc-7.10.3/persistent-template-2.1.8
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/persistent-template-2.1.8
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building persistent-template-2.1.8...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library persistent-template-2.1.8...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-DGHC_7_4 -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key persi_DjlEM8sOyCfJqenhM6WcfB -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id aeson-0.11.1.4-8d9201707f844872c5a25436ad19054d -package-id aeson-compat-0.3.2.0-a66ba3cbda697afb0e497e80e7e645d4 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id http-api-data-0.2.2-ae4ce8ae5c18b2b9a825860e8b5b0a29 -package-id monad-control-1.0.1.0-84c4bc4b17198076c8ec507b90de89c9 -package-id monad-logger-0.3.18-ff8a37cf7be26b37f7a03894caccb401 -package-id path-pieces-0.2.1-4a94c2c5f218271ea8c9d04d2daef5c5 -package-id persistent-2.2.4.1-6d4906d0628c7c47f37b708000e62972 -package-id tagged-0.8.3-21c7d9e94c80e78986722ec9a3df67cf -package-id template-haskell-2.10.0.0-3c4cb52230f347282af9b2817f013181 -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id unordered-containers-0.2.7.0-fd1fc5881b5267f169202fbad1787983 -XHaskell98 Database.Persist.TH -Wall -ddump-hi -ddump-to-file
+
+Database/Persist/TH.hs:12:14: Warning:
+    -XOverlappingInstances is deprecated: instead use per-instance pragmas OVERLAPPING/OVERLAPPABLE/OVERLAPS
+[1 of 1] Compiling Database.Persist.TH ( Database/Persist/TH.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/TH.o )
+
+Database/Persist/TH.hs:66:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+
+Database/Persist/TH.hs:75:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+Database/Persist/TH.hs:79:1: Warning:
+    The import of ‘parseUrlPieceMaybe’
+    from module ‘Web.HttpApiData’ is redundant
+
+Database/Persist/TH.hs:240:26: Warning: Defined but not used: ‘x’
+
+Database/Persist/TH.hs:272:22: Warning:
+    This binding for ‘ent’ shadows the existing binding
+      bound at Database/Persist/TH.hs:252:41
+Linking...
+[(InstalledPackageId
+"aeson-0.11.1.4-8d9201707f844872c5a25436ad19054d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "aeson"}, pkgVersion = Version {versionBranch =
+[0,11,1,4], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"aeson-compat-0.3.2.0-a66ba3cbda697afb0e497e80e7e645d4",PackageIdentifier
+{pkgName = PackageName {unPackageName = "aeson-compat"}, pkgVersion = Version
+{versionBranch = [0,3,2,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437",PackageIdentifier
+{pkgName = PackageName {unPackageName = "bytestring"}, pkgVersion = Version
+{versionBranch = [0,10,6,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592",PackageIdentifier
+{pkgName = PackageName {unPackageName = "containers"}, pkgVersion = Version
+{versionBranch = [0,5,6,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e",PackageIdentifier {pkgName
+= PackageName {unPackageName = "ghc-prim"}, pkgVersion = Version
+{versionBranch = [0,4,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"http-api-data-0.2.2-ae4ce8ae5c18b2b9a825860e8b5b0a29",PackageIdentifier
+{pkgName = PackageName {unPackageName = "http-api-data"}, pkgVersion = Version
+{versionBranch = [0,2,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"monad-control-1.0.1.0-84c4bc4b17198076c8ec507b90de89c9",PackageIdentifier
+{pkgName = PackageName {unPackageName = "monad-control"}, pkgVersion = Version
+{versionBranch = [1,0,1,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"monad-logger-0.3.18-ff8a37cf7be26b37f7a03894caccb401",PackageIdentifier
+{pkgName = PackageName {unPackageName = "monad-logger"}, pkgVersion = Version
+{versionBranch = [0,3,18], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"path-pieces-0.2.1-4a94c2c5f218271ea8c9d04d2daef5c5",PackageIdentifier
+{pkgName = PackageName {unPackageName = "path-pieces"}, pkgVersion = Version
+{versionBranch = [0,2,1], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"persistent-2.2.4.1-6d4906d0628c7c47f37b708000e62972",PackageIdentifier
+{pkgName = PackageName {unPackageName = "persistent"}, pkgVersion = Version
+{versionBranch = [2,2,4,1], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"tagged-0.8.3-21c7d9e94c80e78986722ec9a3df67cf",PackageIdentifier {pkgName =
+PackageName {unPackageName = "tagged"}, pkgVersion = Version {versionBranch =
+[0,8,3], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"template-haskell-2.10.0.0-3c4cb52230f347282af9b2817f013181",PackageIdentifier
+{pkgName = PackageName {unPackageName = "template-haskell"}, pkgVersion =
+Version {versionBranch = [2,10,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c",PackageIdentifier {pkgName =
+PackageName {unPackageName = "text"}, pkgVersion = Version {versionBranch =
+[1,2,2,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers"}, pkgVersion = Version
+{versionBranch = [0,4,2,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"unordered-containers-0.2.7.0-fd1fc5881b5267f169202fbad1787983",PackageIdentifier
+{pkgName = PackageName {unPackageName = "unordered-containers"}, pkgVersion =
+Version {versionBranch = [0,2,7,0], versionTags = []}},ModuleRenaming True
+[])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-3029/libHSpersistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/TH.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-3029/libHSpersistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-3029/libHSpersistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-0.11.1.4-7Kpihi3FCLhDsk0ZPNknzA -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/aeson-compat-0.3.2.0-L4bmnGC58I0Fq4NjCwW4IL -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/async-2.1.0-KuqnF1GrhHK5nNp6Zzm3jy -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/attoparsec-0.13.0.2-41FU8li3hiTHrQHazQNzh3 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/auto-update-0.1.3.1-JxODiy791X7A5hkNmGN2Ed -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-compat-0.9.1-3Zy8UsyHmBEEwbReR8x1KT -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/base64-bytestring-1.0.0.1-AkCk8zInckjJsyQ4AIFHPN -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/binar_3uXFWMoAGBg0xKP9MHKRwi -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-html-0.8.1.1-1fCoF4onMJE2jDLBViwynk -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-markup-0.7.0.3-JGtgJgx8yqB3DdKuU3sbgD -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/conduit-1.2.6.4-1EneW8yRsjj18l2EfcgLyu -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/conduit-extra-1.1.13.1-K5a53Tkcwf93kOHQXIVa9v -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/conta_2C3ZI8RgPO2LBMidXKTvIU -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/direc_0hFG6ZxK1nk4zsyOqbNHfm -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/dlist-0.7.1.2-AO7XAasbAeyL0XLKeq1Aui -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/exceptions-0.8.2.1-6lgwjdgwblY7rzh5s6SLd8 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fail-4.9.0.0-2xB1AvdW34sDm9N3JOe33G -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/fast-logger-2.4.5-7EbVwtKgfIp7Dz8DZ2fSbo -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/filep_Ey7a1in9roBAE8bUFJ5R9m -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/hashable-1.2.4.0-EalUWgp8NarBYWPbvYAD8I -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/http-api-data-0.2.2-3kiLcpdXTUe4CYRpIoinpP -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/lifted-base-0.2.3.6-DoOvgrTvmEtENHs0ypaZTR -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/mmorph-1.0.6-42KUkOfzC6q3qCtAMiSHam -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/monad-control-1.0.1.0-7Tqv3C2ASZP4J7swGaIkqS -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/monad-logger-0.3.18-F14WoEERnInG1mlgWNKXjm -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/monad-loops-0.4.3-LQiHRUYhFhYBU7nOOWDOrb -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/mtl-2.2.1-Aue4leSeVkpKLsfHIV51E8 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/network-2.6.2.1-A6pE0dLgMEk2GtUa1JtTJQ -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/old-locale-1.0.0.7-7h2Gx6mVPJ5Gheca8j9Mpe -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/old-time-1.1.0.3-JVjJvknZJ0JKghfag2Jw2L -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/path-pieces-0.2.1-4qW9xznk5mC6aJZVVgmWEO -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-2.2.4.1-8Kr58OCuKea9qljzW88CQi -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/prett_JItwetRppk1H5Uq3xbjDGC -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/primitive-0.6.1.0-EphY2c7CCxSCBKjAN0YTR3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/proce_52AgREEfSrnJLlkGV9YZZJ -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/random-1.1-9Kgekc9yEaLHLNUuw6paWL -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resource-pool-0.2.3.2-BPzNUl5kJsI1qo7V284Tgq -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/scientific-0.3.4.6-5s26qRhE5w04kI4pP1Rtwm -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/semigroups-0.18.1-IBlkGPjZsYWGswV1yLDA9m -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/silently-1.2.5-5nVdOe0bUXfLPEbxHJT4m4 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-2.4.4.1-EyxFXFfnfY05IrjGaqCxeD -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-chans-3.0.0.4-4ac5OLG4E0w1rpuIDCribD -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/streaming-commons-0.1.15.4-FDgjqa6CVPZ2zy4YbsUfKW -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/syb-0.6-4kccWaTe3QZLxAMQYKgEyE -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tagged-0.8.3-5cptKNCoGdxJM6eqqNERxD -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/templ_GJPvtLC64aA4c1Jl10o2qt -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/text-1.2.2.1-HmqVQnZSpjaC156ABqPhne -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/time_FTheb6LSxyX1UABIbBXRfn -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/time-locale-compat-0.1.1.1-Ciz7M1U3da73rRwCjRF3Np -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/trans_GZTjP9K5WFq01xC9BAGQpF -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/transformers-base-0.4.4-74WedXVmfaHHDJItmBRTVp -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/transformers-compat-0.4.0.4-HLoEtsQxMvo5lni62P8VpB -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/unix_KZL8h98IqDM57kQSPo1mKx -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/unix-time-0.3.6-4DXmhADld9WFju1Q636Hdx -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/unordered-containers-0.2.7.0-2BLx4faR35mFWLJj5xiBgm -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/vector-0.11.0.0-LmZ3LQW4ivu8MsQuVgukln -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/zlib-0.6.1.1-7LjT7TSHX8U3VTy3t378Vu -this-package-key persi_DjlEM8sOyCfJqenhM6WcfB -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id aeson-0.11.1.4-8d9201707f844872c5a25436ad19054d -package-id aeson-compat-0.3.2.0-a66ba3cbda697afb0e497e80e7e645d4 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id http-api-data-0.2.2-ae4ce8ae5c18b2b9a825860e8b5b0a29 -package-id monad-control-1.0.1.0-84c4bc4b17198076c8ec507b90de89c9 -package-id monad-logger-0.3.18-ff8a37cf7be26b37f7a03894caccb401 -package-id path-pieces-0.2.1-4a94c2c5f218271ea8c9d04d2daef5c5 -package-id persistent-2.2.4.1-6d4906d0628c7c47f37b708000e62972 -package-id tagged-0.8.3-21c7d9e94c80e78986722ec9a3df67cf -package-id template-haskell-2.10.0.0-3c4cb52230f347282af9b2817f013181 -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id unordered-containers-0.2.7.0-fd1fc5881b5267f169202fbad1787983 .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/TH.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSpersistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering persistent-template-2.1.8...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/persistent-template does
+exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/persistent-template-2.1.8
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/persistent-template-2.1.8/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB/Database/Persist
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB/Database
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB/Database
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB/Database/Persist
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/TH.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB/Database/Persist/TH.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB/Database/Persist
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Database/Persist/TH.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB/Database/Persist/TH.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSpersistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB/libHSpersistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSpersistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSpersistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/persistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB/libHSpersistent-template-2.1.8-DjlEM8sOyCfJqenhM6WcfB-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-DGHC_7_4 -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key persi_DjlEM8sOyCfJqenhM6WcfB -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-id aeson-0.11.1.4-8d9201707f844872c5a25436ad19054d -package-id aeson-compat-0.3.2.0-a66ba3cbda697afb0e497e80e7e645d4 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id ghc-prim-0.4.0.0-6cdc86811872333585fa98756aa7c51e -package-id http-api-data-0.2.2-ae4ce8ae5c18b2b9a825860e8b5b0a29 -package-id monad-control-1.0.1.0-84c4bc4b17198076c8ec507b90de89c9 -package-id monad-logger-0.3.18-ff8a37cf7be26b37f7a03894caccb401 -package-id path-pieces-0.2.1-4a94c2c5f218271ea8c9d04d2daef5c5 -package-id persistent-2.2.4.1-6d4906d0628c7c47f37b708000e62972 -package-id tagged-0.8.3-21c7d9e94c80e78986722ec9a3df67cf -package-id template-haskell-2.10.0.0-3c4cb52230f347282af9b2817f013181 -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id unordered-containers-0.2.7.0-fd1fc5881b5267f169202fbad1787983 -XHaskell98 Database.Persist.TH -Wall
+Registering persistent-template-2.1.8...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb'

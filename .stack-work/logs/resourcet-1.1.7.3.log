@@ -1,0 +1,279 @@
+Configuring resourcet-1.1.7.3...
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency containers ==0.5.6.2: using containers-0.5.6.2
+Dependency exceptions ==0.8.2.1: using exceptions-0.8.2.1
+Dependency lifted-base ==0.2.3.6: using lifted-base-0.2.3.6
+Dependency mmorph ==1.0.6: using mmorph-1.0.6
+Dependency monad-control ==1.0.1.0: using monad-control-1.0.1.0
+Dependency mtl ==2.2.1: using mtl-2.2.1
+Dependency transformers ==0.4.2.0: using transformers-0.4.2.0
+Dependency transformers-base ==0.4.4: using transformers-base-0.4.4
+Dependency transformers-compat ==0.4.0.4: using transformers-compat-0.4.0.4
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/share/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/resourcet-1.1.7.3
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building resourcet-1.1.7.3...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library resourcet-1.1.7.3...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key resou_0TYP6GHqv9b1qNv0xS98eJ -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id exceptions-0.8.2.1-08ed62d2282590eb80eba3e5c42a5f4e -package-id lifted-base-0.2.3.6-95d2e87a74e11a9ed06423bbb63b94ca -package-id mmorph-1.0.6-386e846816bebe869399594490a5807f -package-id monad-control-1.0.1.0-84c4bc4b17198076c8ec507b90de89c9 -package-id mtl-2.2.1-3af90341e75ee52dfc4e3143b4e5d219 -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id transformers-base-0.4.4-19dc155e74aa624600f63b02f5f0b424 -package-id transformers-compat-0.4.0.4-8aa4073730c676dbe210ea8bffd8d092 -XHaskell98 Control.Monad.Trans.Resource Control.Monad.Trans.Resource.Internal Data.Acquire Data.Acquire.Internal -Wall -ddump-hi -ddump-to-file
+[1 of 4] Compiling Data.Acquire.Internal ( Data/Acquire/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Acquire/Internal.o )
+
+Data/Acquire/Internal.hs:18:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[2 of 4] Compiling Control.Monad.Trans.Resource.Internal ( Control/Monad/Trans/Resource/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Trans/Resource/Internal.o )
+
+Control/Monad/Trans/Resource/Internal.hs:33:1: Warning:
+    The import of ‘Applicative’
+    from module ‘Control.Applicative’ is redundant
+
+Control/Monad/Trans/Resource/Internal.hs:49:1: Warning:
+    Module ‘Control.Monad.Trans.Error’ is deprecated:
+      Use Control.Monad.Trans.Except instead
+
+Control/Monad/Trans/Resource/Internal.hs:75:1: Warning:
+    The import of ‘Data.Word’ is redundant
+      except perhaps to import instances from ‘Data.Word’
+    To import instances alone, use: import Data.Word()
+
+Control/Monad/Trans/Resource/Internal.hs:76:1: Warning:
+    Module ‘Prelude’ does not export ‘catch’
+
+Control/Monad/Trans/Resource/Internal.hs:292:11: Warning:
+    In the use of type constructor or class ‘Error’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+Control/Monad/Trans/Resource/Internal.hs:292:56: Warning:
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+[3 of 4] Compiling Control.Monad.Trans.Resource ( Control/Monad/Trans/Resource.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Trans/Resource.o )
+
+Control/Monad/Trans/Resource.hs:54:7: Warning:
+    The export item ‘ExceptionT(..)’ suggests that
+    ‘ExceptionT’ has (in-scope) constructors or class methods,
+    but it has none
+
+Control/Monad/Trans/Resource.hs:64:1: Warning:
+    The import of ‘throw’ from module ‘Control.Exception’ is redundant
+
+Control/Monad/Trans/Resource.hs:69:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+Control/Monad/Trans/Resource.hs:73:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+
+Control/Monad/Trans/Resource.hs:206:1: Warning:
+    Defined but not used: ‘finally’
+[4 of 4] Compiling Data.Acquire     ( Data/Acquire.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Acquire.o )
+
+Data/Acquire.hs:16:1: Warning:
+    The import of ‘Control.Monad.Trans.Resource’ is redundant
+      except perhaps to import instances from ‘Control.Monad.Trans.Resource’
+    To import instances alone, use: import Control.Monad.Trans.Resource()
+
+Data/Acquire.hs:18:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+Data/Acquire.hs:19:1: Warning:
+    The import of ‘Control.Monad.Base’ is redundant
+      except perhaps to import instances from ‘Control.Monad.Base’
+    To import instances alone, use: import Control.Monad.Base()
+
+Data/Acquire.hs:21:1: Warning:
+    The import of ‘Control.Monad.Trans.Control’ is redundant
+      except perhaps to import instances from ‘Control.Monad.Trans.Control’
+    To import instances alone, use: import Control.Monad.Trans.Control()
+
+Data/Acquire.hs:23:1: Warning:
+    The import of ‘Data.Typeable’ is redundant
+      except perhaps to import instances from ‘Data.Typeable’
+    To import instances alone, use: import Data.Typeable()
+
+Data/Acquire.hs:24:1: Warning:
+    The import of ‘Control.Monad’ is redundant
+      except perhaps to import instances from ‘Control.Monad’
+    To import instances alone, use: import Control.Monad()
+Linking...
+[(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592",PackageIdentifier
+{pkgName = PackageName {unPackageName = "containers"}, pkgVersion = Version
+{versionBranch = [0,5,6,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"exceptions-0.8.2.1-08ed62d2282590eb80eba3e5c42a5f4e",PackageIdentifier
+{pkgName = PackageName {unPackageName = "exceptions"}, pkgVersion = Version
+{versionBranch = [0,8,2,1], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"lifted-base-0.2.3.6-95d2e87a74e11a9ed06423bbb63b94ca",PackageIdentifier
+{pkgName = PackageName {unPackageName = "lifted-base"}, pkgVersion = Version
+{versionBranch = [0,2,3,6], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"mmorph-1.0.6-386e846816bebe869399594490a5807f",PackageIdentifier {pkgName =
+PackageName {unPackageName = "mmorph"}, pkgVersion = Version {versionBranch =
+[1,0,6], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"monad-control-1.0.1.0-84c4bc4b17198076c8ec507b90de89c9",PackageIdentifier
+{pkgName = PackageName {unPackageName = "monad-control"}, pkgVersion = Version
+{versionBranch = [1,0,1,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"mtl-2.2.1-3af90341e75ee52dfc4e3143b4e5d219",PackageIdentifier {pkgName =
+PackageName {unPackageName = "mtl"}, pkgVersion = Version {versionBranch =
+[2,2,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers"}, pkgVersion = Version
+{versionBranch = [0,4,2,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"transformers-base-0.4.4-19dc155e74aa624600f63b02f5f0b424",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers-base"}, pkgVersion =
+Version {versionBranch = [0,4,4], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"transformers-compat-0.4.0.4-8aa4073730c676dbe210ea8bffd8d092",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers-compat"}, pkgVersion =
+Version {versionBranch = [0,4,0,4], versionTags = []}},ModuleRenaming True
+[])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-29517/libHSresourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Trans/Resource.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Trans/Resource/Internal.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Acquire.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Acquire/Internal.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-29517/libHSresourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-29517/libHSresourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/conta_2C3ZI8RgPO2LBMidXKTvIU -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/exceptions-0.8.2.1-6lgwjdgwblY7rzh5s6SLd8 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/lifted-base-0.2.3.6-DoOvgrTvmEtENHs0ypaZTR -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/mmorph-1.0.6-42KUkOfzC6q3qCtAMiSHam -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/monad-control-1.0.1.0-7Tqv3C2ASZP4J7swGaIkqS -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/mtl-2.2.1-Aue4leSeVkpKLsfHIV51E8 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/prett_JItwetRppk1H5Uq3xbjDGC -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/stm-2.4.4.1-EyxFXFfnfY05IrjGaqCxeD -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/templ_GJPvtLC64aA4c1Jl10o2qt -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/trans_GZTjP9K5WFq01xC9BAGQpF -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/transformers-base-0.4.4-74WedXVmfaHHDJItmBRTVp -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/transformers-compat-0.4.0.4-HLoEtsQxMvo5lni62P8VpB -this-package-key resou_0TYP6GHqv9b1qNv0xS98eJ -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id exceptions-0.8.2.1-08ed62d2282590eb80eba3e5c42a5f4e -package-id lifted-base-0.2.3.6-95d2e87a74e11a9ed06423bbb63b94ca -package-id mmorph-1.0.6-386e846816bebe869399594490a5807f -package-id monad-control-1.0.1.0-84c4bc4b17198076c8ec507b90de89c9 -package-id mtl-2.2.1-3af90341e75ee52dfc4e3143b4e5d219 -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id transformers-base-0.4.4-19dc155e74aa624600f63b02f5f0b424 -package-id transformers-compat-0.4.0.4-8aa4073730c676dbe210ea8bffd8d092 .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Trans/Resource.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Trans/Resource/Internal.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Acquire.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Acquire/Internal.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSresourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering resourcet-1.1.7.3...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/resourcet does
+exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/resourcet-1.1.7.3
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/resourcet-1.1.7.3/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Control/Monad/Trans
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Control/Monad
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Control
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Control
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Control/Monad
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Control/Monad/Trans
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Control/Monad/Trans/Resource
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Data/Acquire
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Trans/Resource.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Control/Monad/Trans/Resource.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Trans/Resource/Internal.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Control/Monad/Trans/Resource/Internal.hi
+Installing .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Acquire.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Data/Acquire.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Acquire/Internal.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Data/Acquire/Internal.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Control/Monad/Trans
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Control/Monad/Trans/Resource
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Data/Acquire
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Trans/Resource.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Control/Monad/Trans/Resource.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Control/Monad/Trans/Resource/Internal.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Control/Monad/Trans/Resource/Internal.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Acquire.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Data/Acquire.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Acquire/Internal.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/Data/Acquire/Internal.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSresourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/libHSresourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSresourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSresourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/resourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ/libHSresourcet-1.1.7.3-0TYP6GHqv9b1qNv0xS98eJ-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key resou_0TYP6GHqv9b1qNv0xS98eJ -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id exceptions-0.8.2.1-08ed62d2282590eb80eba3e5c42a5f4e -package-id lifted-base-0.2.3.6-95d2e87a74e11a9ed06423bbb63b94ca -package-id mmorph-1.0.6-386e846816bebe869399594490a5807f -package-id monad-control-1.0.1.0-84c4bc4b17198076c8ec507b90de89c9 -package-id mtl-2.2.1-3af90341e75ee52dfc4e3143b4e5d219 -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id transformers-base-0.4.4-19dc155e74aa624600f63b02f5f0b424 -package-id transformers-compat-0.4.0.4-8aa4073730c676dbe210ea8bffd8d092 -XHaskell98 Control.Monad.Trans.Resource Control.Monad.Trans.Resource.Internal Data.Acquire Data.Acquire.Internal -Wall
+Registering resourcet-1.1.7.3...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb'

@@ -1,0 +1,60 @@
+Configuring generics-sop-0.2.1.0...
+Building generics-sop-0.2.1.0...
+Preprocessing library generics-sop-0.2.1.0...
+[ 1 of 13] Compiling Generics.SOP.Sing ( src/Generics/SOP/Sing.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SOP/Sing.o )
+[ 2 of 13] Compiling Generics.SOP.Constraint ( src/Generics/SOP/Constraint.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SOP/Constraint.o )
+[ 3 of 13] Compiling Generics.SOP.BasicFunctors ( src/Generics/SOP/BasicFunctors.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SOP/BasicFunctors.o )
+[ 4 of 13] Compiling Generics.SOP.Classes ( src/Generics/SOP/Classes.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SOP/Classes.o )
+[ 5 of 13] Compiling Generics.SOP.NP  ( src/Generics/SOP/NP.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SOP/NP.o )
+[ 6 of 13] Compiling Generics.SOP.Metadata ( src/Generics/SOP/Metadata.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SOP/Metadata.o )
+[ 7 of 13] Compiling Generics.SOP.Dict ( src/Generics/SOP/Dict.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SOP/Dict.o )
+[ 8 of 13] Compiling Generics.SOP.NS  ( src/Generics/SOP/NS.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SOP/NS.o )
+[ 9 of 13] Compiling Generics.SOP.GGP ( src/Generics/SOP/GGP.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SOP/GGP.o )
+[10 of 13] Compiling Generics.SOP.Universe ( src/Generics/SOP/Universe.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SOP/Universe.o )
+[11 of 13] Compiling Generics.SOP.TH  ( src/Generics/SOP/TH.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SOP/TH.o )
+[12 of 13] Compiling Generics.SOP.Instances ( src/Generics/SOP/Instances.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SOP/Instances.o )
+[13 of 13] Compiling Generics.SOP     ( src/Generics/SOP.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Generics/SOP.o )
+In-place registering generics-sop-0.2.1.0...
+Running Haddock for generics-sop-0.2.1.0...
+Running hscolour for generics-sop-0.2.1.0...
+Preprocessing library generics-sop-0.2.1.0...
+Preprocessing library generics-sop-0.2.1.0...
+Haddock coverage:
+ 100% ( 11 / 11) in 'Generics.SOP.Sing'
+  56% ( 10 / 18) in 'Generics.SOP.Constraint'
+  Missing documentation for:
+     (src/Generics/SOP/Constraint.hs:45)
+     (src/Generics/SOP/Constraint.hs:78)
+     (src/Generics/SOP/Constraint.hs:102)
+     (src/Generics/SOP/Constraint.hs:108)
+     (src/Generics/SOP/Constraint.hs:114)
+     (src/Generics/SOP/Constraint.hs:130)
+     (src/Generics/SOP/Constraint.hs:137)
+    Constraint
+ 100% (  7 /  7) in 'Generics.SOP.BasicFunctors'
+ 100% ( 26 / 26) in 'Generics.SOP.Classes'
+  98% ( 58 / 59) in 'Generics.SOP.NP'
+  Missing documentation for:
+    shiftProjection (src/Generics/SOP/NP.hs:282)
+ 100% ( 11 / 11) in 'Generics.SOP.Metadata'
+ 100% ( 15 / 15) in 'Generics.SOP.Dict'
+ 100% ( 38 / 38) in 'Generics.SOP.NS'
+ 100% (  8 /  8) in 'Generics.SOP.GGP'
+ 100% (  4 /  4) in 'Generics.SOP.Universe'
+ 100% (  5 /  5) in 'Generics.SOP.TH'
+ 100% (  1 /  1) in 'Generics.SOP.Instances'
+  99% ( 99 /100) in 'Generics.SOP'
+  Missing documentation for:
+    shiftProjection (src/Generics/SOP/NP.hs:282)
+Warning: Generics.SOP.Metadata: could not find link destinations for:
+    D1Associativity C1_0Associativity C1_1Associativity C1_2Associativity
+Warning: Generics.SOP.GGP: could not find link destinations for:
+    ToSumCode GSumFrom GSumTo GDatatypeInfo'
+Warning: Generics.SOP: could not find link destinations for:
+    D1Associativity C1_0Associativity C1_1Associativity C1_2Associativity D1Proxy C1_0Proxy
+Documentation created:
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/generics-sop/index.html,
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/generics-sop/generics-sop.txt
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/generics-sop-0.2.1.0-2ZGHFtoqAzKEbWPEaDqY6O
+Registering generics-sop-0.2.1.0...

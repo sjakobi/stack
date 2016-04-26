@@ -1,0 +1,116 @@
+Configuring cryptohash-conduit-0.1.1...
+Dependency base ==4.7.0.2: using base-4.7.0.2
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency conduit ==1.2.5: using conduit-1.2.5
+Dependency conduit-extra ==1.1.9.1: using conduit-extra-1.1.9.1
+Dependency cryptohash ==0.11.6: using cryptohash-0.11.6
+Dependency resourcet ==1.1.6: using resourcet-1.1.6
+Dependency transformers ==0.3.0.0: using transformers-0.3.0.0
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+Using Cabal-1.18.1.5 compiled by ghc-7.8
+Using compiler: ghc-7.8.4
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/bin
+Libraries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/cryptohash-conduit-0.1.1
+Private binaries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/libexec
+Data files installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/share/x86_64-linux-ghc-7.8.4/cryptohash-conduit-0.1.1
+Documentation installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/cryptohash-conduit-0.1.1
+Configuration files installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+No ffihugs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.8.4 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc
+Using ghc-pkg version 7.8.4 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg
+No greencard found
+Using haddock version 2.14.3 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/haddock
+No happy found
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No hugs found
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+No nhc98 found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using ranlib found on system at: /usr/bin/ranlib
+Using strip found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen
+Building cryptohash-conduit-0.1.1...
+Preprocessing library cryptohash-conduit-0.1.1...
+Building library...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -package-name cryptohash-conduit-0.1.1 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id conduit-1.2.5-1fd7b00b6c40cdfb800fa3750fd2b254 -package-id conduit-extra-1.1.9.1-bff56b4240fc6a051acbbe8de7e7cdc7 -package-id cryptohash-0.11.6-6e20c162994a1b21bed5a64314d4833d -package-id resourcet-1.1.6-b1d32882318e6e38bb5f6787477ca797 -package-id transformers-0.3.0.0-6458c21515cab7c1cf21e53141557a1c -XHaskell98 Crypto.Hash.Conduit -Wall -fwarn-tabs -ddump-hi -ddump-to-file
+[1 of 1] Compiling Crypto.Hash.Conduit ( Crypto/Hash/Conduit.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Crypto/Hash/Conduit.o )
+Linking...
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHScryptohash-conduit-0.1.1.a .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Crypto/Hash/Conduit.o
+/usr/bin/ar: creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHScryptohash-conduit-0.1.1.a
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc -shared -dynamic -package-name cryptohash-conduit-0.1.1 -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id conduit-1.2.5-1fd7b00b6c40cdfb800fa3750fd2b254 -package-id conduit-extra-1.1.9.1-bff56b4240fc6a051acbbe8de7e7cdc7 -package-id cryptohash-0.11.6-6e20c162994a1b21bed5a64314d4833d -package-id resourcet-1.1.6-b1d32882318e6e38bb5f6787477ca797 -package-id transformers-0.3.0.0-6458c21515cab7c1cf21e53141557a1c .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Crypto/Hash/Conduit.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHScryptohash-conduit-0.1.1-ghc7.8.4.so -ddump-hi -ddump-to-file
+In-place registering cryptohash-conduit-0.1.1...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace'
+directory
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/doc/html/cryptohash-conduit does
+exist: False
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/cryptohash-conduit-0.1.1
+Installing LICENSE to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/cryptohash-conduit-0.1.1/LICENSE
+Installing library in
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/cryptohash-conduit-0.1.1
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/cryptohash-conduit-0.1.1/Crypto/Hash
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/cryptohash-conduit-0.1.1/Crypto
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/cryptohash-conduit-0.1.1
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/cryptohash-conduit-0.1.1/Crypto
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/cryptohash-conduit-0.1.1/Crypto/Hash
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Crypto/Hash/Conduit.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/cryptohash-conduit-0.1.1/Crypto/Hash/Conduit.hi
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/cryptohash-conduit-0.1.1/Crypto/Hash
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Crypto/Hash/Conduit.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/cryptohash-conduit-0.1.1/Crypto/Hash/Conduit.dyn_hi
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/cryptohash-conduit-0.1.1
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHScryptohash-conduit-0.1.1.a
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/cryptohash-conduit-0.1.1/libHScryptohash-conduit-0.1.1.a
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/cryptohash-conduit-0.1.1
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHScryptohash-conduit-0.1.1-ghc7.8.4.so
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/cryptohash-conduit-0.1.1/libHScryptohash-conduit-0.1.1-ghc7.8.4.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -package-name cryptohash-conduit-0.1.1 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id conduit-1.2.5-1fd7b00b6c40cdfb800fa3750fd2b254 -package-id conduit-extra-1.1.9.1-bff56b4240fc6a051acbbe8de7e7cdc7 -package-id cryptohash-0.11.6-6e20c162994a1b21bed5a64314d4833d -package-id resourcet-1.1.6-b1d32882318e6e38bb5f6787477ca797 -package-id transformers-0.3.0.0-6458c21515cab7c1cf21e53141557a1c -XHaskell98 Crypto.Hash.Conduit -Wall -fwarn-tabs
+Registering cryptohash-conduit-0.1.1...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb'

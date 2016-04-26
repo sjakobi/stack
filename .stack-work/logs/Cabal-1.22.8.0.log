@@ -1,0 +1,917 @@
+Configuring Cabal-1.22.8.0...
+Flags chosen: bundled-binary-generic=False
+Dependency array ==0.5.1.0: using array-0.5.1.0
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency binary ==0.7.5.0: using binary-0.7.5.0
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency containers ==0.5.6.2: using containers-0.5.6.2
+Dependency deepseq ==1.4.1.1: using deepseq-1.4.1.1
+Dependency directory ==1.2.2.0: using directory-1.2.2.0
+Dependency filepath ==1.4.0.0: using filepath-1.4.0.0
+Dependency pretty ==1.1.2.0: using pretty-1.1.2.0
+Dependency process ==1.2.3.0: using process-1.2.3.0
+Dependency time ==1.5.0.1: using time-1.5.0.1
+Dependency unix ==2.7.1.0: using unix-2.7.1.0
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/share/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/Cabal-1.22.8.0
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building Cabal-1.22.8.0...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library Cabal-1.22.8.0...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key Cabal_Ku2CIqstfjg7Z2SNHUypWH -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id array-0.5.1.0-960bf9ae8875cc30355e086f8853a049 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id binary-0.7.5.0-5784fd031a720c3b84e73006e444c7ca -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e -package-id pretty-1.1.2.0-5cc412214ea63f61ee84c4fbabdbe0ec -package-id process-1.2.3.0-78f206acb2330ea8066c6c19c87356f0 -package-id time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 -XHaskell98 -XCPP Distribution.Compat.CreatePipe Distribution.Compat.Environment Distribution.Compat.Exception Distribution.Compat.ReadP Distribution.Compiler Distribution.InstalledPackageInfo Distribution.License Distribution.Make Distribution.ModuleName Distribution.Package Distribution.PackageDescription Distribution.PackageDescription.Check Distribution.PackageDescription.Configuration Distribution.PackageDescription.Parse Distribution.PackageDescription.PrettyPrint Distribution.PackageDescription.Utils Distribution.ParseUtils Distribution.ReadE Distribution.Simple Distribution.Simple.Bench Distribution.Simple.Build Distribution.Simple.Build.Macros Distribution.Simple.Build.PathsModule Distribution.Simple.BuildPaths Distribution.Simple.BuildTarget Distribution.Simple.CCompiler Distribution.Simple.Command Distribution.Simple.Compiler Distribution.Simple.Configure Distribution.Simple.GHC Distribution.Simple.GHCJS Distribution.Simple.Haddock Distribution.Simple.HaskellSuite Distribution.Simple.Hpc Distribution.Simple.Install Distribution.Simple.InstallDirs Distribution.Simple.JHC Distribution.Simple.LHC Distribution.Simple.LocalBuildInfo Distribution.Simple.PackageIndex Distribution.Simple.PreProcess Distribution.Simple.PreProcess.Unlit Distribution.Simple.Program Distribution.Simple.Program.Ar Distribution.Simple.Program.Builtin Distribution.Simple.Program.Db Distribution.Simple.Program.Find Distribution.Simple.Program.GHC Distribution.Simple.Program.HcPkg Distribution.Simple.Program.Hpc Distribution.Simple.Program.Ld Distribution.Simple.Program.Run Distribution.Simple.Program.Script Distribution.Simple.Program.Strip Distribution.Simple.Program.Types Distribution.Simple.Register Distribution.Simple.Setup Distribution.Simple.SrcDist Distribution.Simple.Test Distribution.Simple.Test.ExeV10 Distribution.Simple.Test.LibV09 Distribution.Simple.Test.Log Distribution.Simple.UHC Distribution.Simple.UserHooks Distribution.Simple.Utils Distribution.System Distribution.TestSuite Distribution.Text Distribution.Utils.NubList Distribution.Verbosity Distribution.Version Language.Haskell.Extension Distribution.Compat.Binary Distribution.Compat.CopyFile Distribution.Compat.TempFile Distribution.GetOpt Distribution.Simple.GHC.Internal Distribution.Simple.GHC.IPI641 Distribution.Simple.GHC.IPI642 Distribution.Simple.GHC.ImplInfo Paths_Cabal -Wall -fno-ignore-asserts -fwarn-tabs -ddump-hi -ddump-to-file
+[ 1 of 81] Compiling Paths_Cabal      ( .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/Paths_Cabal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Paths_Cabal.o )
+[ 2 of 81] Compiling Distribution.TestSuite ( Distribution/TestSuite.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/TestSuite.o )
+[ 3 of 81] Compiling Distribution.Simple.PreProcess.Unlit ( Distribution/Simple/PreProcess/Unlit.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/PreProcess/Unlit.o )
+[ 4 of 81] Compiling Distribution.GetOpt ( Distribution/GetOpt.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/GetOpt.o )
+[ 5 of 81] Compiling Distribution.PackageDescription.Utils ( Distribution/PackageDescription/Utils.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Utils.o )
+[ 6 of 81] Compiling Distribution.Simple.CCompiler ( Distribution/Simple/CCompiler.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/CCompiler.o )
+[ 7 of 81] Compiling Distribution.Compat.Binary ( Distribution/Compat/Binary.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/Binary.o )
+[ 8 of 81] Compiling Distribution.Compat.ReadP ( Distribution/Compat/ReadP.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/ReadP.o )
+[ 9 of 81] Compiling Distribution.Text ( Distribution/Text.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Text.o )
+[10 of 81] Compiling Distribution.Version ( Distribution/Version.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Version.o )
+[11 of 81] Compiling Language.Haskell.Extension ( Language/Haskell/Extension.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Language/Haskell/Extension.o )
+[12 of 81] Compiling Distribution.Compiler ( Distribution/Compiler.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compiler.o )
+[13 of 81] Compiling Distribution.Simple.Compiler ( Distribution/Simple/Compiler.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Compiler.o )
+[14 of 81] Compiling Distribution.Simple.GHC.ImplInfo ( Distribution/Simple/GHC/ImplInfo.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/ImplInfo.o )
+[15 of 81] Compiling Distribution.License ( Distribution/License.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/License.o )
+[16 of 81] Compiling Distribution.ModuleName ( Distribution/ModuleName.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/ModuleName.o )
+[17 of 81] Compiling Distribution.Package ( Distribution/Package.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Package.o )
+[18 of 81] Compiling Distribution.System ( Distribution/System.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/System.o )
+[19 of 81] Compiling Distribution.PackageDescription ( Distribution/PackageDescription.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription.o )
+[20 of 81] Compiling Distribution.Simple.InstallDirs ( Distribution/Simple/InstallDirs.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/InstallDirs.o )
+[21 of 81] Compiling Distribution.ReadE ( Distribution/ReadE.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/ReadE.o )
+[22 of 81] Compiling Distribution.Verbosity ( Distribution/Verbosity.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Verbosity.o )
+[23 of 81] Compiling Distribution.Compat.Exception ( Distribution/Compat/Exception.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/Exception.o )
+[24 of 81] Compiling Distribution.Compat.TempFile ( Distribution/Compat/TempFile.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/TempFile.o )
+[25 of 81] Compiling Distribution.Compat.CopyFile ( Distribution/Compat/CopyFile.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/CopyFile.o )
+[26 of 81] Compiling Distribution.Simple.Utils ( Distribution/Simple/Utils.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Utils.o )
+[27 of 81] Compiling Distribution.ParseUtils ( Distribution/ParseUtils.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/ParseUtils.o )
+[28 of 81] Compiling Distribution.InstalledPackageInfo ( Distribution/InstalledPackageInfo.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/InstalledPackageInfo.o )
+[29 of 81] Compiling Distribution.Simple.GHC.IPI642 ( Distribution/Simple/GHC/IPI642.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/IPI642.o )
+[30 of 81] Compiling Distribution.Simple.GHC.IPI641 ( Distribution/Simple/GHC/IPI641.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/IPI641.o )
+[31 of 81] Compiling Distribution.Simple.Command ( Distribution/Simple/Command.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Command.o )
+[32 of 81] Compiling Distribution.PackageDescription.Configuration ( Distribution/PackageDescription/Configuration.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Configuration.o )
+[33 of 81] Compiling Distribution.PackageDescription.Check ( Distribution/PackageDescription/Check.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Check.o )
+[34 of 81] Compiling Distribution.PackageDescription.Parse ( Distribution/PackageDescription/Parse.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Parse.o )
+[35 of 81] Compiling Distribution.PackageDescription.PrettyPrint ( Distribution/PackageDescription/PrettyPrint.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/PrettyPrint.o )
+[36 of 81] Compiling Distribution.Utils.NubList ( Distribution/Utils/NubList.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Utils/NubList.o )
+[37 of 81] Compiling Distribution.Simple.PackageIndex ( Distribution/Simple/PackageIndex.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/PackageIndex.o )
+[38 of 81] Compiling Distribution.Compat.Environment ( Distribution/Compat/Environment.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/Environment.o )
+[39 of 81] Compiling Distribution.Simple.Program.Find ( Distribution/Simple/Program/Find.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Find.o )
+[40 of 81] Compiling Distribution.Simple.Program.Types ( Distribution/Simple/Program/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Types.o )
+[41 of 81] Compiling Distribution.Simple.Program.Run ( Distribution/Simple/Program/Run.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Run.o )
+[42 of 81] Compiling Distribution.Simple.Program.HcPkg ( Distribution/Simple/Program/HcPkg.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/HcPkg.o )
+[43 of 81] Compiling Distribution.Simple.Program.Ld ( Distribution/Simple/Program/Ld.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Ld.o )
+[44 of 81] Compiling Distribution.Simple.Program.Hpc ( Distribution/Simple/Program/Hpc.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Hpc.o )
+[45 of 81] Compiling Distribution.Simple.Program.Script ( Distribution/Simple/Program/Script.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Script.o )
+[46 of 81] Compiling Distribution.Simple.Program.Builtin ( Distribution/Simple/Program/Builtin.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Builtin.o )
+[47 of 81] Compiling Distribution.Simple.Program.Db ( Distribution/Simple/Program/Db.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Db.o )
+[48 of 81] Compiling Distribution.Simple.Program ( Distribution/Simple/Program.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program.o )
+[49 of 81] Compiling Distribution.Simple.Setup ( Distribution/Simple/Setup.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Setup.o )
+[50 of 81] Compiling Distribution.Make ( Distribution/Make.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Make.o )
+[51 of 81] Compiling Distribution.Simple.Program.GHC ( Distribution/Simple/Program/GHC.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/GHC.o )
+[52 of 81] Compiling Distribution.Simple.LocalBuildInfo ( Distribution/Simple/LocalBuildInfo.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/LocalBuildInfo.o )
+[53 of 81] Compiling Distribution.Simple.BuildPaths ( Distribution/Simple/BuildPaths.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/BuildPaths.o )
+[54 of 81] Compiling Distribution.Simple.Build.PathsModule ( Distribution/Simple/Build/PathsModule.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Build/PathsModule.o )
+[55 of 81] Compiling Distribution.Simple.BuildTarget ( Distribution/Simple/BuildTarget.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/BuildTarget.o )
+[56 of 81] Compiling Distribution.Simple.Test.Log ( Distribution/Simple/Test/Log.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test/Log.o )
+[57 of 81] Compiling Distribution.Simple.JHC ( Distribution/Simple/JHC.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/JHC.o )
+[58 of 81] Compiling Distribution.Simple.LHC ( Distribution/Simple/LHC.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/LHC.o )
+[59 of 81] Compiling Distribution.Simple.UHC ( Distribution/Simple/UHC.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/UHC.o )
+[60 of 81] Compiling Distribution.Simple.HaskellSuite ( Distribution/Simple/HaskellSuite.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/HaskellSuite.o )
+[61 of 81] Compiling Distribution.Simple.GHC.Internal ( Distribution/Simple/GHC/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/Internal.o )
+[62 of 81] Compiling Distribution.Simple.Hpc ( Distribution/Simple/Hpc.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Hpc.o )
+[63 of 81] Compiling Distribution.Simple.Program.Strip ( Distribution/Simple/Program/Strip.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Strip.o )
+[64 of 81] Compiling Distribution.Simple.Program.Ar ( Distribution/Simple/Program/Ar.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Ar.o )
+[65 of 81] Compiling Distribution.Simple.GHC ( Distribution/Simple/GHC.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC.o )
+[66 of 81] Compiling Distribution.Simple.GHCJS ( Distribution/Simple/GHCJS.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHCJS.o )
+[67 of 81] Compiling Distribution.Simple.Register ( Distribution/Simple/Register.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Register.o )
+[68 of 81] Compiling Distribution.Simple.Install ( Distribution/Simple/Install.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Install.o )
+[69 of 81] Compiling Distribution.Simple.Build.Macros ( Distribution/Simple/Build/Macros.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Build/Macros.o )
+[70 of 81] Compiling Distribution.Compat.CreatePipe ( Distribution/Compat/CreatePipe.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/CreatePipe.o )
+[71 of 81] Compiling Distribution.Simple.Test.LibV09 ( Distribution/Simple/Test/LibV09.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test/LibV09.o )
+[72 of 81] Compiling Distribution.Simple.PreProcess ( Distribution/Simple/PreProcess.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/PreProcess.o )
+[73 of 81] Compiling Distribution.Simple.UserHooks ( Distribution/Simple/UserHooks.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/UserHooks.o )
+[74 of 81] Compiling Distribution.Simple.Bench ( Distribution/Simple/Bench.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Bench.o )
+[75 of 81] Compiling Distribution.Simple.SrcDist ( Distribution/Simple/SrcDist.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/SrcDist.o )
+[76 of 81] Compiling Distribution.Simple.Configure ( Distribution/Simple/Configure.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Configure.o )
+[77 of 81] Compiling Distribution.Simple.Build ( Distribution/Simple/Build.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Build.o )
+[78 of 81] Compiling Distribution.Simple.Haddock ( Distribution/Simple/Haddock.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Haddock.o )
+[79 of 81] Compiling Distribution.Simple.Test.ExeV10 ( Distribution/Simple/Test/ExeV10.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test/ExeV10.o )
+[80 of 81] Compiling Distribution.Simple.Test ( Distribution/Simple/Test.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test.o )
+[81 of 81] Compiling Distribution.Simple ( Distribution/Simple.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple.o )
+Linking...
+[(InstalledPackageId
+"array-0.5.1.0-960bf9ae8875cc30355e086f8853a049",PackageIdentifier {pkgName =
+PackageName {unPackageName = "array"}, pkgVersion = Version {versionBranch =
+[0,5,1,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"binary-0.7.5.0-5784fd031a720c3b84e73006e444c7ca",PackageIdentifier {pkgName =
+PackageName {unPackageName = "binary"}, pkgVersion = Version {versionBranch =
+[0,7,5,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437",PackageIdentifier
+{pkgName = PackageName {unPackageName = "bytestring"}, pkgVersion = Version
+{versionBranch = [0,10,6,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592",PackageIdentifier
+{pkgName = PackageName {unPackageName = "containers"}, pkgVersion = Version
+{versionBranch = [0,5,6,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311",PackageIdentifier {pkgName
+= PackageName {unPackageName = "deepseq"}, pkgVersion = Version {versionBranch
+= [1,4,1,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732",PackageIdentifier
+{pkgName = PackageName {unPackageName = "directory"}, pkgVersion = Version
+{versionBranch = [1,2,2,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e",PackageIdentifier {pkgName
+= PackageName {unPackageName = "filepath"}, pkgVersion = Version
+{versionBranch = [1,4,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"pretty-1.1.2.0-5cc412214ea63f61ee84c4fbabdbe0ec",PackageIdentifier {pkgName =
+PackageName {unPackageName = "pretty"}, pkgVersion = Version {versionBranch =
+[1,1,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"process-1.2.3.0-78f206acb2330ea8066c6c19c87356f0",PackageIdentifier {pkgName
+= PackageName {unPackageName = "process"}, pkgVersion = Version {versionBranch
+= [1,2,3,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b",PackageIdentifier {pkgName =
+PackageName {unPackageName = "time"}, pkgVersion = Version {versionBranch =
+[1,5,0,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"unix-2.7.1.0-343d4f566f30113da92e819f4a148640",PackageIdentifier {pkgName =
+PackageName {unPackageName = "unix"}, pkgVersion = Version {versionBranch =
+[2,7,1,0], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-4488/libHSCabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/CreatePipe.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/Environment.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/Exception.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/ReadP.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compiler.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/InstalledPackageInfo.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/License.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Make.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/ModuleName.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Package.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Check.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Configuration.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Parse.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/PrettyPrint.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Utils.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/ParseUtils.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/ReadE.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Bench.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Build.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Build/Macros.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Build/PathsModule.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/BuildPaths.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/BuildTarget.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/CCompiler.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Command.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Compiler.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Configure.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHCJS.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Haddock.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/HaskellSuite.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Hpc.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Install.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/InstallDirs.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/JHC.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/LHC.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/LocalBuildInfo.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/PackageIndex.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/PreProcess.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/PreProcess/Unlit.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Ar.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Builtin.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Db.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Find.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/GHC.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/HcPkg.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Hpc.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Ld.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Run.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Script.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Strip.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Types.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Register.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Setup.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/SrcDist.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test/ExeV10.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test/LibV09.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test/Log.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/UHC.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/UserHooks.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Utils.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/System.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/TestSuite.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Text.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Utils/NubList.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Verbosity.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Version.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Language/Haskell/Extension.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/Binary.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/CopyFile.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/TempFile.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/GetOpt.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/Internal.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/IPI641.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/IPI642.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/ImplInfo.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Paths_Cabal.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-4488/libHSCabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-4488/libHSCabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/binar_3uXFWMoAGBg0xKP9MHKRwi -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/conta_2C3ZI8RgPO2LBMidXKTvIU -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/direc_0hFG6ZxK1nk4zsyOqbNHfm -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/filep_Ey7a1in9roBAE8bUFJ5R9m -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/prett_JItwetRppk1H5Uq3xbjDGC -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/proce_52AgREEfSrnJLlkGV9YZZJ -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/time_FTheb6LSxyX1UABIbBXRfn -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/unix_KZL8h98IqDM57kQSPo1mKx -this-package-key Cabal_Ku2CIqstfjg7Z2SNHUypWH -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id array-0.5.1.0-960bf9ae8875cc30355e086f8853a049 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id binary-0.7.5.0-5784fd031a720c3b84e73006e444c7ca -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e -package-id pretty-1.1.2.0-5cc412214ea63f61ee84c4fbabdbe0ec -package-id process-1.2.3.0-78f206acb2330ea8066c6c19c87356f0 -package-id time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/CreatePipe.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/Environment.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/Exception.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/ReadP.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compiler.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/InstalledPackageInfo.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/License.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Make.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/ModuleName.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Package.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Check.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Configuration.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Parse.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/PrettyPrint.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Utils.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/ParseUtils.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/ReadE.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Bench.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Build.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Build/Macros.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Build/PathsModule.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/BuildPaths.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/BuildTarget.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/CCompiler.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Command.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Compiler.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Configure.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHCJS.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Haddock.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/HaskellSuite.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Hpc.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Install.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/InstallDirs.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/JHC.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/LHC.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/LocalBuildInfo.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/PackageIndex.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/PreProcess.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/PreProcess/Unlit.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Ar.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Builtin.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Db.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Find.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/GHC.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/HcPkg.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Hpc.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Ld.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Run.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Script.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Strip.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Types.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Register.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Setup.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/SrcDist.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test/ExeV10.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test/LibV09.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test/Log.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/UHC.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/UserHooks.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Utils.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/System.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/TestSuite.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Text.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Utils/NubList.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Verbosity.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Version.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Language/Haskell/Extension.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/Binary.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/CopyFile.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/TempFile.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/GetOpt.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/Internal.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/IPI641.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/IPI642.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/ImplInfo.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Paths_Cabal.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSCabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering Cabal-1.22.8.0...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/Cabal does
+exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/Cabal-1.22.8.0
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/Cabal-1.22.8.0/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compat
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compat
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/PackageDescription
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Build
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/PreProcess
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Test
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Utils
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Language/Haskell
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Language
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Language/Haskell
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/GHC
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/CreatePipe.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compat/CreatePipe.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/Environment.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compat/Environment.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/Exception.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compat/Exception.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/ReadP.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compat/ReadP.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compiler.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compiler.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/InstalledPackageInfo.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/InstalledPackageInfo.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/License.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/License.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Make.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Make.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/ModuleName.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/ModuleName.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Package.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Package.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/PackageDescription.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Check.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/PackageDescription/Check.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Configuration.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/PackageDescription/Configuration.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Parse.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/PackageDescription/Parse.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/PrettyPrint.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/PackageDescription/PrettyPrint.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Utils.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/PackageDescription/Utils.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/ParseUtils.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/ParseUtils.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/ReadE.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/ReadE.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Bench.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Bench.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Build.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Build.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Build/Macros.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Build/Macros.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Build/PathsModule.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Build/PathsModule.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/BuildPaths.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/BuildPaths.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/BuildTarget.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/BuildTarget.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/CCompiler.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/CCompiler.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Command.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Command.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Compiler.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Compiler.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Configure.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Configure.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/GHC.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHCJS.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/GHCJS.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Haddock.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Haddock.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/HaskellSuite.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/HaskellSuite.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Hpc.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Hpc.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Install.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Install.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/InstallDirs.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/InstallDirs.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/JHC.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/JHC.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/LHC.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/LHC.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/LocalBuildInfo.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/LocalBuildInfo.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/PackageIndex.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/PackageIndex.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/PreProcess.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/PreProcess.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/PreProcess/Unlit.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/PreProcess/Unlit.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Ar.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Ar.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Builtin.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Builtin.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Db.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Db.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Find.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Find.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/GHC.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/GHC.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/HcPkg.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/HcPkg.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Hpc.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Hpc.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Ld.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Ld.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Run.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Run.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Script.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Script.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Strip.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Strip.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Types.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Types.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Register.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Register.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Setup.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Setup.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/SrcDist.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/SrcDist.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Test.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test/ExeV10.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Test/ExeV10.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test/LibV09.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Test/LibV09.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test/Log.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Test/Log.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/UHC.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/UHC.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/UserHooks.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/UserHooks.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Utils.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Utils.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/System.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/System.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/TestSuite.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/TestSuite.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Text.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Text.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Utils/NubList.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Utils/NubList.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Verbosity.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Verbosity.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Version.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Version.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Language/Haskell/Extension.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Language/Haskell/Extension.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/Binary.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compat/Binary.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/CopyFile.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compat/CopyFile.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/TempFile.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compat/TempFile.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/GetOpt.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/GetOpt.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/Internal.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/GHC/Internal.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/IPI641.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/GHC/IPI641.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/IPI642.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/GHC/IPI642.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/ImplInfo.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/GHC/ImplInfo.hi
+Installing .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Paths_Cabal.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Paths_Cabal.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compat
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/PackageDescription
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Build
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/PreProcess
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Test
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Utils
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Language/Haskell
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/GHC
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/CreatePipe.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compat/CreatePipe.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/Environment.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compat/Environment.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/Exception.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compat/Exception.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/ReadP.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compat/ReadP.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compiler.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compiler.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/InstalledPackageInfo.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/InstalledPackageInfo.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/License.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/License.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Make.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Make.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/ModuleName.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/ModuleName.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Package.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Package.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/PackageDescription.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Check.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/PackageDescription/Check.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Configuration.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/PackageDescription/Configuration.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Parse.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/PackageDescription/Parse.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/PrettyPrint.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/PackageDescription/PrettyPrint.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/PackageDescription/Utils.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/PackageDescription/Utils.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/ParseUtils.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/ParseUtils.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/ReadE.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/ReadE.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Bench.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Bench.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Build.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Build.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Build/Macros.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Build/Macros.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Build/PathsModule.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Build/PathsModule.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/BuildPaths.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/BuildPaths.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/BuildTarget.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/BuildTarget.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/CCompiler.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/CCompiler.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Command.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Command.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Compiler.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Compiler.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Configure.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Configure.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/GHC.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHCJS.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/GHCJS.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Haddock.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Haddock.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/HaskellSuite.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/HaskellSuite.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Hpc.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Hpc.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Install.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Install.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/InstallDirs.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/InstallDirs.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/JHC.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/JHC.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/LHC.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/LHC.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/LocalBuildInfo.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/LocalBuildInfo.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/PackageIndex.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/PackageIndex.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/PreProcess.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/PreProcess.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/PreProcess/Unlit.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/PreProcess/Unlit.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Ar.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Ar.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Builtin.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Builtin.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Db.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Db.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Find.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Find.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/GHC.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/GHC.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/HcPkg.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/HcPkg.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Hpc.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Hpc.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Ld.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Ld.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Run.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Run.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Script.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Script.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Strip.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Strip.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Program/Types.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Program/Types.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Register.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Register.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Setup.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Setup.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/SrcDist.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/SrcDist.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Test.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test/ExeV10.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Test/ExeV10.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test/LibV09.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Test/LibV09.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Test/Log.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Test/Log.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/UHC.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/UHC.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/UserHooks.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/UserHooks.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/Utils.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/Utils.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/System.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/System.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/TestSuite.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/TestSuite.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Text.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Text.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Utils/NubList.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Utils/NubList.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Verbosity.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Verbosity.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Version.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Version.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Language/Haskell/Extension.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Language/Haskell/Extension.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/Binary.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compat/Binary.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/CopyFile.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compat/CopyFile.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Compat/TempFile.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Compat/TempFile.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/GetOpt.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/GetOpt.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/Internal.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/GHC/Internal.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/IPI641.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/GHC/IPI641.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/IPI642.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/GHC/IPI642.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Distribution/Simple/GHC/ImplInfo.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Distribution/Simple/GHC/ImplInfo.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Paths_Cabal.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/Paths_Cabal.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSCabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/libHSCabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSCabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSCabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/Cabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH/libHSCabal-1.22.8.0-Ku2CIqstfjg7Z2SNHUypWH-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key Cabal_Ku2CIqstfjg7Z2SNHUypWH -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-id array-0.5.1.0-960bf9ae8875cc30355e086f8853a049 -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id binary-0.7.5.0-5784fd031a720c3b84e73006e444c7ca -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id containers-0.5.6.2-e59c9b78d840fa743d4169d4bea15592 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e -package-id pretty-1.1.2.0-5cc412214ea63f61ee84c4fbabdbe0ec -package-id process-1.2.3.0-78f206acb2330ea8066c6c19c87356f0 -package-id time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 -XHaskell98 -XCPP Distribution.Compat.CreatePipe Distribution.Compat.Environment Distribution.Compat.Exception Distribution.Compat.ReadP Distribution.Compiler Distribution.InstalledPackageInfo Distribution.License Distribution.Make Distribution.ModuleName Distribution.Package Distribution.PackageDescription Distribution.PackageDescription.Check Distribution.PackageDescription.Configuration Distribution.PackageDescription.Parse Distribution.PackageDescription.PrettyPrint Distribution.PackageDescription.Utils Distribution.ParseUtils Distribution.ReadE Distribution.Simple Distribution.Simple.Bench Distribution.Simple.Build Distribution.Simple.Build.Macros Distribution.Simple.Build.PathsModule Distribution.Simple.BuildPaths Distribution.Simple.BuildTarget Distribution.Simple.CCompiler Distribution.Simple.Command Distribution.Simple.Compiler Distribution.Simple.Configure Distribution.Simple.GHC Distribution.Simple.GHCJS Distribution.Simple.Haddock Distribution.Simple.HaskellSuite Distribution.Simple.Hpc Distribution.Simple.Install Distribution.Simple.InstallDirs Distribution.Simple.JHC Distribution.Simple.LHC Distribution.Simple.LocalBuildInfo Distribution.Simple.PackageIndex Distribution.Simple.PreProcess Distribution.Simple.PreProcess.Unlit Distribution.Simple.Program Distribution.Simple.Program.Ar Distribution.Simple.Program.Builtin Distribution.Simple.Program.Db Distribution.Simple.Program.Find Distribution.Simple.Program.GHC Distribution.Simple.Program.HcPkg Distribution.Simple.Program.Hpc Distribution.Simple.Program.Ld Distribution.Simple.Program.Run Distribution.Simple.Program.Script Distribution.Simple.Program.Strip Distribution.Simple.Program.Types Distribution.Simple.Register Distribution.Simple.Setup Distribution.Simple.SrcDist Distribution.Simple.Test Distribution.Simple.Test.ExeV10 Distribution.Simple.Test.LibV09 Distribution.Simple.Test.Log Distribution.Simple.UHC Distribution.Simple.UserHooks Distribution.Simple.Utils Distribution.System Distribution.TestSuite Distribution.Text Distribution.Utils.NubList Distribution.Verbosity Distribution.Version Language.Haskell.Extension -Wall -fno-ignore-asserts -fwarn-tabs
+Registering Cabal-1.22.8.0...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb'

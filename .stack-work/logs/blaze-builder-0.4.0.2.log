@@ -1,0 +1,228 @@
+Configuring blaze-builder-0.4.0.2...
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency deepseq ==1.4.1.1: using deepseq-1.4.1.1
+Dependency text ==1.2.2.1: using text-1.2.2.1
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/share/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/blaze-builder-0.4.0.2
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building blaze-builder-0.4.0.2...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library blaze-builder-0.4.0.2...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key blaze_5LQurmvTy7l9rPlWgPlNE4 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -XHaskell98 Blaze.ByteString.Builder Blaze.ByteString.Builder.Int Blaze.ByteString.Builder.Word Blaze.ByteString.Builder.ByteString Blaze.ByteString.Builder.Char.Utf8 Blaze.ByteString.Builder.Char8 Blaze.ByteString.Builder.Html.Utf8 Blaze.ByteString.Builder.HTTP Blaze.ByteString.Builder.Compat.Write Blaze.ByteString.Builder.Internal.Write -Wall -ddump-hi -ddump-to-file
+[ 1 of 10] Compiling Blaze.ByteString.Builder.Internal.Write ( Blaze/ByteString/Builder/Internal/Write.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Internal/Write.o )
+[ 2 of 10] Compiling Blaze.ByteString.Builder.Compat.Write ( Blaze/ByteString/Builder/Compat/Write.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Compat/Write.o )
+[ 3 of 10] Compiling Blaze.ByteString.Builder.Char.Utf8 ( Blaze/ByteString/Builder/Char/Utf8.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Char/Utf8.o )
+[ 4 of 10] Compiling Blaze.ByteString.Builder.Char8 ( Blaze/ByteString/Builder/Char8.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Char8.o )
+[ 5 of 10] Compiling Blaze.ByteString.Builder.Html.Utf8 ( Blaze/ByteString/Builder/Html/Utf8.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Html/Utf8.o )
+[ 6 of 10] Compiling Blaze.ByteString.Builder.ByteString ( Blaze/ByteString/Builder/ByteString.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/ByteString.o )
+[ 7 of 10] Compiling Blaze.ByteString.Builder.HTTP ( Blaze/ByteString/Builder/HTTP.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/HTTP.o )
+[ 8 of 10] Compiling Blaze.ByteString.Builder.Word ( Blaze/ByteString/Builder/Word.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Word.o )
+[ 9 of 10] Compiling Blaze.ByteString.Builder.Int ( Blaze/ByteString/Builder/Int.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Int.o )
+[10 of 10] Compiling Blaze.ByteString.Builder ( Blaze/ByteString/Builder.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder.o )
+Linking...
+[(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437",PackageIdentifier
+{pkgName = PackageName {unPackageName = "bytestring"}, pkgVersion = Version
+{versionBranch = [0,10,6,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311",PackageIdentifier {pkgName
+= PackageName {unPackageName = "deepseq"}, pkgVersion = Version {versionBranch
+= [1,4,1,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c",PackageIdentifier {pkgName =
+PackageName {unPackageName = "text"}, pkgVersion = Version {versionBranch =
+[1,2,2,1], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-25530/libHSblaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Int.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Word.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/ByteString.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Char/Utf8.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Char8.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Html/Utf8.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/HTTP.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Compat/Write.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Internal/Write.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-25530/libHSblaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-25530/libHSblaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/binar_3uXFWMoAGBg0xKP9MHKRwi -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/conta_2C3ZI8RgPO2LBMidXKTvIU -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/text-1.2.2.1-HmqVQnZSpjaC156ABqPhne -this-package-key blaze_5LQurmvTy7l9rPlWgPlNE4 -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Int.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Word.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/ByteString.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Char/Utf8.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Char8.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Html/Utf8.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/HTTP.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Compat/Write.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Internal/Write.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSblaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering blaze-builder-0.4.0.2...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/blaze-builder
+does exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/blaze-builder-0.4.0.2
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/blaze-builder-0.4.0.2/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Char
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Html
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Compat
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Internal
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Int.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Int.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Word.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Word.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/ByteString.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/ByteString.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Char/Utf8.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Char/Utf8.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Char8.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Char8.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Html/Utf8.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Html/Utf8.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/HTTP.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/HTTP.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Compat/Write.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Compat/Write.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Internal/Write.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Internal/Write.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Char
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Html
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Compat
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Internal
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Int.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Int.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Word.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Word.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/ByteString.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/ByteString.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Char/Utf8.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Char/Utf8.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Char8.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Char8.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Html/Utf8.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Html/Utf8.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/HTTP.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/HTTP.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Compat/Write.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Compat/Write.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Blaze/ByteString/Builder/Internal/Write.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/Blaze/ByteString/Builder/Internal/Write.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSblaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/libHSblaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSblaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSblaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/blaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4/libHSblaze-builder-0.4.0.2-5LQurmvTy7l9rPlWgPlNE4-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key blaze_5LQurmvTy7l9rPlWgPlNE4 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -XHaskell98 Blaze.ByteString.Builder Blaze.ByteString.Builder.Int Blaze.ByteString.Builder.Word Blaze.ByteString.Builder.ByteString Blaze.ByteString.Builder.Char.Utf8 Blaze.ByteString.Builder.Char8 Blaze.ByteString.Builder.Html.Utf8 Blaze.ByteString.Builder.HTTP Blaze.ByteString.Builder.Compat.Write Blaze.ByteString.Builder.Internal.Write -Wall
+Registering blaze-builder-0.4.0.2...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb'

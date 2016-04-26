@@ -1,0 +1,142 @@
+Configuring http-conduit-2.1.8...
+Dependency base ==4.7.0.2: using base-4.7.0.2
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency conduit ==1.2.5: using conduit-1.2.5
+Dependency http-client ==0.4.19: using http-client-0.4.19
+Dependency http-client-tls ==0.2.4: using http-client-tls-0.2.4
+Dependency http-types ==0.8.6: using http-types-0.8.6
+Dependency lifted-base ==0.2.3.6: using lifted-base-0.2.3.6
+Dependency monad-control ==1.0.0.4: using monad-control-1.0.0.4
+Dependency mtl ==2.1.3.1: using mtl-2.1.3.1
+Dependency resourcet ==1.1.6: using resourcet-1.1.6
+Dependency transformers ==0.3.0.0: using transformers-0.3.0.0
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+Using Cabal-1.18.1.5 compiled by ghc-7.8
+Using compiler: ghc-7.8.4
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/bin
+Libraries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8
+Private binaries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/libexec
+Data files installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/share/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8
+Documentation installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/http-conduit-2.1.8
+Configuration files installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+No ffihugs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.8.4 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc
+Using ghc-pkg version 7.8.4 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg
+No greencard found
+Using haddock version 2.14.3 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/haddock
+No happy found
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No hugs found
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+No nhc98 found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using ranlib found on system at: /usr/bin/ranlib
+Using strip found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen
+Building http-conduit-2.1.8...
+Preprocessing library http-conduit-2.1.8...
+Building library...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -package-name http-conduit-2.1.8 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id conduit-1.2.5-1fd7b00b6c40cdfb800fa3750fd2b254 -package-id http-client-0.4.19-58015a698ea93f744fcf74f0d5c71868 -package-id http-client-tls-0.2.4-abfa497a83c912afbaca1f0b73e35ef9 -package-id http-types-0.8.6-be977986a7fd762b63d358663c166380 -package-id lifted-base-0.2.3.6-d4a276efe0b04220a30c2b9c19c2705c -package-id monad-control-1.0.0.4-6c1f8e5fbca10f10e897dd10e058dbee -package-id mtl-2.1.3.1-96f1a7910a7553352339ed05fb61c269 -package-id resourcet-1.1.6-b1d32882318e6e38bb5f6787477ca797 -package-id transformers-0.3.0.0-6458c21515cab7c1cf21e53141557a1c -XHaskell98 Network.HTTP.Conduit Network.HTTP.Client.Conduit -Wall -ddump-hi -ddump-to-file
+[1 of 2] Compiling Network.HTTP.Client.Conduit ( Network/HTTP/Client/Conduit.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Conduit.o )
+
+Network/HTTP/Client/Conduit.hs:47:1: Warning:
+    The import of ‘Network.HTTP.Client’ is redundant
+      except perhaps to import instances from ‘Network.HTTP.Client’
+    To import instances alone, use: import Network.HTTP.Client()
+[2 of 2] Compiling Network.HTTP.Conduit ( Network/HTTP/Conduit.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Conduit.o )
+
+Network/HTTP/Conduit.hs:221:1: Warning:
+    The import of ‘Control.Exception.Lifted’ is redundant
+      except perhaps to import instances from ‘Control.Exception.Lifted’
+    To import instances alone, use: import Control.Exception.Lifted()
+Linking...
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHShttp-conduit-2.1.8.a .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Conduit.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Conduit.o
+/usr/bin/ar: creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHShttp-conduit-2.1.8.a
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc -shared -dynamic -package-name http-conduit-2.1.8 -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id conduit-1.2.5-1fd7b00b6c40cdfb800fa3750fd2b254 -package-id http-client-0.4.19-58015a698ea93f744fcf74f0d5c71868 -package-id http-client-tls-0.2.4-abfa497a83c912afbaca1f0b73e35ef9 -package-id http-types-0.8.6-be977986a7fd762b63d358663c166380 -package-id lifted-base-0.2.3.6-d4a276efe0b04220a30c2b9c19c2705c -package-id monad-control-1.0.0.4-6c1f8e5fbca10f10e897dd10e058dbee -package-id mtl-2.1.3.1-96f1a7910a7553352339ed05fb61c269 -package-id resourcet-1.1.6-b1d32882318e6e38bb5f6787477ca797 -package-id transformers-0.3.0.0-6458c21515cab7c1cf21e53141557a1c .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Conduit.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Conduit.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHShttp-conduit-2.1.8-ghc7.8.4.so -ddump-hi -ddump-to-file
+In-place registering http-conduit-2.1.8...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/doc/html/http-conduit
+does exist: False
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/http-conduit-2.1.8
+Installing LICENSE to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/http-conduit-2.1.8/LICENSE
+Installing library in
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8/Network/HTTP
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8/Network
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8/Network
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8/Network/HTTP
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8/Network/HTTP/Client
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Conduit.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8/Network/HTTP/Conduit.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Conduit.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8/Network/HTTP/Client/Conduit.hi
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8/Network/HTTP
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8/Network/HTTP/Client
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Conduit.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8/Network/HTTP/Conduit.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Network/HTTP/Client/Conduit.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8/Network/HTTP/Client/Conduit.dyn_hi
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHShttp-conduit-2.1.8.a
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8/libHShttp-conduit-2.1.8.a
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHShttp-conduit-2.1.8-ghc7.8.4.so
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/http-conduit-2.1.8/libHShttp-conduit-2.1.8-ghc7.8.4.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -package-name http-conduit-2.1.8 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id bytestring-0.10.6.0-1c3d1307c3ad6f604e3420c5c058b850 -package-id conduit-1.2.5-1fd7b00b6c40cdfb800fa3750fd2b254 -package-id http-client-0.4.19-58015a698ea93f744fcf74f0d5c71868 -package-id http-client-tls-0.2.4-abfa497a83c912afbaca1f0b73e35ef9 -package-id http-types-0.8.6-be977986a7fd762b63d358663c166380 -package-id lifted-base-0.2.3.6-d4a276efe0b04220a30c2b9c19c2705c -package-id monad-control-1.0.0.4-6c1f8e5fbca10f10e897dd10e058dbee -package-id mtl-2.1.3.1-96f1a7910a7553352339ed05fb61c269 -package-id resourcet-1.1.6-b1d32882318e6e38bb5f6787477ca797 -package-id transformers-0.3.0.0-6458c21515cab7c1cf21e53141557a1c -XHaskell98 Network.HTTP.Conduit Network.HTTP.Client.Conduit -Wall
+Registering http-conduit-2.1.8...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb'

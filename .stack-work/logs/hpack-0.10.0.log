@@ -1,0 +1,207 @@
+Configuring hpack-0.10.0...
+Dependency Glob ==0.7.5: using Glob-0.7.5
+Dependency aeson ==0.8.0.2: using aeson-0.8.0.2
+Dependency base ==4.7.0.2: using base-4.7.0.2
+Dependency base-compat ==0.9.0: using base-compat-0.9.0
+Dependency deepseq ==1.4.1.2: using deepseq-1.4.1.2
+Dependency directory ==1.2.2.0: using directory-1.2.2.0
+Dependency filepath ==1.3.0.2: using filepath-1.3.0.2
+Dependency hpack -any: using hpack-0.10.0
+Dependency text ==1.2.0.6: using text-1.2.0.6
+Dependency unordered-containers ==0.2.5.1: using unordered-containers-0.2.5.1
+Dependency yaml ==0.8.12: using yaml-0.8.12
+Warning: This package indirectly depends on multiple versions of the same
+package. This is highly likely to cause a compile failure.
+package template-haskell-2.9.0.0 requires containers-0.5.5.1
+package yaml-0.8.12 requires containers-0.5.6.3
+package semigroups-0.16.2.2 requires containers-0.5.6.3
+package resourcet-1.1.6 requires containers-0.5.6.3
+package attoparsec-0.12.1.6 requires containers-0.5.6.3
+package aeson-0.8.0.2 requires containers-0.5.6.3
+package Glob-0.7.5 requires containers-0.5.6.3
+package containers-0.5.5.1 requires deepseq-1.3.0.2
+package vector-0.10.12.3 requires deepseq-1.4.1.2
+package unordered-containers-0.2.5.1 requires deepseq-1.4.1.2
+package time-1.5.0.1 requires deepseq-1.4.1.2
+package text-1.2.0.6 requires deepseq-1.4.1.2
+package semigroups-0.16.2.2 requires deepseq-1.4.1.2
+package scientific-0.3.3.8 requires deepseq-1.4.1.2
+package hpack-0.10.0 requires deepseq-1.4.1.2
+package enclosed-exceptions-1.0.1.1 requires deepseq-1.4.1.2
+package dlist-0.7.1.1 requires deepseq-1.4.1.2
+package containers-0.5.6.3 requires deepseq-1.4.1.2
+package bytestring-0.10.6.0 requires deepseq-1.4.1.2
+package attoparsec-0.12.1.6 requires deepseq-1.4.1.2
+package aeson-0.8.0.2 requires deepseq-1.4.1.2
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+Using Cabal-1.18.1.5 compiled by ghc-7.8
+Using compiler: ghc-7.8.4
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/bin
+Libraries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0
+Private binaries installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/libexec
+Data files installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/share/x86_64-linux-ghc-7.8.4/hpack-0.10.0
+Documentation installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/hpack-0.10.0
+Configuration files installed in:
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+No ffihugs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.8.4 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc
+Using ghc-pkg version 7.8.4 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg
+No greencard found
+Using haddock version 2.14.3 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/haddock
+No happy found
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No hugs found
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+No nhc98 found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using ranlib found on system at: /usr/bin/ranlib
+Using strip found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library, executable 'hpack'
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen
+Building hpack-0.10.0...
+Preprocessing library hpack-0.10.0...
+Building library...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -isrc -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -package-name hpack-0.10.0 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id Glob-0.7.5-89c98c42faaf46db33060154920e29fa -package-id aeson-0.8.0.2-85698a0ac2f1f0570b8a3d2125870a7a -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id base-compat-0.9.0-38b5053650d3a7ca96826efac8bcb087 -package-id deepseq-1.4.1.2-9c441ff2589d83e11855d1ecf085892c -package-id directory-1.2.2.0-c0b1502bda890c7f4845b27401b306c5 -package-id filepath-1.3.0.2-25a474a9272ae6260626ce0d70ad1cab -package-id text-1.2.0.6-70c8ca36fc88551c14d04680329a8148 -package-id unordered-containers-0.2.5.1-641369e4c5a32b16ad2ecaef1b37e179 -package-id yaml-0.8.12-9955a8da6cd5a391782f235e9f9745cd -XHaskell2010 Hpack Hpack.Config Hpack.Run Hpack.Yaml Hpack.GenericsUtil Hpack.Haskell Hpack.Render Hpack.Util Paths_hpack -Wall -ddump-hi -ddump-to-file
+[1 of 9] Compiling Hpack.Haskell    ( src/Hpack/Haskell.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Haskell.o )
+[2 of 9] Compiling Hpack.Render     ( src/Hpack/Render.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Render.o )
+[3 of 9] Compiling Hpack.Yaml       ( src/Hpack/Yaml.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Yaml.o )
+[4 of 9] Compiling Hpack.Util       ( src/Hpack/Util.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Util.o )
+[5 of 9] Compiling Hpack.GenericsUtil ( src/Hpack/GenericsUtil.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/GenericsUtil.o )
+[6 of 9] Compiling Hpack.Config     ( src/Hpack/Config.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Config.o )
+[7 of 9] Compiling Hpack.Run        ( src/Hpack/Run.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Run.o )
+[8 of 9] Compiling Paths_hpack      ( .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/Paths_hpack.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Paths_hpack.o )
+[9 of 9] Compiling Hpack            ( src/Hpack.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack.o )
+Linking...
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHShpack-0.10.0.a .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Config.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Run.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Yaml.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/GenericsUtil.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Haskell.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Render.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Util.o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Paths_hpack.o
+/usr/bin/ar: creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHShpack-0.10.0.a
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc -shared -dynamic -package-name hpack-0.10.0 -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id Glob-0.7.5-89c98c42faaf46db33060154920e29fa -package-id aeson-0.8.0.2-85698a0ac2f1f0570b8a3d2125870a7a -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id base-compat-0.9.0-38b5053650d3a7ca96826efac8bcb087 -package-id deepseq-1.4.1.2-9c441ff2589d83e11855d1ecf085892c -package-id directory-1.2.2.0-c0b1502bda890c7f4845b27401b306c5 -package-id filepath-1.3.0.2-25a474a9272ae6260626ce0d70ad1cab -package-id text-1.2.0.6-70c8ca36fc88551c14d04680329a8148 -package-id unordered-containers-0.2.5.1-641369e4c5a32b16ad2ecaef1b37e179 -package-id yaml-0.8.12-9955a8da6cd5a391782f235e9f9745cd .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Config.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Run.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Yaml.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/GenericsUtil.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Haskell.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Render.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Util.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Paths_hpack.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHShpack-0.10.0-ghc7.8.4.so -ddump-hi -ddump-to-file
+In-place registering hpack-0.10.0...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace'
+Preprocessing executable 'hpack' for hpack-0.10.0...
+Building executable hpack...
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/hpack
+creating .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/hpack/hpack-tmp
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --info
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --make -no-link -fbuilding-cabal-package -O -static -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/hpack/hpack-tmp -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/hpack/hpack-tmp -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/hpack/hpack-tmp -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/hpack/hpack-tmp -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/hpack/hpack-tmp -idriver -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/hpack/hpack-tmp -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id Glob-0.7.5-89c98c42faaf46db33060154920e29fa -package-id aeson-0.8.0.2-85698a0ac2f1f0570b8a3d2125870a7a -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id base-compat-0.9.0-38b5053650d3a7ca96826efac8bcb087 -package-id deepseq-1.4.1.2-9c441ff2589d83e11855d1ecf085892c -package-id directory-1.2.2.0-c0b1502bda890c7f4845b27401b306c5 -package-id filepath-1.3.0.2-25a474a9272ae6260626ce0d70ad1cab -package-id text-1.2.0.6-70c8ca36fc88551c14d04680329a8148 -package-id unordered-containers-0.2.5.1-641369e4c5a32b16ad2ecaef1b37e179 -package-id yaml-0.8.12-9955a8da6cd5a391782f235e9f9745cd -package-id hpack-0.10.0-inplace -XHaskell2010 driver/Main.hs -Wall -ddump-hi -ddump-to-file
+[1 of 1] Compiling Main             ( driver/Main.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/hpack/hpack-tmp/Main.o )
+Linking...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --make -fbuilding-cabal-package -O -static -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/hpack/hpack-tmp -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/hpack/hpack-tmp -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/hpack/hpack-tmp -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/hpack/hpack-tmp -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/hpack/hpack-tmp -idriver -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/hpack/hpack-tmp -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/package.conf.inplace -package-id Glob-0.7.5-89c98c42faaf46db33060154920e29fa -package-id aeson-0.8.0.2-85698a0ac2f1f0570b8a3d2125870a7a -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id base-compat-0.9.0-38b5053650d3a7ca96826efac8bcb087 -package-id deepseq-1.4.1.2-9c441ff2589d83e11855d1ecf085892c -package-id directory-1.2.2.0-c0b1502bda890c7f4845b27401b306c5 -package-id filepath-1.3.0.2-25a474a9272ae6260626ce0d70ad1cab -package-id text-1.2.0.6-70c8ca36fc88551c14d04680329a8148 -package-id unordered-containers-0.2.5.1-641369e4c5a32b16ad2ecaef1b37e179 -package-id yaml-0.8.12-9955a8da6cd5a391782f235e9f9745cd -package-id hpack-0.10.0-inplace -XHaskell2010 driver/Main.hs -o .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/hpack/hpack -Wall -ddump-hi -ddump-to-file
+Linking .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/hpack/hpack ...
+directory .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/doc/html/hpack does
+exist: False
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/hpack-0.10.0
+Installing LICENSE to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/doc/hpack-0.10.0/LICENSE
+Installing library in
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0
+Installing executable(s) in
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/bin
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Hpack
+Installing .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Hpack.hi
+Installing .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Config.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Hpack/Config.hi
+Installing .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Run.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Hpack/Run.hi
+Installing .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Yaml.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Hpack/Yaml.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/GenericsUtil.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Hpack/GenericsUtil.hi
+Installing .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Haskell.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Hpack/Haskell.hi
+Installing .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Render.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Hpack/Render.hi
+Installing .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Util.hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Hpack/Util.hi
+Installing .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Paths_hpack.hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Paths_hpack.hi
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Hpack
+Installing .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Hpack.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Config.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Hpack/Config.dyn_hi
+Installing .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Run.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Hpack/Run.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Yaml.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Hpack/Yaml.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/GenericsUtil.dyn_hi
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Hpack/GenericsUtil.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Haskell.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Hpack/Haskell.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Render.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Hpack/Render.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Hpack/Util.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Hpack/Util.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Paths_hpack.dyn_hi to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/Paths_hpack.dyn_hi
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHShpack-0.10.0.a to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/libHShpack-0.10.0.a
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/libHShpack-0.10.0-ghc7.8.4.so
+to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/hpack-0.10.0/libHShpack-0.10.0-ghc7.8.4.so
+creating
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/bin
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/hpack/hpack to
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/bin/hpack
+/usr/bin/strip /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/bin/hpack
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -odir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -isrc -i.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/autogen/cabal_macros.h -package-name hpack-0.10.0 -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-db /home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb -package-id Glob-0.7.5-89c98c42faaf46db33060154920e29fa -package-id aeson-0.8.0.2-85698a0ac2f1f0570b8a3d2125870a7a -package-id base-4.7.0.2-bfd89587617e381ae01b8dd7b6c7f1c1 -package-id base-compat-0.9.0-38b5053650d3a7ca96826efac8bcb087 -package-id deepseq-1.4.1.2-9c441ff2589d83e11855d1ecf085892c -package-id directory-1.2.2.0-c0b1502bda890c7f4845b27401b306c5 -package-id filepath-1.3.0.2-25a474a9272ae6260626ce0d70ad1cab -package-id text-1.2.0.6-70c8ca36fc88551c14d04680329a8148 -package-id unordered-containers-0.2.5.1-641369e4c5a32b16ad2ecaef1b37e179 -package-id yaml-0.8.12-9955a8da6cd5a391782f235e9f9745cd -XHaskell2010 Hpack Hpack.Config Hpack.Run Hpack.Yaml -Wall
+Registering hpack-0.10.0...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.8.4/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/lts-2.22/7.8.4/pkgdb' '--package-db=/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/pkgdb'

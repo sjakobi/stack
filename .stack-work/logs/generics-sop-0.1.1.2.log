@@ -1,0 +1,27 @@
+Configuring generics-sop-0.1.1.2...
+Building generics-sop-0.1.1.2...
+Preprocessing library generics-sop-0.1.1.2...
+[ 1 of 12] Compiling Generics.SOP.Sing ( src/Generics/SOP/Sing.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Generics/SOP/Sing.o )
+[ 2 of 12] Compiling Generics.SOP.Constraint ( src/Generics/SOP/Constraint.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Generics/SOP/Constraint.o )
+[ 3 of 12] Compiling Generics.SOP.BasicFunctors ( src/Generics/SOP/BasicFunctors.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Generics/SOP/BasicFunctors.o )
+[ 4 of 12] Compiling Generics.SOP.Classes ( src/Generics/SOP/Classes.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Generics/SOP/Classes.o )
+[ 5 of 12] Compiling Generics.SOP.NP  ( src/Generics/SOP/NP.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Generics/SOP/NP.o )
+[ 6 of 12] Compiling Generics.SOP.Metadata ( src/Generics/SOP/Metadata.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Generics/SOP/Metadata.o )
+[ 7 of 12] Compiling Generics.SOP.NS  ( src/Generics/SOP/NS.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Generics/SOP/NS.o )
+[ 8 of 12] Compiling Generics.SOP.GGP ( src/Generics/SOP/GGP.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Generics/SOP/GGP.o )
+[ 9 of 12] Compiling Generics.SOP.Universe ( src/Generics/SOP/Universe.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Generics/SOP/Universe.o )
+[10 of 12] Compiling Generics.SOP.TH  ( src/Generics/SOP/TH.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Generics/SOP/TH.o )
+[11 of 12] Compiling Generics.SOP.Instances ( src/Generics/SOP/Instances.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Generics/SOP/Instances.o )
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Loading package array-0.5.0.0 ... linking ... done.
+Loading package deepseq-1.3.0.2 ... linking ... done.
+Loading package containers-0.5.5.1 ... linking ... done.
+Loading package pretty-1.1.1.1 ... linking ... done.
+Loading package template-haskell ... linking ... done.
+[12 of 12] Compiling Generics.SOP     ( src/Generics/SOP.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Generics/SOP.o )
+In-place registering generics-sop-0.1.1.2...
+Installing library in
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/generics-sop-0.1.1.2
+Registering generics-sop-0.1.1.2...

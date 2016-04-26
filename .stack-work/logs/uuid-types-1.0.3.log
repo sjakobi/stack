@@ -1,0 +1,178 @@
+Configuring uuid-types-1.0.3...
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency binary ==0.7.5.0: using binary-0.7.5.0
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency deepseq ==1.4.1.1: using deepseq-1.4.1.1
+Dependency hashable ==1.2.4.0: using hashable-1.2.4.0
+Dependency random ==1.1: using random-1.1
+Dependency text ==1.2.2.1: using text-1.2.2.1
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/share/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/uuid-types-1.0.3
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building uuid-types-1.0.3...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library uuid-types-1.0.3...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key uuidt_1jYi9RR4Gf08rGU1w6xxPr -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id binary-0.7.5.0-5784fd031a720c3b84e73006e444c7ca -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id hashable-1.2.4.0-2f6e980fdeff3f16111d43036e99487a -package-id random-1.1-7d035f9e510822cd64834106e4acc4b7 -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -XHaskell98 -XDeriveDataTypeable Data.UUID.Types Data.UUID.Types.Internal.Builder Data.UUID.Types.Internal -Wall -ddump-hi -ddump-to-file
+[1 of 3] Compiling Data.UUID.Types.Internal.Builder ( Data/UUID/Types/Internal/Builder.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/UUID/Types/Internal/Builder.o )
+[2 of 3] Compiling Data.UUID.Types.Internal ( Data/UUID/Types/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/UUID/Types/Internal.o )
+
+Data/UUID/Types/Internal.hs:41:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+Data/UUID/Types/Internal.hs:44:1: Warning:
+    The import of ‘Data.Functor’ is redundant
+      except perhaps to import instances from ‘Data.Functor’
+    To import instances alone, use: import Data.Functor()
+[3 of 3] Compiling Data.UUID.Types  ( Data/UUID/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/UUID/Types.o )
+Linking...
+[(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"binary-0.7.5.0-5784fd031a720c3b84e73006e444c7ca",PackageIdentifier {pkgName =
+PackageName {unPackageName = "binary"}, pkgVersion = Version {versionBranch =
+[0,7,5,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437",PackageIdentifier
+{pkgName = PackageName {unPackageName = "bytestring"}, pkgVersion = Version
+{versionBranch = [0,10,6,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311",PackageIdentifier {pkgName
+= PackageName {unPackageName = "deepseq"}, pkgVersion = Version {versionBranch
+= [1,4,1,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"hashable-1.2.4.0-2f6e980fdeff3f16111d43036e99487a",PackageIdentifier {pkgName
+= PackageName {unPackageName = "hashable"}, pkgVersion = Version
+{versionBranch = [1,2,4,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"random-1.1-7d035f9e510822cd64834106e4acc4b7",PackageIdentifier {pkgName =
+PackageName {unPackageName = "random"}, pkgVersion = Version {versionBranch =
+[1,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c",PackageIdentifier {pkgName =
+PackageName {unPackageName = "text"}, pkgVersion = Version {versionBranch =
+[1,2,2,1], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-29852/libHSuuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/UUID/Types.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/UUID/Types/Internal/Builder.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/UUID/Types/Internal.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-29852/libHSuuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-29852/libHSuuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/binar_3uXFWMoAGBg0xKP9MHKRwi -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/conta_2C3ZI8RgPO2LBMidXKTvIU -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/hashable-1.2.4.0-EalUWgp8NarBYWPbvYAD8I -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/random-1.1-9Kgekc9yEaLHLNUuw6paWL -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.11/7.10.3/lib/x86_64-linux-ghc-7.10.3/text-1.2.2.1-HmqVQnZSpjaC156ABqPhne -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/time_FTheb6LSxyX1UABIbBXRfn -this-package-key uuidt_1jYi9RR4Gf08rGU1w6xxPr -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id binary-0.7.5.0-5784fd031a720c3b84e73006e444c7ca -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id hashable-1.2.4.0-2f6e980fdeff3f16111d43036e99487a -package-id random-1.1-7d035f9e510822cd64834106e4acc4b7 -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/UUID/Types.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/UUID/Types/Internal/Builder.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/UUID/Types/Internal.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSuuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering uuid-types-1.0.3...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/uuid-types
+does exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/uuid-types-1.0.3
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/uuid-types-1.0.3/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/Data/UUID
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/Data/UUID
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/Data/UUID/Types/Internal
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/Data/UUID/Types
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/Data/UUID/Types/Internal
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/Data/UUID/Types
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/UUID/Types.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/Data/UUID/Types.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/UUID/Types/Internal/Builder.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/Data/UUID/Types/Internal/Builder.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/UUID/Types/Internal.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/Data/UUID/Types/Internal.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/Data/UUID
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/Data/UUID/Types/Internal
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/Data/UUID/Types
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/UUID/Types.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/Data/UUID/Types.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/UUID/Types/Internal/Builder.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/Data/UUID/Types/Internal/Builder.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/UUID/Types/Internal.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/Data/UUID/Types/Internal.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSuuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/libHSuuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSuuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSuuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/uuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr/libHSuuid-types-1.0.3-1jYi9RR4Gf08rGU1w6xxPr-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key uuidt_1jYi9RR4Gf08rGU1w6xxPr -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id binary-0.7.5.0-5784fd031a720c3b84e73006e444c7ca -package-id bytestring-0.10.6.0-c60f4c543b22c7f7293a06ae48820437 -package-id deepseq-1.4.1.1-614b63b36dd6e29d2b35afff57c25311 -package-id hashable-1.2.4.0-2f6e980fdeff3f16111d43036e99487a -package-id random-1.1-7d035f9e510822cd64834106e4acc4b7 -package-id text-1.2.2.1-d0adb978563e9f52dc308d1d0db7212c -XHaskell98 -XDeriveDataTypeable Data.UUID.Types Data.UUID.Types.Internal.Builder Data.UUID.Types.Internal -Wall
+Registering uuid-types-1.0.3...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb'

@@ -1,0 +1,146 @@
+[1 of 1] Compiling Main             ( /tmp/stack23478/distributive-0.5.0.2/Setup.lhs, /tmp/stack23478/distributive-0.5.0.2/.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/setup/Main.o )
+Linking /tmp/stack23478/distributive-0.5.0.2/.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/setup/setup ...
+Configuring distributive-0.5.0.2...
+Flags chosen: tagged=True
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency base-orphans ==0.5.4: using base-orphans-0.5.4
+Dependency tagged ==0.8.3: using tagged-0.8.3
+Dependency transformers ==0.4.2.0: using transformers-0.4.2.0
+Dependency transformers-compat ==0.4.0.4: using transformers-compat-0.4.0.4
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/distributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/share/x86_64-linux-ghc-7.10.3/distributive-0.5.0.2
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/distributive-0.5.0.2
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building distributive-0.5.0.2...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library distributive-0.5.0.2...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -isrc -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key distr_Bzw4892o7eSJ9GCWqoiGOX -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id base-orphans-0.5.4-80aa061a7fc1e4ab8c82be1540afd813 -package-id tagged-0.8.3-21c7d9e94c80e78986722ec9a3df67cf -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id transformers-compat-0.4.0.4-8aa4073730c676dbe210ea8bffd8d092 -XHaskell98 Data.Distributive Data.Distributive.Generic -Wall -ddump-hi -ddump-to-file
+[1 of 2] Compiling Data.Distributive.Generic ( src/Data/Distributive/Generic.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Distributive/Generic.o )
+[2 of 2] Compiling Data.Distributive ( src/Data/Distributive.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Distributive.o )
+Linking...
+[(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"base-orphans-0.5.4-80aa061a7fc1e4ab8c82be1540afd813",PackageIdentifier
+{pkgName = PackageName {unPackageName = "base-orphans"}, pkgVersion = Version
+{versionBranch = [0,5,4], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"tagged-0.8.3-21c7d9e94c80e78986722ec9a3df67cf",PackageIdentifier {pkgName =
+PackageName {unPackageName = "tagged"}, pkgVersion = Version {versionBranch =
+[0,8,3], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers"}, pkgVersion = Version
+{versionBranch = [0,4,2,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"transformers-compat-0.4.0.4-8aa4073730c676dbe210ea8bffd8d092",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers-compat"}, pkgVersion =
+Version {versionBranch = [0,4,0,4], versionTags = []}},ModuleRenaming True
+[])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-27947/libHSdistributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Distributive.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Distributive/Generic.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-27947/libHSdistributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-27947/libHSdistributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/base-orphans-0.5.4-0gFtKFBT26OGSKHmmdqdfx -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/prett_JItwetRppk1H5Uq3xbjDGC -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/tagged-0.8.3-5cptKNCoGdxJM6eqqNERxD -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/templ_GJPvtLC64aA4c1Jl10o2qt -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/trans_GZTjP9K5WFq01xC9BAGQpF -optl-Wl,-rpath,/home/simon/.stack/snapshots/x86_64-linux/lts-5.3/7.10.3/lib/x86_64-linux-ghc-7.10.3/transformers-compat-0.4.0.4-HLoEtsQxMvo5lni62P8VpB -this-package-key distr_Bzw4892o7eSJ9GCWqoiGOX -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id base-orphans-0.5.4-80aa061a7fc1e4ab8c82be1540afd813 -package-id tagged-0.8.3-21c7d9e94c80e78986722ec9a3df67cf -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id transformers-compat-0.4.0.4-8aa4073730c676dbe210ea8bffd8d092 .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Distributive.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Distributive/Generic.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSdistributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering distributive-0.5.0.2...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/distributive
+does exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/distributive-0.5.0.2
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/distributive-0.5.0.2/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/distributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/distributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/distributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/distributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/distributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX/Data/Distributive
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Distributive.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/distributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX/Data/Distributive.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Distributive/Generic.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/distributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX/Data/Distributive/Generic.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/distributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX/Data
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/distributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX/Data/Distributive
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Distributive.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/distributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX/Data/Distributive.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/Data/Distributive/Generic.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/distributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX/Data/Distributive/Generic.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/distributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSdistributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/distributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX/libHSdistributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/distributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSdistributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSdistributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/distributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX/libHSdistributive-0.5.0.2-Bzw4892o7eSJ9GCWqoiGOX-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -isrc -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key distr_Bzw4892o7eSJ9GCWqoiGOX -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id base-orphans-0.5.4-80aa061a7fc1e4ab8c82be1540afd813 -package-id tagged-0.8.3-21c7d9e94c80e78986722ec9a3df67cf -package-id transformers-0.4.2.0-81450cd8f86b36eaa8fa0cbaf6efc3a3 -package-id transformers-compat-0.4.0.4-8aa4073730c676dbe210ea8bffd8d092 -XHaskell98 Data.Distributive Data.Distributive.Generic -Wall
+Registering distributive-0.5.0.2...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb'

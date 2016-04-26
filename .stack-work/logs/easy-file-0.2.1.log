@@ -1,0 +1,167 @@
+Configuring easy-file-0.2.1...
+Dependency base ==4.8.2.0: using base-4.8.2.0
+Dependency directory ==1.2.2.0: using directory-1.2.2.0
+Dependency filepath ==1.4.0.0: using filepath-1.4.0.0
+Dependency time ==1.5.0.1: using time-1.5.0.1
+Dependency unix ==2.7.1.0: using unix-2.7.1.0
+Using Cabal-1.22.7.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.3
+Using install prefix: /home/simon/.cabal
+Binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/bin
+Libraries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G
+Private binaries installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/libexec
+Data files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/share/x86_64-linux-ghc-7.10.3/easy-file-0.2.1
+Documentation installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/easy-file-0.2.1
+Configuration files installed in:
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+Using gcc version 4.8 found on system at: /usr/bin/gcc
+Using ghc version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc
+Using ghc-pkg version 7.10.3 given by user at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hpc
+Using hsc2hs version 0.67 found on system at:
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/simon/.local/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.26 found on system at: /usr/bin/pkg-config
+Using strip version 2.24 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+Component build order: library
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen
+Building easy-file-0.2.1...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg init .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace
+Preprocessing library easy-file-0.2.1...
+Building library...
+creating .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key easyf_IjQ6MMskJyDEpOwcfCdF0G -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e -package-id time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 -XHaskell98 System.EasyFile System.EasyFile.FilePath System.EasyFile.Directory System.EasyFile.Missing -Wall -ddump-hi -ddump-to-file
+[1 of 4] Compiling System.EasyFile.Missing ( System/EasyFile/Missing.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile/Missing.o )
+
+System/EasyFile/Missing.hs:7:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[2 of 4] Compiling System.EasyFile.Directory ( System/EasyFile/Directory.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile/Directory.o )
+
+System/EasyFile/Directory.hs:37:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[3 of 4] Compiling System.EasyFile.FilePath ( System/EasyFile/FilePath.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile/FilePath.o )
+[4 of 4] Compiling System.EasyFile  ( System/EasyFile.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile.o )
+Linking...
+[(InstalledPackageId
+"base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,2,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732",PackageIdentifier
+{pkgName = PackageName {unPackageName = "directory"}, pkgVersion = Version
+{versionBranch = [1,2,2,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e",PackageIdentifier {pkgName
+= PackageName {unPackageName = "filepath"}, pkgVersion = Version
+{versionBranch = [1,4,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b",PackageIdentifier {pkgName =
+PackageName {unPackageName = "time"}, pkgVersion = Version {versionBranch =
+[1,5,0,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"unix-2.7.1.0-343d4f566f30113da92e819f4a148640",PackageIdentifier {pkgName =
+PackageName {unPackageName = "unix"}, pkgVersion = Version {versionBranch =
+[2,7,1,0], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-23888/libHSeasy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G.a .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile/FilePath.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile/Directory.o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile/Missing.o
+/usr/bin/ar: Erzeugen von .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-23888/libHSeasy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G.a
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/objs-23888/libHSeasy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G.a --strip-unneeded
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/array_67iodizgJQIIxYVTp4emlA -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/base_HQfYBxpPvuw8OunzQu6JGM -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/rts -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/bytes_6VWy06pWzJq9evDvK2d4w6 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/deeps_6vMKxt5sPFR0XsbRWvvq59 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/direc_0hFG6ZxK1nk4zsyOqbNHfm -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/filep_Ey7a1in9roBAE8bUFJ5R9m -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/time_FTheb6LSxyX1UABIbBXRfn -optl-Wl,-rpath,/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/unix_KZL8h98IqDM57kQSPo1mKx -this-package-key easyf_IjQ6MMskJyDEpOwcfCdF0G -no-auto-link-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-db .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e -package-id time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile/FilePath.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile/Directory.dyn_o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile/Missing.dyn_o -o .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSeasy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G-ghc7.10.3.so -ddump-hi -ddump-to-file
+In-place registering easy-file-0.2.1...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb' '--package-db=.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/package.conf.inplace'
+directory .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/doc/html/easy-file does
+exist: False
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/easy-file-0.2.1
+Installing LICENSE to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/doc/easy-file-0.2.1/LICENSE
+Installing library in
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G/System
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G/System
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G/System/EasyFile
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile.hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G/System/EasyFile.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile/FilePath.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G/System/EasyFile/FilePath.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile/Directory.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G/System/EasyFile/Directory.hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile/Missing.hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G/System/EasyFile/Missing.hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G/System
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G/System/EasyFile
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile.dyn_hi to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G/System/EasyFile.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile/FilePath.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G/System/EasyFile/FilePath.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile/Directory.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G/System/EasyFile/Directory.dyn_hi
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/System/EasyFile/Missing.dyn_hi
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G/System/EasyFile/Missing.dyn_hi
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G
+Installing
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSeasy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G.a
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G/libHSeasy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G.a
+creating
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G
+/usr/bin/strip .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSeasy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G-ghc7.10.3.so --strip-unneeded
+Installing executable
+.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/libHSeasy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G-ghc7.10.3.so
+to
+/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/lib/x86_64-linux-ghc-7.10.3/easy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G/libHSeasy-file-0.2.1-IjQ6MMskJyDEpOwcfCdF0G-ghc7.10.3.so
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -odir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -hidir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -stubdir .stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -i. -i.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen -I.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build -optP-include -optP.stack-work/dist/x86_64-linux/Cabal-1.22.7.0/build/autogen/cabal_macros.h -this-package-key easyf_IjQ6MMskJyDEpOwcfCdF0G -hide-all-packages -no-user-package-db -package-db /home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb -package-id base-4.8.2.0-0d6d1084fbc041e1cded9228e80e264d -package-id directory-1.2.2.0-f8e14a9d121b76a00a0f669ee724a732 -package-id filepath-1.4.0.0-f97d1e4aebfd7a03be6980454fe31d6e -package-id time-1.5.0.1-edbd1a50e7922b396ada189ab8e8523b -package-id unix-2.7.1.0-343d4f566f30113da92e819f4a148640 -XHaskell98 System.EasyFile -Wall
+Registering easy-file-0.2.1...
+/home/simon/.stack/programs/x86_64-linux/ghc-7.10.3/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/simon/.stack/snapshots/x86_64-linux/nightly-2016-04-26/7.10.3/pkgdb'

@@ -1,0 +1,65 @@
+Configuring binary-0.7.1.0...
+Building binary-0.7.1.0...
+Preprocessing library binary-0.7.1.0...
+[1 of 9] Compiling Data.Binary.Builder.Base ( src/Data/Binary/Builder/Base.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Binary/Builder/Base.o )
+
+src/Data/Binary/Builder/Base.hs:192:37: Warning:
+    In the use of ‘inlinePerformIO’
+    (imported from Data.ByteString.Internal):
+    Deprecated: "If you think you know what you are doing, use 'unsafePerformIO'. If you are sure you know what you are doing, use 'unsafeDupablePerformIO'. If you enjoy sharing an address space with a malevolent agent of chaos, try 'accursedUnutterablePerformIO'."
+[2 of 9] Compiling Data.Binary.Builder.Internal ( src/Data/Binary/Builder/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Binary/Builder/Internal.o )
+[3 of 9] Compiling Data.Binary.Get.Internal ( src/Data/Binary/Get/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Binary/Get/Internal.o )
+
+src/Data/Binary/Get/Internal.hs:348:21: Warning:
+    In the use of ‘B.inlinePerformIO’
+    (imported from Data.ByteString.Internal):
+    Deprecated: "If you think you know what you are doing, use 'unsafePerformIO'. If you are sure you know what you are doing, use 'unsafeDupablePerformIO'. If you enjoy sharing an address space with a malevolent agent of chaos, try 'accursedUnutterablePerformIO'."
+
+src/Data/Binary/Get/Internal.hs:314:1: Warning:
+    Rule "<$> to <*>" may never fire because ‘<$>’ might inline first
+    Probable fix: add an INLINE[n] or NOINLINE[n] pragma on ‘<$>’
+[4 of 9] Compiling Data.Binary.Builder ( src/Data/Binary/Builder.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Binary/Builder.o )
+[5 of 9] Compiling Data.Binary.Get  ( src/Data/Binary/Get.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Binary/Get.o )
+
+src/Data/Binary/Get.hs:416:1: Warning:
+    Rule "getWord8/readN" may never fire
+      because ‘getWord8’ might inline first
+    Probable fix: add an INLINE[n] or NOINLINE[n] pragma on ‘getWord8’
+
+src/Data/Binary/Get.hs:417:1: Warning:
+    Rule "getWord16be/readN" may never fire
+      because ‘getWord16be’ might inline first
+    Probable fix: add an INLINE[n] or NOINLINE[n] pragma on ‘getWord16be’
+
+src/Data/Binary/Get.hs:418:1: Warning:
+    Rule "getWord16le/readN" may never fire
+      because ‘getWord16le’ might inline first
+    Probable fix: add an INLINE[n] or NOINLINE[n] pragma on ‘getWord16le’
+
+src/Data/Binary/Get.hs:419:1: Warning:
+    Rule "getWord32be/readN" may never fire
+      because ‘getWord32be’ might inline first
+    Probable fix: add an INLINE[n] or NOINLINE[n] pragma on ‘getWord32be’
+
+src/Data/Binary/Get.hs:420:1: Warning:
+    Rule "getWord32le/readN" may never fire
+      because ‘getWord32le’ might inline first
+    Probable fix: add an INLINE[n] or NOINLINE[n] pragma on ‘getWord32le’
+
+src/Data/Binary/Get.hs:421:1: Warning:
+    Rule "getWord64be/readN" may never fire
+      because ‘getWord64be’ might inline first
+    Probable fix: add an INLINE[n] or NOINLINE[n] pragma on ‘getWord64be’
+
+src/Data/Binary/Get.hs:422:1: Warning:
+    Rule "getWord64le/readN" may never fire
+      because ‘getWord64le’ might inline first
+    Probable fix: add an INLINE[n] or NOINLINE[n] pragma on ‘getWord64le’
+[6 of 9] Compiling Data.Binary.Put  ( src/Data/Binary/Put.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Binary/Put.o )
+[7 of 9] Compiling Data.Binary.Class ( src/Data/Binary/Class.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Binary/Class.o )
+[8 of 9] Compiling Data.Binary.Generic ( src/Data/Binary/Generic.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Binary/Generic.o )
+[9 of 9] Compiling Data.Binary      ( src/Data/Binary.hs, .stack-work/dist/x86_64-linux/Cabal-1.18.1.5/build/Data/Binary.o )
+In-place registering binary-0.7.1.0...
+Installing library in
+/home/simon/src/stack/.stack-work/install/x86_64-linux/lts-2.22/7.8.4/lib/x86_64-linux-ghc-7.8.4/binary-0.7.1.0
+Registering binary-0.7.1.0...
