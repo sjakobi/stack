@@ -55,7 +55,7 @@ import           Data.List.NonEmpty (NonEmpty(..))
 import qualified Data.List.NonEmpty as NonEmpty
 import           Data.Map (Map)
 import qualified Data.Map as Map
-import           Data.Maybe (fromJust, fromMaybe, mapMaybe)
+import           Data.Maybe (fromMaybe, mapMaybe)
 import           Data.Monoid
 import           Data.Set (Set)
 import qualified Data.Set as Set
@@ -535,46 +535,34 @@ selectPackageBuildPlan
     -> Map PackageName Version
     -> GenericPackageDescription
     -> (Map PackageName (Map FlagName Bool), DepErrors)
-selectPackageBuildPlan platform compiler pool gpd =
-    fromJust (go flagOptions Nothing)
+selectPackageBuildPlan platform compiler pool gpd = F.foldr1 go plans
     where
-        go :: [Map FlagName Bool] -> Maybe (Map PackageName (Map FlagName Bool), DepErrors) -> Maybe (Map PackageName (Map FlagName Bool), DepErrors)
-        -- impossible
-        go [] Nothing = assert False Nothing
-        -- last
-        go [] (Just plan) = Just plan
-        -- got the best possible result
-        go _ (Just plan) | Map.null (snd plan) = Just plan
-        -- initial
-        go (flags:rest) Nothing = go rest $ Just (nextPlan flags)
-        -- keep looking for better results
-        go (flags:rest) (Just plan) =
-          go rest $ Just (betterPlan plan (nextPlan flags))
+    go p1@(_, e1) p2
+        | Map.null e1 = p1
+        | Map.size e1 <= Map.size (snd p2) = p1
+        | otherwise = p2
 
-        nextPlan flags = checkPackageBuildPlan platform compiler pool flags gpd
+    plans :: NonEmpty (Map PackageName (Map FlagName Bool), DepErrors)
+    plans = NonEmpty.map (\f -> checkPackageBuildPlan platform compiler pool f gpd) flagOptions
+        where
 
-        betterPlan (f1, e1) (f2, e2)
-          | (Map.size e1) <= (Map.size e2) = (f1, e1)
-          | otherwise = (f2, e2)
+        flagOptions :: NonEmpty (Map FlagName Bool)
+        flagOptions = limit $ NonEmpty.map Map.fromList $ mapM getOptions $ genPackageFlags gpd
+            where
 
-        flagName' = fromCabalFlagName . flagName
+            getOptions :: C.Flag -> NonEmpty (FlagName, Bool)
+            getOptions f
+                | flagManual f = (fname, flagDefault f) :| []
+                | flagDefault f = (fname, True) :| [(fname, False)]
+                | otherwise = (fname, False) :| [(fname, True)]
+                where
+                fname = (fromCabalFlagName . flagName) f
 
-        -- Avoid exponential complexity in flag combinations making us sad pandas.
-        -- See: https://github.com/commercialhaskell/stack/issues/543
-        maxFlagOptions = 128
-
-        flagOptions :: [Map FlagName Bool]
-        flagOptions = take maxFlagOptions $ map Map.fromList $ mapM getOptions $ genPackageFlags gpd
-        getOptions f
-            | flagManual f = [(flagName' f, flagDefault f)]
-            | flagDefault f =
-                [ (flagName' f, True)
-                , (flagName' f, False)
-                ]
-            | otherwise =
-                [ (flagName' f, False)
-                , (flagName' f, True)
-                ]
+            limit (x :| xs) = x :| take (maxFlagOptions - 1) xs
+                where
+                -- Avoid exponential complexity in flag combinations making us sad pandas.
+                -- See: https://github.com/commercialhaskell/stack/issues/543
+                maxFlagOptions = 128
 
 -- | Check whether with the given set of flags a package's dependency
 -- constraints can be satisfied against a given build plan or pool of packages.
