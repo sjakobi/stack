@@ -11,3 +11,4 @@ nix:
 extra-deps:
 - hpack-0.12.0
 - path-io-1.1.0
+apply-ghc-options: locals
