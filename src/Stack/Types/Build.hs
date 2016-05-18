@@ -42,23 +42,15 @@ module Stack.Types.Build
     ,PrecompiledCache (..))
     where
 
-import           Control.DeepSeq
-import           Control.Exception
+import Prelude ()
+import Imports
 
+import           Control.DeepSeq
 import           Data.Binary (getWord8, putWord8, gput, gget)
 import           Data.Binary.VersionTagged
 import qualified Data.ByteString as S
-import           Data.Char (isSpace)
-import           Data.Data
-import           Data.Hashable
-import           Data.List (dropWhileEnd, nub, intercalate)
 import qualified Data.Map as Map
-import           Data.Map.Strict (Map)
-import           Data.Maybe
-import           Data.Monoid
-import           Data.Set (Set)
 import qualified Data.Set as Set
-import           Data.Text (Text)
 import qualified Data.Text as T
 import           Data.Text.Encoding (decodeUtf8With)
 import           Data.Text.Encoding.Error (lenientDecode)
@@ -67,10 +59,8 @@ import           Data.Time.Clock
 import           Distribution.System (Arch)
 import           Distribution.PackageDescription (TestSuiteInterface)
 import           Distribution.Text (display)
-import           GHC.Generics (Generic, from, to)
-import           Path (Path, Abs, File, Dir, mkRelDir, toFilePath, parseRelDir, (</>))
+import           GHC.Generics (from, to)
 import           Path.Extra (toFilePathNoTrailingSep)
-import           Prelude
 import           Stack.Types.BuildPlan (GitSHA1)
 import           Stack.Types.Compiler
 import           Stack.Types.Config

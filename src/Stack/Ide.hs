@@ -11,21 +11,13 @@ module Stack.Ide
     (ide, getPackageOptsAndTargetFiles, ideGhciOpts)
     where
 
-import           Control.Monad.Catch
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger
-import           Control.Monad.Reader
+import           Prelude ()
+import           Imports
+
 import           Control.Monad.Trans.Unlift (MonadBaseUnlift)
-import           Data.List
-import           Data.Maybe
-import           Data.Monoid
 import qualified Data.Set as S
-import           Data.Text (Text)
 import           Distribution.System
-import           Network.HTTP.Client.Conduit
-import           Path
 import           Path.Extra (toFilePathNoTrailingSep)
-import           Path.IO
 import           Stack.Constants
 import           Stack.Ghci (GhciPkgInfo(..), GhciOpts(..), ghciSetup)
 import           Stack.Package

@@ -19,26 +19,14 @@ module Stack.Build.Target
     , parseTargets
     ) where
 
-import           Control.Applicative
-import           Control.Arrow (second)
-import           Control.Monad.Catch (MonadCatch, throwM)
-import           Control.Monad.IO.Class
-import           Data.Either (partitionEithers)
-import           Data.Foldable
 import           Data.List.Extra (groupSort)
-import           Data.List.NonEmpty (NonEmpty((:|)))
 import qualified Data.List.NonEmpty as NonEmpty
-import           Data.Map (Map)
 import qualified Data.Map as Map
-import           Data.Maybe (mapMaybe)
-import           Data.Set (Set)
 import qualified Data.Set as Set
-import           Data.Text (Text)
 import qualified Data.Text as T
-import           Path
+import           Imports
 import           Path.Extra (rejectMissingDir)
-import           Path.IO
-import           Prelude hiding (concat, concatMap) -- Fix redundant import warnings
+import           Prelude ()
 import           Stack.Types
 
 -- | The name of a component, which applies to executables, test suites, and benchmarks

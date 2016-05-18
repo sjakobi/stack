@@ -7,17 +7,13 @@ module Stack.Config.Nix
        ,StackNixException(..)
        ) where
 
-import Control.Applicative
-import Control.Monad (join, when)
-import Data.Maybe
+import Control.Exception.Lifted
 import Data.Monoid.Extra
 import qualified Data.Text as T
-import Data.Typeable
 import Distribution.System (OS (..))
+import Imports
+import Prelude ()
 import Stack.Types
-import Control.Exception.Lifted
-import Control.Monad.Catch (throwM,MonadCatch)
-import Prelude
 
 -- | Interprets NixOptsMonoid options.
 nixOptsFromMonoid

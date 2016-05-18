@@ -12,9 +12,9 @@
 
 module Stack.Exec where
 
-import           Control.Monad.Reader
-import           Control.Monad.Logger
-import           Control.Monad.Trans.Control (MonadBaseControl)
+import           Prelude ()
+import           Imports
+
 import           Stack.Types
 import           System.Process.Log
 

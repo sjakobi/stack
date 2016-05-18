@@ -11,22 +11,13 @@ module Stack.Image
         imgCmdName, imgDockerCmdName, imgOptsFromMonoid)
        where
 
+import           Prelude ()
+import           Imports
+
 import           Control.Exception.Lifted hiding (finally)
-import           Control.Monad
-import           Control.Monad.Catch hiding (bracket)
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger
-import           Control.Monad.Reader
-import           Control.Monad.Trans.Control
-import           Data.Char (toLower)
 import qualified Data.Map.Strict as Map
-import           Data.Maybe
-import           Data.Typeable
-import           Data.Text (Text)
 import qualified Data.Text as T
-import           Path
 import           Path.Extra
-import           Path.IO
 import           Stack.Constants
 import           Stack.Types
 import           Stack.Types.Internal

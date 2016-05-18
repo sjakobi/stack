@@ -17,42 +17,29 @@ module Stack.New
     , listTemplates)
     where
 
-import           Control.Monad
-import           Control.Monad.Catch
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger
-import           Control.Monad.Reader
+import           Prelude ()
+import           Imports
+
 import           Control.Monad.Trans.Writer.Strict
 import           Data.Aeson
 import           Data.Aeson.Types
 import qualified Data.ByteString.Lazy as LB
 import qualified Data.ByteString.Lazy.Char8 as L8
 import           Data.Conduit
-import           Data.Foldable (asum)
 import qualified Data.HashMap.Strict as HM
-import           Data.List
-import           Data.Map.Strict (Map)
 import qualified Data.Map.Strict as M
-import           Data.Maybe (fromMaybe)
 import           Data.Maybe.Extra (mapMaybeM)
-import           Data.Monoid
-import           Data.Set (Set)
 import qualified Data.Set as S
-import           Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as T
 import qualified Data.Text.IO as T
 import qualified Data.Text.Lazy as LT
 import           Data.Time.Calendar
 import           Data.Time.Clock
-import           Data.Typeable
 import qualified Data.Yaml as Yaml
 import           Network.HTTP.Client.Conduit hiding (path)
 import           Network.HTTP.Download
 import           Network.HTTP.Types.Status
-import           Path
-import           Path.IO
-import           Prelude
 import           Stack.Constants
 import           Stack.Types
 import           Stack.Types.TemplateName

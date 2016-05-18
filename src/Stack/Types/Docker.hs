@@ -7,18 +7,14 @@
 
 module Stack.Types.Docker where
 
-import Control.Applicative
-import Control.Monad
-import Control.Monad.Catch (MonadThrow)
+import Prelude ()
+import Imports
+
 import Data.Aeson.Extended
-import Data.Monoid
-import Data.Text (Text)
 import qualified Data.Text as T
 import Distribution.Text (simpleParse)
 import Distribution.Version (anyVersion)
-import GHC.Generics (Generic)
 import Generics.Deriving.Monoid (mappenddefault, memptydefault)
-import Path
 import Stack.Types.Version
 
 -- | Docker configuration.

@@ -4,12 +4,12 @@
 
 module Stack.Types.Internal where
 
+import Prelude ()
+import Imports
+
 import Control.Concurrent.MVar
-import Control.Monad.Logger (LogLevel)
-import Data.Monoid.Extra
-import Data.Text (Text)
 import Lens.Micro
-import Network.HTTP.Client.Conduit (Manager,HasHttpManager(..))
+import Network.HTTP.Client.Conduit (Manager)
 import Stack.Types.Config
 
 -- | Monadic environment.

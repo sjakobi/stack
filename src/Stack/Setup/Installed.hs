@@ -17,27 +17,15 @@ module Stack.Setup.Installed
     , installDir
     ) where
 
-import           Control.Applicative
-import           Control.Monad.Catch
-import           Control.Monad.IO.Class (MonadIO, liftIO)
-import           Control.Monad.Logger
-import           Control.Monad.Reader (MonadReader, asks)
-import           Control.Monad.Trans.Control
 import qualified Data.ByteString.Char8 as S8
-import           Data.List hiding (concat, elem, maximumBy)
-import           Data.Maybe
-import           Data.Monoid
-import           Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as T
 import           Distribution.System (Platform (..))
 import qualified Distribution.System as Cabal
-import           GHC.Generics (Generic)
 import           Generics.Deriving.Monoid (mappenddefault, memptydefault)
-import           Path
+import           Imports
 import           Path.Extra (toFilePathNoTrailingSep)
-import           Path.IO
-import           Prelude hiding (concat, elem) -- Fix AMP warning
+import           Prelude ()
 import           Stack.Types
 import           System.Process.Read
 

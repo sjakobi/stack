@@ -16,56 +16,34 @@ module Stack.Build.Execute
     , withSingleContext
     ) where
 
-import           Control.Applicative
-import           Control.Arrow ((&&&), second)
 import           Control.Concurrent.Execute
 import           Control.Concurrent.MVar.Lifted
 import           Control.Concurrent.STM
 import           Control.Exception.Enclosed (catchIO)
 import           Control.Exception.Lifted
-import           Control.Monad (liftM, when, unless, void)
-import           Control.Monad.Catch (MonadCatch, MonadMask)
 import           Control.Monad.Extra (anyM, (&&^))
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger
-import           Control.Monad.Reader (MonadReader, asks)
-import           Control.Monad.Trans.Control (liftBaseWith)
 import           Control.Monad.Trans.Resource
 import           Data.Attoparsec.Text hiding (try)
 import qualified Data.ByteString as S
-import           Data.Char (isSpace)
 import           Data.Conduit
 import qualified Data.Conduit.Binary as CB
 import qualified Data.Conduit.List as CL
 import qualified Data.Conduit.Text as CT
-import           Data.Either (isRight)
-import           Data.Foldable (forM_, any)
-import           Data.Function
 import           Data.IORef.RunOnce (runOnce)
-import           Data.List hiding (any)
-import           Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import           Data.Maybe
 import           Data.Maybe.Extra (forMaybeM)
-import           Data.Monoid ((<>))
-import           Data.Set (Set)
 import qualified Data.Set as Set
 import           Data.Streaming.Process hiding (callProcess, env)
-import           Data.Text (Text)
 import qualified Data.Text as T
 import           Data.Text.Encoding (decodeUtf8)
 import           Data.Time.Clock (getCurrentTime)
-import           Data.Traversable (forM)
-import           Data.Tuple
 import qualified Distribution.PackageDescription as C
 import           Distribution.System            (OS (Windows),
                                                  Platform (Platform))
+import           Imports hiding (findExecutable, catch, makeAbsolute)
 import           Language.Haskell.TH as TH (location)
-import           Network.HTTP.Client.Conduit (HasHttpManager)
-import           Path
 import           Path.Extra (toFilePathNoTrailingSep, rejectMissingFile)
-import           Path.IO hiding (findExecutable, makeAbsolute)
-import           Prelude hiding (FilePath, writeFile, any)
+import           Prelude ()
 import           Stack.Build.Cache
 import           Stack.Build.Haddock
 import           Stack.Build.Installed

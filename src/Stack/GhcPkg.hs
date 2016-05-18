@@ -20,22 +20,13 @@ module Stack.GhcPkg
   ,mkGhcPackagePath)
   where
 
-import           Control.Monad
-import           Control.Monad.Catch
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger
-import           Control.Monad.Trans.Control
+import           Prelude ()
+import           Imports
+
 import qualified Data.ByteString.Char8 as S8
-import           Data.Either
-import           Data.List
-import           Data.Maybe
-import           Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as T
-import           Path (Path, Abs, Dir, toFilePath, parent)
 import           Path.Extra (toFilePathNoTrailingSep)
-import           Path.IO
-import           Prelude hiding (FilePath)
 import           Stack.Constants
 import           Stack.Types
 import           System.FilePath (searchPathSeparator)

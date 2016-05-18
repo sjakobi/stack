@@ -29,14 +29,12 @@ module Stack.Options
     ,splitObjsWarning
     ) where
 
-import           Control.Monad.Logger              (LogLevel (..))
-import           Data.Char                         (isSpace, toLower, toUpper)
-import           Data.List                         (intercalate)
+import           Prelude ()
+import           Imports
+
 import           Data.List.Split                   (splitOn)
 import qualified Data.Map                          as Map
-import           Data.Map.Strict                   (Map)
 import qualified Data.Map.Strict                   as M
-import           Data.Maybe
 import           Data.Monoid.Extra
 import qualified Data.Set                          as Set
 import qualified Data.Text                         as T
@@ -46,7 +44,6 @@ import           Options.Applicative
 import           Options.Applicative.Args
 import           Options.Applicative.Builder.Extra
 import           Options.Applicative.Types         (fromM, oneM, readerAsk)
-import           Path
 import           Stack.Build                       (splitObjsWarning)
 import           Stack.Clean                       (CleanOpts (..))
 import           Stack.Config                      (packagesParser)

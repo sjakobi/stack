@@ -6,15 +6,12 @@
 
 module Stack.Types.Image where
 
+import Prelude ()
+import Imports
+
 import Data.Aeson.Extended
-import Data.Monoid
-import Data.Map (Map)
 import qualified Data.Map as Map
-import Data.Maybe (maybeToList)
-import Data.Text (Text)
-import GHC.Generics (Generic)
 import Generics.Deriving.Monoid (mappenddefault, memptydefault)
-import Prelude -- Fix redundant import warnings
 
 -- | Image options. Currently only Docker image options.
 data ImageOpts = ImageOpts

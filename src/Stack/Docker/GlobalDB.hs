@@ -15,21 +15,18 @@ module Stack.Docker.GlobalDB
   ,DockerImageExeId)
   where
 
-import           Control.Exception (IOException,catch,throwIO)
-import           Control.Monad (forM_, when)
-import           Control.Monad.Logger (NoLoggingT)
+import           Prelude ()
+import           Imports hiding (delete)
+
+import           Control.Exception (IOException,throwIO)
 import           Control.Monad.Trans.Resource (ResourceT)
-import           Data.List (sortBy, isInfixOf, stripPrefix)
 import           Data.List.Extra (stripSuffix)
 import qualified Data.Map.Strict as Map
-import           Data.Maybe (fromMaybe)
 import qualified Data.Text as T
 import           Data.Time.Clock (UTCTime,getCurrentTime)
 import           Database.Persist
 import           Database.Persist.Sqlite
 import           Database.Persist.TH
-import           Path (toFilePath, parent)
-import           Path.IO (ensureDir)
 import           Stack.Types.Config
 import           Stack.Types.Docker
 

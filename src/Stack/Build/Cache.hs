@@ -27,25 +27,15 @@ module Stack.Build.Cache
     ) where
 
 import           Control.Exception.Enclosed (handleIO)
-import           Control.Monad.Catch (MonadThrow, MonadCatch)
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger (MonadLogger, logDebug)
-import           Control.Monad.Reader
 import qualified Crypto.Hash.SHA256 as SHA256
 import qualified Data.Binary as Binary (encode)
 import           Data.Binary.VersionTagged
 import qualified Data.ByteString.Char8 as S8
 import qualified Data.ByteString.Base16 as B16
-import           Data.Map (Map)
-import           Data.Maybe (fromMaybe, mapMaybe)
-import           Data.Monoid ((<>))
-import           Data.Set (Set)
 import qualified Data.Set as Set
-import           Data.Text (Text)
 import qualified Data.Text as T
-import           GHC.Generics (Generic)
-import           Path
-import           Path.IO
+import           Imports
+import           Prelude ()
 import           Stack.Types.Build
 import           Stack.Constants
 import           Stack.Types

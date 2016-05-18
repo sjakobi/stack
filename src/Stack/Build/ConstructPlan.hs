@@ -12,33 +12,20 @@ module Stack.Build.ConstructPlan
     ( constructPlan
     ) where
 
-import           Control.Arrow ((&&&))
 import           Control.Exception.Lifted
-import           Control.Monad
-import           Control.Monad.Catch (MonadCatch)
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger (MonadLogger, logWarn)
-import           Control.Monad.RWS.Strict
+import           Control.Monad.RWS.Strict hiding (mapM_,when,forM,guard)
 import           Control.Monad.Trans.Resource
-import           Data.Either
-import           Data.Function
-import           Data.List
-import           Data.Map.Strict (Map)
 import qualified Data.Map.Strict as M
 import qualified Data.Map.Strict as Map
-import           Data.Maybe
-import           Data.Set (Set)
 import qualified Data.Set as Set
-import           Data.Text (Text)
 import qualified Data.Text as T
 import           Data.Text.Encoding (decodeUtf8With)
 import           Data.Text.Encoding.Error (lenientDecode)
 import qualified Distribution.Package as Cabal
 import qualified Distribution.Version as Cabal
-import           GHC.Generics (Generic)
 import           Generics.Deriving.Monoid (memptydefault, mappenddefault)
-import           Network.HTTP.Client.Conduit (HasHttpManager)
-import           Prelude hiding (pi, writeFile)
+import           Imports
+import           Prelude ()
 import           Stack.Build.Cache
 import           Stack.Build.Haddock
 import           Stack.Build.Installed

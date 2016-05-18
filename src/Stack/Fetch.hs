@@ -23,55 +23,36 @@ module Stack.Fetch
     , withCabalLoader
     ) where
 
+import           Prelude ()
+import           Imports
+
+import           Control.Monad.Catch            (bracket)
 import qualified Codec.Archive.Tar              as Tar
 import qualified Codec.Archive.Tar.Check        as Tar
 import qualified Codec.Archive.Tar.Entry        as Tar
 import           Codec.Compression.GZip         (decompress)
-import           Control.Applicative
 import           Control.Concurrent.Async       (Concurrently (..))
 import           Control.Concurrent.MVar.Lifted (modifyMVar, newMVar)
 import           Control.Concurrent.STM         (TVar, atomically, modifyTVar,
                                                  newTVarIO, readTVar,
                                                  readTVarIO, writeTVar)
-import           Control.Exception              (assert)
 import           Control.Exception.Enclosed     (tryIO)
-import           Control.Monad                  (join, liftM, unless, void,
-                                                 when)
-import           Control.Monad.Catch
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger
-import           Control.Monad.Reader           (asks, runReaderT)
-import           Control.Monad.Trans.Control
 import           Control.Monad.Trans.Unlift     (MonadBaseUnlift, askRunBase)
 import "cryptohash" Crypto.Hash                 (SHA512 (..))
-import           Data.ByteString                (ByteString)
 import qualified Data.ByteString                as S
 import qualified Data.ByteString.Lazy           as L
-import           Data.Either                    (partitionEithers)
-import qualified Data.Foldable                  as F
-import           Data.Function                  (fix)
 import qualified Data.Git                       as Git
 import qualified Data.Git.Ref                   as Git
 import qualified Data.Git.Storage               as Git
 import qualified Data.Git.Storage.Object        as Git
-import           Data.List                      (intercalate)
-import           Data.List.NonEmpty             (NonEmpty)
 import qualified Data.List.NonEmpty             as NE
-import           Data.Map                       (Map)
 import qualified Data.Map                       as Map
-import           Data.Maybe                     (maybeToList, catMaybes)
-import           Data.Monoid
-import           Data.Set                       (Set)
 import qualified Data.Set                       as Set
 import           Data.String                    (fromString)
 import qualified Data.Text                      as T
 import           Data.Text.Encoding             (decodeUtf8)
-import           Data.Typeable                  (Typeable)
 import           Data.Word                      (Word64)
 import           Network.HTTP.Download
-import           Path
-import           Path.IO
-import           Prelude -- Fix AMP warning
 import           Stack.GhcPkg
 import           Stack.PackageIndex
 import           Stack.Types
@@ -158,7 +139,7 @@ unpackPackages menv dest input = do
     unless (Map.null alreadyUnpacked) $
         throwM $ UnpackDirectoryAlreadyExists $ Set.fromList $ map toFilePath $ Map.elems alreadyUnpacked
     unpacked <- fetchPackages' Nothing toFetch
-    F.forM_ (Map.toList unpacked) $ \(ident, dest'') -> $logInfo $ T.pack $ concat
+    forM_ (Map.toList unpacked) $ \(ident, dest'') -> $logInfo $ T.pack $ concat
         [ "Unpacked "
         , packageIdentifierString ident
         , " to "
@@ -501,7 +482,7 @@ fetchPackages' mdistDir toFetchAll = do
 
         let fp = toFilePath destpath
 
-        F.forM_ (tfDestDir toFetch) $ \destDir -> do
+        forM_ (tfDestDir toFetch) $ \destDir -> do
             let dest = toFilePath $ parent destDir
                 innerDest = toFilePath destDir
 
@@ -556,14 +537,14 @@ fetchPackages' mdistDir toFetchAll = do
 
                 atomically $ modifyTVar outputVar $ Map.insert ident destDir
 
-parMapM_ :: (F.Foldable f,MonadIO m,MonadBaseControl IO m)
+parMapM_ :: (Foldable f,MonadIO m,MonadBaseControl IO m)
          => Int
          -> (a -> m ())
          -> f a
          -> m ()
-parMapM_ (max 1 -> 1) f xs = F.mapM_ f xs
+parMapM_ (max 1 -> 1) f xs = mapM_ f xs
 parMapM_ cnt f xs0 = do
-    var <- liftIO (newTVarIO $ F.toList xs0)
+    var <- liftIO (newTVarIO $ toList xs0)
 
     -- See comment on similar line in Stack.Build
     runInBase <- liftBaseWith $ \run -> return (void . run)
@@ -591,4 +572,4 @@ orSeparated xs
   | otherwise = intercalate ", " (NE.init xs) <> ", or " <> NE.last xs
 
 commaSeparated :: NonEmpty String -> String
-commaSeparated = F.fold . NE.intersperse ", "
+commaSeparated = fold . NE.intersperse ", "

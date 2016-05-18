@@ -38,28 +38,16 @@ module Stack.Package
   ,cabalFilePackageId)
   where
 
-import Prelude ()
-import Prelude.Compat
+import           Prelude ()
+import           Imports hiding (findFiles)
 
-import           Control.Arrow ((&&&))
-import           Control.Exception hiding (try,catch)
-import           Control.Monad (liftM, liftM2, (<=<), when, forM, forM_)
-import           Control.Monad.Catch
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger
-import           Control.Monad.Reader (MonadReader,runReaderT,ask,asks)
+import           Control.Exception (IOException, try)
 import qualified Data.ByteString as BS
 import qualified Data.ByteString.Char8 as C8
-import           Data.List.Compat
 import           Data.List.Extra (nubOrd)
-import           Data.Map.Strict (Map)
 import qualified Data.Map.Strict as M
-import           Data.Maybe
 import           Data.Maybe.Extra
-import           Data.Monoid
-import           Data.Set (Set)
 import qualified Data.Set as S
-import           Data.Text (Text)
 import qualified Data.Text as T
 import           Data.Text.Encoding (decodeUtf8, decodeUtf8With)
 import           Data.Text.Encoding.Error (lenientDecode)
@@ -80,10 +68,8 @@ import           Distribution.Text (display, simpleParse)
 import qualified Distribution.Verbosity as D
 import qualified Hpack
 import qualified Hpack.Config as Hpack
-import           Path as FL
 import           Path.Extra
 import           Path.Find
-import           Path.IO hiding (findFiles)
 import           Safe (headDef, tailSafe)
 import           Stack.Build.Installed
 import           Stack.Constants
@@ -98,7 +84,7 @@ readPackageUnresolved :: (MonadIO m, MonadThrow m)
                       => Path Abs File
                       -> m ([PWarning],GenericPackageDescription)
 readPackageUnresolved cabalfp =
-  liftIO (BS.readFile (FL.toFilePath cabalfp))
+  liftIO (BS.readFile (toFilePath cabalfp))
   >>= readPackageUnresolvedBS (Just cabalfp)
 
 -- | Read the raw, unresolved package information from a ByteString.
@@ -568,7 +554,7 @@ resolveGlobFiles =
         dir <- asks (parent . fst)
         names <-
             matchDirFileGlob'
-                (FL.toFilePath dir)
+                (toFilePath dir)
                 name
         mapM resolveFileOrWarn names
     matchDirFileGlob' dir glob =
@@ -1123,7 +1109,7 @@ findOrGenerateCabalFile pkgDir = do
     findCabalFile' = do
         files <- liftIO $ findFiles
             pkgDir
-            (flip hasExtension "cabal" . FL.toFilePath)
+            (flip hasExtension "cabal" . toFilePath)
             (const False)
         return $ case files of
             [] -> Left $ PackageNoCabalFileFound pkgDir
@@ -1182,7 +1168,7 @@ resolveOrWarn subject resolver path =
      result <- resolver dir path
      when (isNothing result) $
        $logWarn ("Warning: " <> subject <> " listed in " <>
-         T.pack (maybe (FL.toFilePath file) FL.toFilePath (stripDir cwd file)) <>
+         T.pack (maybe (toFilePath file) toFilePath (stripDir cwd file)) <>
          " file does not exist: " <>
          T.pack path)
      return result

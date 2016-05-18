@@ -62,6 +62,7 @@ library
                      Data.Maybe.Extra
                      Data.Monoid.Extra
                      Distribution.Version.Extra
+                     Imports
                      Network.HTTP.Download
                      Network.HTTP.Download.Verified
                      Options.Applicative.Args
@@ -145,7 +146,8 @@ library
                    , async >= 2.0.2 && < 2.2
                    , attoparsec >= 0.12.1.5 && < 0.14
                    , base >= 4.7 && <5
-                   , base-compat >=0.6 && <0.10
+                   , base-compat >=0.9.1 && <0.10
+                   , base-orphans
                    , base16-bytestring
                    , base64-bytestring
                    , binary >= 0.7

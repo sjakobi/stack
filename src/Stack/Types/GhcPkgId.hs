@@ -10,18 +10,15 @@ module Stack.Types.GhcPkgId
   ,ghcPkgIdString)
   where
 
-import           Control.Applicative
-import           Control.Monad.Catch
+import Prelude ()
+import Imports
+
 import           Data.Aeson.Extended
 import           Data.Attoparsec.Text
 import           Data.Binary (getWord8, putWord8)
 import           Data.Binary.VersionTagged
 import           Data.Data
-import           Data.Hashable
-import           Data.Text (Text)
 import qualified Data.Text as T
-import           GHC.Generics
-import           Prelude -- Fix AMP warning
 
 -- | A parse fail.
 data GhcPkgIdParseFail

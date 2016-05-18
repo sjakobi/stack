@@ -21,22 +21,18 @@ module Stack.Types.FlagName
   ,mkFlagName)
   where
 
-import           Control.Applicative
-import           Control.Monad.Catch
+import Prelude ()
+import Imports hiding (isAlphaNum)
+
 import           Data.Aeson.Extended
 import           Data.Attoparsec.Text
 import           Data.Attoparsec.Combinators
 import           Data.Binary.VersionTagged
-import           Data.Char (isLetter, isDigit, toLower)
 import           Data.Data
-import           Data.Hashable
-import           Data.Map (Map)
 import qualified Data.Map as Map
-import           Data.Text (Text)
 import qualified Data.Text as T
 import           Data.Text.Binary ()
 import qualified Distribution.PackageDescription as Cabal
-import           GHC.Generics
 import           Language.Haskell.TH
 import           Language.Haskell.TH.Syntax
 

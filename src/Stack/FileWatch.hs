@@ -6,22 +6,19 @@ module Stack.FileWatch
     , printExceptionStderr
     ) where
 
+import Prelude ()
+import Imports
+
 import Blaze.ByteString.Builder (toLazyByteString, copyByteString)
 import Blaze.ByteString.Builder.Char.Utf8 (fromShow)
 import Control.Concurrent.Async (race_)
 import Control.Concurrent.STM
-import Control.Exception (Exception, fromException)
 import Control.Exception.Enclosed (tryAny)
-import Control.Monad (forever, unless, when)
 import qualified Data.ByteString.Lazy as L
 import qualified Data.Map.Strict as Map
-import Data.Monoid ((<>))
-import Data.Set (Set)
 import qualified Data.Set as Set
 import Data.String (fromString)
-import Data.Traversable (forM)
 import GHC.IO.Handle (hIsTerminalDevice)
-import Path
 import System.Console.ANSI
 import System.Exit
 import System.FSNotify

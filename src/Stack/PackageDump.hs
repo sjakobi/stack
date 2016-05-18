@@ -24,35 +24,21 @@ module Stack.PackageDump
     , pruneDeps
     ) where
 
-import           Control.Applicative
-import           Control.Arrow ((&&&))
+import           Prelude ()
+import           Imports hiding (doesFileExist)
+
 import           Control.Exception.Enclosed (tryIO)
-import           Control.Monad (liftM)
-import           Control.Monad.Catch
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger (MonadLogger)
-import           Control.Monad.Trans.Control
 import           Data.Attoparsec.Args
 import           Data.Attoparsec.Text as P
 import           Data.Binary.VersionTagged
 import           Data.Conduit
 import qualified Data.Conduit.List as CL
 import qualified Data.Conduit.Text as CT
-import           Data.Either (partitionEithers)
-import           Data.IORef
-import           Data.Map (Map)
 import qualified Data.Map as Map
-import           Data.Maybe (catMaybes, listToMaybe)
 import           Data.Maybe.Extra (mapMaybeM)
 import qualified Data.Set as Set
 import qualified Data.Text as T
-import           Data.Text (Text)
-import           Data.Typeable (Typeable)
-import           GHC.Generics (Generic)
-import           Path
-import           Path.IO (ensureDir)
 import           Path.Extra (toFilePathNoTrailingSep)
-import           Prelude -- Fix AMP warning
 import           Stack.GhcPkg
 import           Stack.Types
 import           System.Directory (getDirectoryContents, doesFileExist)

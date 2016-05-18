@@ -9,27 +9,15 @@ module Stack.Dot (dot
                  ,pruneGraph
                  ) where
 
-import           Control.Applicative
-import           Control.Arrow ((&&&))
-import           Control.Monad (liftM, void)
-import           Control.Monad.Catch (MonadCatch,MonadMask)
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger (MonadLogger)
-import           Control.Monad.Reader (MonadReader)
+import           Prelude ()
+import           Imports
+
 import           Control.Monad.Trans.Unlift (MonadBaseUnlift)
-import qualified Data.Foldable as F
 import qualified Data.HashSet as HashSet
-import           Data.Map (Map)
 import qualified Data.Map as Map
-import           Data.Monoid ((<>))
-import           Data.Set (Set)
 import qualified Data.Set as Set
-import           Data.Text (Text)
 import qualified Data.Text as Text
 import qualified Data.Text.IO as Text
-import qualified Data.Traversable as T
-import           Network.HTTP.Client.Conduit (HasHttpManager)
-import           Prelude -- Fix redundant import warnings
 import           Stack.Build (withLoadPackage)
 import           Stack.Build.Installed (getInstalled, GetInstalledOpts(..))
 import           Stack.Build.Source
@@ -130,22 +118,22 @@ listDependencies sep = do
 -- | @pruneGraph dontPrune toPrune graph@ prunes all packages in
 -- @graph@ with a name in @toPrune@ and removes resulting orphans
 -- unless they are in @dontPrune@
-pruneGraph :: (F.Foldable f, F.Foldable g, Eq a)
+pruneGraph :: (Foldable f, Foldable g, Eq a)
            => f PackageName
            -> g String
            -> Map PackageName (Set PackageName, a)
            -> Map PackageName (Set PackageName, a)
 pruneGraph dontPrune names =
   pruneUnreachable dontPrune . Map.mapMaybeWithKey (\pkg (pkgDeps,x) ->
-    if show pkg `F.elem` names
+    if show pkg `elem` names
       then Nothing
-      else let filtered = Set.filter (\n -> show n `F.notElem` names) pkgDeps
+      else let filtered = Set.filter (\n -> show n `notElem` names) pkgDeps
            in if Set.null filtered && not (Set.null pkgDeps)
                 then Nothing
                 else Just (filtered,x))
 
 -- | Make sure that all unreachable nodes (orphans) are pruned
-pruneUnreachable :: (Eq a, F.Foldable f)
+pruneUnreachable :: (Eq a, Foldable f)
                  => f PackageName
                  -> Map PackageName (Set PackageName, a)
                  -> Map PackageName (Set PackageName, a)
@@ -153,8 +141,8 @@ pruneUnreachable dontPrune = fixpoint prune
   where fixpoint :: Eq a => (a -> a) -> a -> a
         fixpoint f v = if f v == v then v else fixpoint f (f v)
         prune graph' = Map.filterWithKey (\k _ -> reachable k) graph'
-          where reachable k = k `F.elem` dontPrune || k `Set.member` reachables
-                reachables = F.fold (fst <$> graph')
+          where reachable k = k `elem` dontPrune || k `Set.member` reachables
+                reachables = fold (fst <$> graph')
 
 
 -- | Resolve the dependency graph up to (Just depth) or until fixpoint is reached
@@ -171,7 +159,7 @@ resolveDependencies limit graph loadPackageDeps = do
   if Set.null next
      then return graph
      else do
-       x <- T.traverse (\name -> (name,) <$> loadPackageDeps name) (F.toList next)
+       x <- traverse (\name -> (name,) <$> loadPackageDeps name) (toList next)
        resolveDependencies (subtract 1 <$> limit)
                       (Map.unionWith unifier graph (Map.fromList x))
                       loadPackageDeps
@@ -217,7 +205,7 @@ printGraph dotOpts locals graph = do
           packageNameString local `Set.notMember` dotPrune dotOpts) locals
 
 -- | Print the local nodes with a different style depending on options
-printLocalNodes :: (F.Foldable t, MonadIO m)
+printLocalNodes :: (Foldable t, MonadIO m)
                 => DotOpts
                 -> t PackageName
                 -> m ()
@@ -227,17 +215,17 @@ printLocalNodes dotOpts locals = liftIO $ Text.putStrLn (Text.intercalate "\n" l
                          then n <> " [style=dashed];"
                          else n <> " [style=solid];"
         lpNodes :: [Text]
-        lpNodes = map (applyStyle . nodeName) (F.toList locals)
+        lpNodes = map (applyStyle . nodeName) (toList locals)
 
 -- | Print nodes without dependencies
 printLeaves :: MonadIO m
             => Map PackageName (Set PackageName,Maybe Version)
             -> m ()
-printLeaves = F.mapM_ printLeaf . Map.keysSet . Map.filter Set.null . fmap fst
+printLeaves = mapM_ printLeaf . Map.keysSet . Map.filter Set.null . fmap fst
 
 -- | @printDedges p ps@ prints an edge from p to every ps
 printEdges :: MonadIO m => PackageName -> Set PackageName -> m ()
-printEdges package deps = F.forM_ deps (printEdge package)
+printEdges package deps = forM_ deps (printEdge package)
 
 -- | Print an edge between the two package names
 printEdge :: MonadIO m => PackageName -> PackageName -> m ()

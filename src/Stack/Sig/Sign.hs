@@ -17,25 +17,18 @@ Portability : POSIX
 module Stack.Sig.Sign (sign, signPackage, signTarBytes) where
 
 import Prelude ()
-import Prelude.Compat
+import Imports
 
 import qualified Codec.Archive.Tar as Tar
 import qualified Codec.Compression.GZip as GZip
-import           Control.Monad (when)
-import           Control.Monad.Catch
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger
 import qualified Data.ByteString.Lazy as BS
 import qualified Data.ByteString.Lazy as L
-import           Data.Monoid ((<>))
 import qualified Data.Text as T
 import           Network.HTTP.Conduit (Response(..), RequestBody(..),
                                        Request(..), httpLbs)
 import           Network.HTTP.Client (Manager)
 import           Network.HTTP.Download
 import           Network.HTTP.Types (status200, methodPut)
-import           Path
-import           Path.IO
 import           Stack.Package
 import           Stack.Sig.GPG
 import           Stack.Types
@@ -44,11 +37,7 @@ import qualified System.FilePath as FP
 -- | Sign a haskell package with the given url of the signature
 -- service and a path to a tarball.
 sign
-#if __GLASGOW_HASKELL__ < 710
-    :: (Applicative m, MonadIO m, MonadLogger m, MonadMask m)
-#else
     :: (MonadIO m, MonadLogger m, MonadMask m)
-#endif
     => Manager -> String -> Path Abs File -> m Signature
 sign manager url filePath =
     withSystemTempDir
@@ -89,11 +78,7 @@ sign manager url filePath =
 -- function will write the bytes to the path in a temp dir and sign
 -- the tarball with GPG.
 signTarBytes
-#if __GLASGOW_HASKELL__ < 710
-    :: (Applicative m, MonadIO m, MonadLogger m, MonadMask m)
-#else
     :: (MonadIO m, MonadLogger m, MonadMask m)
-#endif
     => Manager -> String -> Path Rel File -> L.ByteString -> m Signature
 signTarBytes manager url tarPath bs =
     withSystemTempDir

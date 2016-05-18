@@ -7,37 +7,22 @@ module Stack.Init
     , InitOpts (..)
     ) where
 
-import           Control.Exception               (assert)
+import           Prelude ()
+import           Imports hiding (find)
+
 import           Control.Exception.Enclosed      (catchAny)
-import           Control.Monad
-import           Control.Monad.Catch             (MonadMask, throwM)
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger
-import           Control.Monad.Reader            (MonadReader, asks)
-import           Control.Monad.Trans.Control     (MonadBaseControl)
 import qualified Data.ByteString.Builder         as B
 import qualified Data.ByteString.Char8           as BC
 import qualified Data.ByteString.Lazy            as L
-import qualified Data.Foldable                   as F
-import           Data.Function                   (on)
 import qualified Data.HashMap.Strict             as HM
 import qualified Data.IntMap                     as IntMap
-import           Data.List                       ( intercalate, intersect
-                                                 , maximumBy)
-import           Data.List.NonEmpty              (NonEmpty(..))
 import qualified Data.List.NonEmpty              as NonEmpty
-import           Data.Map                        (Map)
 import qualified Data.Map                        as Map
-import           Data.Maybe
-import           Data.Monoid
 import qualified Data.Text                       as T
 import qualified Data.Yaml                       as Yaml
 import qualified Distribution.PackageDescription as C
 import qualified Distribution.Text               as C
 import qualified Distribution.Version            as C
-import           Network.HTTP.Client.Conduit     (HasHttpManager)
-import           Path
-import           Path.IO
 import qualified Paths_stack                     as Meta
 import           Stack.BuildPlan
 import           Stack.Config                    (getSnapshots,
@@ -185,7 +170,7 @@ renderStackYaml p ignoredPackages dupPackages =
     renderObject o =
            B.byteString headerHelp
         <> B.byteString "\n\n"
-        <> F.foldMap (goComment o) comments
+        <> foldMap (goComment o) comments
         <> goOthers (o `HM.difference` HM.fromList comments)
         <> B.byteString footerHelp
 

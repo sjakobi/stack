@@ -16,17 +16,10 @@ Portability : POSIX
 module Stack.Sig.GPG (gpgSign, gpgVerify) where
 
 import Prelude ()
-import Prelude.Compat
+import Imports hiding (findExecutable)
 
-import           Control.Monad (unless, when)
-import           Control.Monad.Catch (MonadThrow, throwM)
-import           Control.Monad.IO.Class (MonadIO, liftIO)
-import           Control.Monad.Logger (MonadLogger, logWarn)
 import qualified Data.ByteString.Char8 as C
-import           Data.List (find, isPrefixOf)
-import           Data.Monoid ((<>))
 import qualified Data.Text as T
-import           Path
 import           Stack.Types
 import           System.Directory (findExecutable)
 import           System.Environment (lookupEnv)

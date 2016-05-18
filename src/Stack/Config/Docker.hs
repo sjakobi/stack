@@ -4,15 +4,11 @@
 module Stack.Config.Docker where
 
 import Control.Exception.Lifted
-import Control.Monad
-import Control.Monad.Catch (throwM, MonadThrow)
-import Data.List (find)
-import Data.Maybe
 import Data.Monoid.Extra
 import qualified Data.Text as T
-import Data.Typeable (Typeable)
 import Distribution.Version (simplifyVersionRange)
-import Path
+import Imports
+import Prelude ()
 import Stack.Types
 
 -- | Interprets DockerOptsMonoid options.

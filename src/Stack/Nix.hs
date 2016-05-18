@@ -11,28 +11,13 @@ module Stack.Nix
   ,nixHelpOptName
   ) where
 
-import           Control.Applicative
-import           Control.Arrow ((***))
-import           Control.Exception (Exception,throw)
-import           Control.Monad hiding (mapM)
-import           Control.Monad.Catch (MonadMask)
-import           Control.Monad.IO.Class (MonadIO,liftIO)
-import           Control.Monad.Logger (MonadLogger,logDebug)
-import           Control.Monad.Reader (MonadReader,asks)
-import           Control.Monad.Trans.Control (MonadBaseControl)
-import           Data.Char (toUpper)
-import           Data.List (intercalate)
-import           Data.Maybe
-import           Data.Monoid
+import           Prelude ()
+import           Imports
+
+import           Control.Exception (throw)
 import qualified Data.Text as T
-import           Data.Traversable
-import           Data.Typeable (Typeable)
 import           Data.Version (showVersion)
-import           Network.HTTP.Client.Conduit (HasHttpManager)
-import           Path
-import           Path.IO
 import qualified Paths_stack as Meta
-import           Prelude hiding (mapM) -- Fix redundant import warnings
 import           Stack.Config (makeConcreteResolver)
 import           Stack.Config.Nix (nixCompiler)
 import           Stack.Constants (stackProgName,platformVariantEnvVar)

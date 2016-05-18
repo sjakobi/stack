@@ -16,37 +16,22 @@ module Stack.Ghci
     , ghci
     ) where
 
-import           Control.Applicative
+import           Prelude ()
+import           Imports
+
 import           Control.Exception.Enclosed (tryAny)
-import           Control.Monad
-import           Control.Monad.Catch
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger
-import           Control.Monad.RWS.Strict
-import           Control.Monad.State.Strict
+import           Control.Monad.State.Strict (State, execState, get, modify)
 import           Control.Monad.Trans.Unlift (MonadBaseUnlift)
 import qualified Data.ByteString.Char8 as S8
-import           Data.Either
-import           Data.Function
-import           Data.List
 import           Data.List.Extra (nubOrd)
 import           Data.List.Split (splitOn)
-import           Data.Map.Strict (Map)
 import qualified Data.Map.Strict as M
-import           Data.Maybe
 import           Data.Maybe.Extra (forMaybeM)
-import           Data.Set (Set)
 import qualified Data.Set as S
-import           Data.Text (Text)
 import qualified Data.Text as T
-import           Data.Typeable (Typeable)
 import           Distribution.ModuleName (ModuleName)
 import           Distribution.Text (display)
-import           Network.HTTP.Client.Conduit
-import           Path
 import           Path.Extra (toFilePathNoTrailingSep)
-import           Path.IO
-import           Prelude
 import           Stack.Build
 import           Stack.Build.Installed
 import           Stack.Build.Source

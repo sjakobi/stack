@@ -20,52 +20,38 @@ module Stack.Docker
   ,StackDockerException(..)
   ) where
 
-import           Control.Applicative
+import           Prelude ()
+import           Imports hiding (catch)
+
 import           Control.Concurrent.MVar.Lifted (MVar,modifyMVar_,newMVar)
 import           Control.Exception.Lifted
-import           Control.Monad
-import           Control.Monad.Catch (MonadThrow,throwM,MonadCatch,MonadMask)
-import           Control.Monad.IO.Class (MonadIO,liftIO)
-import           Control.Monad.Logger (MonadLogger,logError,logInfo,logWarn)
-import           Control.Monad.Reader (MonadReader,asks,runReaderT)
 import           Control.Monad.Writer (execWriter,runWriter,tell)
-import           Control.Monad.Trans.Control (MonadBaseControl)
 import qualified "cryptohash" Crypto.Hash as Hash
 import           Data.Aeson.Extended (FromJSON(..),(.:),(.:?),(.!=),eitherDecode)
 import           Data.ByteString.Builder (stringUtf8,charUtf8,toLazyByteString)
 import qualified Data.ByteString.Char8 as BS
 import qualified Data.ByteString.Lazy.Char8 as LBS
-import           Data.Char (isSpace,toUpper,isAscii,isDigit)
 import           Data.Conduit.List (sinkNull)
-import           Data.List (dropWhileEnd,intercalate,isPrefixOf,isInfixOf,foldl')
 import           Data.List.Extra (trim)
-import           Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import           Data.Maybe
 import           Data.Ord (Down(..))
 import           Data.Streaming.Process (ProcessExitedUnsuccessfully(..))
-import           Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as T
 import           Data.Time (UTCTime,LocalTime(..),diffDays,utcToLocalTime,getZonedTime,ZonedTime(..))
-import           Data.Typeable (Typeable)
 import           Data.Version (showVersion)
 import           Distribution.System (Platform (Platform),Arch (X86_64),OS (Linux))
 import           Distribution.Text (display)
 import           GHC.Exts (sortWith)
-import           Network.HTTP.Client.Conduit (HasHttpManager)
-import           Path
 import           Path.Extra (toFilePathNoTrailingSep)
-import           Path.IO hiding (canonicalizePath)
 import qualified Paths_stack as Meta
-import           Prelude -- Fix redundant import warnings
 import           Stack.Config (getInContainer)
 import           Stack.Constants
 import           Stack.Docker.GlobalDB
 import           Stack.Types
 import           Stack.Types.Internal
 import           Stack.Setup (ensureDockerStackExe)
-import           System.Directory (canonicalizePath,getHomeDirectory)
+import           System.Directory (getHomeDirectory)
 import           System.Environment (getEnv,getEnvironment,getProgName,getArgs,getExecutablePath)
 import           System.Exit (exitSuccess, exitWith)
 import qualified System.FilePath as FP
@@ -82,7 +68,6 @@ import           Text.Printf (printf)
 
 #ifndef WINDOWS
 import           Control.Concurrent (threadDelay)
-import           Control.Monad.Trans.Control (liftBaseWith)
 import           System.Posix.Signals
 import qualified System.Posix.User as PosixUser
 #endif
@@ -134,8 +119,8 @@ reexecWithOptionalContainer mprojectRoot =
                 progName <- liftIO getProgName
                 return (FP.takeBaseName progName, args, [], [])
             Just (DockerStackExePath path) -> do
-                exePath <- liftIO $ canonicalizePath (toFilePath path)
-                cmdArgs args exePath
+                exePath <- liftIO $ canonicalizePath path
+                cmdArgs args (toFilePath exePath)
             Just DockerStackExeDownload -> exeDownload args
             Nothing
               | configPlatform config == dockerContainerPlatform -> do

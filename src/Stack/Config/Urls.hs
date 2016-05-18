@@ -2,8 +2,10 @@
 
 module Stack.Config.Urls (urlsFromMonoid) where
 
-import           Stack.Types
 import           Data.Monoid.Extra
+import           Imports
+import           Prelude ()
+import           Stack.Types
 
 urlsFromMonoid :: UrlsMonoid -> Urls
 urlsFromMonoid monoid =

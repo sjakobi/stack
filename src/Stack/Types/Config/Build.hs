@@ -27,15 +27,12 @@ module Stack.Types.Config.Build
     )
     where
 
-import           Control.Applicative
+import Prelude ()
+import Imports
+
 import           Data.Aeson.Extended
-import           Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import           Data.Monoid
-import           Data.Text (Text)
-import           GHC.Generics (Generic)
 import           Generics.Deriving.Monoid (memptydefault, mappenddefault)
-import           Prelude -- Fix AMP warning
 import           Stack.Types.FlagName
 import           Stack.Types.PackageName
 
