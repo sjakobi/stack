@@ -1,6 +1,7 @@
 {-# LANGUAGE DataKinds          #-}
 {-# LANGUAGE GADTs              #-}
 {-# LANGUAGE KindSignatures     #-}
+{-# LANGUAGE NoImplicitPrelude  #-}
 {-# LANGUAGE OverloadedStrings  #-}
 {-# LANGUAGE StandaloneDeriving #-}
 {-# LANGUAGE TupleSections      #-}
@@ -19,26 +20,12 @@ module Stack.Build.Target
     , parseTargets
     ) where
 
-import           Control.Applicative
-import           Control.Arrow (second)
-import           Control.Monad.Catch (MonadCatch, throwM)
-import           Control.Monad.IO.Class
-import           Data.Either (partitionEithers)
-import           Data.Foldable
 import           Data.List.Extra (groupSort)
-import           Data.List.NonEmpty (NonEmpty((:|)))
 import qualified Data.List.NonEmpty as NonEmpty
-import           Data.Map (Map)
 import qualified Data.Map as Map
-import           Data.Maybe (mapMaybe)
-import           Data.Set (Set)
 import qualified Data.Set as Set
-import           Data.Text (Text)
 import qualified Data.Text as T
-import           Path
-import           Path.Extra (rejectMissingDir)
-import           Path.IO
-import           Prelude hiding (concat, concatMap) -- Fix redundant import warnings
+import           StackPrelude
 import           Stack.Types
 
 -- | The name of a component, which applies to executables, test suites, and benchmarks
@@ -187,11 +174,11 @@ resolveRawTarget snap extras locals (ri, rt) =
                     ResolvedComponent comp
                         | comp `Set.member` lpvComponents lpv ->
                             Right (name, (ri, STLocalComps $ Set.singleton comp))
-                        | otherwise -> Left $ T.pack $ concat
+                        | otherwise -> Left $ T.concat
                             [ "Component "
                             , show comp
                             , " does not exist in package "
-                            , packageNameString name
+                            , packageNameText name
                             ]
                     UnresolvedComponent comp ->
                         case filter (isCompNamed comp) $ Set.toList $ lpvComponents lpv of
@@ -206,9 +193,9 @@ resolveRawTarget snap extras locals (ri, rt) =
                                 [ "Ambiguous component name "
                                 , comp
                                 , " for package "
-                                , T.pack $ packageNameString name
+                                , packageNameText name
                                 , ": "
-                                , T.pack $ show matches
+                                , show matches
                                 ]
     go (RTComponent cname) =
         let allPairs = concatMap
@@ -222,7 +209,7 @@ resolveRawTarget snap extras locals (ri, rt) =
                     [ "Ambiugous component name "
                     , cname
                     , ", matches: "
-                    , T.pack $ show matches
+                    , show matches
                     ]
 
     go (RTPackage name) =
@@ -250,15 +237,15 @@ simplifyTargets =
     go :: (PackageName, NonEmpty (RawInput, SimpleTarget))
        -> ([Text], Map PackageName SimpleTarget)
     go (name, (_, st) :| []) = ([], Map.singleton name st)
-    go (name, pairs) =
-        case partitionEithers $ map (getLocalComp . snd) (NonEmpty.toList pairs) of
+    go (name, pairs') =
+        case partitionEithers $ map (getLocalComp . snd) (NonEmpty.toList pairs') of
             ([], comps) -> ([], Map.singleton name $ STLocalComps $ Set.unions comps)
             _ ->
-                let err = T.pack $ concat
+                let err = T.concat
                         [ "Overlapping targets provided for package "
-                        , packageNameString name
+                        , packageNameText name
                         , ": "
-                        , show $ map (unRawInput . fst) (NonEmpty.toList pairs)
+                        , show $ map (unRawInput . fst) (NonEmpty.toList pairs')
                         ]
                  in ([err], Map.empty)
 

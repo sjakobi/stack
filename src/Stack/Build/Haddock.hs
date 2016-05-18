@@ -1,6 +1,7 @@
 {-# LANGUAGE ConstraintKinds       #-}
 {-# LANGUAGE FlexibleContexts      #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE NoImplicitPrelude     #-}
 {-# LANGUAGE OverloadedStrings     #-}
 {-# LANGUAGE RecordWildCards       #-}
 {-# LANGUAGE ScopedTypeVariables   #-}
@@ -16,35 +17,18 @@ module Stack.Build.Haddock
     , shouldHaddockDeps
     ) where
 
-import           Control.Exception (tryJust, onException)
-import           Control.Monad
-import           Control.Monad.Catch (MonadCatch)
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger
 import           Control.Monad.Trans.Resource
-import qualified Data.Foldable as F
-import           Data.Function
 import qualified Data.HashSet as HS
-import           Data.List
 import           Data.List.Extra (nubOrd)
-import           Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import           Data.Maybe
 import           Data.Maybe.Extra (mapMaybeM)
-import           Data.Monoid ((<>))
-import           Data.Set (Set)
 import qualified Data.Set as Set
-import           Data.Text (Text)
 import qualified Data.Text as T
 import           Data.Time (UTCTime)
-import           Path
-import           Path.Extra
-import           Path.IO
-import           Prelude
+import           StackPrelude
 import           Stack.PackageDump
 import           Stack.Types
 import qualified System.FilePath as FP
-import           System.IO.Error (isDoesNotExistError)
 import           System.Process.Read
 import           Web.Browser (openBrowser)
 
@@ -121,7 +105,7 @@ generateLocalHaddockIndex envOverride wc bco localDumpPkgs locals = do
     let dumpPackages =
             mapMaybe
                 (\LocalPackage{lpPackage = Package{..}} ->
-                    F.find
+                    find
                         (\dp -> dpPackageIdent dp == PackageIdentifier packageName packageVersion)
                         localDumpPkgs)
                 locals
@@ -158,7 +142,7 @@ generateDepsHaddockIndex envOverride wc bco globalDumpPkgs snapshotDumpPkgs loca
     getGhcPkgId :: LocalPackage -> Maybe GhcPkgId
     getGhcPkgId LocalPackage{lpPackage = Package{..}} =
         let pkgId = PackageIdentifier packageName packageVersion
-            mdpPkg = F.find (\dp -> dpPackageIdent dp == pkgId) localDumpPkgs
+            mdpPkg = find (\dp -> dpPackageIdent dp == pkgId) localDumpPkgs
         in fmap dpGhcPkgId mdpPkg
     findTransitiveDepends :: [GhcPkgId] -> [GhcPkgId]
     findTransitiveDepends = (`go` HS.empty) . HS.fromList

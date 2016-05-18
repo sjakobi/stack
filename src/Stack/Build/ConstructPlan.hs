@@ -1,6 +1,7 @@
 {-# LANGUAGE DeriveGeneric         #-}
 {-# LANGUAGE FlexibleContexts      #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE NoImplicitPrelude     #-}
 {-# LANGUAGE OverloadedStrings     #-}
 {-# LANGUAGE RecordWildCards       #-}
 {-# LANGUAGE ScopedTypeVariables   #-}
@@ -12,33 +13,18 @@ module Stack.Build.ConstructPlan
     ( constructPlan
     ) where
 
-import           Control.Arrow ((&&&))
 import           Control.Exception.Lifted
-import           Control.Monad
-import           Control.Monad.Catch (MonadCatch)
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger (MonadLogger, logWarn)
-import           Control.Monad.RWS.Strict
+import           Control.Monad.RWS.Strict hiding (mapM_)
 import           Control.Monad.Trans.Resource
-import           Data.Either
-import           Data.Function
-import           Data.List
-import           Data.Map.Strict (Map)
 import qualified Data.Map.Strict as M
 import qualified Data.Map.Strict as Map
-import           Data.Maybe
-import           Data.Set (Set)
 import qualified Data.Set as Set
-import           Data.Text (Text)
 import qualified Data.Text as T
 import           Data.Text.Encoding (decodeUtf8With)
 import           Data.Text.Encoding.Error (lenientDecode)
 import qualified Distribution.Package as Cabal
 import qualified Distribution.Version as Cabal
-import           GHC.Generics (Generic)
 import           Generics.Deriving.Monoid (memptydefault, mappenddefault)
-import           Network.HTTP.Client.Conduit (HasHttpManager)
-import           Prelude hiding (pi, writeFile)
 import           Stack.Build.Cache
 import           Stack.Build.Haddock
 import           Stack.Build.Installed
@@ -48,6 +34,7 @@ import           Stack.Package
 import           Stack.PackageDump
 import           Stack.PackageIndex
 import           Stack.Types
+import           StackPrelude
 
 data PackageInfo
     = PIOnlyInstalled InstallLocation Installed
@@ -482,7 +469,7 @@ addPackageDeps treatAsDep package = do
                         mlatestApplicable <- getLatestApplicable
                         return $ Left (depname, (range, mlatestApplicable, DependencyMismatch $ adrVersion adr))
     case partitionEithers deps of
-        ([], pairs) -> return $ Right $ mconcat pairs
+        ([], pairs') -> return $ Right $ mconcat pairs'
         (errs, _) -> return $ Left $ DependencyPlanFailures
             package
             (Map.fromList errs)
@@ -526,7 +513,7 @@ checkDirtiness ps installed package present wanted = do
                     | Just reason <- describeConfigDiff config oldOpts wantConfigCache -> Just reason
                     | True <- psForceDirty ps -> Just "--force-dirty specified"
                     | Just files <- psDirty ps -> Just $ "local file changes: " <>
-                                                         addEllipsis (T.pack $ unwords $ Set.toList files)
+                                                         addEllipsis (unwords $ map T.pack $ Set.toList files)
                     | otherwise -> Nothing
         config = getConfig ctx
     case mreason of
@@ -542,7 +529,7 @@ describeConfigDiff config old new
         Just $ "components added: " `T.append` T.intercalate ", "
             (map (decodeUtf8With lenientDecode) (Set.toList newComponents))
     | not (configCacheHaddock old) && configCacheHaddock new = Just "rebuilding with haddocks"
-    | oldOpts /= newOpts = Just $ T.pack $ concat
+    | oldOpts /= newOpts = Just $ mconcat
         [ "flags changed from "
         , show oldOpts
         , " to "
@@ -640,14 +627,14 @@ isNoToolFound _ = False
 toolWarningText :: ToolWarning -> Text
 toolWarningText (NoToolFound toolName pkgName) =
     "No packages found in snapshot which provide a " <>
-    T.pack (show toolName) <>
+    show toolName <>
     " executable, which is a build-tool dependency of " <>
-    T.pack (show (packageNameString pkgName))
+    show (packageNameString pkgName)
 toolWarningText (AmbiguousToolsFound toolName pkgName options) =
     "Multiple packages found in snapshot which provide a " <>
-    T.pack (show toolName) <>
+    show toolName <>
     " exeuctable, which is a build-tool dependency of " <>
-    T.pack (show (packageNameString pkgName)) <>
+    show (packageNameString pkgName) <>
     ", so none will be installed.\n" <>
     "Here's the list of packages which provide it: " <>
     T.intercalate ", " (map packageNameText options) <>

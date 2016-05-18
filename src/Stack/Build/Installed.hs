@@ -1,7 +1,8 @@
 {-# LANGUAGE ConstraintKinds       #-}
 {-# LANGUAGE FlexibleContexts      #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
-{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE NoImplicitPrelude     #-}
+{-# LANGUAGE OverloadedStrings      #-}
 {-# LANGUAGE TemplateHaskell       #-}
 -- Determine which packages are already installed
 module Stack.Build.Installed
@@ -11,29 +12,15 @@ module Stack.Build.Installed
     , getInstalled
     ) where
 
-import           Control.Applicative
-import           Control.Monad
-import           Control.Monad.Catch          (MonadMask)
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger
-import           Control.Monad.Reader         (MonadReader, asks)
 import           Control.Monad.Trans.Resource
 import           Data.Conduit
 import qualified Data.Conduit.List            as CL
-import           Data.Function
-import qualified Data.Foldable                as F
 import qualified Data.HashSet                 as HashSet
-import           Data.List
-import           Data.Map.Strict              (Map)
 import qualified Data.Map.Strict              as M
 import qualified Data.Map.Strict              as Map
-import           Data.Maybe
 import           Data.Maybe.Extra             (mapMaybeM)
-import           Data.Monoid
 import qualified Data.Text                    as T
-import           Network.HTTP.Client.Conduit  (HasHttpManager)
-import           Path
-import           Prelude                      hiding (FilePath, writeFile)
+import           StackPrelude
 import           Stack.Build.Cache
 import           Stack.Types.Build
 import           Stack.Types.Version
@@ -88,7 +75,7 @@ getInstalled menv opts sourceMap = do
         loadDatabase' (Just (InstalledTo Local, localDBPath)) installedLibs2
     let installedLibs = M.fromList $ map lhPair installedLibs3
 
-    F.forM_ mcache (saveInstalledCache (configInstalledCache bconfig))
+    forM_ mcache (saveInstalledCache (configInstalledCache bconfig))
 
     -- Add in the executables that are installed, making sure to only trust a
     -- listed installation under the right circumstances (see below)
@@ -190,14 +177,14 @@ processLoadResult mdb _ (reason, lh) = do
         [ "Ignoring package "
         , packageNameText (fst (lhPair lh))
         ] ++
-        maybe [] (\db -> [", from ", T.pack (show db), ","]) mdb ++
+        maybe [] (\db -> [", from ", show db, ","]) mdb ++
         [ " due to"
         , case reason of
             Allowed -> " the impossible?!?!"
             NeedsProfiling -> " it needing profiling."
             NeedsHaddock -> " it needing haddocks."
             UnknownPkg -> " it being unknown to the resolver / extra-deps."
-            WrongLocation mloc loc -> " wrong location: " <> T.pack (show (mloc, loc))
+            WrongLocation mloc loc -> " wrong location: " <> show (mloc, loc)
             WrongVersion actual wanted -> T.concat
                 [ " wanting version "
                 , versionText wanted

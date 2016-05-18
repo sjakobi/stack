@@ -2,6 +2,7 @@
 {-# LANGUAGE ConstraintKinds       #-}
 {-# LANGUAGE FlexibleContexts      #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE NoImplicitPrelude     #-}
 {-# LANGUAGE OverloadedStrings     #-}
 {-# LANGUAGE RecordWildCards       #-}
 {-# LANGUAGE TemplateHaskell       #-}
@@ -16,20 +17,12 @@ module Stack.Build.Execute
     , withSingleContext
     ) where
 
-import           Control.Applicative
-import           Control.Arrow ((&&&), second)
 import           Control.Concurrent.Execute
 import           Control.Concurrent.MVar.Lifted
 import           Control.Concurrent.STM
 import           Control.Exception.Enclosed (catchIO)
 import           Control.Exception.Lifted
-import           Control.Monad (liftM, when, unless, void)
-import           Control.Monad.Catch (MonadCatch, MonadMask)
 import           Control.Monad.Extra (anyM, (&&^))
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger
-import           Control.Monad.Reader (MonadReader, asks)
-import           Control.Monad.Trans.Control (liftBaseWith)
 import           Control.Monad.Trans.Resource
 import           Data.Attoparsec.Text hiding (try)
 import qualified Data.ByteString as S
@@ -38,34 +31,18 @@ import           Data.Conduit
 import qualified Data.Conduit.Binary as CB
 import qualified Data.Conduit.List as CL
 import qualified Data.Conduit.Text as CT
-import           Data.Either (isRight)
-import           Data.Foldable (forM_, any)
-import           Data.Function
 import           Data.IORef.RunOnce (runOnce)
-import           Data.List hiding (any)
-import           Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import           Data.Maybe
 import           Data.Maybe.Extra (forMaybeM)
-import           Data.Monoid ((<>))
-import           Data.Set (Set)
 import qualified Data.Set as Set
 import           Data.Streaming.Process hiding (callProcess, env)
-import           Data.Text (Text)
 import qualified Data.Text as T
-import           Data.Text.Encoding (decodeUtf8)
+import qualified Data.Text.IO as T
 import           Data.Time.Clock (getCurrentTime)
-import           Data.Traversable (forM)
-import           Data.Tuple
 import qualified Distribution.PackageDescription as C
 import           Distribution.System            (OS (Windows),
                                                  Platform (Platform))
 import           Language.Haskell.TH as TH (location)
-import           Network.HTTP.Client.Conduit (HasHttpManager)
-import           Path
-import           Path.Extra (toFilePathNoTrailingSep, rejectMissingFile)
-import           Path.IO hiding (findExecutable, makeAbsolute)
-import           Prelude hiding (FilePath, writeFile, any)
 import           Stack.Build.Cache
 import           Stack.Build.Haddock
 import           Stack.Build.Installed
@@ -81,6 +58,7 @@ import           Stack.PackageDump
 import           Stack.Types
 import           Stack.Types.Internal
 import           Stack.Types.StackT
+import           StackPrelude hiding (writeFile,findExecutable,bracket,catch,try,makeAbsolute)
 import qualified System.Directory as D
 import           System.Environment (getExecutablePath)
 import           System.Exit (ExitCode (ExitSuccess))
@@ -530,10 +508,10 @@ executePlan' installedMap0 targets plan ee@ExecuteEnv {..} = do
         let total = length actions
             loop prev
                 | prev == total =
-                    runInBase $ $logStickyDone ("Completed " <> T.pack (show total) <> " action(s).")
+                    runInBase $ $logStickyDone ("Completed " <> show total <> " action(s).")
                 | otherwise = do
                     when terminal $ runInBase $
-                        $logSticky ("Progress: " <> T.pack (show prev) <> "/" <> T.pack (show total))
+                        $logSticky ("Progress: " <> show prev <> "/" <> show total)
                     done <- atomically $ do
                         done <- readTVar doneVar
                         check $ done /= prev
@@ -784,7 +762,7 @@ withSingleContext runInBase ActionContext {..} ExecuteEnv {..} task@Task {..} md
                             cabalfpRel <- parseRelFile $ packageNameString name ++ ".cabal"
                             let cabalfp = dir </> cabalfpRel
                             inner package cabalfp dir
-                    _ -> error $ "withPackage: invariant violated: " ++ show m
+                    _ -> error $ "withPackage: invariant violated: " ++ T.unpack (show m)
 
     withLogFile package inner
         | console = inner Nothing
@@ -1124,7 +1102,7 @@ singleBuild runInBase ac@ActionContext {..} ee@ExecuteEnv {..} task@Task {..} in
             eres <- try $ cabal False ["copy"]
             case eres of
                 Left err@CabalExitedUnsuccessfully{} ->
-                    throwM $ CabalCopyFailed (packageSimpleType package) (show err)
+                    throwM $ CabalCopyFailed (packageSimpleType package) (T.unpack $ show err)
                 _ -> return ()
             when (packageHasLibrary package) $ cabal False ["register"]
 
@@ -1174,7 +1152,7 @@ checkForUnlistedFiles (TTLocal lp) preBuildTime pkgDir = do
             (lpPackage lp)
             (lpCabalFile lp)
             (lpNewBuildCache lp)
-    mapM_ ($logWarn . ("Warning: " <>) . T.pack . show) warnings
+    mapM_ ($logWarn . ("Warning: " <>) . show) warnings
     unless (null addBuildCache) $
         writeBuildCache pkgDir $
         Map.unions (lpNewBuildCache lp : addBuildCache)
@@ -1289,7 +1267,7 @@ singleTest runInBase topts testsToRun ac ee task installedMap = do
                         when isTestTypeLib $ do
                             logPath <- buildLogPath package (Just stestName)
                             ensureDir (parent logPath)
-                            liftIO $ hPutStr inH $ show (logPath, testName)
+                            liftIO $ T.hPutStr inH $ show (logPath, testName)
                         liftIO $ hClose inH
                         ec <- liftIO $ waitForProcess ph
                         -- Add a trailing newline, incase the test
@@ -1304,7 +1282,7 @@ singleTest runInBase topts testsToRun ac ee task installedMap = do
                             ExitSuccess -> Map.empty
                             _ -> Map.singleton testName $ Just ec
                     else do
-                        $logError $ T.pack $ show $ TestSuiteExeMissing
+                        $logError $ show $ TestSuiteExeMissing
                             (packageSimpleType package)
                             exeName
                             (packageNameString (packageName package))

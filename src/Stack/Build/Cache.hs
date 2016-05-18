@@ -4,6 +4,7 @@
 {-# LANGUAGE TupleSections         #-}
 {-# LANGUAGE ConstraintKinds       #-}
 {-# LANGUAGE OverloadedStrings     #-}
+{-# LANGUAGE NoImplicitPrelude     #-}
 -- | Cache information about previous builds
 module Stack.Build.Cache
     ( tryGetBuildCache
@@ -27,28 +28,17 @@ module Stack.Build.Cache
     ) where
 
 import           Control.Exception.Enclosed (handleIO)
-import           Control.Monad.Catch (MonadThrow, MonadCatch)
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger (MonadLogger, logDebug)
-import           Control.Monad.Reader
 import qualified Crypto.Hash.SHA256 as SHA256
 import qualified Data.Binary as Binary (encode)
 import           Data.Binary.VersionTagged
 import qualified Data.ByteString.Char8 as S8
 import qualified Data.ByteString.Base16 as B16
-import           Data.Map (Map)
-import           Data.Maybe (fromMaybe, mapMaybe)
-import           Data.Monoid ((<>))
-import           Data.Set (Set)
 import qualified Data.Set as Set
-import           Data.Text (Text)
 import qualified Data.Text as T
-import           GHC.Generics (Generic)
-import           Path
-import           Path.IO
 import           Stack.Types.Build
 import           Stack.Constants
 import           Stack.Types
+import           StackPrelude
 
 -- | Directory containing files to mark an executable as installed
 exeInstalledDir :: (MonadReader env m, HasEnvConfig env, MonadThrow m)
@@ -258,7 +248,7 @@ precompiledCacheFile pkgident copts installedPackageIDs = do
     --
     -- See issue: https://github.com/commercialhaskell/stack/issues/1103
     let computeCacheSource input = do
-            $logDebug $ "Precompiled cache input = " <> T.pack (show input)
+            $logDebug $ "Precompiled cache input = " <> show input
             return $ Binary.encode input
     cacheInput <-
         if envConfigCabalVersion ec >= $(mkVersion "1.22")

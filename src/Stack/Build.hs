@@ -3,6 +3,7 @@
 {-# LANGUAGE DeriveDataTypeable #-}
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE FlexibleContexts #-}
+{-# LANGUAGE NoImplicitPrelude #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE TemplateHaskell #-}
@@ -20,37 +21,19 @@ module Stack.Build
   ,CabalVersionException(..))
   where
 
-import           Control.Exception (Exception)
-import           Control.Monad
-import           Control.Monad.Catch (MonadMask, MonadMask)
-import           Control.Monad.IO.Class
-import           Control.Monad.Logger
-import           Control.Monad.Reader (MonadReader, asks)
 import           Control.Monad.Trans.Resource
 import           Control.Monad.Trans.Unlift (MonadBaseUnlift)
-import           Data.Aeson (Value (Object, Array), (.=), object)
-import           Data.Function
 import qualified Data.HashMap.Strict as HM
-import           Data.List ((\\))
 import           Data.List.Extra (groupSort)
-import           Data.List.NonEmpty (NonEmpty(..))
 import qualified Data.List.NonEmpty as NE
 import qualified Data.Map as Map
-import           Data.Map.Strict (Map)
-import           Data.Monoid
-import           Data.Set (Set)
 import qualified Data.Set as Set
-import           Data.Text (Text)
 import qualified Data.Text as T
-import           Data.Text.Encoding (decodeUtf8)
 import qualified Data.Text.IO as TIO
 import           Data.Text.Read (decimal)
-import           Data.Typeable (Typeable)
 import qualified Data.Vector as V
 import qualified Data.Yaml as Yaml
-import           Network.HTTP.Client.Conduit (HasHttpManager)
-import           Path
-import           Prelude hiding (FilePath, writeFile)
+import           StackPrelude
 import           Stack.Build.ConstructPlan
 import           Stack.Build.Execute
 import           Stack.Build.Haddock

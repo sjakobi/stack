@@ -1,6 +1,7 @@
 {-# LANGUAGE BangPatterns          #-}
 {-# LANGUAGE FlexibleContexts      #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE NoImplicitPrelude     #-}
 {-# LANGUAGE OverloadedStrings     #-}
 {-# LANGUAGE PackageImports        #-}
 {-# LANGUAGE TemplateHaskell       #-}
@@ -20,14 +21,6 @@ module Stack.Build.Source
     , getPackageConfig
     ) where
 
-import              Control.Applicative
-import              Control.Arrow ((&&&))
-import              Control.Exception (assert, catch)
-import              Control.Monad hiding (sequence)
-import              Control.Monad.Catch (MonadMask)
-import              Control.Monad.IO.Class
-import              Control.Monad.Logger
-import              Control.Monad.Reader (MonadReader, asks)
 import              Control.Monad.Trans.Resource
 import "cryptohash" Crypto.Hash (Digest, SHA256)
 import              Crypto.Hash.Conduit (sinkHash)
@@ -36,27 +29,15 @@ import              Data.Byteable (toBytes)
 import              Data.Conduit (($$), ZipSink (..))
 import qualified    Data.Conduit.Binary as CB
 import qualified    Data.Conduit.List as CL
-import              Data.Either
-import              Data.Function
 import qualified    Data.HashSet as HashSet
-import              Data.List
 import qualified    Data.Map as Map
-import              Data.Map.Strict (Map)
 import qualified    Data.Map.Strict as M
-import              Data.Maybe
-import              Data.Monoid
-import              Data.Set (Set)
 import qualified    Data.Set as Set
-import              Data.Text (Text)
 import qualified    Data.Text as T
-import              Data.Traversable (sequence)
 import              Distribution.Package (pkgName, pkgVersion)
 import              Distribution.PackageDescription (GenericPackageDescription, package, packageDescription)
 import qualified    Distribution.PackageDescription as C
-import              Network.HTTP.Client.Conduit (HasHttpManager)
-import              Path
-import              Path.IO
-import              Prelude hiding (sequence)
+import              StackPrelude
 import              Stack.Build.Cache
 import              Stack.Build.Target
 import              Stack.BuildPlan (shadowMiniBuildPlan)
@@ -67,7 +48,6 @@ import              Stack.Types
 import qualified    System.Directory as D
 import              System.FilePath (takeFileName)
 import              System.IO (withBinaryFile, IOMode (ReadMode))
-import              System.IO.Error (isDoesNotExistError)
 
 loadSourceMap :: (MonadIO m, MonadMask m, MonadReader env m, MonadBaseControl IO m, HasHttpManager env, MonadLogger m, HasEnvConfig env)
               => NeedTargets

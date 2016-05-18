@@ -70,6 +70,7 @@ library
                      Path.Extra
                      Path.Find
                      Paths_stack
+                     StackPrelude
                      Stack.Build
                      Stack.Build.Cache
                      Stack.Build.ConstructPlan
@@ -148,6 +149,7 @@ library
                    , base-compat >=0.6 && <0.10
                    , base16-bytestring
                    , base64-bytestring
+                   , basic-prelude >= 0.5.1
                    , binary >= 0.7
                    , binary-tagged >= 0.1.1
                    , blaze-builder
