@@ -147,7 +147,7 @@ module Stack.Types.Config
 import           Control.Applicative
 import           Control.Arrow ((&&&))
 import           Control.Exception
-import           Control.Monad (liftM, mzero, forM, join)
+import           Control.Monad (liftM, mzero, join)
 import           Control.Monad.Catch (MonadThrow, throwM)
 import           Control.Monad.Logger (LogLevel(..))
 import           Control.Monad.Reader (MonadReader, ask, asks, MonadIO, liftIO)
@@ -176,6 +176,7 @@ import           Data.Store (Store)
 import           Data.Text (Text)
 import qualified Data.Text as T
 import           Data.Text.Encoding (encodeUtf8, decodeUtf8)
+import           Data.Traversable (forM)
 import           Data.Typeable
 import           Data.Yaml (ParseException)
 import           Distribution.System (Platform)
@@ -798,7 +799,7 @@ data ConfigMonoid =
   ConfigMonoid
     { configMonoidStackRoot          :: !(First (Path Abs Dir))
     -- ^ See: 'configStackRoot'
-    , configMonoidWorkDir            :: !(First FilePath)
+    , configMonoidWorkDir            :: !(First (Path Rel Dir))
     -- ^ See: 'configWorkDir'.
     , configMonoidBuildOpts          :: !BuildOptsMonoid
     -- ^ build options.
@@ -891,7 +892,12 @@ parseConfigMonoidJSON :: Object -> WarningParser ConfigMonoid
 parseConfigMonoidJSON obj = do
     -- Parsing 'stackRoot' from 'stackRoot'/config.yaml would be nonsensical
     let configMonoidStackRoot = First Nothing
-    configMonoidWorkDir <- First <$> obj ..:? configMonoidWorkDirName
+    configMonoidWorkDir <- First <$> do
+        mraw <- obj ..:? configMonoidWorkDirName
+        forM mraw $ \raw ->
+            case parseRelDir (T.unpack raw) of
+                Right workDir -> return workDir
+                Left e -> fail (show e)
     configMonoidBuildOpts <- jsonSubWarnings (obj ..:? configMonoidBuildOptsName ..!= mempty)
     configMonoidDockerOpts <- jsonSubWarnings (obj ..:? configMonoidDockerOptsName ..!= mempty)
     configMonoidNixOpts <- jsonSubWarnings (obj ..:? configMonoidNixOptsName ..!= mempty)
