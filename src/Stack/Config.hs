@@ -65,7 +65,6 @@ import           Data.Text.Encoding (encodeUtf8, decodeUtf8, decodeUtf8With)
 import           Data.Text.Encoding.Error (lenientDecode)
 import qualified Data.Yaml as Yaml
 import           Distribution.System (OS (..), Platform (..), buildPlatform)
-import qualified Distribution.Text
 import           Distribution.Version (simplifyVersionRange)
 import           GHC.Conc (getNumProcessors)
 import           Network.HTTP.Client.Conduit (HasHttpManager, getHttpManager, Manager, parseUrl)
@@ -233,13 +232,9 @@ configFromConfigMonoid configStackRoot configUserConfigPath mresolver mproject C
          configExtraIncludeDirs = configMonoidExtraIncludeDirs
          configExtraLibDirs = configMonoidExtraLibDirs
 
-         -- Only place in the codebase where platform is hard-coded. In theory
-         -- in the future, allow it to be configured.
          (Platform defArch defOS) = buildPlatform
-         arch = fromMaybe defArch
-              $ (getFirst configMonoidArch) >>= Distribution.Text.simpleParse
-         os = fromMaybe defOS
-            $ (getFirst configMonoidOS) >>= Distribution.Text.simpleParse
+         arch = fromFirst defArch configMonoidArch
+         os = fromFirst defOS configMonoidOS
          configPlatform = Platform arch os
 
          configRequireStackVersion = simplifyVersionRange (getIntersectingVersionRange configMonoidRequireStackVersion)

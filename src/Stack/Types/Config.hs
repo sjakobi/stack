@@ -179,7 +179,7 @@ import           Data.Text.Encoding (encodeUtf8, decodeUtf8)
 import           Data.Traversable (forM)
 import           Data.Typeable
 import           Data.Yaml (ParseException)
-import           Distribution.System (Platform)
+import           Distribution.System (Platform, OS, Arch)
 import qualified Distribution.Text
 import           Distribution.Version (anyVersion)
 import           GHC.Generics (Generic)
@@ -829,9 +829,9 @@ data ConfigMonoid =
     -- ^ See: 'configCompilerCheck'
     ,configMonoidRequireStackVersion :: !IntersectingVersionRange
     -- ^ See: 'configRequireStackVersion'
-    ,configMonoidOS                  :: !(First String)
+    ,configMonoidOS                  :: !(First OS)
     -- ^ Used for overriding the platform
-    ,configMonoidArch                :: !(First String)
+    ,configMonoidArch                :: !(First Arch)
     -- ^ Used for overriding the platform
     ,configMonoidGHCVariant          :: !(First GHCVariant)
     -- ^ Used for overriding the GHC variant
@@ -913,8 +913,8 @@ parseConfigMonoidJSON obj = do
     configMonoidRequireStackVersion <- IntersectingVersionRange <$> unVersionRangeJSON <$>
                                        obj ..:? configMonoidRequireStackVersionName
                                            ..!= VersionRangeJSON anyVersion
-    configMonoidOS <- First <$> obj ..:? configMonoidOSName
-    configMonoidArch <- First <$> obj ..:? configMonoidArchName
+    configMonoidOS <- First <$> parseCabalText obj configMonoidOSName
+    configMonoidArch <- First <$> parseCabalText obj configMonoidArchName
     configMonoidGHCVariant <- First <$> obj ..:? configMonoidGHCVariantName
     configMonoidJobs <- First <$> obj ..:? configMonoidJobsName
     configMonoidExtraIncludeDirs <- obj ..:?  configMonoidExtraIncludeDirsName ..!= Set.empty
@@ -962,6 +962,10 @@ parseConfigMonoidJSON obj = do
                         Left e -> fail $ show e
                         Right x -> return $ Just x
         return (name, b)
+    parseCabalText :: Distribution.Text.Text a => Object -> Text -> WarningParser (Maybe a)
+    parseCabalText o name = do
+        mraw <- o ..:? name
+        return $ Distribution.Text.simpleParse . T.unpack =<< mraw
 
 configMonoidWorkDirName :: Text
 configMonoidWorkDirName = "work-dir"

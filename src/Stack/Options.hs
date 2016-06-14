@@ -41,6 +41,7 @@ import           Data.Monoid.Extra
 import qualified Data.Set                          as Set
 import qualified Data.Text                         as T
 import           Data.Text.Read                    (decimal)
+import qualified Distribution.Text
 import           Distribution.Version              (anyVersion)
 import           Options.Applicative
 import           Options.Applicative.Args
@@ -247,13 +248,13 @@ configOptsParser hide0 =
             "install-ghc"
             "downloading and installing GHC if necessary (can be done manually with stack setup)"
             hide
-    <*> optionalFirst (strOption
+    <*> fmap First (option (Distribution.Text.simpleParse <$> str)
             ( long "arch"
            <> metavar "ARCH"
            <> help "System architecture, e.g. i386, x86_64"
            <> hide
             ))
-    <*> optionalFirst (strOption
+    <*> fmap First (option (Distribution.Text.simpleParse <$> str)
             ( long "os"
            <> metavar "OS"
            <> help "Operating system, e.g. linux, windows"
