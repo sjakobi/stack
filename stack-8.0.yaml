@@ -26,6 +26,6 @@ extra-deps:
 packages:
 - .
 - location:
-    git: git@github.com:sjakobi/path.git
+    git: https://github.com/sjakobi/path.git
     commit: a9efd053a4d99bb9fb4fb2822d51f666e0c4e488
   extra-dep: true
