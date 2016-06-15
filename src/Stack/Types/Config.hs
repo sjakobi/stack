@@ -282,9 +282,9 @@ data Config =
          -- ^ Require a version of stack within this range.
          ,configJobs                :: !Int
          -- ^ How many concurrent jobs to run, defaults to number of capabilities
-         ,configExtraIncludeDirs    :: !(Set Text)
+         ,configExtraIncludeDirs    :: !(Set (Path Abs Dir))
          -- ^ --extra-include-dirs arguments
-         ,configExtraLibDirs        :: !(Set Text)
+         ,configExtraLibDirs        :: !(Set (Path Abs Dir))
          -- ^ --extra-lib-dirs arguments
          ,configConcurrentTests     :: !Bool
          -- ^ Run test suites concurrently
@@ -836,9 +836,9 @@ data ConfigMonoid =
     -- ^ Used for overriding the GHC variant
     ,configMonoidJobs                :: !(First Int)
     -- ^ See: 'configJobs'
-    ,configMonoidExtraIncludeDirs    :: !(Set Text)
+    ,configMonoidExtraIncludeDirs    :: !(Set (Path Abs Dir))
     -- ^ See: 'configExtraIncludeDirs'
-    ,configMonoidExtraLibDirs        :: !(Set Text)
+    ,configMonoidExtraLibDirs        :: !(Set (Path Abs Dir))
     -- ^ See: 'configExtraLibDirs'
     ,configMonoidConcurrentTests     :: !(First Bool)
     -- ^ See: 'configConcurrentTests'
