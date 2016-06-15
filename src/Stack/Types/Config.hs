@@ -176,7 +176,6 @@ import           Data.Store (Store)
 import           Data.Text (Text)
 import qualified Data.Text as T
 import           Data.Text.Encoding (encodeUtf8, decodeUtf8)
-import           Data.Traversable (forM)
 import           Data.Typeable
 import           Data.Yaml (ParseException)
 import           Distribution.System (Platform, OS, Arch)
@@ -892,12 +891,7 @@ parseConfigMonoidJSON :: Object -> WarningParser ConfigMonoid
 parseConfigMonoidJSON obj = do
     -- Parsing 'stackRoot' from 'stackRoot'/config.yaml would be nonsensical
     let configMonoidStackRoot = First Nothing
-    configMonoidWorkDir <- First <$> do
-        mraw <- obj ..:? configMonoidWorkDirName
-        forM mraw $ \raw ->
-            case parseRelDir (T.unpack raw) of
-                Right workDir -> return workDir
-                Left e -> fail (show e)
+    configMonoidWorkDir <- First <$> obj ..:? configMonoidWorkDirName
     configMonoidBuildOpts <- jsonSubWarnings (obj ..:? configMonoidBuildOptsName ..!= mempty)
     configMonoidDockerOpts <- jsonSubWarnings (obj ..:? configMonoidDockerOptsName ..!= mempty)
     configMonoidNixOpts <- jsonSubWarnings (obj ..:? configMonoidNixOptsName ..!= mempty)
@@ -933,11 +927,7 @@ parseConfigMonoidJSON obj = do
     configMonoidCompilerCheck <- First <$> obj ..:? configMonoidCompilerCheckName
 
     configMonoidGhcOptions <- obj ..:? configMonoidGhcOptionsName ..!= mempty
-
-    extraPath <- obj ..:? configMonoidExtraPathName ..!= []
-    configMonoidExtraPath <- forM extraPath $
-        either (fail . show) return . parseAbsDir . T.unpack
-
+    configMonoidExtraPath <- obj ..:? configMonoidExtraPathName ..!= []
     configMonoidSetupInfoLocations <-
         maybeToList <$> jsonSubWarningsT (obj ..:?  configMonoidSetupInfoLocationsName)
     configMonoidPvpBounds <- First <$> obj ..:? configMonoidPvpBoundsName
