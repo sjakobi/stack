@@ -16,3 +16,9 @@ extra-deps:
 - th-utilities-0.1.1.0
 - store-0.1.0.1
 - th-orphans-0.13.1
+packages:
+- .
+- location:
+    git: git@github.com:sjakobi/path.git
+    commit: a9efd053a4d99bb9fb4fb2822d51f666e0c4e488
+  extra-dep: true
