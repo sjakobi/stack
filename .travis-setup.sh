@@ -15,23 +15,17 @@ fetch_stack_linux() {
   curl -sL https://www.stackage.org/stack/linux-x86_64 | tar xz --wildcards --strip-components=1 -C ~/.local/bin '*/stack';
 }
 
-case "$BUILD" in
-  stack)
-    mkdir -p ~/.local/bin;
-    if [ `uname` = "Darwin" ]; then
-      travis_retry fetch_stack_osx
-    else
-      travis_retry fetch_stack_linux
-    fi;
+mkdir -p ~/.local/bin;
+if [ `uname` = "Darwin" ]; then
+  travis_retry fetch_stack_osx
+else
+  travis_retry fetch_stack_linux
+fi;
 
-    travis_retry stack --no-terminal setup;
-    ;;
-  cabal)
+travis_retry stack --no-terminal setup;
 mkdir -p $HOME/.cabal
 cat > $HOME/.cabal/config <<EOF
 remote-repo: hackage.haskell.org:http://hackage.fpcomplete.com/
 remote-repo-cache: $HOME/.cabal/packages
 jobs: \$ncpus
 EOF
-;;
-esac
