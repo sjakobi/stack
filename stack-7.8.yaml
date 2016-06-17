@@ -60,12 +60,7 @@ extra-deps:
 - th-utilities-0.1.1.0
 - th-orphans-0.13.1
 - base-orphans-0.5.4
+- path-0.5.8
 flags:
   time-locale-compat:
     old-locale: false
-packages:
-- .
-- location:
-    git: https://github.com/sjakobi/path.git
-    commit: a9efd053a4d99bb9fb4fb2822d51f666e0c4e488
-  extra-dep: true
