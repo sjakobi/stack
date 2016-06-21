@@ -64,6 +64,7 @@ library
                      Distribution.Version.Extra
                      Network.HTTP.Download
                      Network.HTTP.Download.Verified
+                     Network.HTTP.URL
                      Options.Applicative.Args
                      Options.Applicative.Builder.Extra
                      Options.Applicative.Complicated
@@ -222,6 +223,7 @@ library
                    , zip-archive < 0.4
                    , hpack >= 0.14.0 && < 0.15
                    , store
+                   , uri-bytestring
   if os(windows)
     cpp-options:     -DWINDOWS
     build-depends:   Win32

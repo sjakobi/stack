@@ -79,6 +79,7 @@ import qualified Distribution.Version as C
 import           Network.HTTP.Client (checkStatus)
 import           Network.HTTP.Download
 import           Network.HTTP.Types (Status(..))
+import           Network.HTTP.URL
 import           Path
 import           Path.IO
 import           Prelude -- Fix AMP warning
@@ -488,8 +489,8 @@ loadBuildPlan :: (MonadIO m, MonadThrow m, MonadLogger m, MonadReader env m, Has
 loadBuildPlan name = do
     env <- ask
     let stackage = getStackRoot env
-    file' <- parseRelFile $ T.unpack file
-    let fp = buildPlanDir stackage </> file'
+        file = snapFilePath name
+        fp = buildPlanDir stackage </> file
     $logDebug $ "Decoding build plan from: " <> T.pack (toFilePath fp)
     eres <- liftIO $ decodeFileEither $ toFilePath fp
     case eres of
@@ -497,26 +498,25 @@ loadBuildPlan name = do
         Left e -> do
             $logDebug $ "Decoding build plan from file failed: " <> T.pack (show e)
             ensureDir (parent fp)
-            url <- buildBuildPlanUrl name file
-            req <- parseUrl $ T.unpack url
+            url <- buildBuildPlanUrl name
+            let req = httpUrlRequest url
             $logSticky $ "Downloading " <> renderSnapName name <> " build plan ..."
-            $logDebug $ "Downloading build plan from: " <> url
+            $logDebug $ "Downloading build plan from: " <> httpUrlText url
             _ <- redownload req { checkStatus = handle404 } fp
             $logStickyDone $ "Downloaded " <> renderSnapName name <> " build plan."
             liftIO (decodeFileEither $ toFilePath fp) >>= either throwM return
 
   where
-    file = renderSnapName name <> ".yaml"
     handle404 (Status 404 _) _ _ = Just $ SomeException $ SnapshotNotFound name
     handle404 _ _ _              = Nothing
 
-buildBuildPlanUrl :: (MonadReader env m, HasConfig env) => SnapName -> Text -> m Text
-buildBuildPlanUrl name file = do
+buildBuildPlanUrl :: (MonadReader env m, HasConfig env) => SnapName -> m HttpUrl
+buildBuildPlanUrl name = do
     urls <- asks (configUrls . getConfig)
     return $
         case name of
-             LTS _ _ -> urlsLtsBuildPlans urls <> "/" <> file
-             Nightly _ -> urlsNightlyBuildPlans urls <> "/" <> file
+             LTS _ _ -> urlsLtsBuildPlans urls `appendPath` snapFilePath name
+             Nightly _ -> urlsNightlyBuildPlans urls `appendPath` snapFilePath name
 
 gpdPackages :: [GenericPackageDescription] -> Map PackageName Version
 gpdPackages gpds = Map.fromList $

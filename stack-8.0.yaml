@@ -12,3 +12,4 @@ extra-deps:
 - th-utilities-0.1.1.0
 - store-0.2.0.0
 - store-core-0.2.0.0
+- uri-bytestring-0.2.1.0
