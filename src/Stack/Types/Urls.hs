@@ -6,31 +6,23 @@ module Stack.Types.Urls where
 
 import Control.Applicative
 import Data.Aeson.Extended
-import Data.Text (Text)
 import Data.Monoid
 import GHC.Generics (Generic)
 import Generics.Deriving.Monoid (memptydefault, mappenddefault)
+import Network.HTTP.URL
 import Prelude
 
 data Urls = Urls
-    { urlsLatestSnapshot :: !Text
-    , urlsLtsBuildPlans :: !Text
-    , urlsNightlyBuildPlans :: !Text
+    { urlsLatestSnapshot :: !HttpUrl
+    , urlsLtsBuildPlans :: !HttpUrl
+    , urlsNightlyBuildPlans :: !HttpUrl
     }
     deriving Show
 
--- TODO: Really need this instance?
-instance FromJSON (WithJSONWarnings Urls) where
-    parseJSON = withObjectWarnings "Urls" $ \o -> do
-        Urls
-            <$> o ..: "latest-snapshot"
-            <*> o ..: "lts-build-plans"
-            <*> o ..: "nightly-build-plans"
-
 data UrlsMonoid = UrlsMonoid
-    { urlsMonoidLatestSnapshot :: !(First Text)
-    , urlsMonoidLtsBuildPlans :: !(First Text)
-    , urlsMonoidNightlyBuildPlans :: !(First Text)
+    { urlsMonoidLatestSnapshot :: !(First HttpUrl)
+    , urlsMonoidLtsBuildPlans :: !(First HttpUrl)
+    , urlsMonoidNightlyBuildPlans :: !(First HttpUrl)
     }
     deriving (Show, Generic)
 

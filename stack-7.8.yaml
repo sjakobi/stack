@@ -61,6 +61,7 @@ extra-deps:
 - th-utilities-0.1.1.0
 - th-orphans-0.13.1
 - base-orphans-0.5.4
+- uri-bytestring-0.2.1.0
 flags:
   time-locale-compat:
     old-locale: false

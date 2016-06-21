@@ -70,6 +70,7 @@ import           Distribution.Version (simplifyVersionRange)
 import           GHC.Conc (getNumProcessors)
 import           Network.HTTP.Client.Conduit (HasHttpManager, getHttpManager, Manager, parseUrl)
 import           Network.HTTP.Download (download, downloadJSON)
+import           Network.HTTP.URL
 import           Options.Applicative (Parser, strOption, long, help)
 import           Path
 import           Path.Extra (toFilePathNoTrailingSep)
@@ -142,10 +143,9 @@ getImplicitGlobalProjectDir config =
 getSnapshots :: (MonadThrow m, MonadMask m, MonadIO m, MonadReader env m, HasHttpManager env, HasConfig env, MonadLogger m)
              => m Snapshots
 getSnapshots = do
-    latestUrlText <- askLatestSnapshotUrl
-    latestUrl <- parseUrl (T.unpack latestUrlText)
-    $logDebug $ "Downloading snapshot versions file from " <> latestUrlText
-    result <- downloadJSON latestUrl
+    latestUrl <- askLatestSnapshotUrl
+    $logDebug $ "Downloading snapshot versions file from " <> httpUrlText latestUrl
+    result <- downloadJSON (httpUrlRequest latestUrl)
     $logDebug $ "Done downloading and parsing snapshot versions file"
     return result
 

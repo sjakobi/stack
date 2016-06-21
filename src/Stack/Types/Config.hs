@@ -184,6 +184,7 @@ import           Distribution.Version (anyVersion)
 import           GHC.Generics (Generic)
 import           Generics.Deriving.Monoid (memptydefault, mappenddefault)
 import           Network.HTTP.Client (parseUrl)
+import           Network.HTTP.URL
 import           Path
 import qualified Paths_stack as Meta
 import           Stack.Types.BuildPlan (MiniBuildPlan(..), SnapName, renderSnapName, parseSnapName, SnapshotHash (..), trimmedSnapshotHash)
@@ -810,7 +811,7 @@ data ConfigMonoid =
     -- ^ See: 'configConnectionCount'
     , configMonoidHideTHLoading      :: !(First Bool)
     -- ^ See: 'configHideTHLoading'
-    , configMonoidLatestSnapshotUrl  :: !(First Text)
+    , configMonoidLatestSnapshotUrl  :: !(First HttpUrl)
     -- ^ Deprecated in favour of 'urlsMonoidLatestSnapshot'
     , configMonoidUrls               :: !UrlsMonoid
     -- ^ See: 'configUrls
@@ -1200,7 +1201,7 @@ askConfig :: (MonadReader env m, HasConfig env) => m Config
 askConfig = liftM getConfig ask
 
 -- | Get the URL to request the information on the latest snapshots
-askLatestSnapshotUrl :: (MonadReader env m, HasConfig env) => m Text
+askLatestSnapshotUrl :: (MonadReader env m, HasConfig env) => m HttpUrl
 askLatestSnapshotUrl = asks (urlsLatestSnapshot . configUrls . getConfig)
 
 -- | Root for a specific package index

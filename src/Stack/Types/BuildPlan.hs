@@ -27,6 +27,7 @@ module Stack.Types.BuildPlan
     , GitSHA1 (..)
     , renderSnapName
     , parseSnapName
+    , snapFilePath
     , SnapshotHash (..)
     , trimmedSnapshotHash
     ) where
@@ -45,7 +46,7 @@ import           Data.IntMap (IntMap)
 import qualified Data.IntMap as IntMap
 import           Data.Map (Map)
 import qualified Data.Map as Map
-import           Data.Maybe (fromMaybe)
+import           Data.Maybe
 import           Data.Monoid
 import           Data.Set (Set)
 import           Data.Store (Store)
@@ -62,6 +63,7 @@ import           Distribution.System (Arch, OS (..))
 import qualified Distribution.Text as DT
 import qualified Distribution.Version as C
 import           GHC.Generics (Generic)
+import           Path
 import           Prelude -- Fix AMP warning
 import           Safe (readMay)
 import           Stack.Types.Compiler
@@ -390,6 +392,10 @@ parseSnapName t0 =
     nightly = do
         t1 <- T.stripPrefix "nightly-" t0
         Nightly <$> readMay (T.unpack t1)
+
+-- | Create the Path for a YAML file with the given 'SnapName'
+snapFilePath :: SnapName -> Path Rel File
+snapFilePath name = (fromJust . parseRelFile . T.unpack) (renderSnapName name <> ".yaml")
 
 -- | Most recent Nightly and newest LTS version per major release.
 data Snapshots = Snapshots
