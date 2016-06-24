@@ -57,6 +57,8 @@ data GetInstalledOpts = GetInstalledOpts
 getInstalled :: (M env m, PackageInstallInfo pii)
              => EnvOverride
              -> GetInstalledOpts
+             -- TODO: Clarify what the Map is used for and what properties it
+             -- should have.
              -> Map PackageName pii -- ^ does not contain any installed information
              -> m ( InstalledMap
                   , [DumpPackage () ()] -- globally installed
