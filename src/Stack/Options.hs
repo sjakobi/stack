@@ -966,6 +966,10 @@ pvpBoundsOptsParser = PvpBoundsOpts
                 (long "also-considering" <>
                  help "Extra dependency configs to consider during bounds generation" <>
                  metavar "RESOLVER_OR_STACK_YAML"))
+  where
+    readDependencyConfigurationSource =
+        DCSResolver <$> readAbstractResolver <|>
+        DCSProjectConfig <$> str
 
 pvpBoundsOption :: Parser PvpBounds
 pvpBoundsOption =
@@ -982,11 +986,6 @@ pvpBoundsOption =
                 readerError e
             Right v ->
                 return v
-
-readDependencyConfigurationSource :: ReadM (DependencyConfigurationSource FilePath AbstractResolver)
-readDependencyConfigurationSource =
-    DCSResolver <$> readAbstractResolver <|>
-    DCSProjectConfig <$> str
 
 configCmdSetParser :: Parser ConfigCmdSet
 configCmdSetParser =
