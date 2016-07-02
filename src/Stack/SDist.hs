@@ -341,11 +341,7 @@ loadConfiguredPackageVersions = do
     let sourceVersions = Map.map piiVersion sourceMap
     installedVersions <- do
         menv <- getMinimalEnvOverride
-        (installedMap, _, _, _) <- getInstalled menv GetInstalledOpts
-                                    { getInstalledProfiling = False
-                                    , getInstalledHaddock = False
-                                    }
-                                    sourceMap
+        (installedMap, _, _, _) <- getInstalled menv defaultGetInstalledOpts sourceMap
         return (Map.map (installedVersion . snd) installedMap)
     return (sourceVersions `Map.union` installedVersions)
 

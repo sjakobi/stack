@@ -8,6 +8,7 @@ module Stack.Build.Installed
     ( InstalledMap
     , Installed (..)
     , GetInstalledOpts (..)
+    , defaultGetInstalledOpts
     , getInstalled
     ) where
 
@@ -51,6 +52,12 @@ data GetInstalledOpts = GetInstalledOpts
       -- ^ Require profiling libraries?
     , getInstalledHaddock   :: !Bool
       -- ^ Require haddocks?
+    }
+
+defaultGetInstalledOpts :: GetInstalledOpts
+defaultGetInstalledOpts = GetInstalledOpts
+    { getInstalledProfiling = False
+    , getInstalledHaddock = False
     }
 
 -- | Returns the new InstalledMap and all of the locally registered packages.
