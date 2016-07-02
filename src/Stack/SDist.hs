@@ -75,6 +75,7 @@ import           Stack.Types.Internal
 import           System.Directory (getModificationTime, getPermissions)
 import qualified System.FilePath as FP
 
+-- | Options for the PVP bounds generation.
 data PvpBoundsOpts = PvpBoundsOpts
     { pvpBoundsOptsPvpBounds :: !PvpBounds
     -- TODO (sjakobi): It would be better to use a Set or HashSet here than a list if only I could
@@ -88,6 +89,9 @@ defaultPvpBoundsOpts = PvpBoundsOpts
     , pvpBoundsOptsExtraDependencyConfigurationSources = []
     }
 
+-- | A "dependency configuration" is basically a @'Map' 'PackageName' 'Version'@.
+--
+-- A 'DependencyConfigurationSource' specifies such a configuration.
 data DependencyConfigurationSource projectConfig resolver
     = DCSProjectConfig !projectConfig
     | DCSResolver !resolver
@@ -252,6 +256,7 @@ getCabalFileContents pvpBoundsOpts fp = do
                         $logInfo ("    " <> T.pack (Distribution.Text.display gaps))
                 return (Dependency cname newRange)
 
+-- | 'Version's together with the dependendency configurations in which they are specified.
 type VersionWitnesses projectConfig resolver =
     Map Version (NonEmpty (DependencyConfigurationSource projectConfig resolver))
 
@@ -268,13 +273,15 @@ mergeDependencyConfigs xs =
         | (dcs, m) <- xs
         ]
 
+-- TODO: It would probably be better to use existing functionality like @stack list-dependencies"
+-- to get the package versions.
 loadDependencyConfigs
     :: M env m
     => Path Abs File -- ^ Cabal file of the current package
     -> DependencyConfigurationSource FilePath AbstractResolver
     -> m (Maybe (DependencyConfigurationSource (Path Abs File) Resolver, Map PackageName Version))
        -- ^ Nothing if the 'DependencyConfigurationSource' doesn't apply to the package, e.g.
-       --   a project config doesn't list it.
+       --   a project config doesn't list the package.
 loadDependencyConfigs cabalFp = \case
     DCSProjectConfig fp -> do
         absFile <- resolveFile' fp
