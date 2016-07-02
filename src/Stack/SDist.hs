@@ -36,7 +36,7 @@ import qualified Data.ByteString as S
 import qualified Data.ByteString.Lazy as L
 import           Data.Data (Data, Typeable, cast, gmapM)
 import           Data.Either (partitionEithers)
-import           Data.Foldable (foldMap, forM_)
+import           Data.Foldable (forM_)
 import           Data.List
 import           Data.List.NonEmpty (NonEmpty)
 import qualified Data.List.NonEmpty as NE
@@ -44,7 +44,6 @@ import           Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
 import           Data.Maybe
 import           Data.Maybe.Extra
-import           Data.Monoid hiding ((<>))
 import           Data.Semigroup ((<>))
 import qualified Data.Set as Set
 import qualified Data.Text as T
@@ -387,16 +386,11 @@ computePvpVersionRange pvpBounds oldRange witnesses =
         minVersion = Set.findMin (Map.keysSet witnesses)
         maxVersion = Set.findMax (Map.keysSet witnesses)
 
-    -- TODO: It's probably more honest _not_ to delete the zero ranges.
-    gaps = deleteZeroRanges (differenceVersionRanges newRange totalWitnessedRange)
+    gaps = simplifyVersionRange (differenceVersionRanges newRange totalWitnessedRange)
       where
-        deleteZeroRanges = appEndo (foldMap (Endo . cleanseOfZeroRangesFor) (Map.keys witnesses))
-
-        differenceVersionRanges vr0 vr1 =
-            simplifyVersionRange (intersectVersionRanges vr0 (invertVersionRange vr1))
+        differenceVersionRanges vr0 vr1 = intersectVersionRanges vr0 (invertVersionRange vr1)
 
         totalWitnessedRange =
-            simplifyVersionRange $
             foldl'
                 unionVersionRanges
                 noVersion
@@ -406,28 +400,6 @@ computePvpVersionRange pvpBounds oldRange witnesses =
                 intersectVersionRanges
                     (earlierVersion $ toCabalVersion $ nextMajorVersion version)
                     (orLaterVersion $ toCabalVersion version)
-
--- | Given e.g. 4.9.0.0, this function will delete subranges like ">=4.9 && <4.9.0.0"
--- from a version range.
---
--- While that subrange could in theory contain the version 4.9 and 4.9.0, the existence
--- of 4.9.0.0 indicates that these versions don't exist.
-cleanseOfZeroRangesFor :: Version -> VersionRange -> VersionRange
-cleanseOfZeroRangesFor version
-    | [0] `isSuffixOf` (versionBranch cabalVersion) =
-        fromVersionIntervals .
-        fromMaybe (error "cleanseOfZeroRangesFor: mkVersionIntervals returned Nothing") .
-        mkVersionIntervals .
-        filter (not . isZeroIntervalOf cabalVersion) .
-        asVersionIntervals
-    | otherwise = id
-  where
-    cabalVersion = toCabalVersion version
-    isZeroIntervalOf v (LowerBound lv _, UpperBound uv ExclusiveBound) | v == uv =
-        case stripPrefix (versionBranch lv) (versionBranch v) of
-            Just xs -> all (== 0) xs
-            Nothing -> False
-    isZeroIntervalOf _ _ = False
 
 -- | Traverse a data type.
 gtraverseM :: (Data a, Typeable b, Monad m) => (b -> m b) -> a -> m a
