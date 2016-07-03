@@ -537,9 +537,7 @@ pathCmd :: [Text] -> GlobalOpts -> IO ()
 pathCmd keys go =
     withBuildConfig
         go
-        (do env <- ask
-            let cfg = envConfig env
-                bc = envConfigBuildConfig cfg
+        (do bc <- asks getBuildConfig
             -- This is the modified 'bin-path',
             -- including the local GHC or MSYS if not configured to operate on
             -- global GHC.
