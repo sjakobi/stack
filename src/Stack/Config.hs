@@ -383,7 +383,9 @@ loadMiniConfig manager config = do
         case configGHCVariant0 config of
             Just ghcVariant -> return ghcVariant
             Nothing -> getDefaultGHCVariant menv (configPlatform config)
-    return (MiniConfig manager ghcVariant config)
+    let mc = MiniConfig manager ghcVariant config
+    $logDebug "Finished creating a MiniConfig"
+    return mc
 
 -- Load the configuration, using environment variables, and defaults as
 -- necessary.
@@ -421,11 +423,13 @@ loadConfigMaybeProject configArgs mresolver mproject = do
         forM_ mprojectRoot $ \dir ->
             checkOwnership (dir </> configWorkDir config)
 
-    return LoadConfig
-        { lcConfig          = config
-        , lcLoadBuildConfig = loadBuildConfig mproject config mresolver
-        , lcProjectRoot     = mprojectRoot
-        }
+    let lc = LoadConfig
+            { lcConfig          = config
+            , lcLoadBuildConfig = loadBuildConfig mproject config mresolver
+            , lcProjectRoot     = mprojectRoot
+            }
+    $logDebug "Finished creating a LoadConfig"
+    return lc
 
 -- | Load the configuration, using current directory, environment variables,
 -- and defaults as necessary. The passed @Maybe (Path Abs File)@ is an
@@ -533,18 +537,20 @@ loadBuildConfig mproject config mresolver mcompiler = do
 
     extraPackageDBs <- mapM resolveDir' (projectExtraPackageDBs project)
 
-    return BuildConfig
-        { bcConfig = config
-        , bcResolver = loadedResolver
-        , bcWantedMiniBuildPlan = mbp
-        , bcPackageEntries = projectPackages project
-        , bcExtraDeps = projectExtraDeps project
-        , bcExtraPackageDBs = extraPackageDBs
-        , bcStackYaml = stackYamlFP
-        , bcFlags = projectFlags project
-        , bcImplicitGlobal = isNothing mproject
-        , bcGHCVariant = getGHCVariant miniConfig
-        }
+    let bc = BuildConfig
+            { bcConfig = config
+            , bcResolver = loadedResolver
+            , bcWantedMiniBuildPlan = mbp
+            , bcPackageEntries = projectPackages project
+            , bcExtraDeps = projectExtraDeps project
+            , bcExtraPackageDBs = extraPackageDBs
+            , bcStackYaml = stackYamlFP
+            , bcFlags = projectFlags project
+            , bcImplicitGlobal = isNothing mproject
+            , bcGHCVariant = getGHCVariant miniConfig
+            }
+    $logDebug "Finished creating a BuildConfig"
+    return bc
 
 -- | Resolve a PackageEntry into a list of paths, downloading and cloning as
 -- necessary.

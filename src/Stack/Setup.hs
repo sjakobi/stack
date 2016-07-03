@@ -298,16 +298,18 @@ setupEnv mResolveMissingGHC = do
                         (Map.insert es eo m', ())
                     return eo
 
-    return EnvConfig
-        { envConfigBuildConfig = bconfig
-            { bcConfig = maybe id addIncludeLib mghcBin
-                          (bcConfig bconfig)
-                { configEnvOverride = getEnvOverride' }
+    let ec = EnvConfig
+            { envConfigBuildConfig = bconfig
+                { bcConfig = maybe id addIncludeLib mghcBin
+                              (bcConfig bconfig)
+                    { configEnvOverride = getEnvOverride' }
+                }
+            , envConfigCabalVersion = cabalVer
+            , envConfigCompilerVersion = compilerVer
+            , envConfigPackages = envConfigPackages envConfig0
             }
-        , envConfigCabalVersion = cabalVer
-        , envConfigCompilerVersion = compilerVer
-        , envConfigPackages = envConfigPackages envConfig0
-        }
+    $logDebug "Finished creating an EnvConfig"
+    return ec
 
 -- | Add the include and lib paths to the given Config
 addIncludeLib :: ExtraDirs -> Config -> Config
