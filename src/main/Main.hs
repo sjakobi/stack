@@ -948,6 +948,42 @@ withBuildConfigExt go@GlobalOpts{..} mbefore inner mafter = do
 cleanCmd :: CleanOpts -> GlobalOpts -> IO ()
 cleanCmd opts go = withBuildConfigAndLock go (const (clean opts))
 
+cleanCommand :: Command
+cleanCommand = Command
+    { commandName = "clean"
+    , commandDescription = "Clean the local packages"
+    , commandCore = withEnvConfigAndLock cleanOptsParser cleanCmd
+    , commandAvailableInInterpreterMode = False
+    }
+
+data Command = Command
+    { commandName :: String
+    , commandDescription :: String
+    , commandCore :: CommandCore
+    , commandAvailableInInterpreterMode :: Bool
+    }
+
+-- opaque
+data CommandCore = CommandCore
+    { commandCoreBeforeAction :: Maybe (StackT Config IO ())
+    , commandCoreMainAction :: CommandCoreMainAction
+    , commandCoreAfterAction :: Maybe (StackT Config IO ())
+    }
+
+type MainAction env = (Maybe FileLock -> StackT env IO ())
+
+data CommandCoreMainAction
+    = CCMAConfig (MainAction Config)
+    | CCMAMiniConfig (MainAction MiniConfig)
+    | CCMABuildConfig (MainAction BuildConfig)
+    | CCMAEnvConfig (MainAction EnvConfig)
+
+withEnvConfigAndLock :: Parser a -> (a -> GlobalOpts -> IO ()) -> CommandCore
+withEnvConfigAndLock = undefined
+
+interpretCommand :: Command -> AddCommand
+interpretCommand = undefined
+
 -- | Helper for build and install commands
 buildCmd :: BuildOptsCLI -> GlobalOpts -> IO ()
 buildCmd opts go = do
