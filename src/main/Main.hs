@@ -948,21 +948,24 @@ withBuildConfigExt go@GlobalOpts{..} mbefore inner mafter = do
 cleanCmd :: CleanOpts -> GlobalOpts -> IO ()
 cleanCmd opts go = withBuildConfigAndLock go (const (clean opts))
 
-cleanCommand :: Command
+cleanCommand :: Command CleanOpts
 cleanCommand = Command
     { commandName = "clean"
     , commandDescription = "Clean the local packages"
-    , commandCore = withEnvConfigAndLock cleanOptsParser cleanCmd
+    , commandActions = withEnvConfigAndLock (\globalOpts cleanOpts -> clean cleanOpts)
+    , commandOptsParser = cleanOptsParser
     , commandAvailableInInterpreterMode = False
     }
 
-data Command = Command
+data Command a = Command
     { commandName :: String
     , commandDescription :: String
-    , commandCore :: CommandCore
+    , commandActions :: CommandActions a
+    , commandOptsParser :: Parser a
     , commandAvailableInInterpreterMode :: Bool
     }
 
+{-
 -- opaque
 data CommandCore = CommandCore
     { commandCoreBeforeAction :: Maybe (StackT Config IO ())
@@ -977,12 +980,20 @@ data CommandCoreMainAction
     | CCMAMiniConfig (MainAction MiniConfig)
     | CCMABuildConfig (MainAction BuildConfig)
     | CCMAEnvConfig (MainAction EnvConfig)
+-}
 
-withEnvConfigAndLock :: Parser a -> (a -> GlobalOpts -> IO ()) -> CommandCore
-withEnvConfigAndLock = undefined
+type CommandActions a =
+    String -> String -> Parser a -> Bool -> String -> Parser GlobalOptsMonoid
+    -> ((GlobalOpts -> a -> StackT EnvConfig IO ()) -> a -> GlobalOpts -> IO ())
+    -> AddCommand
 
+withEnvConfigAndLock :: (GlobalOpts -> a -> StackT EnvConfig IO ()) -> CommandActions a
+withEnvConfigAndLock cmd name descr parser availableInInterpreterMode globalFooter globalOptsParser runner =
+    addCommand name descr globalFooter (runner cmd) globalOptsParser parser
+{-
 interpretCommand :: Command -> AddCommand
 interpretCommand = undefined
+-}
 
 -- | Helper for build and install commands
 buildCmd :: BuildOptsCLI -> GlobalOpts -> IO ()
