@@ -15,6 +15,7 @@ module Stack.Ghci
     , ghci
     ) where
 
+import           Prelude (print)
 import           Stack.Prelude hiding (Display (..))
 import           Control.Monad.State.Strict (State, execState, get, modify)
 import           Data.ByteString.Builder (byteString)
@@ -196,6 +197,12 @@ ghci opts@GhciOpts{..} = do
     pkgs <- getGhciPkgInfos installMap addPkgs (fmap fst mfileTargets) pkgDescs
     checkForIssues pkgs
     -- Finally, do the invocation of ghci
+    liftIO $ print ("opts", opts)
+    liftIO $ print ("localTargets", localTargets)
+    liftIO $ print ("pkgs", pkgs)
+    liftIO $ print ("mfileTargets", mfileTargets)
+    liftIO $ print ("nonLocalTargets", nonLocalTargets)
+    liftIO $ print ("addPkgs", addPkgs)
     runGhci opts localTargets mainFile pkgs (maybe [] snd mfileTargets) (nonLocalTargets ++ addPkgs)
 
 preprocessTargets
@@ -661,7 +668,8 @@ loadGhciPkgDesc buildOptsCLI name cabalfp target = do
     let mbuildinfofp
           | hasDotBuildinfo = Just (parent cabalfp </> buildinfofp)
           | otherwise = Nothing
-    mbuildinfo <- forM mbuildinfofp readDotBuildinfo
+    mbuildinfo <- forM mbuildinfofp readDotBuildinfo -- Here
+    liftIO $ print mbuildinfo
     let pdp = resolvePackageDescription config gpkgdesc
         pkg =
             packageFromPackageDescription config (C.genPackageFlags gpkgdesc) $
@@ -670,7 +678,7 @@ loadGhciPkgDesc buildOptsCLI name cabalfp target = do
               (\bi ->
                let PackageDescriptionPair x y = pdp
                 in PackageDescriptionPair
-                    (C.updatePackageDescription bi x)
+                    (C.updatePackageDescription bi x) -- Here
                     (C.updatePackageDescription bi y))
               mbuildinfo
     return GhciPkgDesc

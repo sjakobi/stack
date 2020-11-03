@@ -115,6 +115,7 @@ data Target
   -- ^ Build all of the default components.
   | TargetComps !(Set NamedComponent)
   -- ^ Only build specific components
+  deriving (Show)
 
 data PackageType = PTProject | PTDependency
   deriving (Eq, Show)
